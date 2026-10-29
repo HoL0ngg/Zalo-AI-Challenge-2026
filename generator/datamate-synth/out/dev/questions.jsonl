@@ -1,0 +1,120 @@
+{"id":"dev_01_q001","business_id":"dev_01","question":"Mat hang nao ban chay nhat thang nay theo so luong","as_of_date":"2026-05-11"}
+{"id":"dev_01_q002","business_id":"dev_01","question":"Tháng này chốt được bao nhiêu đơn hợp lệ","as_of_date":"2026-05-10"}
+{"id":"dev_01_q003","business_id":"dev_01","question":"Liệt kê hàng đang tồn kho dưới 15 đơn vị.?","as_of_date":"2026-06-30"}
+{"id":"dev_01_q004","business_id":"dev_01","question":"Doanh thu tuần rồi là bao nhiêu?","as_of_date":"2026-07-04"}
+{"id":"dev_01_q005","business_id":"dev_01","question":"Tổng số lượng sản phẩm ban ra tháng trước la bao nhiêu","as_of_date":"2026-07-06"}
+{"id":"dev_01_q006","business_id":"dev_01","question":"Doanhthu dịp Tết gần nhất là bao nhiêu?","as_of_date":"2026-08-20"}
+{"id":"dev_01_q007","business_id":"dev_01","question":"Tuan roi co bao nhieu don hang hop le?","as_of_date":"2026-08-26"}
+{"id":"dev_01_q008","business_id":"dev_01","question":"Cho mình danh sách top 3 sản phẩm bán nhiều nhất tháng trước, đúng thứ tự.","as_of_date":"2026-09-18"}
+{"id":"dev_01_q009","business_id":"dev_01","question":"Tuần rồi mặt hàng nào mang về doanh thu cao nhất?","as_of_date":"2026-09-06"}
+{"id":"dev_01_q010","business_id":"dev_01","question":"Tháng trước sản phẩm bán ít nhất là gì?","as_of_date":"2026-06-10"}
+{"id":"dev_01_q011","business_id":"dev_01","question":"CÙNG kỳ năm ngoái sản phẩm doanh thu cao nhất là gì?","as_of_date":"2026-06-04"}
+{"id":"dev_01_q012","business_id":"dev_01","question":"Tổng số lượng sản phẩm bán ra tháng trước là bao nhiêu","as_of_date":"2026-07-02"}
+{"id":"dev_01_q013","business_id":"dev_01","question":"Liệtkê ba mặt hàng doanh thu cao NHẤT trong tháng này.","as_of_date":"2026-07-15"}
+{"id":"dev_01_q014","business_id":"dev_01","question":"Doanh thu tuần rồi tăng giảm bao nhiêu % so với tuần liền trước đó","as_of_date":"2026-08-05"}
+{"id":"dev_01_q015","business_id":"dev_01","question":"Hom qua doanh thu bao nhiêu","as_of_date":"2026-05-22"}
+{"id":"dev_01_q016","business_id":"dev_01","question":"Sản phẩm nào còn tồn mà lô hàng sẽ hết hạn trong 30 ngày tới","as_of_date":"2026-06-19"}
+{"id":"dev_01_q017","business_id":"dev_01","question":"Giá trị don hàng trung bình tháng này là bao nhiêu?","as_of_date":"2026-07-01"}
+{"id":"dev_01_q018","business_id":"dev_01","question":"Doanh thu cung ky năm ngoái đạt bao nhiêu","as_of_date":"2026-05-26"}
+{"id":"dev_01_q019","business_id":"dev_01","question":"Nhómhàng nào đem lại doanh thu cao nhất tháng này","as_of_date":"2026-07-04"}
+{"id":"dev_01_q020","business_id":"dev_01","question":"Tháng trước cửa hàng thu được bao nhiêu tiền bán hàng?","as_of_date":"2026-07-11"}
+{"id":"dev_01_q021","business_id":"dev_01","question":"Tháng trước có bao nhiêu đơn hàng bị hủy?","as_of_date":"2026-07-11"}
+{"id":"dev_01_q022","business_id":"dev_01","question":"Tháng trước sản phẩm bán ít nhất là gì","as_of_date":"2026-09-11"}
+{"id":"dev_01_q023","business_id":"dev_01","question":"san pham nào còn tồn mà lô hàng sẽ hết hạn trong 30 ngày tới?","as_of_date":"2026-09-02"}
+{"id":"dev_01_q024","business_id":"dev_01","question":"Tháng này có bao nhiêu khách hàng khác nhau đã mua?","as_of_date":"2026-08-03"}
+{"id":"dev_01_q025","business_id":"dev_01","question":"Doanhthu tháng này tăng trưởng bao nhiêu phần trăm so với tháng trước?","as_of_date":"2026-08-23"}
+{"id":"dev_01_q026","business_id":"dev_01","question":"Hôm qua có bán được sản phẩm nước mía ly 500ml khong","as_of_date":"2026-06-01"}
+{"id":"dev_01_q027","business_id":"dev_01","question":"Cùng kỳ năm ngoái mặt hàng nào bán nhiều nhất?","as_of_date":"2026-09-13"}
+{"id":"dev_01_q028","business_id":"dev_01","question":"Tháng trước thứ mấy có nhiều đơn hàng hợp lệ nhất?","as_of_date":"2026-08-28"}
+{"id":"dev_01_q029","business_id":"dev_01","question":"Trong dịp Tết GẦN nhất, sản phẩm nào bán chạy nhất?","as_of_date":"2026-09-09"}
+{"id":"dev_01_q030","business_id":"dev_01","question":"Sản phẩm nao tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái?","as_of_date":"2026-09-20"}
+{"id":"dev_01_q031","business_id":"dev_01","question":"Tháng này chốt được bao nhiêu don hợp lệ?","as_of_date":"2026-09-22"}
+{"id":"dev_01_q032","business_id":"dev_01","question":"GIA tri don hang trung binh thang nay la bao nhieu?","as_of_date":"2026-07-21"}
+{"id":"dev_01_q033","business_id":"dev_01","question":"Tuần roi sản pham nào bán nhiềuu nhất?","as_of_date":"2026-06-30"}
+{"id":"dev_01_q034","business_id":"dev_01","question":"Trong tháng trước, ngày nào có doanhhh thu cao nhất?","as_of_date":"2026-05-06"}
+{"id":"dev_01_q035","business_id":"dev_01","question":"Tổng doanh thu tháng này tính đến HÔM nay là bao nhiêu?","as_of_date":"2026-08-11"}
+{"id":"dev_01_q036","business_id":"dev_01","question":"Khách hàng nao mua nhiều tiền nhất tháng trước?","as_of_date":"2026-05-27"}
+{"id":"dev_01_q037","business_id":"dev_01","question":"Sản phẩm Nước thần ZZZ 999ml tuần rồi bán được mấy cái?","as_of_date":"2026-05-22"}
+{"id":"dev_01_q038","business_id":"dev_01","question":"Nhân viên ca tối nào mang về doanh thu nhiều nhất tháng trước?","as_of_date":"2026-08-07"}
+{"id":"dev_01_q039","business_id":"dev_01","question":"Doanh thu trong tháng 01/2023 là bao nhiêu?","as_of_date":"2026-05-16"}
+{"id":"dev_01_q040","business_id":"dev_01","question":"Lợi nhuận gộp tháng trước là bao nhiêu, tinh theo giá vốn bình quân nhập lô?","as_of_date":"2026-06-29"}
+{"id":"dev_02_q001","business_id":"dev_02","question":"Thánggg trước có bao nhiêu đơn hàng bị hủy?","as_of_date":"2026-05-11"}
+{"id":"dev_02_q002","business_id":"dev_02","question":"Lập bảng các khách đang nợ tiền, kèm mã khách, tên và số tiền nợ.?","as_of_date":"2026-05-10"}
+{"id":"dev_02_q003","business_id":"dev_02","question":"Hômqua doanh thu bao nhiêu?","as_of_date":"2026-05-31"}
+{"id":"dev_02_q004","business_id":"dev_02","question":"Mặt HÀNG nào bán chạy nhất tháng này theo số lượng?","as_of_date":"2026-06-09"}
+{"id":"dev_02_q005","business_id":"dev_02","question":"Khách hàng nào mua nhiều tien nhat thang trước?","as_of_date":"2026-06-27"}
+{"id":"dev_02_q006","business_id":"dev_02","question":"Doanhhh thu tuan rồi tăng giảm bao nhiêu % so với tuần lien truoc đó?","as_of_date":"2026-05-16"}
+{"id":"dev_02_q007","business_id":"dev_02","question":"Thang này có bao nhiêu khách hang khac nhau đã mua","as_of_date":"2026-05-21"}
+{"id":"dev_02_q008","business_id":"dev_02","question":"Nhóm hàng nao đem lại doanh thu cao nhất tháng này?","as_of_date":"2026-05-13"}
+{"id":"dev_02_q009","business_id":"dev_02","question":"Lợi nhuận gộp tháng truoc dựa trên giá vốn bình quân nhập lô là bao nhiêu?","as_of_date":"2026-05-14"}
+{"id":"dev_02_q010","business_id":"dev_02","question":"Tháng trước thứ mấy có NHIỀU đơn hàng hợp lệ nhất?","as_of_date":"2026-06-12"}
+{"id":"dev_02_q011","business_id":"dev_02","question":"Khách C0049 hiện còn nợ cửa hàng bn?","as_of_date":"2026-06-08"}
+{"id":"dev_02_q012","business_id":"dev_02","question":"Tuần rồi sản phẩm nào bán nhiều nhất?","as_of_date":"2026-08-11"}
+{"id":"dev_02_q013","business_id":"dev_02","question":"Sản phẩm nào tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái","as_of_date":"2026-08-07"}
+{"id":"dev_02_q014","business_id":"dev_02","question":"Doanh thu tuần rồi tăng giảm bao nhiêu % so với tuần liền trước đó?","as_of_date":"2026-05-15"}
+{"id":"dev_02_q015","business_id":"dev_02","question":"Giá trị đơn hàng trung bình tháng này là bao nhiêu?","as_of_date":"2026-05-23"}
+{"id":"dev_02_q016","business_id":"dev_02","question":"Cùng kỳ năm ngoái SẢN phẩm doanh thu cao nhất là gì?","as_of_date":"2026-08-05"}
+{"id":"dev_02_q017","business_id":"dev_02","question":"Tháng trước sp bán ít nhất là gì?","as_of_date":"2026-07-22"}
+{"id":"dev_02_q018","business_id":"dev_02","question":"Trong tháng trước, ngày nào có doanh thu cao nhất?","as_of_date":"2026-07-07"}
+{"id":"dev_02_q019","business_id":"dev_02","question":"Tổng số lượng sản phẩm bán ra tháng trước là bao nhiêu","as_of_date":"2026-06-19"}
+{"id":"dev_02_q020","business_id":"dev_02","question":"Tuần rồi mặt hàng nào mang về doanh thu cao nhất?","as_of_date":"2026-07-07"}
+{"id":"dev_02_q021","business_id":"dev_02","question":"Liệt kê hàng đang tồn kho dưới 15 đơn vị.?","as_of_date":"2026-06-29"}
+{"id":"dev_02_q022","business_id":"dev_02","question":"Trong dịp Tết gần nhất, sản phẩm nào bán chạy nhất?","as_of_date":"2026-06-07"}
+{"id":"dev_02_q023","business_id":"dev_02","question":"Liệt kê ba mặt hàng doanh thu cao nhất trong tháng này.","as_of_date":"2026-08-06"}
+{"id":"dev_02_q024","business_id":"dev_02","question":"Tuần rồi sản phẩm nào bán nhiều nhất?","as_of_date":"2026-07-16"}
+{"id":"dev_02_q025","business_id":"dev_02","question":"Tháng này chốt được bao nhiêu đơn hợp lệ","as_of_date":"2026-06-20"}
+{"id":"dev_02_q026","business_id":"dev_02","question":"Hôm qua có bán được sản phẩm P0001 KHÔNG?","as_of_date":"2026-07-20"}
+{"id":"dev_02_q027","business_id":"dev_02","question":"DOANH  thu tuần rồi là bao nhiêu?","as_of_date":"2026-06-18"}
+{"id":"dev_02_q028","business_id":"dev_02","question":"Doanh thu dịp Tet gần nhất la bn?","as_of_date":"2026-07-28"}
+{"id":"dev_02_q029","business_id":"dev_02","question":"Doanh thu cùng kỳ năm ngoáiii đạt BAO nhiêu?","as_of_date":"2026-06-29"}
+{"id":"dev_02_q030","business_id":"dev_02","question":"Tổng doanh thu tháng này tính đến hôm nay là bao nhiêu?","as_of_date":"2026-05-14"}
+{"id":"dev_02_q031","business_id":"dev_02","question":"Cho mình danh sách top 3 sản phẩm bán nhiều nhất tháng trước, đúng thứ tự.","as_of_date":"2026-06-18"}
+{"id":"dev_02_q032","business_id":"dev_02","question":"Tháng trước cửa hàng thu được bao nhiêu tiền bán hàng","as_of_date":"2026-08-25"}
+{"id":"dev_02_q033","business_id":"dev_02","question":"Cùng kỳ năm ngoái mặt hàng nào bán nhiều nhất","as_of_date":"2026-07-04"}
+{"id":"dev_02_q034","business_id":"dev_02","question":"Tuần  rồi có bao nhiêu đơn hàng hợp lệ?","as_of_date":"2026-07-23"}
+{"id":"dev_02_q035","business_id":"dev_02","question":"Doanh thu tháng này tăng trưởng bao nhiêu phần trăm so với tháng trước?","as_of_date":"2026-08-20"}
+{"id":"dev_02_q036","business_id":"dev_02","question":"Tháng trước thứ may có nhiều don hang hợp le nhất?","as_of_date":"2026-08-19"}
+{"id":"dev_02_q037","business_id":"dev_02","question":"Sản  phẩm Nước THẦN ZZZ 999ml tuần rồi bán được mấy cái?","as_of_date":"2026-07-19"}
+{"id":"dev_02_q038","business_id":"dev_02","question":"Nhân viên ca tối nào mang về doanh thu nhiều nhất tháng trước","as_of_date":"2026-07-22"}
+{"id":"dev_02_q039","business_id":"dev_02","question":"Doanh thu trong thang 01/2023 la bao nhieu?","as_of_date":"2026-05-16"}
+{"id":"dev_02_q040","business_id":"dev_02","question":"Chi phí điện nước riêng của cửa hàng trong tháng trước là bao nhiêu?","as_of_date":"2026-07-27"}
+{"id":"dev_03_q001","business_id":"dev_03","question":"Tuần rồi có bao nhiêu đơn hàng hợp lệ?","as_of_date":"2026-04-06"}
+{"id":"dev_03_q002","business_id":"dev_03","question":"Doanhthu tuần rồi tăng giảm BAO nhiêu % so với tuần liền trước đó?","as_of_date":"2026-04-12"}
+{"id":"dev_03_q003","business_id":"dev_03","question":"Tuần rồi có bao nhiêu đơn hàng hợp lệ","as_of_date":"2026-06-30"}
+{"id":"dev_03_q004","business_id":"dev_03","question":"Cho mình danh sách top 3 sản phẩm bán nhiều nhất tháng trước, đúng thứ tự.","as_of_date":"2026-04-06"}
+{"id":"dev_03_q005","business_id":"dev_03","question":"Nhóm hàng nào đem lại doanh thu cao nhất tháng này?","as_of_date":"2026-05-05"}
+{"id":"dev_03_q006","business_id":"dev_03","question":"Thángnày chốt được bao nhiêu đơn hợp lệ?","as_of_date":"2026-07-05"}
+{"id":"dev_03_q007","business_id":"dev_03","question":"Thángtrước cửa hàng thu được bao nhiêu tiền bán hàng?","as_of_date":"2026-07-25"}
+{"id":"dev_03_q008","business_id":"dev_03","question":"Hôm qua có bán được SẢN phẩm P0018 không?","as_of_date":"2026-06-15"}
+{"id":"dev_03_q009","business_id":"dev_03","question":"Tháng trước thứ mấy có nhiều đơn hàng hợp lệ nhất?","as_of_date":"2026-07-21"}
+{"id":"dev_03_q010","business_id":"dev_03","question":"Doanh thu tuần rồi là bao nhiêu","as_of_date":"2026-07-22"}
+{"id":"dev_03_q011","business_id":"dev_03","question":"Sản  phẩm nào tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái?","as_of_date":"2026-05-09"}
+{"id":"dev_03_q012","business_id":"dev_03","question":"Hômqua doanh thu bao nhiêu","as_of_date":"2026-06-28"}
+{"id":"dev_03_q013","business_id":"dev_03","question":"Khách  hàng nào mua nhiều tiền nhất tháng trước","as_of_date":"2026-04-26"}
+{"id":"dev_03_q014","business_id":"dev_03","question":"Cùng kỳ năm ngoái mặt hàng nào bán nhiều nhất?","as_of_date":"2026-04-25"}
+{"id":"dev_03_q015","business_id":"dev_03","question":"Tuan roi san pham nao ban nhiu nhat?","as_of_date":"2026-05-19"}
+{"id":"dev_03_q016","business_id":"dev_03","question":"Tháng trước thứ mấy có nhiều đơn hàng hợp lệ nhất","as_of_date":"2026-05-09"}
+{"id":"dev_03_q017","business_id":"dev_03","question":"Trong dịp Tết gần nhất, sản phẩm nào bán chạy nhất","as_of_date":"2026-06-05"}
+{"id":"dev_03_q018","business_id":"dev_03","question":"Liệt kê ba mặt hàng doanh thu cao nhất trong tháng này.","as_of_date":"2026-07-21"}
+{"id":"dev_03_q019","business_id":"dev_03","question":"Lợi nhuận gộp tháng trướcc dựa trên giá vốn bình quân nhập lô là bao nhiêu?","as_of_date":"2026-05-05"}
+{"id":"dev_03_q020","business_id":"dev_03","question":"Cùng kỳ năm ngoái sản phẩm doanh thu cao nhất là gì","as_of_date":"2026-05-05"}
+{"id":"dev_03_q021","business_id":"dev_03","question":"Tổng số lượng sản phẩm bán ra tháng trước là bao nhiêu?","as_of_date":"2026-04-08"}
+{"id":"dev_03_q022","business_id":"dev_03","question":"Mặt hàng nào bán chạy nhất tháng này theo so luong?","as_of_date":"2026-06-02"}
+{"id":"dev_03_q023","business_id":"dev_03","question":"Liệt kê hàng đang tồn kho dưới 15 đơn vị.  ","as_of_date":"2026-07-20"}
+{"id":"dev_03_q024","business_id":"dev_03","question":"sản phẩm nào còn tồn mà lô hàng sẽ hết hạn trong 30 ngày tới?","as_of_date":"2026-06-02"}
+{"id":"dev_03_q025","business_id":"dev_03","question":"Tháng này có bao nhiêu khách hàng khác nhau đã mua?","as_of_date":"2026-05-31"}
+{"id":"dev_03_q026","business_id":"dev_03","question":"Doanh thu tháng này tăng trưởng bao nhiêu phần trăm so với tháng trước?","as_of_date":"2026-04-21"}
+{"id":"dev_03_q027","business_id":"dev_03","question":"Tháng trước có bao nhiêu đơn hàng bị hủy?","as_of_date":"2026-07-08"}
+{"id":"dev_03_q028","business_id":"dev_03","question":"Doanh thu cung ky năm ngoái đạt bao nhiêu?","as_of_date":"2026-05-28"}
+{"id":"dev_03_q029","business_id":"dev_03","question":"Gia tri don hang trung binh thang nay la bao nhieu?","as_of_date":"2026-07-13"}
+{"id":"dev_03_q030","business_id":"dev_03","question":"Trong tháng trước, ngày nào có doanh thu cao nhất","as_of_date":"2026-05-16"}
+{"id":"dev_03_q031","business_id":"dev_03","question":"Tuầnrồi mặt hàng nào mang về doanh thu cao nhất?","as_of_date":"2026-06-01"}
+{"id":"dev_03_q032","business_id":"dev_03","question":"Tháng trước sản phẩm bán ít nhất là gì","as_of_date":"2026-07-23"}
+{"id":"dev_03_q033","business_id":"dev_03","question":"dthu dịp Tết gần nhất là bao nhiêu?","as_of_date":"2026-06-14"}
+{"id":"dev_03_q034","business_id":"dev_03","question":"Tháng  trước cửa hàng thu được bao nhiêu tiền bán hàng?","as_of_date":"2026-06-26"}
+{"id":"dev_03_q035","business_id":"dev_03","question":"Tổng doanh thu tháng này TÍNH đến hôm nay là bao nhiêuuu?","as_of_date":"2026-06-01"}
+{"id":"dev_03_q036","business_id":"dev_03","question":"tổng doanh thu tháng này tính den hôm nay là bao nhiêu?","as_of_date":"2026-06-20"}
+{"id":"dev_03_q037","business_id":"dev_03","question":"Sản phẩm Nước thần ZZZ 999ml tuần rồi bán được mấy cái?","as_of_date":"2026-07-09"}
+{"id":"dev_03_q038","business_id":"dev_03","question":"Nhân vien ca tối nào mang về doanh thu nhiều nhat thang trướcc?","as_of_date":"2026-07-08"}
+{"id":"dev_03_q039","business_id":"dev_03","question":"Doanh thu trong tháng 01/2023 là bao nhiêu?","as_of_date":"2026-05-22"}
+{"id":"dev_03_q040","business_id":"dev_03","question":"Chi phí điện nước riêng của cửa hàng trong tháng trước là bao nhiêu","as_of_date":"2026-04-12"}

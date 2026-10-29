@@ -1,0 +1,378 @@
+{
+  "business_id": "train_05",
+  "end": "2026-07-31",
+  "format": "xlsx",
+  "kind": "sua_xe",
+  "products": {
+    "P0001": {
+      "aliases": [
+        "Bố thắng trước Wave Alpha",
+        "BỐ THẮNG TRƯỚC WAVE ALPHA",
+        "Bố  thắng trước Wave Alpha",
+        "Bố Thắng Trước Wave Alpha",
+        "Bố thắng trước Wave Alpha",
+        "P0001",
+        "bo thang truoc wave alpha",
+        "bố thắng trước wave alpha"
+      ],
+      "name": "Bố thắng trước Wave Alpha"
+    },
+    "P0002": {
+      "aliases": [
+        "BI NỒI VISION BỘ 6",
+        "Bi  nồi Vision bộ 6",
+        "Bi Nồi Vision Bộ 6",
+        "Bi nồi Vision bộ 6",
+        "Bi nồi Vision bộ 6",
+        "P0002",
+        "bi noi vision bo 6",
+        "bi nồi vision bộ 6"
+      ],
+      "name": "Bi nồi Vision bộ 6"
+    },
+    "P0003": {
+      "aliases": [
+        "DUNG DỊCH RỬA XE 1L",
+        "Dung  dịch rửa xe 1L",
+        "Dung Dịch Rửa Xe 1L",
+        "Dung dịch rửa xe 1L",
+        "Dung dịch rửa xe 1L",
+        "P0003",
+        "dung dich rua xe 1l",
+        "dung dịch rửa xe 1l"
+      ],
+      "name": "Dung dịch rửa xe 1L"
+    },
+    "P0004": {
+      "aliases": [
+        "Dầu thắng DOT4 250ml",
+        "DẦU THẮNG DOT4 250ML",
+        "Dầu  thắng DOT4 250ml",
+        "Dầu Thắng Dot4 250Ml",
+        "Dầu thắng DOT4 250ml",
+        "P0004",
+        "dau thang dot4 250 ml",
+        "dầu thắng dot4 250ml"
+      ],
+      "name": "Dầu thắng DOT4 250ml"
+    },
+    "P0005": {
+      "aliases": [
+        "Dung  dịch vệ sinh kim phun",
+        "Dung Dịch Vệ Sinh Kim Phun",
+        "Dung dịch vệ sinh kim phun",
+        "Dung dịch vệ sinh kim phun",
+        "P0005",
+        "dung dich ve sinh kim phun",
+        "dung dịch vệ sinh kim phun"
+      ],
+      "name": "Dung dịch vệ sinh kim phun"
+    },
+    "P0006": {
+      "aliases": [
+        "Công kiểm tra điện",
+        "CÔNG KIỂM TRA ĐIỆN",
+        "Công Kiểm Tra Điện",
+        "Công kiểm tra điện",
+        "P0006",
+        "cong kiem tra dien",
+        "công kiểm tra điện"
+      ],
+      "name": "Công kiểm tra điện"
+    },
+    "P0007": {
+      "aliases": [
+        "P0007",
+        "RUỘT XE 70/90-17",
+        "Ruột xe 70/90-17",
+        "Ruột  xe 70/90-17",
+        "Ruột Xe 70/90-17",
+        "Ruột xe 70/90-17",
+        "ruot xe 70/90-17",
+        "ruột xe 70/90-17"
+      ],
+      "name": "Ruột xe 70/90-17"
+    },
+    "P0008": {
+      "aliases": [
+        "P0008",
+        "den xi nhan led cap",
+        "Đèn xi nhan LED cặp",
+        "ĐÈN XI NHAN LED CẶP",
+        "Đèn xi nhan LED cặp",
+        "đèn xi nhan led cặp"
+      ],
+      "name": "Đèn xi nhan LED cặp"
+    },
+    "P0009": {
+      "aliases": [
+        "Công  vệ sinh nồi",
+        "Công Vệ Sinh Nồi",
+        "Công vệ sinh nồi",
+        "P0009",
+        "cong ve sinh noi",
+        "công vệ sinh nồi"
+      ],
+      "name": "Công vệ sinh nồi"
+    },
+    "P0010": {
+      "aliases": [
+        "Công chỉnh xăng gió",
+        "Công  chỉnh xăng gió",
+        "Công Chỉnh Xăng Gió",
+        "Công chỉnh xăng gió",
+        "P0010",
+        "cong chinh xang gio"
+      ],
+      "name": "Công chỉnh xăng gió"
+    },
+    "P0011": {
+      "aliases": [
+        "Công thay lốp",
+        "Công  thay lốp",
+        "Công thay lốp",
+        "P0011",
+        "cong thay lop",
+        "công thay lốp"
+      ],
+      "name": "Công thay lốp"
+    },
+    "P0012": {
+      "aliases": [
+        "Bugi  Denso U20EPR9",
+        "Bugi Denso U20EPR9",
+        "Bugi Denso U20Epr9",
+        "P0012",
+        "bugi denso u20epr9"
+      ],
+      "name": "Bugi Denso U20EPR9"
+    },
+    "P0013": {
+      "aliases": [
+        "BUGI NGK CPR8EA-9",
+        "Bugi NGK CPR8EA-9",
+        "P0013",
+        "bugi ngk cpr8ea-9"
+      ],
+      "name": "Bugi NGK CPR8EA-9"
+    },
+    "P0014": {
+      "aliases": [
+        "Bóng đèn pha H4 35W",
+        "Bóng  đèn pha H4 35W",
+        "Bóng Đèn Pha H4 35W",
+        "Bóng đèn pha H4 35W",
+        "P0014",
+        "bong den pha h4 35w",
+        "bóng đèn pha h4 35w"
+      ],
+      "name": "Bóng đèn pha H4 35W"
+    },
+    "P0015": {
+      "aliases": [
+        "Lọc gió Honda Vision",
+        "LỌC GIÓ HONDA VISION",
+        "Lọc  gió Honda Vision",
+        "Lọc gió Honda Vision",
+        "P0015",
+        "loc gio honda vision",
+        "lọc gió honda vision"
+      ],
+      "name": "Lọc gió Honda Vision"
+    },
+    "P0016": {
+      "aliases": [
+        "Công  vá vỏ không ruột",
+        "Công vá vỏ không ruột",
+        "P0016",
+        "công vá vỏ không ruột"
+      ],
+      "name": "Công vá vỏ không ruột"
+    },
+    "P0017": {
+      "aliases": [
+        "P0017",
+        "Tẩy rỉ WD-40 200ml",
+        "Tẩy  rỉ WD-40 200ml",
+        "Tẩy rỉ WD-40 200ml",
+        "tay ri wd-40 200 ml",
+        "tẩy rỉ wd-40 200ml"
+      ],
+      "name": "Tẩy rỉ WD-40 200ml"
+    },
+    "P0018": {
+      "aliases": [
+        "DẦU LÁP XE TAY GA 120ML",
+        "Dầu Láp Xe Tay Ga 120Ml",
+        "Dầu láp xe tay ga 120ml",
+        "P0018",
+        "dầu láp xe tay ga 120ml"
+      ],
+      "name": "Dầu láp xe tay ga 120ml"
+    },
+    "P0019": {
+      "aliases": [
+        "Bố thắng sau Air Blade",
+        "BỐ THẮNG SAU AIR BLADE",
+        "Bố Thắng Sau Air Blade",
+        "Bố thắng sau Air Blade",
+        "P0019",
+        "bo thang sau air blade"
+      ],
+      "name": "Bố thắng sau Air Blade"
+    },
+    "P0020": {
+      "aliases": [
+        "Công bảo dưỡng tổng thể",
+        "Công Bảo Dưỡng Tổng Thể",
+        "Công bảo dưỡng tổng thể",
+        "P0020"
+      ],
+      "name": "Công bảo dưỡng tổng thể"
+    },
+    "P0021": {
+      "aliases": [
+        "Dầu nhớt Castrol Power1 1L",
+        "DẦU NHỚT CASTROL POWER1 1L",
+        "Dầu nhớt Castrol Power1 1L",
+        "P0021"
+      ],
+      "name": "Dầu nhớt Castrol Power1 1L"
+    },
+    "P0022": {
+      "aliases": [
+        "BÌNH ẮC QUY YUASA YTZ6V",
+        "Bình  ắc quy Yuasa YTZ6V",
+        "Bình Ắc Quy Yuasa Ytz6V",
+        "Bình ắc quy Yuasa YTZ6V",
+        "P0022",
+        "binh ac quy yuasa ytz6v",
+        "bình ắc quy yuasa ytz6v"
+      ],
+      "name": "Bình ắc quy Yuasa YTZ6V"
+    },
+    "P0023": {
+      "aliases": [
+        "Lốp IRC 80/90-14",
+        "Lốp IRC 80/90-14",
+        "P0023"
+      ],
+      "name": "Lốp IRC 80/90-14"
+    },
+    "P0024": {
+      "aliases": [
+        "Dầu nhớt Motul 10W40 1L",
+        "DẦU NHỚT MOTUL 10W40 1L",
+        "Dầu  nhớt Motul 10W40 1L",
+        "Dầu Nhớt Motul 10W40 1L",
+        "Dầu nhớt Motul 10W40 1L",
+        "P0024",
+        "dau nhot motul 10w40 1l"
+      ],
+      "name": "Dầu nhớt Motul 10W40 1L"
+    },
+    "P0025": {
+      "aliases": [
+        "Má  phanh đĩa Winner X",
+        "Má phanh đĩa Winner X",
+        "P0025",
+        "ma phanh dia winner x",
+        "má phanh đĩa winner x"
+      ],
+      "name": "Má phanh đĩa Winner X"
+    },
+    "P0026": {
+      "aliases": [
+        "Dây curoa Honda Lead",
+        "Dây curoa Honda Lead",
+        "P0026",
+        "day curoa honda lead"
+      ],
+      "name": "Dây curoa Honda Lead"
+    },
+    "P0027": {
+      "aliases": [
+        "DẦU NHỚT SHELL ADVANCE 0.8L",
+        "Dầu Nhớt Shell Advance 0.8L",
+        "Dầu nhớt Shell Advance 0.8L",
+        "P0027",
+        "dau nhot shell advance 0.8l",
+        "dầu nhớt shell advance 0.8l"
+      ],
+      "name": "Dầu nhớt Shell Advance 0.8L"
+    },
+    "P0028": {
+      "aliases": [
+        "P0028",
+        "VAN KHÔNG RUỘT CAO SU",
+        "Van không ruột cao su",
+        "Van không ruột cao su",
+        "van không ruột cao su"
+      ],
+      "name": "Van không ruột cao su"
+    },
+    "P0029": {
+      "aliases": [
+        "Chai  xịt sên Motul 400ml",
+        "Chai xịt sên Motul 400ml",
+        "P0029",
+        "chai xit sen motul 400 ml"
+      ],
+      "name": "Chai xịt sên Motul 400ml"
+    },
+    "P0030": {
+      "aliases": [
+        "Lọc gió Yamaha Janus",
+        "Lọc gió Yamaha Janus",
+        "P0030",
+        "loc gio yamaha janus"
+      ],
+      "name": "Lọc gió Yamaha Janus"
+    },
+    "P0031": {
+      "aliases": [
+        "Dây curoa Yamaha Grande",
+        "DÂY CUROA YAMAHA GRANDE",
+        "Dây  curoa Yamaha Grande",
+        "Dây Curoa Yamaha Grande",
+        "Dây curoa Yamaha Grande",
+        "P0031",
+        "dây curoa yamaha grande"
+      ],
+      "name": "Dây curoa Yamaha Grande"
+    },
+    "P0032": {
+      "aliases": [
+        "Lốp  Michelin City Grip 90/90",
+        "Lốp Michelin City Grip 90/90",
+        "P0032"
+      ],
+      "name": "Lốp Michelin City Grip 90/90"
+    },
+    "P0033": {
+      "aliases": [
+        "Công căn chỉnh phanh",
+        "P0033"
+      ],
+      "name": "Công căn chỉnh phanh"
+    },
+    "P0034": {
+      "aliases": [
+        "Công thay nhớt",
+        "Công thay nhớt",
+        "P0034",
+        "cong thay nhot"
+      ],
+      "name": "Công thay nhớt"
+    },
+    "P0035": {
+      "aliases": [
+        "BÌNH ẮC QUY GS GTZ5S",
+        "Bình ắc quy GS GTZ5S",
+        "P0035"
+      ],
+      "name": "Bình ắc quy GS GTZ5S"
+    }
+  },
+  "start": "2025-04-01"
+}

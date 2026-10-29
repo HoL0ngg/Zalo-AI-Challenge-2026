@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "splits": {
+    "train": {"seed": 20261029, "types": ["tap_hoa", "ca_phe", "nha_thuoc", "vlxd", "sua_xe", "me_va_be", "tap_hoa", "ca_phe"]},
+    "dev":   {"seed": 20261117, "types": ["quan_com", "dien_thoai", "nha_thuoc"]}
+  },
+  "rows_per_business": [700, 1150],
+  "products_per_business": [30, 52],
+  "customers_per_business": [40, 90],
+  "months_per_business": [16, 18],
+  "questions_per_business": 40,
+  "noise_rate": 0.70,
+  "noise": {"missing_optional_cell_rate": 0.016, "duplicate_line_rate": 0.004, "text_number_rate": 0.10, "display_variant_rate": 0.30},
+  "returns_rate": 0.03,
+  "cancel_rate": 0.04,
+  "missing_cost_business_ids": ["train_04", "dev_01"],
+  "formats": ["csv", "xlsx", "sqlite"],
+  "max_output_mb": 50
+}

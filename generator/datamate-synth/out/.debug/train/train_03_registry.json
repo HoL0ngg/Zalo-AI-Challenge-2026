@@ -1,0 +1,371 @@
+{
+  "business_id": "train_03",
+  "end": "2026-10-31",
+  "format": "sqlite",
+  "kind": "nha_thuoc",
+  "products": {
+    "P0001": {
+      "aliases": [
+        "Dầu gội trị gàu 100ml",
+        "DẦU GỘI TRỊ GÀU 100ML",
+        "Dầu  gội trị gàu 100ml",
+        "Dầu Gội Trị Gàu 100Ml",
+        "Dầu gội trị gàu 100ml",
+        "P0001",
+        "dau goi tri gau 100 ml",
+        "dầu gội trị gàu 100ml"
+      ],
+      "name": "Dầu gội trị gàu 100ml"
+    },
+    "P0002": {
+      "aliases": [
+        "Găng tay y tế hộp 100",
+        "GĂNG TAY Y TẾ HỘP 100",
+        "Găng  tay y tế hộp 100",
+        "Găng Tay Y Tế Hộp 100",
+        "Găng tay y tế hộp 100",
+        "P0002",
+        "gang tay y te hop 100",
+        "găng tay y tế hộp 100"
+      ],
+      "name": "Găng tay y tế hộp 100"
+    },
+    "P0003": {
+      "aliases": [
+        "Máy đo huyết áp Omron M2",
+        "MÁY ĐO HUYẾT ÁP OMRON M2",
+        "Máy  đo huyết áp Omron M2",
+        "Máy Đo Huyết Áp Omron M2",
+        "Máy đo huyết áp Omron M2",
+        "P0003",
+        "may do huyet ap omron m2",
+        "máy đo huyết áp omron m2"
+      ],
+      "name": "Máy đo huyết áp Omron M2"
+    },
+    "P0004": {
+      "aliases": [
+        "Kẽm gluconat hộp 30",
+        "KẼM GLUCONAT HỘP 30",
+        "Kẽm  gluconat hộp 30",
+        "Kẽm Gluconat Hộp 30",
+        "Kẽm gluconat hộp 30",
+        "P0004",
+        "kem gluconat hop 30",
+        "kẽm gluconat hộp 30"
+      ],
+      "name": "Kẽm gluconat hộp 30"
+    },
+    "P0005": {
+      "aliases": [
+        "Cồn 70 độ chai 100ml",
+        "CỒN 70 ĐỘ CHAI 100ML",
+        "Cồn  70 độ chai 100ml",
+        "Cồn 70 Độ Chai 100Ml",
+        "Cồn 70 độ chai 100ml",
+        "P0005",
+        "con 70 do chai 100 ml",
+        "cồn 70 độ chai 100ml"
+      ],
+      "name": "Cồn 70 độ chai 100ml"
+    },
+    "P0006": {
+      "aliases": [
+        "P0006",
+        "SIRO HO THẢO DƯỢC 100ML",
+        "Siro Ho Thảo Dược 100Ml",
+        "Siro ho thảo dược 100ml",
+        "Siro ho thảo dược 100ml",
+        "siro ho thao duoc 100 ml",
+        "siro ho thảo dược 100ml"
+      ],
+      "name": "Siro ho thảo dược 100ml"
+    },
+    "P0007": {
+      "aliases": [
+        "P0007",
+        "TIFFY HỘP 25",
+        "Tiffy  hộp 25",
+        "Tiffy Hộp 25",
+        "Tiffy hộp 25",
+        "Tiffy hộp 25",
+        "tiffy hộp 25"
+      ],
+      "name": "Tiffy hộp 25"
+    },
+    "P0008": {
+      "aliases": [
+        "Dầu  cá Omega 3 hộp 30",
+        "Dầu Cá Omega 3 Hộp 30",
+        "Dầu cá Omega 3 hộp 30",
+        "P0008",
+        "dau ca omega 3 hop 30"
+      ],
+      "name": "Dầu cá Omega 3 hộp 30"
+    },
+    "P0009": {
+      "aliases": [
+        "P0009",
+        "PANADOL EXTRA VỈ 12",
+        "Panadol  Extra vỉ 12",
+        "Panadol Extra vỉ 12",
+        "panadol extra vi 12",
+        "panadol extra vỉ 12"
+      ],
+      "name": "Panadol Extra vỉ 12"
+    },
+    "P0010": {
+      "aliases": [
+        "EFFERALGAN 500MG TUÝP 16",
+        "Efferalgan  500mg tuýp 16",
+        "Efferalgan 500Mg Tuýp 16",
+        "Efferalgan 500mg tuýp 16",
+        "P0010",
+        "efferalgan 500mg tuyp 16",
+        "efferalgan 500mg tuýp 16"
+      ],
+      "name": "Efferalgan 500mg tuýp 16"
+    },
+    "P0011": {
+      "aliases": [
+        "NHIỆT KẾ ĐIỆN TỬ MICROLIFE",
+        "Nhiệt kế điện tử Microlife",
+        "Nhiệt  kế điện tử Microlife",
+        "Nhiệt Kế Điện Tử Microlife",
+        "Nhiệt kế điện tử Microlife",
+        "P0011",
+        "nhiệt kế điện tử microlife"
+      ],
+      "name": "Nhiệt kế điện tử Microlife"
+    },
+    "P0012": {
+      "aliases": [
+        "DECOLGEN HỘP 25",
+        "Decolgen  hộp 25",
+        "Decolgen Hộp 25",
+        "Decolgen hộp 25",
+        "P0012",
+        "decolgen hop 25"
+      ],
+      "name": "Decolgen hộp 25"
+    },
+    "P0013": {
+      "aliases": [
+        "Gel  rửa tay khô 100ml",
+        "Gel rửa tay khô 100ml",
+        "Gel rửa tay khô 100ml",
+        "P0013",
+        "gel rua tay kho 100 ml"
+      ],
+      "name": "Gel rửa tay khô 100ml"
+    },
+    "P0014": {
+      "aliases": [
+        "MIẾNG DÁN HẠ SỐT HỘP 4",
+        "Miếng  dán hạ sốt hộp 4",
+        "Miếng dán hạ sốt hộp 4",
+        "P0014",
+        "mieng dan ha sot hop 4",
+        "miếng dán hạ sốt hộp 4"
+      ],
+      "name": "Miếng dán hạ sốt hộp 4"
+    },
+    "P0015": {
+      "aliases": [
+        "Băng gạc vô trùng 10x10",
+        "Băng  gạc vô trùng 10x10",
+        "Băng gạc vô trùng 10x10",
+        "P0015",
+        "bang gac vo trung 10x10",
+        "băng gạc vô trùng 10x10"
+      ],
+      "name": "Băng gạc vô trùng 10x10"
+    },
+    "P0016": {
+      "aliases": [
+        "P0016",
+        "Than  hoạt tính hộp 20",
+        "Than hoạt tính hộp 20",
+        "than hoạt tính hộp 20"
+      ],
+      "name": "Than hoạt tính hộp 20"
+    },
+    "P0017": {
+      "aliases": [
+        "P0017",
+        "PARACETAMOL 500MG HỘP 100",
+        "Paracetamol  500mg hộp 100",
+        "Paracetamol 500Mg Hộp 100",
+        "Paracetamol 500mg hộp 100",
+        "Paracetamol 500mg hộp 100"
+      ],
+      "name": "Paracetamol 500mg hộp 100"
+    },
+    "P0018": {
+      "aliases": [
+        "P0018",
+        "Vitamin  D3 1000IU lọ 60",
+        "Vitamin D3 1000IU lọ 60",
+        "Vitamin D3 1000Iu Lọ 60",
+        "vitamin d3 1000iu lo 60"
+      ],
+      "name": "Vitamin D3 1000IU lọ 60"
+    },
+    "P0019": {
+      "aliases": [
+        "P0019",
+        "Vitamin C 500mg lọ 100",
+        "vitamin c 500mg lọ 100"
+      ],
+      "name": "Vitamin C 500mg lọ 100"
+    },
+    "P0020": {
+      "aliases": [
+        "P0020",
+        "Povidine 10% chai 20ml",
+        "povidine 10% chai 20ml"
+      ],
+      "name": "Povidine 10% chai 20ml"
+    },
+    "P0021": {
+      "aliases": [
+        "Kem  chống nắng SPF50 50ml",
+        "Kem chống nắng SPF50 50ml",
+        "Kem chống nắng SPF50 50ml",
+        "P0021"
+      ],
+      "name": "Kem chống nắng SPF50 50ml"
+    },
+    "P0022": {
+      "aliases": [
+        "P0022",
+        "Viên Ngậm Ho Bạc Hà 24V",
+        "Viên ngậm ho bạc hà 24v"
+      ],
+      "name": "Viên ngậm ho bạc hà 24v"
+    },
+    "P0023": {
+      "aliases": [
+        "Khẩu  trang y tế hộp 50",
+        "Khẩu Trang Y Tế Hộp 50",
+        "Khẩu trang y tế hộp 50",
+        "P0023"
+      ],
+      "name": "Khẩu trang y tế hộp 50"
+    },
+    "P0024": {
+      "aliases": [
+        "P0024",
+        "SỮA RỬA MẶT DỊU NHẸ 150ML",
+        "Sữa rửa mặt dịu nhẹ 150ml",
+        "sua rua mat diu nhe 150 ml"
+      ],
+      "name": "Sữa rửa mặt dịu nhẹ 150ml"
+    },
+    "P0025": {
+      "aliases": [
+        "Băng cá nhân Urgo 100 miếng",
+        "Băng Cá Nhân Urgo 100 Miếng",
+        "Băng cá nhân Urgo 100 miếng",
+        "P0025"
+      ],
+      "name": "Băng cá nhân Urgo 100 miếng"
+    },
+    "P0026": {
+      "aliases": [
+        "Nước muối sinh lý 10ml",
+        "NƯỚC MUỐI SINH LÝ 10ML",
+        "Nước muối sinh lý 10ml",
+        "P0026"
+      ],
+      "name": "Nước muối sinh lý 10ml"
+    },
+    "P0027": {
+      "aliases": [
+        "IBUPROFEN 200MG HỘP 20",
+        "Ibuprofen 200mg hộp 20",
+        "P0027"
+      ],
+      "name": "Ibuprofen 200mg hộp 20"
+    },
+    "P0028": {
+      "aliases": [
+        "MEN VI SINH GÓI 10",
+        "Men  vi sinh gói 10",
+        "Men vi sinh gói 10",
+        "P0028",
+        "men vi sinh gói 10"
+      ],
+      "name": "Men vi sinh gói 10"
+    },
+    "P0029": {
+      "aliases": [
+        "P0029",
+        "SMECTA GÓI 3G",
+        "Smecta gói 3g",
+        "smecta goi 3g",
+        "smecta gói 3g"
+      ],
+      "name": "Smecta gói 3g"
+    },
+    "P0030": {
+      "aliases": [
+        "P0030",
+        "Thuốc nhỏ mắt 0.9% 10ml"
+      ],
+      "name": "Thuốc nhỏ mắt 0.9% 10ml"
+    },
+    "P0031": {
+      "aliases": [
+        "P0031",
+        "Vitamin B1 50mg hộp 100",
+        "vitamin b1 50mg hop 100",
+        "vitamin b1 50mg hộp 100"
+      ],
+      "name": "Vitamin B1 50mg hộp 100"
+    },
+    "P0032": {
+      "aliases": [
+        "KEM DƯỠNG DA 100G",
+        "Kem  dưỡng da 100g",
+        "Kem dưỡng da 100g",
+        "Kem dưỡng da 100g",
+        "P0032"
+      ],
+      "name": "Kem dưỡng da 100g"
+    },
+    "P0033": {
+      "aliases": [
+        "Oresol gói 5.6g",
+        "P0033"
+      ],
+      "name": "Oresol gói 5.6g"
+    },
+    "P0034": {
+      "aliases": [
+        "P0034",
+        "Que Thử Đường Huyết 25 Chiếc",
+        "Que thử đường huyết 25 chiếc",
+        "Que thử đường huyết 25 chiếc",
+        "que thu duong huyet 25 chiec"
+      ],
+      "name": "Que thử đường huyết 25 chiếc"
+    },
+    "P0035": {
+      "aliases": [
+        "Canxi 500mg hộp 30",
+        "P0035"
+      ],
+      "name": "Canxi 500mg hộp 30"
+    },
+    "P0036": {
+      "aliases": [
+        "Dung dịch NaCl 0.9% 500ml",
+        "Dung dịch NaCl 0.9% 500ml",
+        "P0036"
+      ],
+      "name": "Dung dịch NaCl 0.9% 500ml"
+    }
+  },
+  "start": "2025-05-01"
+}

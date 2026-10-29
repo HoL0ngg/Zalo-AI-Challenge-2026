@@ -1,0 +1,120 @@
+{"id":"dev_01_q001","type":"string","answer":"Nước mía ly 500ml","alias":["Nước mía ly 500ml","NƯỚC MÍA LY 500ML","Nước  mía ly 500ml","Nước Mía Ly 500Ml","Nước mía ly 500ml","P0001","nuoc mia ly 500 ml","nước mía ly 500ml"]}
+{"id":"dev_01_q002","type":"number","answer":14}
+{"id":"dev_01_q003","type":"list","answer":["Canh cải thịt bằm","Cơm thịt kho trứng","Cơm tấm sườn bì chả","Mì xào bò"]}
+{"id":"dev_01_q004","type":"number","answer":2709000}
+{"id":"dev_01_q005","type":"number","answer":74}
+{"id":"dev_01_q006","type":"number","answer":5949000}
+{"id":"dev_01_q007","type":"number","answer":8}
+{"id":"dev_01_q008","type":"list","answer":["Nước mía ly 500ml","Bún riêu cua","Bún chả Hà Nội"]}
+{"id":"dev_01_q009","type":"string","answer":"Chả trứng hấp","alias":["CHẢ TRỨNG HẤP","Chả trứng hấp","Chả  trứng hấp","Chả Trứng Hấp","Chả trứng hấp","P0002","cha trung hap","chả trứng hấp"]}
+{"id":"dev_01_q010","type":"string","answer":"Hủ tiếu Nam Vang","alias":["Hủ tiếu Nam Vang","HỦ TIẾU NAM VANG","Hủ  tiếu Nam Vang","Hủ tiếu Nam Vang","P0019","hủ tiếu nam vang"]}
+{"id":"dev_01_q011","type":"string","answer":"Phở gà xé","alias":["P0031","PHỞ GÀ XÉ","Phở gà xé","Phở  gà xé","Phở Gà Xé","Phở gà xé","phở gà xé"]}
+{"id":"dev_01_q012","type":"number","answer":74}
+{"id":"dev_01_q013","type":"list","answer":["Chả trứng hấp","Cơm cá kho tộ","Bún riêu cua"]}
+{"id":"dev_01_q014","type":"percent","answer":-76.59}
+{"id":"dev_01_q015","type":"number","answer":521000}
+{"id":"dev_01_q016","type":"list","answer":["Bún bò Huế đặc biệt","Bún thịt nướng","Phở gà xé"]}
+{"id":"dev_01_q017","type":"number","answer":131000.0}
+{"id":"dev_01_q018","type":"number","answer":4540000}
+{"id":"dev_01_q019","type":"string","answer":"Nước"}
+{"id":"dev_01_q020","type":"number","answer":6235000}
+{"id":"dev_01_q021","type":"number","answer":0}
+{"id":"dev_01_q022","type":"string","answer":"Trà đá ly","alias":["P0011","TRÀ ĐÁ LY","Trà đá ly","Trà Đá Ly","Trà đá ly"]}
+{"id":"dev_01_q023","type":"list","answer":["Coca lon 320ml","Cơm gà teriyaki","Cơm đùi gà chiên","Mì xào hải sản","Phở bò tái","Sữa đậu nành 300ml","Đậu hũ sốt cà"]}
+{"id":"dev_01_q024","type":"number","answer":4}
+{"id":"dev_01_q025","type":"percent","answer":-16.45}
+{"id":"dev_01_q026","type":"boolean","answer":false}
+{"id":"dev_01_q027","type":"string","answer":"Chả trứng hấp","alias":["CHẢ TRỨNG HẤP","Chả trứng hấp","Chả  trứng hấp","Chả Trứng Hấp","Chả trứng hấp","P0002","cha trung hap","chả trứng hấp"]}
+{"id":"dev_01_q028","type":"string","answer":"Thứ sáu"}
+{"id":"dev_01_q029","type":"string","answer":"Cơm gà luộc","alias":["Cơm gà luộc","CƠM GÀ LUỘC","Cơm  gà luộc","Cơm Gà Luộc","Cơm gà luộc","P0006","com ga luoc","cơm gà luộc"]}
+{"id":"dev_01_q030","type":"list","answer":["Bún bò Huế đặc biệt","Bún thịt nướng","Canh chua cá","Chè đậu xanh","Cơm bò xào hành tây","Cơm chay thập cẩm","Cơm cá kho tộ","Cơm gà teriyaki","Cơm gà xối mỡ","Cơm sườn nướng mật ong","Cơm đùi gà chiên","Hủ tiếu Nam Vang","Kim chi phần nhỏ","Mì xào hải sản","Nước sâm chai 330ml","Phở bò tái","Phở gà xé","Rau luộc kho quẹt","Sữa chua nếp cẩm","Sữa đậu nành 300ml","Trà đá ly","Trái cây theo mùa","Trứng ốp la thêm","Đậu hũ sốt cà"]}
+{"id":"dev_01_q031","type":"number","answer":16}
+{"id":"dev_01_q032","type":"number","answer":205277.78}
+{"id":"dev_01_q033","type":"string","answer":"Nước mía ly 500ml","alias":["Nước mía ly 500ml","NƯỚC MÍA LY 500ML","Nước  mía ly 500ml","Nước Mía Ly 500Ml","Nước mía ly 500ml","P0001","nuoc mia ly 500 ml","nước mía ly 500ml"]}
+{"id":"dev_01_q034","type":"date","answer":"2026-04-21"}
+{"id":"dev_01_q035","type":"number","answer":2304000}
+{"id":"dev_01_q036","type":"string","answer":"Đặng Quỳnh Phương"}
+{"id":"dev_01_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"dev_01_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"dev_01_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"dev_01_q040","type":"unanswerable","answer":null,"reason":"Thiếu trường giá vốn và giá nhập lô nên không thể tính lợi nhuận."}
+{"id":"dev_02_q001","type":"number","answer":0}
+{"id":"dev_02_q002","type":"table","answer":{"columns":["ma_kh","ten_kh","so_tien_no"],"rows":[["C0043","Vũ Bảo Linh",1604000],["C0016","Trần Linh Bình",1374000],["C0056","Vũ Quỳnh Hùng",1274000],["C0008","Đặng Trúc Ngân",1128000],["C0037","Nguyễn Long Ngọc",1019000],["C0049","Lê Hòa Trang",983000],["C0045","Nguyễn Trang An",895000],["C0021","Phan Hà Ngân",208000],["C0060","Vũ Bình Hòa",202000]]}}
+{"id":"dev_02_q003","type":"number","answer":4407000}
+{"id":"dev_02_q004","type":"string","answer":"Tai nghe Galaxy Buds FE","alias":["P0009","Tai  nghe Galaxy Buds FE","Tai nghe Galaxy Buds FE","tai nghe galaxy buds fe"]}
+{"id":"dev_02_q005","type":"string","answer":"Nguyễn Trang An"}
+{"id":"dev_02_q006","type":"percent","answer":63.93}
+{"id":"dev_02_q007","type":"number","answer":19}
+{"id":"dev_02_q008","type":"string","answer":"Điện thoại"}
+{"id":"dev_02_q009","type":"number","answer":186200460}
+{"id":"dev_02_q010","type":"string","answer":"Thứ bảy"}
+{"id":"dev_02_q011","type":"number","answer":983000}
+{"id":"dev_02_q012","type":"string","answer":"iPhone 15 128GB đen","alias":["IPHONE 15 128GB ĐEN","Iphone 15 128Gb Đen","P0001","iPhone  15 128GB đen","iPhone 15 128GB đen","iphone 15 128gb den","iphone 15 128gb đen"]}
+{"id":"dev_02_q013","type":"list","answer":["Củ sạc Apple USB-C 20W","Dịch vụ vệ sinh máy","Kính cường lực iPhone 16","Tai nghe Galaxy Buds FE","USB Kingston 64GB","Xiaomi Redmi Note 13 128GB","Xiaomi Redmi Note 14 256GB","iPhone 15 Plus 128GB xanh","iPhone 16 Pro 256GB titan","realme C67 128GB","Ốp lưng iPhone 15 silicon"]}
+{"id":"dev_02_q014","type":"percent","answer":63.93}
+{"id":"dev_02_q015","type":"number","answer":24591434.78}
+{"id":"dev_02_q016","type":"string","answer":"iPhone 15 128GB đen","alias":["IPHONE 15 128GB ĐEN","Iphone 15 128Gb Đen","P0001","iPhone  15 128GB đen","iPhone 15 128GB đen","iphone 15 128gb den","iphone 15 128gb đen"]}
+{"id":"dev_02_q017","type":"string","answer":"iPhone 16 128GB hồng","alias":["IPHONE 16 128GB HỒNG","Iphone 16 128Gb Hồng","P0006","iPhone  16 128GB hồng","iPhone 16 128GB hồng","iPhone 16 128GB hồng","iphone 16 128gb hong","iphone 16 128gb hồng"]}
+{"id":"dev_02_q018","type":"date","answer":"2026-06-23"}
+{"id":"dev_02_q019","type":"number","answer":69}
+{"id":"dev_02_q020","type":"string","answer":"vivo V30e 256GB","alias":["P0003","VIVO V30E 256GB","Vivo V30E 256Gb","vivo  V30e 256GB","vivo V30e 256GB","vivo v30e 256gb"]}
+{"id":"dev_02_q021","type":"list","answer":["Cáp USB-C Anker 1m","Kính cường lực Samsung S24","OPPO Reno11 256GB","Pin dự phòng Anker 20000mAh","Thẻ nhớ SanDisk 128GB"]}
+{"id":"dev_02_q022","type":"string","answer":"iPhone 15 128GB đen","alias":["IPHONE 15 128GB ĐEN","Iphone 15 128Gb Đen","P0001","iPhone  15 128GB đen","iPhone 15 128GB đen","iphone 15 128gb den","iphone 15 128gb đen"]}
+{"id":"dev_02_q023","type":"list","answer":["iPhone 15 128GB đen","Samsung Tab A9 64GB","iPhone 16 128GB hồng"]}
+{"id":"dev_02_q024","type":"string","answer":"OPPO A79 128GB","alias":["OPPO  A79 128GB","OPPO A79 128GB","Oppo A79 128Gb","P0002","oppo a79 128gb"]}
+{"id":"dev_02_q025","type":"number","answer":14}
+{"id":"dev_02_q026","type":"boolean","answer":false}
+{"id":"dev_02_q027","type":"number","answer":203617000}
+{"id":"dev_02_q028","type":"number","answer":871952000}
+{"id":"dev_02_q029","type":"number","answer":728958000}
+{"id":"dev_02_q030","type":"number","answer":311850000}
+{"id":"dev_02_q031","type":"list","answer":["iPhone 15 128GB đen","iPhone 16 128GB hồng","vivo V30e 256GB"]}
+{"id":"dev_02_q032","type":"number","answer":1213085000}
+{"id":"dev_02_q033","type":"string","answer":"Samsung Galaxy A35 256GB","alias":["P0007","SAMSUNG GALAXY A35 256GB","Samsung  Galaxy A35 256GB","Samsung Galaxy A35 256GB","Samsung Galaxy A35 256Gb","samsung galaxy a35 256gb"]}
+{"id":"dev_02_q034","type":"number","answer":16}
+{"id":"dev_02_q035","type":"percent","answer":-63.58}
+{"id":"dev_02_q036","type":"string","answer":"Thứ năm"}
+{"id":"dev_02_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"dev_02_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"dev_02_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"dev_02_q040","type":"unanswerable","answer":null,"reason":"Không có trường chi_phi_dien_nuoc trong dữ liệu của cơ sở."}
+{"id":"dev_03_q001","type":"number","answer":9}
+{"id":"dev_03_q002","type":"percent","answer":-39.33}
+{"id":"dev_03_q003","type":"number","answer":10}
+{"id":"dev_03_q004","type":"list","answer":["Cồn 70 độ chai 100ml","Gel rửa tay khô 100ml","Siro ho thảo dược 100ml"]}
+{"id":"dev_03_q005","type":"string","answer":"Sát khuẩn"}
+{"id":"dev_03_q006","type":"number","answer":4}
+{"id":"dev_03_q007","type":"number","answer":22564000}
+{"id":"dev_03_q008","type":"boolean","answer":false}
+{"id":"dev_03_q009","type":"string","answer":"Thứ hai"}
+{"id":"dev_03_q010","type":"number","answer":5439000}
+{"id":"dev_03_q011","type":"list","answer":["Băng gạc vô trùng 10x10","Canxi 500mg hộp 30","Decolgen hộp 25","Dung dịch NaCl 0.9% 500ml","Dầu gội trị gàu 100ml","Kem dưỡng da 100g","Khẩu trang y tế hộp 50","Men vi sinh gói 10","Miếng dán hạ sốt hộp 4","Máy đo huyết áp Omron M2","Nhiệt kế điện tử Microlife","Nước muối sinh lý 10ml","Panadol Extra vỉ 12","Povidine 10% chai 20ml","Sữa rửa mặt dịu nhẹ 150ml","Thuốc nhỏ mắt 0.9% 10ml","Tiffy hộp 25","Vitamin C 500mg lọ 100"]}
+{"id":"dev_03_q012","type":"number","answer":2798000}
+{"id":"dev_03_q013","type":"string","answer":"Vũ An Phúc"}
+{"id":"dev_03_q014","type":"string","answer":"Paracetamol 500mg hộp 100","alias":["P0002","PARACETAMOL 500MG HỘP 100","Paracetamol  500mg hộp 100","Paracetamol 500Mg Hộp 100","Paracetamol 500mg hộp 100","Paracetamol 500mg hộp 100","paracetamol 500mg hop 100","paracetamol 500mg hộp 100"]}
+{"id":"dev_03_q015","type":"string","answer":"Vitamin B1 50mg hộp 100","alias":["P0005","VITAMIN B1 50MG HỘP 100","Vitamin  B1 50mg hộp 100","Vitamin B1 50Mg Hộp 100","Vitamin B1 50mg hộp 100","Vitamin B1 50mg hộp 100","vitamin b1 50mg hop 100","vitamin b1 50mg hộp 100"]}
+{"id":"dev_03_q016","type":"string","answer":"Thứ năm"}
+{"id":"dev_03_q017","type":"string","answer":"Vitamin B1 50mg hộp 100","alias":["P0005","VITAMIN B1 50MG HỘP 100","Vitamin  B1 50mg hộp 100","Vitamin B1 50Mg Hộp 100","Vitamin B1 50mg hộp 100","Vitamin B1 50mg hộp 100","vitamin b1 50mg hop 100","vitamin b1 50mg hộp 100"]}
+{"id":"dev_03_q018","type":"list","answer":["Gel rửa tay khô 100ml","Oresol gói 5.6g","Efferalgan 500mg tuýp 16"]}
+{"id":"dev_03_q019","type":"number","answer":4902539}
+{"id":"dev_03_q020","type":"string","answer":"Paracetamol 500mg hộp 100","alias":["P0002","PARACETAMOL 500MG HỘP 100","Paracetamol  500mg hộp 100","Paracetamol 500Mg Hộp 100","Paracetamol 500mg hộp 100","Paracetamol 500mg hộp 100","paracetamol 500mg hop 100","paracetamol 500mg hộp 100"]}
+{"id":"dev_03_q021","type":"number","answer":119}
+{"id":"dev_03_q022","type":"string","answer":"Gel rửa tay khô 100ml","alias":["GEL RỬA TAY KHÔ 100ML","Gel  rửa tay khô 100ml","Gel Rửa Tay Khô 100Ml","Gel rửa tay khô 100ml","Gel rửa tay khô 100ml","P0003","gel rua tay kho 100 ml","gel rửa tay khô 100ml"]}
+{"id":"dev_03_q023","type":"list","answer":["Băng cá nhân Urgo 100 miếng","Găng tay y tế hộp 100","Ibuprofen 200mg hộp 20","Kẽm gluconat hộp 30","Que thử đường huyết 25 chiếc","Smecta gói 3g","Than hoạt tính hộp 20","Vitamin B1 50mg hộp 100","Vitamin D3 1000IU lọ 60","Viên ngậm ho bạc hà 24v"]}
+{"id":"dev_03_q024","type":"list","answer":["Nhiệt kế điện tử Microlife","Than hoạt tính hộp 20","Thuốc nhỏ mắt 0.9% 10ml"]}
+{"id":"dev_03_q025","type":"number","answer":27}
+{"id":"dev_03_q026","type":"percent","answer":-34.23}
+{"id":"dev_03_q027","type":"number","answer":1}
+{"id":"dev_03_q028","type":"number","answer":23048000}
+{"id":"dev_03_q029","type":"number","answer":394200.0}
+{"id":"dev_03_q030","type":"date","answer":"2026-04-21"}
+{"id":"dev_03_q031","type":"string","answer":"Miếng dán hạ sốt hộp 4","alias":["MIẾNG DÁN HẠ SỐT HỘP 4","Miếng dán hạ sốt hộp 4","Miếng  dán hạ sốt hộp 4","Miếng Dán Hạ Sốt Hộp 4","Miếng dán hạ sốt hộp 4","P0009","mieng dan ha sot hop 4","miếng dán hạ sốt hộp 4"]}
+{"id":"dev_03_q032","type":"string","answer":"Kem dưỡng da 100g","alias":["Kem  dưỡng da 100g","Kem dưỡng da 100g","P0022","kem duong da 100g","kem dưỡng da 100g"]}
+{"id":"dev_03_q033","type":"number","answer":13746000}
+{"id":"dev_03_q034","type":"number","answer":14608000}
+{"id":"dev_03_q035","type":"number","answer":1329000}
+{"id":"dev_03_q036","type":"number","answer":14610000}
+{"id":"dev_03_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"dev_03_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"dev_03_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"dev_03_q040","type":"unanswerable","answer":null,"reason":"Không có trường chi_phi_dien_nuoc trong dữ liệu của cơ sở."}

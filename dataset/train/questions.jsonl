@@ -1,0 +1,320 @@
+{"id":"train_01_q001","business_id":"train_01","question":"Doanh thu tháng này tăng trởưng bao nhiêu phần trăm so với tháng trước?","as_of_date":"2026-05-11"}
+{"id":"train_01_q002","business_id":"train_01","question":"Mặt hàng nào bán chạy nhất tháng này theo số lượng","as_of_date":"2026-05-10"}
+{"id":"train_01_q003","business_id":"train_01","question":"Trong tháng trước, ngày nào có doanh thu cao nhat?","as_of_date":"2026-07-31"}
+{"id":"train_01_q004","business_id":"train_01","question":"Nhóm hàng nào đem lại doanhhh thu cao nhat tháng này?","as_of_date":"2026-07-07"}
+{"id":"train_01_q005","business_id":"train_01","question":"Doanh thu tuần rồi là bao nhiêuu?","as_of_date":"2026-06-03"}
+{"id":"train_01_q006","business_id":"train_01","question":"Thang truoc thu may co nhieu don hang hop le nhat","as_of_date":"2026-07-01"}
+{"id":"train_01_q007","business_id":"train_01","question":"Cho mình danh sách top 3 sản phẩm bán nhiều nhất tháng trước, đúng thứ tự.","as_of_date":"2026-08-03"}
+{"id":"train_01_q008","business_id":"train_01","question":"Trong dịp Tết gần nhất, sản phẩm nào bán chạy nhất?","as_of_date":"2026-08-15"}
+{"id":"train_01_q009","business_id":"train_01","question":"Tháng  trước có bao nhiêu đơn hàng bị hủy?","as_of_date":"2026-06-18"}
+{"id":"train_01_q010","business_id":"train_01","question":"Sản phẩm nào tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái?","as_of_date":"2026-08-19"}
+{"id":"train_01_q011","business_id":"train_01","question":"Tháng trước cửa hàng thu được bao nhiêu tiền bán hàng?","as_of_date":"2026-05-31"}
+{"id":"train_01_q012","business_id":"train_01","question":"Lợi nhuận gộp tháng trước dựa trên giá vốn bình quân nhập lô là bao nhiêu","as_of_date":"2026-06-28"}
+{"id":"train_01_q013","business_id":"train_01","question":"Lập bảng các khách đang nợ tiền, kèm mã khách, tên và số tiền nợ.  ","as_of_date":"2026-06-14"}
+{"id":"train_01_q014","business_id":"train_01","question":"Hôm qua DOANH thu bao nhiêu","as_of_date":"2026-08-21"}
+{"id":"train_01_q015","business_id":"train_01","question":"Giá trị đơn hàng trung bình tháng này là bao nhiêu","as_of_date":"2026-05-19"}
+{"id":"train_01_q016","business_id":"train_01","question":"Thang nay chot duoc bao nhieu don hop le?","as_of_date":"2026-05-16"}
+{"id":"train_01_q017","business_id":"train_01","question":"Nhóm hàng nào đem lại doanh thu cao nhất tháng này?","as_of_date":"2026-05-28"}
+{"id":"train_01_q018","business_id":"train_01","question":"Doanh thu tuần rồi tăng giảm bao nhiêu % so với tuần liền trước đó","as_of_date":"2026-08-22"}
+{"id":"train_01_q019","business_id":"train_01","question":"Tháng trước cửa hàng thu được bao nhiêu tiền bán hàng?","as_of_date":"2026-07-24"}
+{"id":"train_01_q020","business_id":"train_01","question":"Tổng số lượng sản phẩm bán ra THÁNG trước là bao nhiêu?","as_of_date":"2026-05-15"}
+{"id":"train_01_q021","business_id":"train_01","question":"Tuần rồi mặt hàng nào mang về doanh thu cao NHẤT?","as_of_date":"2026-08-31"}
+{"id":"train_01_q022","business_id":"train_01","question":"Sản phẩm nào còn tồn mà lô hàng sẽ hết hạn trong 30 ngày tới","as_of_date":"2026-06-15"}
+{"id":"train_01_q023","business_id":"train_01","question":"Cùng kỳ năm ngoáii mặt hàng nào bán nhiều nhất?","as_of_date":"2026-08-30"}
+{"id":"train_01_q024","business_id":"train_01","question":"Tháng này có bao nhiêu khách hàng khác nhau đã mua?","as_of_date":"2026-06-27"}
+{"id":"train_01_q025","business_id":"train_01","question":"Khách Phạm Hiếu Hòa hiện còn nợ cửa hàng bao nhiêu?","as_of_date":"2026-08-07"}
+{"id":"train_01_q026","business_id":"train_01","question":"Thángtrước sản phẩm bán ít nhất là gì?","as_of_date":"2026-06-02"}
+{"id":"train_01_q027","business_id":"train_01","question":"Tổng doanh thu tháng này tính đến hôm nay là bao nhiêu?","as_of_date":"2026-06-28"}
+{"id":"train_01_q028","business_id":"train_01","question":"Tuần rồi có bao nhiêu đơn hàng hợp lệ?","as_of_date":"2026-08-10"}
+{"id":"train_01_q029","business_id":"train_01","question":"Cùng kỳ năm ngoáii sản phẩm doanh thu cao nhat là gì?","as_of_date":"2026-06-26"}
+{"id":"train_01_q030","business_id":"train_01","question":"Liệt kê ba mặt hàng doanh thu cao nhất trong thánggg này.","as_of_date":"2026-08-24"}
+{"id":"train_01_q031","business_id":"train_01","question":"Tuần rồi SẢN phẩm nào bán nhiềuuu nhất?","as_of_date":"2026-06-04"}
+{"id":"train_01_q032","business_id":"train_01","question":"Doanh thu dịp Tết gần nhất là bao nhiêu?","as_of_date":"2026-06-06"}
+{"id":"train_01_q033","business_id":"train_01","question":"Liệt kê hàng đang tồn kho dưới 15 đơn vị.  ","as_of_date":"2026-06-05"}
+{"id":"train_01_q034","business_id":"train_01","question":"Doanh thu cùng kỳ năm ngoái đạt bn?","as_of_date":"2026-08-02"}
+{"id":"train_01_q035","business_id":"train_01","question":"Hôm qua có bán được sản phẩm Mì 3 Miền tôm chua cay không","as_of_date":"2026-07-07"}
+{"id":"train_01_q036","business_id":"train_01","question":"Khách hàng nào mua nhiều tiền nhất tháng trước?","as_of_date":"2026-06-21"}
+{"id":"train_01_q037","business_id":"train_01","question":"San phẩm Nước thần ZZZ 999ml tuần rồi bán được mấy cái?","as_of_date":"2026-05-09"}
+{"id":"train_01_q038","business_id":"train_01","question":"Nhân  viên ca tối nào mang về doanh thu nhiều nhất tháng trước","as_of_date":"2026-06-29"}
+{"id":"train_01_q039","business_id":"train_01","question":"Doanh thu trong tháng 01/2023 là bao nhiêu","as_of_date":"2026-06-04"}
+{"id":"train_01_q040","business_id":"train_01","question":"Chi phi dien nuoc rieng cua cua hang trong thang truoc la bao nhieu?","as_of_date":"2026-07-20"}
+{"id":"train_02_q001","business_id":"train_02","question":"Cho  mình danh sách top 3 sản phẩm bán nhiều nhất tháng trước, đúng thứ TỰ.","as_of_date":"2026-03-09"}
+{"id":"train_02_q002","business_id":"train_02","question":"Tổngdoanh thu tháng này tính đến hôm nay là bao nhiêu?","as_of_date":"2026-03-08"}
+{"id":"train_02_q003","business_id":"train_02","question":"Khách hàng nào mua nhiều tiền nhất tháng TRƯỚC?","as_of_date":"2026-07-31"}
+{"id":"train_02_q004","business_id":"train_02","question":"Doanh thu tuần rồi là bao nhiêu?","as_of_date":"2026-05-13"}
+{"id":"train_02_q005","business_id":"train_02","question":"Tháng này chốt được bao nhiêu đơn hợp lệ?","as_of_date":"2026-05-05"}
+{"id":"train_02_q006","business_id":"train_02","question":"Sản phẩm nao tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái?","as_of_date":"2026-06-25"}
+{"id":"train_02_q007","business_id":"train_02","question":"Tháng trước cửa hàng thu được bao nihêuuu tiền bán hàng?","as_of_date":"2026-05-18"}
+{"id":"train_02_q008","business_id":"train_02","question":"Tuần rồi mặt hàng nào mang về doanh thu cao nhất?","as_of_date":"2026-07-09"}
+{"id":"train_02_q009","business_id":"train_02","question":"Cho mình danh sách top 3 sản phẩm bán nhiềuu nhất tháng trước, đúng thứ tự.","as_of_date":"2026-06-12"}
+{"id":"train_02_q010","business_id":"train_02","question":"Giátrị đơn hàng trung bình tháng này là bao nhiêu?","as_of_date":"2026-06-26"}
+{"id":"train_02_q011","business_id":"train_02","question":"Trong dịp Tết gần nhất, sản phẩm nào bán chạy nhất?","as_of_date":"2026-08-22"}
+{"id":"train_02_q012","business_id":"train_02","question":"Tổng so lượng san phẩm bán ra tháng trước la bao nhiêu?","as_of_date":"2026-07-12"}
+{"id":"train_02_q013","business_id":"train_02","question":"Tuần rồi có bao nhiêu đơn hàng hợp lệ?","as_of_date":"2026-04-16"}
+{"id":"train_02_q014","business_id":"train_02","question":"Tháng trước sản phẩm bán ít nhất là gì?","as_of_date":"2026-03-21"}
+{"id":"train_02_q015","business_id":"train_02","question":"Tháng  trước thứ mấy có nhiều đơn hàng hợp lệ nhất?","as_of_date":"2026-05-03"}
+{"id":"train_02_q016","business_id":"train_02","question":"Doanh thu cùng kỳ năm ngoái đạt bao nhiêu?","as_of_date":"2026-05-07"}
+{"id":"train_02_q017","business_id":"train_02","question":"Doanh thu tháng này tăng truong bao nhiêu phần trăm so voi tháng trước?","as_of_date":"2026-07-03"}
+{"id":"train_02_q018","business_id":"train_02","question":"Tuần rồi sản phẩm nào bán nhiều nhất?","as_of_date":"2026-04-10"}
+{"id":"train_02_q019","business_id":"train_02","question":"Liệt kê ba mặt hàng doanh thu cao nhat trong tháng này.","as_of_date":"2026-08-14"}
+{"id":"train_02_q020","business_id":"train_02","question":"Tháng này có bao nhiêu khách hàng khác nhau đã mua","as_of_date":"2026-08-17"}
+{"id":"train_02_q021","business_id":"train_02","question":"Lợi nhuận gộp thg trước dựa trên giá vốn bình quân nhập lô là bao nhiêu?","as_of_date":"2026-07-09"}
+{"id":"train_02_q022","business_id":"train_02","question":"Doanh  thu dịp Tết gần nhất là bao nhiêu","as_of_date":"2026-03-29"}
+{"id":"train_02_q023","business_id":"train_02","question":"Tuần rồi sản phẩm nào bán nhiều nhất?","as_of_date":"2026-05-19"}
+{"id":"train_02_q024","business_id":"train_02","question":"Trong tháng trước, ngày nào có doanh thu cao nhất?","as_of_date":"2026-05-08"}
+{"id":"train_02_q025","business_id":"train_02","question":"Nhóm hàng nào đem lại doanh thu cao nhat tháng này?","as_of_date":"2026-08-20"}
+{"id":"train_02_q026","business_id":"train_02","question":"Mặt hàng nào bán chạy nhất tháng này theo số lượng?","as_of_date":"2026-04-13"}
+{"id":"train_02_q027","business_id":"train_02","question":"Hômqua có BÁN được sản phẩm cappuccino m không?","as_of_date":"2026-07-11"}
+{"id":"train_02_q028","business_id":"train_02","question":"Giátrị đơn hàng trung bình thánggg này là bao nhiêu?","as_of_date":"2026-08-08"}
+{"id":"train_02_q029","business_id":"train_02","question":"Hôm qua doanh thu bao nhiêu?","as_of_date":"2026-08-15"}
+{"id":"train_02_q030","business_id":"train_02","question":"Cùng kỳ năm ngoái sản phẩm doanh thu cao nhất là gì","as_of_date":"2026-05-21"}
+{"id":"train_02_q031","business_id":"train_02","question":"Nhómhàng nào đem lại doanh thu cao nhất tháng này?","as_of_date":"2026-03-21"}
+{"id":"train_02_q032","business_id":"train_02","question":"Doanh thu tuần rồi tăng giảm bao nhiêu % so với tuần liền trước đó","as_of_date":"2026-08-21"}
+{"id":"train_02_q033","business_id":"train_02","question":"Sảnphẩm nào còn tồn mà lô hàng sẽ hết hạn trong 30 ngày tới?","as_of_date":"2026-04-01"}
+{"id":"train_02_q034","business_id":"train_02","question":"Thang trước có BAO nhiêu đơn hàng bị hủy?","as_of_date":"2026-06-18"}
+{"id":"train_02_q035","business_id":"train_02","question":"Cùng kỳ năm ngoái mặt hàng nào bán nhiều nhất","as_of_date":"2026-06-30"}
+{"id":"train_02_q036","business_id":"train_02","question":"Liệt kê hàng đang tồn kho dưới 15 don vị.","as_of_date":"2026-07-10"}
+{"id":"train_02_q037","business_id":"train_02","question":"Sảnphẩm Nước thần ZZZ 999ml tuần rồi bán được mấy cái","as_of_date":"2026-04-14"}
+{"id":"train_02_q038","business_id":"train_02","question":"Nhân VIÊN ca tối nào mang về doanh thu nhiều nhất tháng trước?","as_of_date":"2026-06-13"}
+{"id":"train_02_q039","business_id":"train_02","question":"Doanhh thu trong tháng 01/2023 là bao nhiêu","as_of_date":"2026-06-14"}
+{"id":"train_02_q040","business_id":"train_02","question":"Chi phi dien nuoc rieng cua cua hang trong thang truoc la bao nhieu?","as_of_date":"2026-05-10"}
+{"id":"train_03_q001","business_id":"train_03","question":"Tuần rồi sản phẩm nào bán nhiều nhất","as_of_date":"2026-05-11"}
+{"id":"train_03_q002","business_id":"train_03","question":"Cho minh danh sach top 3 san pham ban nhieu nhat thang truoc, dung thu tu.","as_of_date":"2026-05-10"}
+{"id":"train_03_q003","business_id":"train_03","question":"Sản phẩm nào tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái","as_of_date":"2026-06-30"}
+{"id":"train_03_q004","business_id":"train_03","question":"Tháng trước có bao nhiêu đơn hàng bị hủy","as_of_date":"2026-05-11"}
+{"id":"train_03_q005","business_id":"train_03","question":"Giá trị đơn hàng trung bình tháng này là bao nhiêu","as_of_date":"2026-06-08"}
+{"id":"train_03_q006","business_id":"train_03","question":"Tháng trước cửa hàng thu được bao nhiêu tiền bán hàng","as_of_date":"2026-09-03"}
+{"id":"train_03_q007","business_id":"train_03","question":"Doanh thu tháng này tăng trưởng bao nhiêu phần trăm so với tháng trước?","as_of_date":"2026-06-06"}
+{"id":"train_03_q008","business_id":"train_03","question":"Cùng kỳ nam ngoai sản phẩm doanh thu cao nhất là gì","as_of_date":"2026-06-26"}
+{"id":"train_03_q009","business_id":"train_03","question":"Nhóm hàng nào đem lại doanhhh thu cao nhất tháng này?","as_of_date":"2026-10-28"}
+{"id":"train_03_q010","business_id":"train_03","question":"Cung ky nam ngoai mat hang nao ban nhieu nhat?","as_of_date":"2026-10-21"}
+{"id":"train_03_q011","business_id":"train_03","question":"san pham nào còn tồn mà lô hàng sẽ hết hạn trong 30 ngày tới?","as_of_date":"2026-09-09"}
+{"id":"train_03_q012","business_id":"train_03","question":"Sảnphẩm nào tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái?","as_of_date":"2026-08-06"}
+{"id":"train_03_q013","business_id":"train_03","question":"Liệt kê hàng đang ton kho dưới 15 don vi.","as_of_date":"2026-10-18"}
+{"id":"train_03_q014","business_id":"train_03","question":"DOANH thu tuần rồi là bao nhiêu","as_of_date":"2026-06-16"}
+{"id":"train_03_q015","business_id":"train_03","question":"Trong dịp Tết gần nhất, sản phẩm nào bán chạy nhất?","as_of_date":"2026-06-30"}
+{"id":"train_03_q016","business_id":"train_03","question":"Tổng số lượng sản phẩm bán ra tháng trước là bao nhiêu?","as_of_date":"2026-08-06"}
+{"id":"train_03_q017","business_id":"train_03","question":"Tuần rồi mặt hàng nào mang về doanh thu cao nhất?","as_of_date":"2026-10-14"}
+{"id":"train_03_q018","business_id":"train_03","question":"Tháng trước thứ mấy có nhiều đơn hàng hợp lệ nhất?","as_of_date":"2026-07-03"}
+{"id":"train_03_q019","business_id":"train_03","question":"Doanh thu dịp Tết gần nhất là bao nhiêu?","as_of_date":"2026-07-30"}
+{"id":"train_03_q020","business_id":"train_03","question":"Mặt hàng nào bán chạy nhất tháng này theo số lượng","as_of_date":"2026-05-24"}
+{"id":"train_03_q021","business_id":"train_03","question":"Sản phẩm nào còn tồn mà lô hàng sẽ hết hạn trong 30 ngày tới?","as_of_date":"2026-07-06"}
+{"id":"train_03_q022","business_id":"train_03","question":"Hom qua co ban duoc san pham Dau ca Omega 3 hop 30 khong?","as_of_date":"2026-05-30"}
+{"id":"train_03_q023","business_id":"train_03","question":"Doanh thu tuần rồi tăng giảm bao nhiêu % so voi tuần liền trước đó?","as_of_date":"2026-08-16"}
+{"id":"train_03_q024","business_id":"train_03","question":"Khách hàng nào mua nhiều tiền nhất tháng trước?","as_of_date":"2026-08-01"}
+{"id":"train_03_q025","business_id":"train_03","question":"Giá trị đơn hàng trung bình tháng này là bao nhiêu","as_of_date":"2026-09-30"}
+{"id":"train_03_q026","business_id":"train_03","question":"Trong tháng trước, ngày nào có doanh thu cao nhất?","as_of_date":"2026-09-30"}
+{"id":"train_03_q027","business_id":"train_03","question":"Liệt  kê ba mặt hàng doanh thu cao nhất trong tháng này.","as_of_date":"2026-07-26"}
+{"id":"train_03_q028","business_id":"train_03","question":"Tháng này chốt được bao nhiêu đơn hợp lệ?","as_of_date":"2026-06-06"}
+{"id":"train_03_q029","business_id":"train_03","question":"HÔM qua doanh thu bao nhiêu?","as_of_date":"2026-05-17"}
+{"id":"train_03_q030","business_id":"train_03","question":"Tháng này có bao nhiêu kháchhh hàng khác nhau đã mua?","as_of_date":"2026-07-20"}
+{"id":"train_03_q031","business_id":"train_03","question":"Doanh thu cùng kỳ năm ngoái đạt bao nhiêu","as_of_date":"2026-06-27"}
+{"id":"train_03_q032","business_id":"train_03","question":"Tổng doanh thu tháng này tính đến hôm nay là bao nhiêu?","as_of_date":"2026-06-24"}
+{"id":"train_03_q033","business_id":"train_03","question":"Lợi nhuận gộp tháng trước dựa trên giá vốn bình quân nhập lô là bao nhiêu?","as_of_date":"2026-06-30"}
+{"id":"train_03_q034","business_id":"train_03","question":"Tuầnrồi có bao nhiêuuu đơn hàng hợp lệ?","as_of_date":"2026-09-13"}
+{"id":"train_03_q035","business_id":"train_03","question":"Tháng trước có bao nhiêuuu đơn hàng bị hủy","as_of_date":"2026-06-21"}
+{"id":"train_03_q036","business_id":"train_03","question":"Tháng trước sản phẩm bán ít nhất là gì","as_of_date":"2026-08-20"}
+{"id":"train_03_q037","business_id":"train_03","question":"Sản  phẩm Nước thần ZZZ 999ml tuần rồi bán được mấy cái?","as_of_date":"2026-06-14"}
+{"id":"train_03_q038","business_id":"train_03","question":"Nhân viên ca tối nào mang về doanh thu nhiều nhất tháng trước","as_of_date":"2026-05-24"}
+{"id":"train_03_q039","business_id":"train_03","question":"doanhthu trong tháng 01/2023 là bao nhiêu?","as_of_date":"2026-10-05"}
+{"id":"train_03_q040","business_id":"train_03","question":"Chi phí điện nước riêng của cửa hàng trong tháng trước là BAO nhiêu?","as_of_date":"2026-07-11"}
+{"id":"train_04_q001","business_id":"train_04","question":"Tuần rồi có bnh đơn hàng hợp lệ?","as_of_date":"2026-05-11"}
+{"id":"train_04_q002","business_id":"train_04","question":"Doanh thu cùng kỳ năm ngoai đạt bao nhiêu?","as_of_date":"2026-05-10"}
+{"id":"train_04_q003","business_id":"train_04","question":"Nhóm hang nào đem lại doanh thu cao nhất tháng nay?","as_of_date":"2026-06-30"}
+{"id":"train_04_q004","business_id":"train_04","question":"Sản  phẩm nào tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái?","as_of_date":"2026-09-06"}
+{"id":"train_04_q005","business_id":"train_04","question":"Doanh thu tuần rồi tăng giảm bao nhiêu % so với tuần liền trước đó","as_of_date":"2026-08-14"}
+{"id":"train_04_q006","business_id":"train_04","question":"Giá trị đơn hàng trung bình tháng này là bao nhiêu","as_of_date":"2026-07-13"}
+{"id":"train_04_q007","business_id":"train_04","question":"Cho mình danh sách top 3 sản phẩm bán nhiều nhất tháng trước, đúng thứ tự.","as_of_date":"2026-06-20"}
+{"id":"train_04_q008","business_id":"train_04","question":"Tháng này chốt được bao nhiêu đơn hợp lệ","as_of_date":"2026-06-05"}
+{"id":"train_04_q009","business_id":"train_04","question":"Hôm  qua có bán được sản phẩm Co PVC D21 khônggg?","as_of_date":"2026-07-30"}
+{"id":"train_04_q010","business_id":"train_04","question":"Tháng trước co bao nhiêu đơn hàng bị hủy?","as_of_date":"2026-09-13"}
+{"id":"train_04_q011","business_id":"train_04","question":"Thanggg truoc san pham ban it nhat la gi?","as_of_date":"2026-07-01"}
+{"id":"train_04_q012","business_id":"train_04","question":"Tháng trước cửa hàng thu được bao nhiuêu tiền bán hàng?","as_of_date":"2026-08-28"}
+{"id":"train_04_q013","business_id":"train_04","question":"Tổng số lượng sản phẩm bán ra tháng trước là bao nhiêu","as_of_date":"2026-05-19"}
+{"id":"train_04_q014","business_id":"train_04","question":"khach hang nào mua nhiều TIỀN nhất tháng trước?","as_of_date":"2026-07-08"}
+{"id":"train_04_q015","business_id":"train_04","question":"Tháng trước thứ mấy có nhiều đơn hàng hợp lệ nhất?","as_of_date":"2026-08-29"}
+{"id":"train_04_q016","business_id":"train_04","question":"Doanh thu tuần rồi là bao nhiêu?","as_of_date":"2026-07-07"}
+{"id":"train_04_q017","business_id":"train_04","question":"Hôm qua doanh thu bao nhiêu?","as_of_date":"2026-08-23"}
+{"id":"train_04_q018","business_id":"train_04","question":"Liệt kê ba mặt hàng doanh thu cao nhất trong thángg này.","as_of_date":"2026-07-07"}
+{"id":"train_04_q019","business_id":"train_04","question":"Doanh thu tháng này tăng trưởng bao nhiêu phần trăm so với tháng trước","as_of_date":"2026-08-15"}
+{"id":"train_04_q020","business_id":"train_04","question":"Cùng kỳ năm ngoái sản phẩm doanh thu cao nhất là gì","as_of_date":"2026-09-11"}
+{"id":"train_04_q021","business_id":"train_04","question":"Liệt kê hàng đang tồn kho dưới 15 don vi.","as_of_date":"2026-07-22"}
+{"id":"train_04_q022","business_id":"train_04","question":"Trong dịp Tết gần nhất, sản phẩm nào bán CHẠY nhất?","as_of_date":"2026-05-08"}
+{"id":"train_04_q023","business_id":"train_04","question":"Tuần  rồi sản phẩm nào bán nhiều nhất?","as_of_date":"2026-09-16"}
+{"id":"train_04_q024","business_id":"train_04","question":"Trong tháng trước, ngày nào có doanh thu cao nhất?","as_of_date":"2026-06-04"}
+{"id":"train_04_q025","business_id":"train_04","question":"Cùng kỳ năm ngoái mặt hàng nào bán nhiềuu nhất?","as_of_date":"2026-08-07"}
+{"id":"train_04_q026","business_id":"train_04","question":"Tổng doanh thu tháng này tính đến hôm nay là bao nhiêu?","as_of_date":"2026-05-14"}
+{"id":"train_04_q027","business_id":"train_04","question":"Liệt kê ba mặt hàng doanh thu cao nhất trong tháng này.?","as_of_date":"2026-06-05"}
+{"id":"train_04_q028","business_id":"train_04","question":"Tháng này có bao nhiêuuu khách hàng khác nhau đã mua?","as_of_date":"2026-09-05"}
+{"id":"train_04_q029","business_id":"train_04","question":"Tháng trước thứ mấy có nhiều đơn hàng hợp lệ nhất?","as_of_date":"2026-08-13"}
+{"id":"train_04_q030","business_id":"train_04","question":"Lậpbảng các khách đang nợ tiền, kèm mã khách, tên và số tiền nợ.","as_of_date":"2026-05-26"}
+{"id":"train_04_q031","business_id":"train_04","question":"Hom qua doanh thu bao nhieu?","as_of_date":"2026-05-09"}
+{"id":"train_04_q032","business_id":"train_04","question":"Tuần rồi mặt hàng nào mang về doanh thu cao nhất?","as_of_date":"2026-09-18"}
+{"id":"train_04_q033","business_id":"train_04","question":"Tháng trước sản phẩm bán ít nhất là gì?","as_of_date":"2026-07-14"}
+{"id":"train_04_q034","business_id":"train_04","question":"Khách Lê Đạt Hân hiện còn nợ cửa hàng bao nhiêu?","as_of_date":"2026-09-12"}
+{"id":"train_04_q035","business_id":"train_04","question":"Doanh thu dịp Tết gần nhất là bao nhiêu?","as_of_date":"2026-06-07"}
+{"id":"train_04_q036","business_id":"train_04","question":"Mặt hàng nào bán chạy nhất tháng này THEO số lượngg?","as_of_date":"2026-06-29"}
+{"id":"train_04_q037","business_id":"train_04","question":"Sản phẩm Nước thần ZZZ 999ml tuần rồi bán được mấy cái?","as_of_date":"2026-06-08"}
+{"id":"train_04_q038","business_id":"train_04","question":"Nhân viên ca toi nào mang về doanh THU nhiều nhất tháng truoc?","as_of_date":"2026-09-26"}
+{"id":"train_04_q039","business_id":"train_04","question":"Doanh thu trong thang 01/2023 là bao nhieu?","as_of_date":"2026-07-23"}
+{"id":"train_04_q040","business_id":"train_04","question":"Lợi nhuận gộp tháng trước là bao nhiêuu, tính theo giá vốn bình quân nhập lô?","as_of_date":"2026-06-30"}
+{"id":"train_05_q001","business_id":"train_05","question":"Thángnày có bao nhiêu khách hàng khác nhau đã mua?","as_of_date":"2026-04-06"}
+{"id":"train_05_q002","business_id":"train_05","question":"Hôm qua co bán được sản phẩm Bugi NGK CPR8EA-9 không?","as_of_date":"2026-04-12"}
+{"id":"train_05_q003","business_id":"train_05","question":"Hôm qua doanh thu bao nhiêu?","as_of_date":"2026-05-31"}
+{"id":"train_05_q004","business_id":"train_05","question":"DOANH thu dịp Tết gần nhất là bao nhiêuu?","as_of_date":"2026-07-21"}
+{"id":"train_05_q005","business_id":"train_05","question":"Tổng số lượng sản phẩm bán ra tháng trướccc là bao nhiêu?","as_of_date":"2026-07-27"}
+{"id":"train_05_q006","business_id":"train_05","question":"Trong tháng trước, ngày nào có doanh thu cao nhất?","as_of_date":"2026-07-16"}
+{"id":"train_05_q007","business_id":"train_05","question":"Kháchhh C0065 hiện còn nợ cửa hàng bn?","as_of_date":"2026-05-08"}
+{"id":"train_05_q008","business_id":"train_05","question":"Tổng doanh thu thánggg này tính đến hôm nay là bao nhiêu?","as_of_date":"2026-06-20"}
+{"id":"train_05_q009","business_id":"train_05","question":"Doanh thu tháng này tăng trưởng bao nhiêu phần trăm so với tháng trước","as_of_date":"2026-05-23"}
+{"id":"train_05_q010","business_id":"train_05","question":"Mặt  hàng nào bán chạy nhất tháng này theo số lượng","as_of_date":"2026-07-17"}
+{"id":"train_05_q011","business_id":"train_05","question":"Trongdịp Tết gan nhất, sản phẩm nào bán chạy nhất?","as_of_date":"2026-04-25"}
+{"id":"train_05_q012","business_id":"train_05","question":"Thángtrước sản pham bán ít nhất là gì?","as_of_date":"2026-04-18"}
+{"id":"train_05_q013","business_id":"train_05","question":"Cùng kỳ năm ngoái MẶT hàng nào bán nhiều nhất?","as_of_date":"2026-06-07"}
+{"id":"train_05_q014","business_id":"train_05","question":"Cùngkỳ năm ngoái sản phẩm doanh thu CAO nhất là gì?","as_of_date":"2026-05-17"}
+{"id":"train_05_q015","business_id":"train_05","question":"loi nhuan gộp tháng trước dựa trên giá vốn bình quân nhập lô là bao nhiêu?","as_of_date":"2026-06-16"}
+{"id":"train_05_q016","business_id":"train_05","question":"Tuần rồi sản phẩm nào bán nhiều nhất?","as_of_date":"2026-06-07"}
+{"id":"train_05_q017","business_id":"train_05","question":"Tuần rồi mặt hàng nào mang về doanhhh thu cao nhất?","as_of_date":"2026-06-27"}
+{"id":"train_05_q018","business_id":"train_05","question":"Liệt kê ba mặt hàng doanh thu cao nhất trong tháng này.","as_of_date":"2026-05-10"}
+{"id":"train_05_q019","business_id":"train_05","question":"Doanh thu tuần rồi là bao nhiêu?","as_of_date":"2026-05-31"}
+{"id":"train_05_q020","business_id":"train_05","question":"Thánggg trước thứ mấy có nhiều đơn hàng hợp lệ nhất","as_of_date":"2026-05-06"}
+{"id":"train_05_q021","business_id":"train_05","question":"Tháng trướcc có bao NHIÊU đơn hàng bị hủy?","as_of_date":"2026-07-08"}
+{"id":"train_05_q022","business_id":"train_05","question":"Doanh thu thang nay tang truong bao nhieu % so voi thang truoc?","as_of_date":"2026-06-05"}
+{"id":"train_05_q023","business_id":"train_05","question":"Liệtkê hàng đang tồn kho dưới 15 đơn vị.","as_of_date":"2026-04-08"}
+{"id":"train_05_q024","business_id":"train_05","question":"Tháng trước cửa hàng thu được bao nhiêu tiền bán hàng?","as_of_date":"2026-04-19"}
+{"id":"train_05_q025","business_id":"train_05","question":"Khách hàng nao mua nhiềuuu tiền nhất tháng trước?","as_of_date":"2026-05-20"}
+{"id":"train_05_q026","business_id":"train_05","question":"Sản phẩm nào tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái?","as_of_date":"2026-07-14"}
+{"id":"train_05_q027","business_id":"train_05","question":"Giá trị đơn hàng trung bình tháng này là bao nhiêu?","as_of_date":"2026-06-04"}
+{"id":"train_05_q028","business_id":"train_05","question":"Tháng trước có bao nhiêu đơn hàng bị hủy?","as_of_date":"2026-07-08"}
+{"id":"train_05_q029","business_id":"train_05","question":"Tuần rồi có bao nhiêu đơn hàng hợp lệ","as_of_date":"2026-05-19"}
+{"id":"train_05_q030","business_id":"train_05","question":"Doanh thu dịp tet gần nhất là bao nhiêu?","as_of_date":"2026-06-30"}
+{"id":"train_05_q031","business_id":"train_05","question":"Doanh thu cùng kỳ năm ngoai đạt bao nhiêu?","as_of_date":"2026-07-13"}
+{"id":"train_05_q032","business_id":"train_05","question":"Cho mình danh sách top 3 sản phẩm bán nhiều nhất tháng trướcc, đúng thứ tự.","as_of_date":"2026-05-11"}
+{"id":"train_05_q033","business_id":"train_05","question":"Tháng này chốt được bao nhiêu đơn hợp lệ?","as_of_date":"2026-07-30"}
+{"id":"train_05_q034","business_id":"train_05","question":"DOANH thu tuần rồi tăng giảm bao nhiêuuu % so với tuần liền trước đó?","as_of_date":"2026-06-23"}
+{"id":"train_05_q035","business_id":"train_05","question":"Lập bảng các khách dang no tiền, kèm mã khách, tên và số tiền nợ.","as_of_date":"2026-04-08"}
+{"id":"train_05_q036","business_id":"train_05","question":"Nhóm hàng nào đem lại DOANH thu cao nhất thang nay?","as_of_date":"2026-07-17"}
+{"id":"train_05_q037","business_id":"train_05","question":"Sảnphẩm Nước thần ZZZ 999ml tuần rồi bán được mấy cái?","as_of_date":"2026-05-16"}
+{"id":"train_05_q038","business_id":"train_05","question":"Nhân viên ca tối nào mang về doanh thu nhiều nhất tháng trước?","as_of_date":"2026-04-23"}
+{"id":"train_05_q039","business_id":"train_05","question":"Doanh thu trong tháng 01/2023 là bao nhiêu?","as_of_date":"2026-07-30"}
+{"id":"train_05_q040","business_id":"train_05","question":"Chi phí điện nước riêng của cửa hàng trong tháng trước là bao nhiêu","as_of_date":"2026-04-13"}
+{"id":"train_06_q001","business_id":"train_06","question":"Trong tháng trước, ngày nào có doanh thu cao nhất?","as_of_date":"2026-03-09"}
+{"id":"train_06_q002","business_id":"train_06","question":"Liệt kê ba mặt hàng doanh thu cao nhất trong tháng này.","as_of_date":"2026-03-08"}
+{"id":"train_06_q003","business_id":"train_06","question":"Sản phẩm nào còn tồn mà lô hàng sẽ hết hạn trong 30 ngày tới?","as_of_date":"2026-06-30"}
+{"id":"train_06_q004","business_id":"train_06","question":"dthu dịp Tết gần nhất là bao nhiêu?","as_of_date":"2026-04-12"}
+{"id":"train_06_q005","business_id":"train_06","question":"Hôm qua doanhhh thu bao nhiêu","as_of_date":"2026-08-18"}
+{"id":"train_06_q006","business_id":"train_06","question":"Cùng kỳ năm ngoáii mặt hàng nào bán nhìu nhất?","as_of_date":"2026-03-14"}
+{"id":"train_06_q007","business_id":"train_06","question":"Sản phẩm nao tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái?","as_of_date":"2026-08-02"}
+{"id":"train_06_q008","business_id":"train_06","question":"Doanhthu tuần rồi tăng giảm bao nhiêu % so với tuần liền trước do?","as_of_date":"2026-08-08"}
+{"id":"train_06_q009","business_id":"train_06","question":"Trong dịp Tết gần nhất, sản phẩm nào bán chạy nhất?","as_of_date":"2026-05-16"}
+{"id":"train_06_q010","business_id":"train_06","question":"Tổng doanh thu tháng này tính đến hôm nay là bao nhiêu?","as_of_date":"2026-06-21"}
+{"id":"train_06_q011","business_id":"train_06","question":"Doanh thu thang này tăng trởưng bao nhiêu phần trăm so với thang truoc?","as_of_date":"2026-05-05"}
+{"id":"train_06_q012","business_id":"train_06","question":"Tháng này có bao nhiêu khách hàng khác nhau đã mua","as_of_date":"2026-06-23"}
+{"id":"train_06_q013","business_id":"train_06","question":"Lập bảng các khách đang nợ tiền, kèm mã khách, tên và số tiền nợ.","as_of_date":"2026-08-04"}
+{"id":"train_06_q014","business_id":"train_06","question":"thg trước sản phẩm bán ít nhất LÀ gì?","as_of_date":"2026-06-22"}
+{"id":"train_06_q015","business_id":"train_06","question":"Doanhthu cùng kỳ năm ngoái đạt bao nhiêu?","as_of_date":"2026-06-12"}
+{"id":"train_06_q016","business_id":"train_06","question":"Tuần rồi sản phẩm nào bán nhiều nhất","as_of_date":"2026-07-04"}
+{"id":"train_06_q017","business_id":"train_06","question":"Thang trướcc cửa hàng thu được bao nhiêu tiền bán hàng?","as_of_date":"2026-05-07"}
+{"id":"train_06_q018","business_id":"train_06","question":"Tổng số lượng sản phẩm BÁN ra tháng trước là bao nhiêu?","as_of_date":"2026-06-16"}
+{"id":"train_06_q019","business_id":"train_06","question":"Khach Nguyen Duyen Minh hien con no cua hang bao nhieu?","as_of_date":"2026-08-12"}
+{"id":"train_06_q020","business_id":"train_06","question":"Nhóm hàng nào đem lại doanh thu cao nhất tháng này?","as_of_date":"2026-06-29"}
+{"id":"train_06_q021","business_id":"train_06","question":"Chomình danh sách top 3 sản phẩm bán nhiều nhất tháng trước, đúng thứ tự.?","as_of_date":"2026-07-20"}
+{"id":"train_06_q022","business_id":"train_06","question":"Trong dịp Tết gần nhất, sản phẩm nào bán chạy NHẤT?","as_of_date":"2026-08-21"}
+{"id":"train_06_q023","business_id":"train_06","question":"Tuần rồi co bao nhiêu ĐƠN hàng hợp lệ?","as_of_date":"2026-03-11"}
+{"id":"train_06_q024","business_id":"train_06","question":"THANG nay chot duoc bao nhieu don hop le?","as_of_date":"2026-06-10"}
+{"id":"train_06_q025","business_id":"train_06","question":"Giátrị don hàng trung binh thang này là bao nhiêu?","as_of_date":"2026-07-21"}
+{"id":"train_06_q026","business_id":"train_06","question":"Tháng trước thứ mấy có nhiều ĐƠN hàng hợp lệ nhất?","as_of_date":"2026-06-07"}
+{"id":"train_06_q027","business_id":"train_06","question":"Tháng trước có bao nhiêu đơn hàng bị hủy","as_of_date":"2026-06-30"}
+{"id":"train_06_q028","business_id":"train_06","question":"Liệt ke hàng dang tồn kho dưới 15 đơn vị.","as_of_date":"2026-03-29"}
+{"id":"train_06_q029","business_id":"train_06","question":"Kháchhh hàng nào mua nhieu tiền nhất thang truoc?","as_of_date":"2026-07-24"}
+{"id":"train_06_q030","business_id":"train_06","question":"Tháng trước thu may có nhiều đơn hàng hợp lệ nhất?","as_of_date":"2026-03-23"}
+{"id":"train_06_q031","business_id":"train_06","question":"Hôm qua có bán được sản phẩm P0016 không","as_of_date":"2026-03-07"}
+{"id":"train_06_q032","business_id":"train_06","question":"Mặt hàng nào bán chạy nhất tháng này theo số lượng","as_of_date":"2026-04-27"}
+{"id":"train_06_q033","business_id":"train_06","question":"Cùng kỳ năm ngoái sản phẩm doanh thu cao nhất la gì?","as_of_date":"2026-07-06"}
+{"id":"train_06_q034","business_id":"train_06","question":"Doanh thu tuần rồi là bao nhiêu?","as_of_date":"2026-04-02"}
+{"id":"train_06_q035","business_id":"train_06","question":"Tuần rồi mặt hàng nào mang về doanh thu cao nhất?","as_of_date":"2026-08-16"}
+{"id":"train_06_q036","business_id":"train_06","question":"Lợi nhuận gộp tháng trước dựa trên giá vốn bình quân nhập lô là bao nhiêu?","as_of_date":"2026-07-29"}
+{"id":"train_06_q037","business_id":"train_06","question":"Sản phẩm Nước thần ZZZ 999ml tuần rồi bán được mấy cái?","as_of_date":"2026-06-05"}
+{"id":"train_06_q038","business_id":"train_06","question":"Nhân viên ca tối nào mang về doanh thu nhiều nhất tháng trước?","as_of_date":"2026-08-02"}
+{"id":"train_06_q039","business_id":"train_06","question":"Doanh thu trong thang 01/2023 la bao nhieu","as_of_date":"2026-08-18"}
+{"id":"train_06_q040","business_id":"train_06","question":"Chi phí điện nước riêng của cửa hàng trong tháng trước la bao nhiêu?","as_of_date":"2026-07-12"}
+{"id":"train_07_q001","business_id":"train_07","question":"Hôm qua có bán được sản phẩm P0017 KHÔNG?","as_of_date":"2026-03-09"}
+{"id":"train_07_q002","business_id":"train_07","question":"Sản phẩm nào tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái?","as_of_date":"2026-03-08"}
+{"id":"train_07_q003","business_id":"train_07","question":"Giá trị đơn hàng trung bình thang nay là bao nhiêu?","as_of_date":"2026-06-30"}
+{"id":"train_07_q004","business_id":"train_07","question":"Doanh thu tuần rồi tăng giảm bao nhiêu % so với tuần liền trước đó","as_of_date":"2026-07-12"}
+{"id":"train_07_q005","business_id":"train_07","question":"Hom qua doanh THU bao nhiêu?","as_of_date":"2026-07-12"}
+{"id":"train_07_q006","business_id":"train_07","question":"thang truoc sản phẩm bán ít nhất là gì?","as_of_date":"2026-06-30"}
+{"id":"train_07_q007","business_id":"train_07","question":"Tháng này có bao nhiêu khách hàng khác nhau đã mua?","as_of_date":"2026-05-30"}
+{"id":"train_07_q008","business_id":"train_07","question":"Tháng trước cua hàng thu được bao nhieu tiền ban hàng?","as_of_date":"2026-05-22"}
+{"id":"train_07_q009","business_id":"train_07","question":"Kháchhàng nào mua nhiều tiền nhất tháng trước","as_of_date":"2026-08-11"}
+{"id":"train_07_q010","business_id":"train_07","question":"loi nhuan gộp tháng trước dựa trên giá vốn bình quân nhập lô là bao nhiêu?","as_of_date":"2026-05-05"}
+{"id":"train_07_q011","business_id":"train_07","question":"Tháng trước có bao nhiêu đơn hàng bị hủy?","as_of_date":"2026-07-07"}
+{"id":"train_07_q012","business_id":"train_07","question":"Doanh thu tuần rồi là bao nhiêu","as_of_date":"2026-06-03"}
+{"id":"train_07_q013","business_id":"train_07","question":"Doanh thu cùng kỳ năm ngoái đạt bao nhiêu","as_of_date":"2026-07-19"}
+{"id":"train_07_q014","business_id":"train_07","question":"Tháng trước thứ mấy có nhiều đơn hàng hợp lệ nhất","as_of_date":"2026-08-09"}
+{"id":"train_07_q015","business_id":"train_07","question":"Khách Đặng phúc Vy hiện còn nợ cửa hàng bao nhiêu?","as_of_date":"2026-08-18"}
+{"id":"train_07_q016","business_id":"train_07","question":"Cung kỳ năm ngoái sản pham doanh thu cao nhat là gì?","as_of_date":"2026-07-07"}
+{"id":"train_07_q017","business_id":"train_07","question":"Tuần RỒI mặt hàng nào mang về doanh thu cao nhất?","as_of_date":"2026-06-16"}
+{"id":"train_07_q018","business_id":"train_07","question":"Liệt kê ba mặt hàng doanh thu cao nhất tronggg tháng này.","as_of_date":"2026-06-23"}
+{"id":"train_07_q019","business_id":"train_07","question":"Lập bảng các khách đang nợ tiền, kèm mã khách, tên và số tiền nợ.","as_of_date":"2026-04-25"}
+{"id":"train_07_q020","business_id":"train_07","question":"Tuần rồi sản phẩm nào bán nhiều nhất?","as_of_date":"2026-07-11"}
+{"id":"train_07_q021","business_id":"train_07","question":"Sản phẩm nào còn tồn mà lô hàng sẽ hết hạn trong 30 ngày tới?","as_of_date":"2026-06-09"}
+{"id":"train_07_q022","business_id":"train_07","question":"Tuần rồi có bao NHIÊUU đơn hàng hợp lệ?","as_of_date":"2026-07-21"}
+{"id":"train_07_q023","business_id":"train_07","question":"Tháng này chốt được bao nhiêu đơn hợp lệ?","as_of_date":"2026-06-25"}
+{"id":"train_07_q024","business_id":"train_07","question":"Tổng doanh thu tháng này tính đến hôm nay là bao nhiêu","as_of_date":"2026-03-24"}
+{"id":"train_07_q025","business_id":"train_07","question":"Cho mình danh sách top 3 sản phẩm bán nhiều nhất tháng trước, đúng thứ tự.","as_of_date":"2026-07-20"}
+{"id":"train_07_q026","business_id":"train_07","question":"KháchC0001 hien còn nợ cửa hang bao nhieu?","as_of_date":"2026-04-18"}
+{"id":"train_07_q027","business_id":"train_07","question":"doanh thu dịp Tết gần nhất là bao nhiêu?","as_of_date":"2026-03-30"}
+{"id":"train_07_q028","business_id":"train_07","question":"Doanh  thu tháng này tăng trưởng bao nhiêu phần trăm so với tháng trước?","as_of_date":"2026-08-25"}
+{"id":"train_07_q029","business_id":"train_07","question":"Liệt kê hàng đang tồn KHO dưới 15 đơn vị.","as_of_date":"2026-08-24"}
+{"id":"train_07_q030","business_id":"train_07","question":"Doanh thu tuần rồi tăng giảm bao nhiêu % so với tuần liền trước đó?","as_of_date":"2026-03-12"}
+{"id":"train_07_q031","business_id":"train_07","question":"Nhóm hàng nào đem lại doanh thu cao nhất tháng NÀY?","as_of_date":"2026-08-29"}
+{"id":"train_07_q032","business_id":"train_07","question":"Trong tháng trước, ngày nào có doanh thu cao nhất?","as_of_date":"2026-04-21"}
+{"id":"train_07_q033","business_id":"train_07","question":"Cùng kỳ năm ngoái mat hang nào bán nhiều nhất?","as_of_date":"2026-04-03"}
+{"id":"train_07_q034","business_id":"train_07","question":"Mặt hàng nào bán chạy nhất tháng này theo số lượnggg","as_of_date":"2026-03-18"}
+{"id":"train_07_q035","business_id":"train_07","question":"Tổngsố lượng sản phẩm bán ra tháng trước là bao nhiêu","as_of_date":"2026-08-19"}
+{"id":"train_07_q036","business_id":"train_07","question":"Trong dịp Tết gần nhất, sản phẩm nào bán chạy nhất?","as_of_date":"2026-06-14"}
+{"id":"train_07_q037","business_id":"train_07","question":"Sản phẩm Nước thần ZZZ 999ml tuần rồi bán được mấy cái","as_of_date":"2026-05-09"}
+{"id":"train_07_q038","business_id":"train_07","question":"Nhânviên ca tối nào mang về doanh thu nhiều nhất tháng trước?","as_of_date":"2026-04-12"}
+{"id":"train_07_q039","business_id":"train_07","question":"Doanh  thu trong tháng 01/2023 la bao nhiêu?","as_of_date":"2026-04-20"}
+{"id":"train_07_q040","business_id":"train_07","question":"Chi phí điện nước riêng của cửa hàng trong tháng trước là bao nhiêu?","as_of_date":"2026-07-27"}
+{"id":"train_08_q001","business_id":"train_08","question":"Liệt kê hàng đang tồn kho dưới 15 đơn vị.","as_of_date":"2026-03-09"}
+{"id":"train_08_q002","business_id":"train_08","question":"Doanhh thu tuần rồi là bao nhiêu?","as_of_date":"2026-03-15"}
+{"id":"train_08_q003","business_id":"train_08","question":"Tháng này chốt được bao nhiêuu đơn hợp lệ?","as_of_date":"2026-04-30"}
+{"id":"train_08_q004","business_id":"train_08","question":"Trongdịp Tết gần nhất, sản phẩm nào bán chạy nhất?","as_of_date":"2026-04-28"}
+{"id":"train_08_q005","business_id":"train_08","question":"Giá trị đơn hàng trung bình tháng này là bao nhiêu?","as_of_date":"2026-05-08"}
+{"id":"train_08_q006","business_id":"train_08","question":"Tuần rồi mặt hàng nào mang về doanh thu cao nhất?","as_of_date":"2026-07-17"}
+{"id":"train_08_q007","business_id":"train_08","question":"Tổng doanh thu tháng này tính ĐẾN hôm nay là bao nhiêu","as_of_date":"2026-06-10"}
+{"id":"train_08_q008","business_id":"train_08","question":"Doanh thu tuần rồi tăng giảm bao nhiêu % so với tuần liền trước đó?","as_of_date":"2026-05-15"}
+{"id":"train_08_q009","business_id":"train_08","question":"Hôm qua doanhh thu bao nhiêu?","as_of_date":"2026-03-22"}
+{"id":"train_08_q010","business_id":"train_08","question":"Doanh thu cùng kỳ năm ngoáiii đạt bao nhiêu","as_of_date":"2026-04-28"}
+{"id":"train_08_q011","business_id":"train_08","question":"Tháng trước sản phẩm bán it nhat là gì?","as_of_date":"2026-06-23"}
+{"id":"train_08_q012","business_id":"train_08","question":"Nhóm  hàng nào đem lại doanhthu cao nhất tháng này?","as_of_date":"2026-06-21"}
+{"id":"train_08_q013","business_id":"train_08","question":"Cùngkỳ năm ngoái sản phẩm doanh thu cao nhất là gì?","as_of_date":"2026-06-29"}
+{"id":"train_08_q014","business_id":"train_08","question":"Tháng này co bao nhiêu khách hàng khác nhau đã mua?","as_of_date":"2026-03-19"}
+{"id":"train_08_q015","business_id":"train_08","question":"Chomình danh sách top 3 sản phẩm bán nhiều nhất tháng trước, đúng thứ tự.","as_of_date":"2026-05-10"}
+{"id":"train_08_q016","business_id":"train_08","question":"Doanh thu tuần RỒI tăng giảm bao nhiêu % so với tuần liền trước đó?","as_of_date":"2026-06-16"}
+{"id":"train_08_q017","business_id":"train_08","question":"Hôm qua có bán đc sản phẩm Trà Tắc Mật ONG M không?","as_of_date":"2026-06-19"}
+{"id":"train_08_q018","business_id":"train_08","question":"Mặt hàng nào bán chạy nhất tháng này theo số lượng","as_of_date":"2026-04-26"}
+{"id":"train_08_q019","business_id":"train_08","question":"Khách hàng nào mua nhiều tiền nhất tháng trước?","as_of_date":"2026-04-29"}
+{"id":"train_08_q020","business_id":"train_08","question":"Tổng số lượng sản phẩm bán ra tháng trước là bao nhiêu?","as_of_date":"2026-03-27"}
+{"id":"train_08_q021","business_id":"train_08","question":"Tháng trước thứ mấy có nhiều đơn hàng hợp lệ nhất?","as_of_date":"2026-04-11"}
+{"id":"train_08_q022","business_id":"train_08","question":"Tuần rồi có bao nhiêu đơn hàng hợp lệ","as_of_date":"2026-04-03"}
+{"id":"train_08_q023","business_id":"train_08","question":"Tháng trước có bao nhiêu đơn hàng bị hủy?","as_of_date":"2026-03-27"}
+{"id":"train_08_q024","business_id":"train_08","question":"Doanh thu thángg này tăng trưởng bnh phần trăm so với tháng trước?","as_of_date":"2026-05-01"}
+{"id":"train_08_q025","business_id":"train_08","question":"Tuần rồi sản pham nào bán nhieu nhất?","as_of_date":"2026-04-06"}
+{"id":"train_08_q026","business_id":"train_08","question":"Cùng kỳ nam ngoái mặt hang nào bán nhieu nhất?","as_of_date":"2026-07-28"}
+{"id":"train_08_q027","business_id":"train_08","question":"Doanh thu tuần rồi la bao nhiêu?","as_of_date":"2026-07-20"}
+{"id":"train_08_q028","business_id":"train_08","question":"Liệt kê ba mặt hàng doanh thu cao nhất trong tháng này.","as_of_date":"2026-07-15"}
+{"id":"train_08_q029","business_id":"train_08","question":"Táhnggg trước cửa hàng thu được bao nhiêu tiền bán hàng?","as_of_date":"2026-04-05"}
+{"id":"train_08_q030","business_id":"train_08","question":"Sản phẩm nào con tồn mà lô hàng sẽ hết hạn trong 30 ngày tới?","as_of_date":"2026-07-03"}
+{"id":"train_08_q031","business_id":"train_08","question":"Tuan rồi mặt hang nao mang về doanh thu cao nhất?","as_of_date":"2026-05-17"}
+{"id":"train_08_q032","business_id":"train_08","question":"Hôm qua có bán đc sản phẩm P0017 khôngg?","as_of_date":"2026-05-05"}
+{"id":"train_08_q033","business_id":"train_08","question":"Sảnphẩm nào tồn ít nhất 70 cái mà 30 ngày qua chỉ bán tối đa 2 cái?","as_of_date":"2026-06-06"}
+{"id":"train_08_q034","business_id":"train_08","question":"Lợi nhuận gộp tháng TRƯỚC dựa trên giá vốn bình quân nhập lô là bao nhiêu","as_of_date":"2026-04-06"}
+{"id":"train_08_q035","business_id":"train_08","question":"Doanh thu dịp Tết gần nhất là bao nhiêu?","as_of_date":"2026-06-23"}
+{"id":"train_08_q036","business_id":"train_08","question":"Trong tháng trước, ngày nào có doanh thu cao nhất?","as_of_date":"2026-06-21"}
+{"id":"train_08_q037","business_id":"train_08","question":"Sản phẩm Nước thần ZZZ 999ml tuần rồi bán được mấy cái?","as_of_date":"2026-07-21"}
+{"id":"train_08_q038","business_id":"train_08","question":"Nhân vien ca tối nào mang về doanh thu nhiều nhất tháng trước?","as_of_date":"2026-03-31"}
+{"id":"train_08_q039","business_id":"train_08","question":"Doanh thu trong tháng 01/2023 là bao nhiêu","as_of_date":"2026-04-20"}
+{"id":"train_08_q040","business_id":"train_08","question":"Chi  phí điện nước riêng của cua hàng trong tháng trước la bao nhieu?","as_of_date":"2026-05-03"}

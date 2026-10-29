@@ -1,0 +1,374 @@
+{
+  "business_id": "train_01",
+  "end": "2026-08-31",
+  "format": "csv",
+  "kind": "tap_hoa",
+  "products": {
+    "P0001": {
+      "aliases": [
+        "P0001",
+        "REVIVE CHANH MUỐI 500ML",
+        "Revive  chanh muối 500ml",
+        "Revive Chanh Muối 500Ml",
+        "Revive chanh muối 500ml",
+        "Revive chanh muối 500ml",
+        "revive chanh muoi 500 ml",
+        "revive chanh muối 500ml"
+      ],
+      "name": "Revive chanh muối 500ml"
+    },
+    "P0002": {
+      "aliases": [
+        "Nước xả Comfort 800ml",
+        "NƯỚC XẢ COMFORT 800ML",
+        "Nước  xả Comfort 800ml",
+        "Nước Xả Comfort 800Ml",
+        "Nước xả Comfort 800ml",
+        "P0002",
+        "nuoc xa comfort 800 ml",
+        "nước xả comfort 800ml"
+      ],
+      "name": "Nước xả Comfort 800ml"
+    },
+    "P0003": {
+      "aliases": [
+        "Mì Hảo Hảo tôm chua cay",
+        "MÌ HẢO HẢO TÔM CHUA CAY",
+        "Mì  Hảo Hảo tôm chua cay",
+        "Mì Hảo Hảo Tôm Chua Cay",
+        "Mì Hảo Hảo tôm chua cay",
+        "P0003",
+        "mi hao hao tom chua cay",
+        "mì hảo hảo tôm chua cay"
+      ],
+      "name": "Mì Hảo Hảo tôm chua cay"
+    },
+    "P0004": {
+      "aliases": [
+        "P0004",
+        "TRÀ LIPTON TÚI LỌC 25 GÓI",
+        "Trà Lipton túi lọc 25 gói",
+        "Trà  Lipton túi lọc 25 gói",
+        "Trà Lipton Túi Lọc 25 Gói",
+        "Trà Lipton túi lọc 25 gói",
+        "tra lipton tui loc 25 goi",
+        "trà lipton túi lọc 25 gói"
+      ],
+      "name": "Trà Lipton túi lọc 25 gói"
+    },
+    "P0005": {
+      "aliases": [
+        "P0005",
+        "TRỨNG GÀ HỘP 10 QUẢ",
+        "Trứng gà hộp 10 quả",
+        "Trứng  gà hộp 10 quả",
+        "Trứng Gà Hộp 10 Quả",
+        "Trứng gà hộp 10 quả",
+        "trung ga hop 10 qua",
+        "trứng gà hộp 10 quả"
+      ],
+      "name": "Trứng gà hộp 10 quả"
+    },
+    "P0006": {
+      "aliases": [
+        "P0006",
+        "Tương ớt Chinsu 250g",
+        "TƯƠNG ỚT CHINSU 250G",
+        "Tương  ớt Chinsu 250g",
+        "Tương Ớt Chinsu 250G",
+        "Tương ớt Chinsu 250g",
+        "tuong ot chinsu 250g",
+        "tương ớt chinsu 250g"
+      ],
+      "name": "Tương ớt Chinsu 250g"
+    },
+    "P0007": {
+      "aliases": [
+        "P0007",
+        "PEPSI LON 320ML",
+        "Pepsi  lon 320ml",
+        "Pepsi Lon 320Ml",
+        "Pepsi lon 320ml",
+        "pepsi lon 320 ml",
+        "pepsi lon 320ml"
+      ],
+      "name": "Pepsi lon 320ml"
+    },
+    "P0008": {
+      "aliases": [
+        "Dầu  gội Clear 340ml",
+        "Dầu Gội Clear 340Ml",
+        "Dầu gội Clear 340ml",
+        "P0008",
+        "dau goi clear 340 ml",
+        "dầu gội clear 340ml"
+      ],
+      "name": "Dầu gội Clear 340ml"
+    },
+    "P0009": {
+      "aliases": [
+        "BÀN CHẢI COLGATE SLIM SOFT",
+        "Bàn  chải Colgate Slim Soft",
+        "Bàn Chải Colgate Slim Soft",
+        "Bàn chải Colgate Slim Soft",
+        "P0009",
+        "ban chai colgate slim soft",
+        "bàn chải colgate slim soft"
+      ],
+      "name": "Bàn chải Colgate Slim Soft"
+    },
+    "P0010": {
+      "aliases": [
+        "P0010",
+        "Sữa TH true MILK 180ml",
+        "Sữa  TH true MILK 180ml",
+        "Sữa TH true MILK 180ml",
+        "Sữa Th True Milk 180Ml",
+        "sữa th true milk 180ml"
+      ],
+      "name": "Sữa TH true MILK 180ml"
+    },
+    "P0011": {
+      "aliases": [
+        "Kẹo Alpenliebe 90g",
+        "KẸO ALPENLIEBE 90G",
+        "Kẹo  Alpenliebe 90g",
+        "Kẹo Alpenliebe 90G",
+        "Kẹo Alpenliebe 90g",
+        "P0011",
+        "keo alpenliebe 90g"
+      ],
+      "name": "Kẹo Alpenliebe 90g"
+    },
+    "P0012": {
+      "aliases": [
+        "P0012",
+        "STING DÂU 330ML",
+        "Sting  dâu 330ml",
+        "Sting Dâu 330Ml",
+        "Sting dâu 330ml",
+        "Sting dâu 330ml",
+        "sting dau 330 ml",
+        "sting dâu 330ml"
+      ],
+      "name": "Sting dâu 330ml"
+    },
+    "P0013": {
+      "aliases": [
+        "COCA-COLA LON 320ML",
+        "Coca-Cola  lon 320ml",
+        "Coca-Cola lon 320ml",
+        "P0013",
+        "coca-cola lon 320 ml",
+        "coca-cola lon 320ml"
+      ],
+      "name": "Coca-Cola lon 320ml"
+    },
+    "P0014": {
+      "aliases": [
+        "DẦU ĂN NEPTUNE 1L",
+        "Dầu  ăn Neptune 1L",
+        "Dầu ăn Neptune 1L",
+        "P0014",
+        "dau an neptune 1l",
+        "dầu ăn neptune 1l"
+      ],
+      "name": "Dầu ăn Neptune 1L"
+    },
+    "P0015": {
+      "aliases": [
+        "Bánh ChocoPie hộp 6 cái",
+        "Bánh  ChocoPie hộp 6 cái",
+        "Bánh ChocoPie hộp 6 cái",
+        "Bánh Chocopie Hộp 6 Cái",
+        "P0015",
+        "bánh chocopie hộp 6 cái"
+      ],
+      "name": "Bánh ChocoPie hộp 6 cái"
+    },
+    "P0016": {
+      "aliases": [
+        "P0016",
+        "Sữa chua Vinamilk có đường",
+        "SỮA CHUA VINAMILK CÓ ĐƯỜNG",
+        "Sữa chua Vinamilk có đường",
+        "sua chua vinamilk co duong"
+      ],
+      "name": "Sữa chua Vinamilk có đường"
+    },
+    "P0017": {
+      "aliases": [
+        "MÌ 3 MIỀN TÔM CHUA CAY",
+        "Mì  3 Miền tôm chua cay",
+        "Mì 3 Miền tôm chua cay",
+        "P0017",
+        "mi 3 mien tom chua cay"
+      ],
+      "name": "Mì 3 Miền tôm chua cay"
+    },
+    "P0018": {
+      "aliases": [
+        "Bánh  Oreo 133g",
+        "Bánh Oreo 133g",
+        "P0018"
+      ],
+      "name": "Bánh Oreo 133g"
+    },
+    "P0019": {
+      "aliases": [
+        "Bột giặt OMO 2.7kg",
+        "Bột giặt OMO 2.7kg",
+        "P0019",
+        "bot giat omo 2.7kg",
+        "bột giặt omo 2.7kg"
+      ],
+      "name": "Bột giặt OMO 2.7kg"
+    },
+    "P0020": {
+      "aliases": [
+        "P0020",
+        "Đường Biên Hòa 1kg",
+        "ĐƯỜNG BIÊN HÒA 1KG",
+        "Đường Biên Hòa 1kg"
+      ],
+      "name": "Đường Biên Hòa 1kg"
+    },
+    "P0021": {
+      "aliases": [
+        "Muối I-Ốt 500G",
+        "Muối i-ốt 500g",
+        "P0021",
+        "muối i-ốt 500g"
+      ],
+      "name": "Muối i-ốt 500g"
+    },
+    "P0022": {
+      "aliases": [
+        "Aquafina  500ml",
+        "Aquafina 500Ml",
+        "Aquafina 500ml",
+        "P0022"
+      ],
+      "name": "Aquafina 500ml"
+    },
+    "P0023": {
+      "aliases": [
+        "P0023",
+        "Sữa  tươi Vinamilk 1L",
+        "Sữa tươi Vinamilk 1L"
+      ],
+      "name": "Sữa tươi Vinamilk 1L"
+    },
+    "P0024": {
+      "aliases": [
+        "Nước  rửa chén Sunlight 750ml",
+        "Nước rửa chén Sunlight 750ml",
+        "P0024",
+        "nước rửa chén sunlight 750ml"
+      ],
+      "name": "Nước rửa chén Sunlight 750ml"
+    },
+    "P0025": {
+      "aliases": [
+        "Khăn giấy Bless You 180 tờ",
+        "P0025",
+        "khăn giấy bless you 180 tờ"
+      ],
+      "name": "Khăn giấy Bless You 180 tờ"
+    },
+    "P0026": {
+      "aliases": [
+        "Nước mắm Nam Ngư 750ml",
+        "Nước Mắm Nam Ngư 750Ml",
+        "Nước mắm Nam Ngư 750ml",
+        "P0026",
+        "nuoc mam nam ngu 750 ml"
+      ],
+      "name": "Nước mắm Nam Ngư 750ml"
+    },
+    "P0027": {
+      "aliases": [
+        "Kem  đánh răng P/S 180g",
+        "Kem đánh răng P/S 180g",
+        "P0027",
+        "kem đánh răng p/s 180g"
+      ],
+      "name": "Kem đánh răng P/S 180g"
+    },
+    "P0028": {
+      "aliases": [
+        "P0028",
+        "TRÀ XANH KHÔNG ĐỘ 455ML",
+        "Trà xanh Không Độ 455ml"
+      ],
+      "name": "Trà xanh Không Độ 455ml"
+    },
+    "P0029": {
+      "aliases": [
+        "Bánh Quy Cosy 192G",
+        "Bánh quy Cosy 192g",
+        "P0029"
+      ],
+      "name": "Bánh quy Cosy 192g"
+    },
+    "P0030": {
+      "aliases": [
+        "Nước tương Maggi 700ml",
+        "Nước tương Maggi 700ml",
+        "P0030"
+      ],
+      "name": "Nước tương Maggi 700ml"
+    },
+    "P0031": {
+      "aliases": [
+        "CÀ PHÊ G7 3IN1 HỘP 20",
+        "Cà phê G7 3in1 hộp 20",
+        "P0031",
+        "ca phe g7 3in1 hop 20"
+      ],
+      "name": "Cà phê G7 3in1 hộp 20"
+    },
+    "P0032": {
+      "aliases": [
+        "7Up 390ml",
+        "7up 390ml",
+        "P0032"
+      ],
+      "name": "7Up 390ml"
+    },
+    "P0033": {
+      "aliases": [
+        "P0033",
+        "Red  Bull 250ml",
+        "Red Bull 250ml"
+      ],
+      "name": "Red Bull 250ml"
+    },
+    "P0034": {
+      "aliases": [
+        "Gạo ST25 5kg",
+        "P0034",
+        "gao st25 5kg"
+      ],
+      "name": "Gạo ST25 5kg"
+    },
+    "P0035": {
+      "aliases": [
+        "Bim Bim O'Star 55G",
+        "Bim bim O'Star 55g",
+        "P0035",
+        "bim bim o'star 55g"
+      ],
+      "name": "Bim bim O'Star 55g"
+    },
+    "P0036": {
+      "aliases": [
+        "LAVIE 1.5L",
+        "Lavie 1.5L",
+        "P0036"
+      ],
+      "name": "Lavie 1.5L"
+    }
+  },
+  "start": "2025-05-01"
+}

@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "noisy_percent": 70.0,
+    "total_questions": 120,
+    "types": {
+      "boolean": 3,
+      "date": 3,
+      "list": 15,
+      "number": 45,
+      "percent": 7,
+      "string": 34,
+      "table": 1,
+      "unanswerable": 12
+    },
+    "unanswerable_percent": 10.0
+  },
+  "total_output_mb": 1.47,
+  "train": {
+    "noisy_percent": 70.0,
+    "total_questions": 320,
+    "types": {
+      "boolean": 9,
+      "date": 8,
+      "list": 42,
+      "number": 117,
+      "percent": 19,
+      "string": 88,
+      "table": 5,
+      "unanswerable": 32
+    },
+    "unanswerable_percent": 10.0
+  }
+}

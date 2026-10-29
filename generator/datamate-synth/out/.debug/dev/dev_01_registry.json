@@ -1,0 +1,392 @@
+{
+  "business_id": "dev_01",
+  "end": "2026-09-30",
+  "format": "xlsx",
+  "kind": "quan_com",
+  "products": {
+    "P0001": {
+      "aliases": [
+        "Nước mía ly 500ml",
+        "NƯỚC MÍA LY 500ML",
+        "Nước  mía ly 500ml",
+        "Nước Mía Ly 500Ml",
+        "Nước mía ly 500ml",
+        "P0001",
+        "nuoc mia ly 500 ml",
+        "nước mía ly 500ml"
+      ],
+      "name": "Nước mía ly 500ml"
+    },
+    "P0002": {
+      "aliases": [
+        "CHẢ TRỨNG HẤP",
+        "Chả trứng hấp",
+        "Chả  trứng hấp",
+        "Chả Trứng Hấp",
+        "Chả trứng hấp",
+        "P0002",
+        "cha trung hap",
+        "chả trứng hấp"
+      ],
+      "name": "Chả trứng hấp"
+    },
+    "P0003": {
+      "aliases": [
+        "Bún riêu cua",
+        "BÚN RIÊU CUA",
+        "Bún  riêu cua",
+        "Bún Riêu Cua",
+        "Bún riêu cua",
+        "P0003",
+        "bun rieu cua",
+        "bún riêu cua"
+      ],
+      "name": "Bún riêu cua"
+    },
+    "P0004": {
+      "aliases": [
+        "Cơm cá kho tộ",
+        "CƠM CÁ KHO TỘ",
+        "Cơm  cá kho tộ",
+        "Cơm Cá Kho Tộ",
+        "Cơm cá kho tộ",
+        "P0004",
+        "com ca kho to",
+        "cơm cá kho tộ"
+      ],
+      "name": "Cơm cá kho tộ"
+    },
+    "P0005": {
+      "aliases": [
+        "Bún chả Hà Nội",
+        "BÚN CHẢ HÀ NỘI",
+        "Bún  chả Hà Nội",
+        "Bún Chả Hà Nội",
+        "Bún chả Hà Nội",
+        "P0005",
+        "bun cha ha noi",
+        "bún chả hà nội"
+      ],
+      "name": "Bún chả Hà Nội"
+    },
+    "P0006": {
+      "aliases": [
+        "Cơm gà luộc",
+        "CƠM GÀ LUỘC",
+        "Cơm  gà luộc",
+        "Cơm Gà Luộc",
+        "Cơm gà luộc",
+        "P0006",
+        "com ga luoc",
+        "cơm gà luộc"
+      ],
+      "name": "Cơm gà luộc"
+    },
+    "P0007": {
+      "aliases": [
+        "Bún thịt nướng",
+        "BÚN THỊT NƯỚNG",
+        "Bún  thịt nướng",
+        "Bún Thịt Nướng",
+        "Bún thịt nướng",
+        "P0007",
+        "bun thit nuong",
+        "bún thịt nướng"
+      ],
+      "name": "Bún thịt nướng"
+    },
+    "P0008": {
+      "aliases": [
+        "P0008",
+        "TRỨNG ỐP LA THÊM",
+        "Trứng ốp la thêm",
+        "Trứng Ốp La Thêm",
+        "Trứng ốp la thêm",
+        "trung op la them",
+        "trứng ốp la thêm"
+      ],
+      "name": "Trứng ốp la thêm"
+    },
+    "P0009": {
+      "aliases": [
+        "CƠM THỊT KHO TRỨNG",
+        "Cơm thịt kho trứng",
+        "P0009",
+        "com thit kho trung",
+        "cơm thịt kho trứng"
+      ],
+      "name": "Cơm thịt kho trứng"
+    },
+    "P0010": {
+      "aliases": [
+        "P0010",
+        "Sữa đậu nành 300ml",
+        "SỮA ĐẬU NÀNH 300ML",
+        "Sữa  đậu nành 300ml",
+        "Sữa Đậu Nành 300Ml",
+        "Sữa đậu nành 300ml",
+        "sua dau nanh 300 ml"
+      ],
+      "name": "Sữa đậu nành 300ml"
+    },
+    "P0011": {
+      "aliases": [
+        "P0011",
+        "TRÀ ĐÁ LY",
+        "Trà đá ly",
+        "Trà Đá Ly",
+        "Trà đá ly"
+      ],
+      "name": "Trà đá ly"
+    },
+    "P0012": {
+      "aliases": [
+        "CƠM BÒ LÚC LẮC",
+        "Cơm Bò Lúc Lắc",
+        "Cơm bò lúc lắc",
+        "P0012",
+        "com bo luc lac",
+        "cơm bò lúc lắc"
+      ],
+      "name": "Cơm bò lúc lắc"
+    },
+    "P0013": {
+      "aliases": [
+        "P0013",
+        "dau hu sot ca",
+        "Đậu  hũ sốt cà",
+        "Đậu Hũ Sốt Cà",
+        "Đậu hũ sốt cà"
+      ],
+      "name": "Đậu hũ sốt cà"
+    },
+    "P0014": {
+      "aliases": [
+        "Cơm rau củ nấm",
+        "CƠM RAU CỦ NẤM",
+        "Cơm  rau củ nấm",
+        "Cơm Rau Củ Nấm",
+        "Cơm rau củ nấm",
+        "P0014",
+        "com rau cu nam"
+      ],
+      "name": "Cơm rau củ nấm"
+    },
+    "P0015": {
+      "aliases": [
+        "BÚN BÒ HUẾ ĐẶC BIỆT",
+        "Bún  bò Huế đặc biệt",
+        "Bún bò Huế đặc biệt",
+        "P0015",
+        "bún bò huế đặc biệt"
+      ],
+      "name": "Bún bò Huế đặc biệt"
+    },
+    "P0016": {
+      "aliases": [
+        "CANH CHUA CÁ",
+        "Canh  chua cá",
+        "Canh Chua Cá",
+        "Canh chua cá",
+        "Canh chua cá",
+        "P0016",
+        "canh chua ca"
+      ],
+      "name": "Canh chua cá"
+    },
+    "P0017": {
+      "aliases": [
+        "P0017",
+        "Phở bò tái",
+        "Phở Bò Tái",
+        "Phở bò tái",
+        "pho bo tai",
+        "phở bò tái"
+      ],
+      "name": "Phở bò tái"
+    },
+    "P0018": {
+      "aliases": [
+        "Cơm  sườn nướng mật ong",
+        "Cơm Sườn Nướng Mật Ong",
+        "Cơm sườn nướng mật ong",
+        "P0018",
+        "cơm sườn nướng mật ong"
+      ],
+      "name": "Cơm sườn nướng mật ong"
+    },
+    "P0019": {
+      "aliases": [
+        "Hủ tiếu Nam Vang",
+        "HỦ TIẾU NAM VANG",
+        "Hủ  tiếu Nam Vang",
+        "Hủ tiếu Nam Vang",
+        "P0019",
+        "hủ tiếu nam vang"
+      ],
+      "name": "Hủ tiếu Nam Vang"
+    },
+    "P0020": {
+      "aliases": [
+        "Chè đậu xanh",
+        "Chè đậu xanh",
+        "P0020",
+        "chè đậu xanh"
+      ],
+      "name": "Chè đậu xanh"
+    },
+    "P0021": {
+      "aliases": [
+        "Cơm bò xào hành tây",
+        "CƠM BÒ XÀO HÀNH TÂY",
+        "Cơm  bò xào hành tây",
+        "Cơm bò xào hành tây",
+        "P0021",
+        "com bo xao hanh tay"
+      ],
+      "name": "Cơm bò xào hành tây"
+    },
+    "P0022": {
+      "aliases": [
+        "P0022",
+        "Trái Cây Theo Mùa",
+        "Trái cây theo mùa",
+        "trái cây theo mùa"
+      ],
+      "name": "Trái cây theo mùa"
+    },
+    "P0023": {
+      "aliases": [
+        "Mì xào bò",
+        "MÌ XÀO BÒ",
+        "Mì xào bò",
+        "P0023",
+        "mi xao bo"
+      ],
+      "name": "Mì xào bò"
+    },
+    "P0024": {
+      "aliases": [
+        "Kim chi phần nhỏ",
+        "P0024",
+        "kim chi phan nho",
+        "kim chi phần nhỏ"
+      ],
+      "name": "Kim chi phần nhỏ"
+    },
+    "P0025": {
+      "aliases": [
+        "Mì xào hải sản",
+        "P0025"
+      ],
+      "name": "Mì xào hải sản"
+    },
+    "P0026": {
+      "aliases": [
+        "Cơm chay thập cẩm",
+        "CƠM CHAY THẬP CẨM",
+        "Cơm chay thập cẩm",
+        "P0026",
+        "cơm chay thập cẩm"
+      ],
+      "name": "Cơm chay thập cẩm"
+    },
+    "P0027": {
+      "aliases": [
+        "P0027",
+        "RAU LUỘC KHO QUẸT",
+        "Rau  luộc kho quẹt",
+        "Rau luộc kho quẹt",
+        "Rau luộc kho quẹt",
+        "rau luộc kho quẹt"
+      ],
+      "name": "Rau luộc kho quẹt"
+    },
+    "P0028": {
+      "aliases": [
+        "Cơm tấm sườn bì chả",
+        "CƠM TẤM SƯỜN BÌ CHẢ",
+        "Cơm tấm sườn bì chả",
+        "P0028"
+      ],
+      "name": "Cơm tấm sườn bì chả"
+    },
+    "P0029": {
+      "aliases": [
+        "P0029",
+        "Sữa chua nếp cẩm",
+        "Sữa chua nếp cẩm",
+        "sữa chua nếp cẩm"
+      ],
+      "name": "Sữa chua nếp cẩm"
+    },
+    "P0030": {
+      "aliases": [
+        "NƯỚC SÂM CHAI 330ML",
+        "Nước sâm chai 330ml",
+        "P0030"
+      ],
+      "name": "Nước sâm chai 330ml"
+    },
+    "P0031": {
+      "aliases": [
+        "P0031",
+        "PHỞ GÀ XÉ",
+        "Phở gà xé",
+        "Phở  gà xé",
+        "Phở Gà Xé",
+        "Phở gà xé",
+        "phở gà xé"
+      ],
+      "name": "Phở gà xé"
+    },
+    "P0032": {
+      "aliases": [
+        "Cơm đùi gà chiên",
+        "Cơm đùi gà chiên",
+        "P0032",
+        "com dui ga chien",
+        "cơm đùi gà chiên"
+      ],
+      "name": "Cơm đùi gà chiên"
+    },
+    "P0033": {
+      "aliases": [
+        "CƠM GÀ TERIYAKI",
+        "Cơm  gà teriyaki",
+        "Cơm Gà Teriyaki",
+        "Cơm gà teriyaki",
+        "P0033"
+      ],
+      "name": "Cơm gà teriyaki"
+    },
+    "P0034": {
+      "aliases": [
+        "Cơm gà xối mỡ",
+        "Cơm gà xối mỡ",
+        "P0034",
+        "cơm gà xối mỡ"
+      ],
+      "name": "Cơm gà xối mỡ"
+    },
+    "P0035": {
+      "aliases": [
+        "Canh Cải Thịt Bằm",
+        "Canh cải thịt bằm",
+        "Canh cải thịt bằm",
+        "P0035",
+        "canh cai thit bam"
+      ],
+      "name": "Canh cải thịt bằm"
+    },
+    "P0036": {
+      "aliases": [
+        "Coca lon 320ml",
+        "P0036",
+        "coca lon 320ml"
+      ],
+      "name": "Coca lon 320ml"
+    }
+  },
+  "start": "2025-05-01"
+}

@@ -1,0 +1,389 @@
+{
+  "business_id": "train_08",
+  "end": "2026-07-31",
+  "format": "xlsx",
+  "kind": "ca_phe",
+  "products": {
+    "P0001": {
+      "aliases": [
+        "CARAMEL MACCHIATO L",
+        "Caramel  macchiato L",
+        "Caramel Macchiato L",
+        "Caramel macchiato L",
+        "P0001",
+        "caramel macchiato l"
+      ],
+      "name": "Caramel macchiato L"
+    },
+    "P0002": {
+      "aliases": [
+        "COLD BREW CAM SẢ",
+        "Cold  brew cam sả",
+        "Cold Brew Cam Sả",
+        "Cold brew cam sả",
+        "Cold brew cam sả",
+        "P0002",
+        "cold brew cam sa",
+        "cold brew cam sả"
+      ],
+      "name": "Cold brew cam sả"
+    },
+    "P0003": {
+      "aliases": [
+        "MOCHA ĐÁ M",
+        "Mocha  đá M",
+        "Mocha Đá M",
+        "Mocha đá M",
+        "Mocha đá M",
+        "P0003",
+        "mocha da m",
+        "mocha đá m"
+      ],
+      "name": "Mocha đá M"
+    },
+    "P0004": {
+      "aliases": [
+        "Bánh cookie chocolate",
+        "BÁNH COOKIE CHOCOLATE",
+        "Bánh  cookie chocolate",
+        "Bánh Cookie Chocolate",
+        "Bánh cookie chocolate",
+        "P0004",
+        "banh cookie chocolate"
+      ],
+      "name": "Bánh cookie chocolate"
+    },
+    "P0005": {
+      "aliases": [
+        "AMERICANO NÓNG M",
+        "Americano Nóng M",
+        "Americano nóng M",
+        "Americano nóng M",
+        "P0005",
+        "americano nong m",
+        "americano nóng m"
+      ],
+      "name": "Americano nóng M"
+    },
+    "P0006": {
+      "aliases": [
+        "Hồng trà sữa L",
+        "HỒNG TRÀ SỮA L",
+        "Hồng  trà sữa L",
+        "Hồng Trà Sữa L",
+        "Hồng trà sữa L",
+        "P0006",
+        "hồng trà sữa l"
+      ],
+      "name": "Hồng trà sữa L"
+    },
+    "P0007": {
+      "aliases": [
+        "Bánh trung thu thập cẩm 150g",
+        "Bánh Trung Thu Thập Cẩm 150G",
+        "Bánh trung thu thập cẩm 150g",
+        "P0007",
+        "banh trung thu thap cam 150g",
+        "bánh trung thu thập cẩm 150g"
+      ],
+      "name": "Bánh trung thu thập cẩm 150g"
+    },
+    "P0008": {
+      "aliases": [
+        "CAPPUCCINO M",
+        "Cappuccino  M",
+        "Cappuccino M",
+        "P0008",
+        "cappuccino m"
+      ],
+      "name": "Cappuccino M"
+    },
+    "P0009": {
+      "aliases": [
+        "Cà phê đen đá M",
+        "CÀ PHÊ ĐEN ĐÁ M",
+        "Cà  phê đen đá M",
+        "Cà Phê Đen Đá M",
+        "Cà phê đen đá M",
+        "P0009"
+      ],
+      "name": "Cà phê đen đá M"
+    },
+    "P0010": {
+      "aliases": [
+        "Latte  đá L",
+        "Latte Đá L",
+        "Latte đá L",
+        "Latte đá L",
+        "P0010",
+        "latte da l"
+      ],
+      "name": "Latte đá L"
+    },
+    "P0011": {
+      "aliases": [
+        "P0011",
+        "TRÀ VẢI HOA HỒNG M",
+        "Trà vải hoa hồng M",
+        "Trà  vải hoa hồng M",
+        "Trà Vải Hoa Hồng M",
+        "Trà vải hoa hồng M",
+        "tra vai hoa hong m",
+        "trà vải hoa hồng m"
+      ],
+      "name": "Trà vải hoa hồng M"
+    },
+    "P0012": {
+      "aliases": [
+        "P0012",
+        "TRÀ CHANH GIÃ TAY L",
+        "Trà chanh giã tay L",
+        "Trà  chanh giã tay L",
+        "Trà Chanh Giã Tay L",
+        "Trà chanh giã tay L",
+        "tra chanh gia tay l",
+        "trà chanh giã tay l"
+      ],
+      "name": "Trà chanh giã tay L"
+    },
+    "P0013": {
+      "aliases": [
+        "P0013",
+        "SINH TỐ BƠ M",
+        "Sinh  tố bơ M",
+        "Sinh Tố Bơ M",
+        "Sinh tố bơ M",
+        "Sinh tố bơ M",
+        "sinh to bo m"
+      ],
+      "name": "Sinh tố bơ M"
+    },
+    "P0014": {
+      "aliases": [
+        "P0014",
+        "Trà sữa thái xanh M",
+        "Trà  sữa thái xanh M",
+        "Trà Sữa Thái Xanh M",
+        "Trà sữa thái xanh M",
+        "tra sua thai xanh m"
+      ],
+      "name": "Trà sữa thái xanh M"
+    },
+    "P0015": {
+      "aliases": [
+        "MATCHA LATTE M",
+        "Matcha  latte M",
+        "Matcha Latte M",
+        "Matcha latte M",
+        "P0015",
+        "matcha latte m"
+      ],
+      "name": "Matcha latte M"
+    },
+    "P0016": {
+      "aliases": [
+        "Bánh croissant bơ",
+        "Bánh  croissant bơ",
+        "Bánh croissant bơ",
+        "P0016"
+      ],
+      "name": "Bánh croissant bơ"
+    },
+    "P0017": {
+      "aliases": [
+        "P0017",
+        "Trà sữa matcha L",
+        "Trà  sữa matcha L",
+        "Trà Sữa Matcha L",
+        "Trà sữa matcha L"
+      ],
+      "name": "Trà sữa matcha L"
+    },
+    "P0018": {
+      "aliases": [
+        "P0018",
+        "Sinh Tố Xoài L",
+        "Sinh tố xoài L",
+        "Sinh tố xoài L",
+        "sinh tố xoài l"
+      ],
+      "name": "Sinh tố xoài L"
+    },
+    "P0019": {
+      "aliases": [
+        "Nước ép cam tươi",
+        "P0019"
+      ],
+      "name": "Nước ép cam tươi"
+    },
+    "P0020": {
+      "aliases": [
+        "P0020",
+        "Trà sữa khoai môn M",
+        "Trà Sữa Khoai Môn M",
+        "Trà sữa khoai môn M",
+        "tra sua khoai mon m",
+        "trà sữa khoai môn m"
+      ],
+      "name": "Trà sữa khoai môn M"
+    },
+    "P0021": {
+      "aliases": [
+        "BẠC XỈU M",
+        "Bạc  xỉu M",
+        "Bạc Xỉu M",
+        "Bạc xỉu M",
+        "P0021"
+      ],
+      "name": "Bạc xỉu M"
+    },
+    "P0022": {
+      "aliases": [
+        "Bánh tiramisu miếng",
+        "BÁNH TIRAMISU MIẾNG",
+        "Bánh tiramisu miếng",
+        "P0022"
+      ],
+      "name": "Bánh tiramisu miếng"
+    },
+    "P0023": {
+      "aliases": [
+        "COOKIES CREAM ĐÁ XAY",
+        "Cookies cream đá xay",
+        "P0023",
+        "cookies cream đá xay"
+      ],
+      "name": "Cookies cream đá xay"
+    },
+    "P0024": {
+      "aliases": [
+        "P0024",
+        "TRÀ ĐÀO CAM SẢ L",
+        "Trà đào cam sả L",
+        "tra dao cam sa l",
+        "trà đào cam sả l"
+      ],
+      "name": "Trà đào cam sả L"
+    },
+    "P0025": {
+      "aliases": [
+        "P0025",
+        "Trà Tắc Mật Ong M",
+        "Trà tắc mật ong M"
+      ],
+      "name": "Trà tắc mật ong M"
+    },
+    "P0026": {
+      "aliases": [
+        "P0026",
+        "Trà  sữa trân châu đường đen M",
+        "Trà sữa trân châu đường đen M",
+        "trà sữa trân châu đường đen m"
+      ],
+      "name": "Trà sữa trân châu đường đen M"
+    },
+    "P0027": {
+      "aliases": [
+        "Latte  nóng M",
+        "Latte nóng M",
+        "Latte nóng M",
+        "P0027",
+        "latte nong m"
+      ],
+      "name": "Latte nóng M"
+    },
+    "P0028": {
+      "aliases": [
+        "AMERICANO ĐÁ L",
+        "Americano Đá L",
+        "Americano đá L",
+        "P0028",
+        "americano da l"
+      ],
+      "name": "Americano đá L"
+    },
+    "P0029": {
+      "aliases": [
+        "COLD BREW TRUYỀN THỐNG",
+        "Cold Brew Truyền Thống",
+        "Cold brew truyền thống",
+        "Cold brew truyền thống",
+        "P0029"
+      ],
+      "name": "Cold brew truyền thống"
+    },
+    "P0030": {
+      "aliases": [
+        "Bánh Su Kem Hộp 3",
+        "Bánh su kem hộp 3",
+        "P0030",
+        "banh su kem hop 3",
+        "bánh su kem hộp 3"
+      ],
+      "name": "Bánh su kem hộp 3"
+    },
+    "P0031": {
+      "aliases": [
+        "Bánh mì pate trứng",
+        "BÁNH MÌ PATE TRỨNG",
+        "Bánh  mì pate trứng",
+        "Bánh mì pate trứng",
+        "P0031",
+        "banh mi pate trung"
+      ],
+      "name": "Bánh mì pate trứng"
+    },
+    "P0032": {
+      "aliases": [
+        "Cà phê sữa đá M",
+        "P0032",
+        "ca phe sua da m"
+      ],
+      "name": "Cà phê sữa đá M"
+    },
+    "P0033": {
+      "aliases": [
+        "P0033",
+        "Trà sen vàng L",
+        "trà sen vàng l"
+      ],
+      "name": "Trà sen vàng L"
+    },
+    "P0034": {
+      "aliases": [
+        "Espresso  single",
+        "Espresso Single",
+        "Espresso single",
+        "P0034"
+      ],
+      "name": "Espresso single"
+    },
+    "P0035": {
+      "aliases": [
+        "Chocolate  đá xay L",
+        "Chocolate đá xay L",
+        "Chocolate đá xay L",
+        "P0035"
+      ],
+      "name": "Chocolate đá xay L"
+    },
+    "P0036": {
+      "aliases": [
+        "P0036",
+        "Trà  ô long kem sữa",
+        "Trà Ô Long Kem Sữa",
+        "Trà ô long kem sữa"
+      ],
+      "name": "Trà ô long kem sữa"
+    },
+    "P0037": {
+      "aliases": [
+        "Bánh trung thu đậu xanh 150g",
+        "Bánh trung thu đậu xanh 150g",
+        "P0037"
+      ],
+      "name": "Bánh trung thu đậu xanh 150g"
+    }
+  },
+  "start": "2025-03-01"
+}

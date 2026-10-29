@@ -1,0 +1,374 @@
+{
+  "business_id": "train_06",
+  "end": "2026-08-31",
+  "format": "sqlite",
+  "kind": "me_va_be",
+  "products": {
+    "P0001": {
+      "aliases": [
+        "P0001",
+        "Váng sữa Monte hộp 4",
+        "VÁNG SỮA MONTE HỘP 4",
+        "Váng  sữa Monte hộp 4",
+        "Váng Sữa Monte Hộp 4",
+        "Váng sữa Monte hộp 4",
+        "vang sua monte hop 4",
+        "váng sữa monte hộp 4"
+      ],
+      "name": "Váng sữa Monte hộp 4"
+    },
+    "P0002": {
+      "aliases": [
+        "Bánh ăn dặm Gerber 42g",
+        "BÁNH ĂN DẶM GERBER 42G",
+        "Bánh  ăn dặm Gerber 42g",
+        "Bánh Ăn Dặm Gerber 42G",
+        "Bánh ăn dặm Gerber 42g",
+        "P0002",
+        "banh an dam gerber 42g",
+        "bánh ăn dặm gerber 42g"
+      ],
+      "name": "Bánh ăn dặm Gerber 42g"
+    },
+    "P0003": {
+      "aliases": [
+        "Bình sữa Pigeon 160ml",
+        "BÌNH SỮA PIGEON 160ML",
+        "Bình  sữa Pigeon 160ml",
+        "Bình Sữa Pigeon 160Ml",
+        "Bình sữa Pigeon 160ml",
+        "P0003",
+        "bình sữa pigeon 160ml"
+      ],
+      "name": "Bình sữa Pigeon 160ml"
+    },
+    "P0004": {
+      "aliases": [
+        "Bột ăn dặm HiPP 250g",
+        "BỘT ĂN DẶM HIPP 250G",
+        "Bột  ăn dặm HiPP 250g",
+        "Bột Ăn Dặm Hipp 250G",
+        "Bột ăn dặm HiPP 250g",
+        "P0004",
+        "bot an dam hipp 250g",
+        "bột ăn dặm hipp 250g"
+      ],
+      "name": "Bột ăn dặm HiPP 250g"
+    },
+    "P0005": {
+      "aliases": [
+        "P0005",
+        "Tã Merries size M 64 miếng",
+        "TÃ MERRIES SIZE M 64 MIẾNG",
+        "Tã  Merries size M 64 miếng",
+        "Tã Merries Size M 64 Miếng",
+        "Tã Merries size M 64 miếng",
+        "ta merries size m 64 mieng"
+      ],
+      "name": "Tã Merries size M 64 miếng"
+    },
+    "P0006": {
+      "aliases": [
+        "Gối chống bẹp đầu",
+        "GỐI CHỐNG BẸP ĐẦU",
+        "Gối  chống bẹp đầu",
+        "Gối Chống Bẹp Đầu",
+        "Gối chống bẹp đầu",
+        "P0006",
+        "goi chong bep dau",
+        "gối chống bẹp đầu"
+      ],
+      "name": "Gối chống bẹp đầu"
+    },
+    "P0007": {
+      "aliases": [
+        "KHĂN SỮA COTTON 10 CHIẾC",
+        "Khăn sữa cotton 10 chiếc",
+        "Khăn  sữa cotton 10 chiếc",
+        "Khăn Sữa Cotton 10 Chiếc",
+        "Khăn sữa cotton 10 chiếc",
+        "P0007",
+        "khan sua cotton 10 chiec",
+        "khăn sữa cotton 10 chiếc"
+      ],
+      "name": "Khăn sữa cotton 10 chiếc"
+    },
+    "P0008": {
+      "aliases": [
+        "P0008",
+        "TÃ BOBBY SIZE XL 48 MIẾNG",
+        "Tã Bobby size XL 48 miếng",
+        "ta bobby size xl 48 mieng",
+        "tã bobby size xl 48 miếng"
+      ],
+      "name": "Tã Bobby size XL 48 miếng"
+    },
+    "P0009": {
+      "aliases": [
+        "Núm ti Pigeon size M",
+        "Núm  ti Pigeon size M",
+        "Núm ti Pigeon size M",
+        "P0009",
+        "núm ti pigeon size m"
+      ],
+      "name": "Núm ti Pigeon size M"
+    },
+    "P0010": {
+      "aliases": [
+        "BÌNH SỮA AVENT 260ML",
+        "Bình  sữa Avent 260ml",
+        "Bình Sữa Avent 260Ml",
+        "Bình sữa Avent 260ml",
+        "P0010",
+        "binh sua avent 260 ml",
+        "bình sữa avent 260ml"
+      ],
+      "name": "Bình sữa Avent 260ml"
+    },
+    "P0011": {
+      "aliases": [
+        "P0011",
+        "SỮA NAN OPTIPRO SỐ 1 800G",
+        "Sữa  NAN Optipro số 1 800g",
+        "Sữa NAN Optipro số 1 800g",
+        "Sữa Nan Optipro Số 1 800G",
+        "sua nan optipro so 1 800g",
+        "sữa nan optipro số 1 800g"
+      ],
+      "name": "Sữa NAN Optipro số 1 800g"
+    },
+    "P0012": {
+      "aliases": [
+        "P0012",
+        "Tã Huggies size L 56 miếng",
+        "TÃ HUGGIES SIZE L 56 MIẾNG",
+        "Tã Huggies Size L 56 Miếng",
+        "Tã Huggies size L 56 miếng",
+        "ta huggies size l 56 mieng",
+        "tã huggies size l 56 miếng"
+      ],
+      "name": "Tã Huggies size L 56 miếng"
+    },
+    "P0013": {
+      "aliases": [
+        "Bông tăm em bé hộp 200",
+        "BÔNG TĂM EM BÉ HỘP 200",
+        "Bông  tăm em bé hộp 200",
+        "Bông tăm em bé hộp 200",
+        "P0013",
+        "bong tam em be hop 200"
+      ],
+      "name": "Bông tăm em bé hộp 200"
+    },
+    "P0014": {
+      "aliases": [
+        "P0014",
+        "SỮA MEIJI SỐ 0 800G",
+        "Sữa  Meiji số 0 800g",
+        "Sữa Meiji Số 0 800G",
+        "Sữa Meiji số 0 800g",
+        "sua meiji so 0 800g",
+        "sữa meiji số 0 800g"
+      ],
+      "name": "Sữa Meiji số 0 800g"
+    },
+    "P0015": {
+      "aliases": [
+        "DẦU MASSAGE JOHNSON'S 200ML",
+        "Dầu  massage Johnson's 200ml",
+        "Dầu Massage Johnson'S 200Ml",
+        "Dầu massage Johnson's 200ml",
+        "P0015",
+        "dau massage johnson's 200 ml"
+      ],
+      "name": "Dầu massage Johnson's 200ml"
+    },
+    "P0016": {
+      "aliases": [
+        "CHÁO ĂN DẶM WAKODO 80G",
+        "Cháo ăn dặm Wakodo 80g",
+        "Cháo Ăn Dặm Wakodo 80G",
+        "Cháo ăn dặm Wakodo 80g",
+        "P0016"
+      ],
+      "name": "Cháo ăn dặm Wakodo 80g"
+    },
+    "P0017": {
+      "aliases": [
+        "P0017",
+        "ÁO BODY COTTON SIZE 6M",
+        "Áo body cotton size 6M",
+        "áo body cotton size 6m"
+      ],
+      "name": "Áo body cotton size 6M"
+    },
+    "P0018": {
+      "aliases": [
+        "P0018",
+        "Sữa Tắm Gội Cetaphil Baby 230Ml",
+        "Sữa tắm gội Cetaphil Baby 230ml"
+      ],
+      "name": "Sữa tắm gội Cetaphil Baby 230ml"
+    },
+    "P0019": {
+      "aliases": [
+        "P0019",
+        "SỮA ENFAMIL A+ SỐ 2 830G",
+        "Sữa  Enfamil A+ số 2 830g",
+        "Sữa Enfamil A+ Số 2 830G",
+        "Sữa Enfamil A+ số 2 830g",
+        "sữa enfamil a+ số 2 830g"
+      ],
+      "name": "Sữa Enfamil A+ số 2 830g"
+    },
+    "P0020": {
+      "aliases": [
+        "P0020",
+        "Sữa Aptamil Profutura 800g",
+        "Sữa Aptamil Profutura 800G",
+        "Sữa Aptamil Profutura 800g",
+        "sua aptamil profutura 800g"
+      ],
+      "name": "Sữa Aptamil Profutura 800g"
+    },
+    "P0021": {
+      "aliases": [
+        "P0021",
+        "Xe Đẩy Combi Gấp Gọn",
+        "Xe đẩy Combi gấp gọn",
+        "xe đẩy combi gấp gọn"
+      ],
+      "name": "Xe đẩy Combi gấp gọn"
+    },
+    "P0022": {
+      "aliases": [
+        "P0022",
+        "Đồ chơi xúc xắc Fisher Price",
+        "Đồ  chơi xúc xắc Fisher Price",
+        "Đồ chơi xúc xắc Fisher Price"
+      ],
+      "name": "Đồ chơi xúc xắc Fisher Price"
+    },
+    "P0023": {
+      "aliases": [
+        "P0023",
+        "SỮA FRISO GOLD SỐ 3 850G",
+        "Sữa Friso Gold Số 3 850G",
+        "Sữa Friso Gold số 3 850g"
+      ],
+      "name": "Sữa Friso Gold số 3 850g"
+    },
+    "P0024": {
+      "aliases": [
+        "P0024",
+        "Ti Giả Chicco 0-6 Tháng",
+        "Ti giả Chicco 0-6 tháng",
+        "Ti giả Chicco 0-6 tháng"
+      ],
+      "name": "Ti giả Chicco 0-6 tháng"
+    },
+    "P0025": {
+      "aliases": [
+        "KEM CHỐNG HĂM BEPANTHEN 30G",
+        "Kem chống hăm Bepanthen 30g",
+        "P0025",
+        "kem chống hăm bepanthen 30g"
+      ],
+      "name": "Kem chống hăm Bepanthen 30g"
+    },
+    "P0026": {
+      "aliases": [
+        "P0026",
+        "Tất chống trượt size S",
+        "tat chong truot size s"
+      ],
+      "name": "Tất chống trượt size S"
+    },
+    "P0027": {
+      "aliases": [
+        "P0027",
+        "Sách vải cho bé 0-12M",
+        "Sách vải cho bé 0-12M"
+      ],
+      "name": "Sách vải cho bé 0-12M"
+    },
+    "P0028": {
+      "aliases": [
+        "Bộ sơ sinh cotton size 3M",
+        "P0028"
+      ],
+      "name": "Bộ sơ sinh cotton size 3M"
+    },
+    "P0029": {
+      "aliases": [
+        "P0029",
+        "Thìa ăn dặm Munchkin"
+      ],
+      "name": "Thìa ăn dặm Munchkin"
+    },
+    "P0030": {
+      "aliases": [
+        "P0030",
+        "Tã Pampers size S 72 miếng",
+        "Tã Pampers size S 72 miếng"
+      ],
+      "name": "Tã Pampers size S 72 miếng"
+    },
+    "P0031": {
+      "aliases": [
+        "Mũ  len trẻ em 0-6M",
+        "Mũ Len Trẻ Em 0-6M",
+        "Mũ len trẻ em 0-6M",
+        "P0031"
+      ],
+      "name": "Mũ len trẻ em 0-6M"
+    },
+    "P0032": {
+      "aliases": [
+        "P0032",
+        "Tã Moony Size M 58 Miếng",
+        "Tã Moony size M 58 miếng"
+      ],
+      "name": "Tã Moony size M 58 miếng"
+    },
+    "P0033": {
+      "aliases": [
+        "Ghế ăn dặm Mastela",
+        "Ghế Ăn Dặm Mastela",
+        "Ghế ăn dặm Mastela",
+        "P0033",
+        "ghe an dam mastela",
+        "ghế ăn dặm mastela"
+      ],
+      "name": "Ghế ăn dặm Mastela"
+    },
+    "P0034": {
+      "aliases": [
+        "P0034",
+        "Yếm  ăn dặm silicone",
+        "Yếm ăn dặm silicone",
+        "yem an dam silicone"
+      ],
+      "name": "Yếm ăn dặm silicone"
+    },
+    "P0035": {
+      "aliases": [
+        "Nước giặt D-nee 3L",
+        "P0035",
+        "nước giặt d-nee 3l"
+      ],
+      "name": "Nước giặt D-nee 3L"
+    },
+    "P0036": {
+      "aliases": [
+        "KHĂN ƯỚT HUGGIES 80 TỜ",
+        "Khăn  ướt Huggies 80 tờ",
+        "Khăn Ướt Huggies 80 Tờ",
+        "Khăn ướt Huggies 80 tờ",
+        "P0036"
+      ],
+      "name": "Khăn ướt Huggies 80 tờ"
+    }
+  },
+  "start": "2025-03-01"
+}

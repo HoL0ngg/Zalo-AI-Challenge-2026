@@ -1,0 +1,376 @@
+{
+  "business_id": "train_04",
+  "end": "2026-09-30",
+  "format": "csv",
+  "kind": "vlxd",
+  "products": {
+    "P0001": {
+      "aliases": [
+        "P0001",
+        "XI MĂNG INSEE ĐA DỤNG 50KG",
+        "Xi  măng INSEE đa dụng 50kg",
+        "Xi Măng Insee Đa Dụng 50Kg",
+        "Xi măng INSEE đa dụng 50kg",
+        "Xi măng INSEE đa dụng 50kg",
+        "xi mang insee da dung 50kg",
+        "xi măng insee đa dụng 50kg"
+      ],
+      "name": "Xi măng INSEE đa dụng 50kg"
+    },
+    "P0002": {
+      "aliases": [
+        "P0002",
+        "RULO SƠN 9 INCH",
+        "Rulo  sơn 9 inch",
+        "Rulo Sơn 9 Inch",
+        "Rulo sơn 9 inch",
+        "Rulo sơn 9 inch",
+        "rulo son 9 inch",
+        "rulo sơn 9 inch"
+      ],
+      "name": "Rulo sơn 9 inch"
+    },
+    "P0003": {
+      "aliases": [
+        "DÂY THÉP BUỘC 1KG",
+        "Dây  thép buộc 1kg",
+        "Dây Thép Buộc 1Kg",
+        "Dây thép buộc 1kg",
+        "P0003",
+        "day thep buoc 1kg",
+        "dây thép buộc 1kg"
+      ],
+      "name": "Dây thép buộc 1kg"
+    },
+    "P0004": {
+      "aliases": [
+        "P0004",
+        "THÉP CUỘN PHI 6 KG",
+        "Thép cuộn phi 6 kg",
+        "Thép  cuộn phi 6 kg",
+        "Thép Cuộn Phi 6 Kg",
+        "Thép cuộn phi 6 kg",
+        "thep cuon phi 6 kg",
+        "thép cuộn phi 6 kg"
+      ],
+      "name": "Thép cuộn phi 6 kg"
+    },
+    "P0005": {
+      "aliases": [
+        "P0005",
+        "Vít bê tông 8cm hộp 100",
+        "VÍT BÊ TÔNG 8CM HỘP 100",
+        "Vít  bê tông 8cm hộp 100",
+        "Vít Bê Tông 8Cm Hộp 100",
+        "Vít bê tông 8cm hộp 100",
+        "vit be tong 8cm hop 100",
+        "vít bê tông 8cm hộp 100"
+      ],
+      "name": "Vít bê tông 8cm hộp 100"
+    },
+    "P0006": {
+      "aliases": [
+        "Bột trét tường 40kg",
+        "BỘT TRÉT TƯỜNG 40KG",
+        "Bột  trét tường 40kg",
+        "Bột Trét Tường 40Kg",
+        "Bột trét tường 40kg",
+        "P0006",
+        "bot tret tuong 40kg",
+        "bột trét tường 40kg"
+      ],
+      "name": "Bột trét tường 40kg"
+    },
+    "P0007": {
+      "aliases": [
+        "P0007",
+        "XI MĂNG HÀ TIÊN PCB40 BAO 50KG",
+        "Xi  măng Hà Tiên PCB40 bao 50kg",
+        "Xi Măng Hà Tiên Pcb40 Bao 50Kg",
+        "Xi măng Hà Tiên PCB40 bao 50kg",
+        "Xi măng Hà Tiên PCB40 bao 50kg",
+        "xi mang ha tien pcb40 bao 50kg",
+        "xi măng hà tiên pcb40 bao 50kg"
+      ],
+      "name": "Xi măng Hà Tiên PCB40 bao 50kg"
+    },
+    "P0008": {
+      "aliases": [
+        "Gạch ống 8x8x18",
+        "GẠCH ỐNG 8X8X18",
+        "Gạch ống 8x8x18",
+        "P0008",
+        "gach ong 8x8x18"
+      ],
+      "name": "Gạch ống 8x8x18"
+    },
+    "P0009": {
+      "aliases": [
+        "Cọ sơn 4 inch",
+        "CỌ SƠN 4 INCH",
+        "Cọ Sơn 4 Inch",
+        "Cọ sơn 4 inch",
+        "P0009",
+        "cọ sơn 4 inch"
+      ],
+      "name": "Cọ sơn 4 inch"
+    },
+    "P0010": {
+      "aliases": [
+        "Ống PVC Tiền Phong D27 4m",
+        "P0010",
+        "ong pvc tien phong d27 4m",
+        "ỐNG PVC TIỀN PHONG D27 4M",
+        "Ống  PVC Tiền Phong D27 4m",
+        "Ống PVC Tiền Phong D27 4m",
+        "Ống Pvc Tiền Phong D27 4M",
+        "ống pvc tiền phong d27 4m"
+      ],
+      "name": "Ống PVC Tiền Phong D27 4m"
+    },
+    "P0011": {
+      "aliases": [
+        "Ống PVC Bình Minh D21 4m",
+        "P0011",
+        "ong pvc binh minh d21 4m",
+        "Ống  PVC Bình Minh D21 4m",
+        "Ống PVC Bình Minh D21 4m",
+        "Ống Pvc Bình Minh D21 4M"
+      ],
+      "name": "Ống PVC Bình Minh D21 4m"
+    },
+    "P0012": {
+      "aliases": [
+        "KE GÓC L INOX 5CM",
+        "Ke góc L inox 5cm",
+        "P0012",
+        "ke goc l inox 5cm"
+      ],
+      "name": "Ke góc L inox 5cm"
+    },
+    "P0013": {
+      "aliases": [
+        "P0013",
+        "Tôn Đông Á 0.45mm mét",
+        "Tôn Đông Á 0.45Mm Mét",
+        "Tôn Đông Á 0.45mm mét",
+        "ton dong a 0.45mm met"
+      ],
+      "name": "Tôn Đông Á 0.45mm mét"
+    },
+    "P0014": {
+      "aliases": [
+        "Ổ cắm Panasonic 3 chấu",
+        "P0014",
+        "o cam panasonic 3 chau",
+        "Ổ CẮM PANASONIC 3 CHẤU",
+        "Ổ Cắm Panasonic 3 Chấu",
+        "Ổ cắm Panasonic 3 chấu"
+      ],
+      "name": "Ổ cắm Panasonic 3 chấu"
+    },
+    "P0015": {
+      "aliases": [
+        "P0015",
+        "Sơn Nippon chống thấm 5L",
+        "Sơn Nippon chống thấm 5L",
+        "son nippon chong tham 5l",
+        "sơn nippon chống thấm 5l"
+      ],
+      "name": "Sơn Nippon chống thấm 5L"
+    },
+    "P0016": {
+      "aliases": [
+        "P0016",
+        "SƠN JOTUN NGOẠI THẤT 5L",
+        "Sơn  Jotun ngoại thất 5L",
+        "Sơn Jotun ngoại thất 5L",
+        "son jotun ngoai that 5l",
+        "sơn jotun ngoại thất 5l"
+      ],
+      "name": "Sơn Jotun ngoại thất 5L"
+    },
+    "P0017": {
+      "aliases": [
+        "P0017",
+        "Đá 1x2 m3",
+        "Đá 1X2 M3",
+        "Đá 1x2 m3",
+        "đá 1x2 m3"
+      ],
+      "name": "Đá 1x2 m3"
+    },
+    "P0018": {
+      "aliases": [
+        "CO PVC D21",
+        "Co  PVC D21",
+        "Co PVC D21",
+        "P0018"
+      ],
+      "name": "Co PVC D21"
+    },
+    "P0019": {
+      "aliases": [
+        "P0019",
+        "THÉP HÒA PHÁT D10 CÂY 11.7M",
+        "Thép Hòa Phát D10 cây 11.7m",
+        "Thép  Hòa Phát D10 cây 11.7m",
+        "Thép Hòa Phát D10 Cây 11.7M",
+        "Thép Hòa Phát D10 cây 11.7m",
+        "thep hoa phat d10 cay 11.7m"
+      ],
+      "name": "Thép Hòa Phát D10 cây 11.7m"
+    },
+    "P0020": {
+      "aliases": [
+        "P0020",
+        "Tê PVC D27",
+        "te pvc d27",
+        "tê pvc d27"
+      ],
+      "name": "Tê PVC D27"
+    },
+    "P0021": {
+      "aliases": [
+        "Lưới thép B40 mét",
+        "P0021"
+      ],
+      "name": "Lưới thép B40 mét"
+    },
+    "P0022": {
+      "aliases": [
+        "P0022",
+        "Xi  măng Nghi Sơn 50kg",
+        "Xi măng Nghi Sơn 50kg",
+        "Xi măng Nghi Sơn 50kg",
+        "xi măng nghi sơn 50kg"
+      ],
+      "name": "Xi măng Nghi Sơn 50kg"
+    },
+    "P0023": {
+      "aliases": [
+        "P0023",
+        "Thép Việt Nhật D12 cây",
+        "Thép  Việt Nhật D12 cây",
+        "Thép Việt Nhật D12 Cây",
+        "Thép Việt Nhật D12 cây"
+      ],
+      "name": "Thép Việt Nhật D12 cây"
+    },
+    "P0024": {
+      "aliases": [
+        "P0024",
+        "Sơn  Dulux trắng 5L",
+        "Sơn Dulux trắng 5L"
+      ],
+      "name": "Sơn Dulux trắng 5L"
+    },
+    "P0025": {
+      "aliases": [
+        "P0025",
+        "TÔN HOA SEN 0.4MM MÉT",
+        "Tôn Hoa Sen 0.4mm mét"
+      ],
+      "name": "Tôn Hoa Sen 0.4mm mét"
+    },
+    "P0026": {
+      "aliases": [
+        "Gạch  lát 80x80 xám",
+        "Gạch lát 80x80 xám",
+        "P0026"
+      ],
+      "name": "Gạch lát 80x80 xám"
+    },
+    "P0027": {
+      "aliases": [
+        "P0027",
+        "Đinh Thép 5Cm 1Kg",
+        "Đinh thép 5cm 1kg",
+        "Đinh thép 5cm 1kg",
+        "đinh thép 5cm 1kg"
+      ],
+      "name": "Đinh thép 5cm 1kg"
+    },
+    "P0028": {
+      "aliases": [
+        "KEO DÁN ỐNG PVC 100G",
+        "Keo Dán Ống Pvc 100G",
+        "Keo dán ống PVC 100g",
+        "P0028",
+        "keo dan ong pvc 100g"
+      ],
+      "name": "Keo dán ống PVC 100g"
+    },
+    "P0029": {
+      "aliases": [
+        "Gạch thẻ đặc 4x8x18",
+        "Gạch thẻ đặc 4x8x18",
+        "P0029",
+        "gach the dac 4x8x18"
+      ],
+      "name": "Gạch thẻ đặc 4x8x18"
+    },
+    "P0030": {
+      "aliases": [
+        "Cát vàng xây tô m3",
+        "P0030",
+        "cat vang xay to m3"
+      ],
+      "name": "Cát vàng xây tô m3"
+    },
+    "P0031": {
+      "aliases": [
+        "Gạch block 10x20x40",
+        "P0031",
+        "gach block 10x20x40"
+      ],
+      "name": "Gạch block 10x20x40"
+    },
+    "P0032": {
+      "aliases": [
+        "P0032",
+        "da mi sang m3",
+        "Đá mi sàng m3"
+      ],
+      "name": "Đá mi sàng m3"
+    },
+    "P0033": {
+      "aliases": [
+        "Cát bê tông m3",
+        "P0033"
+      ],
+      "name": "Cát bê tông m3"
+    },
+    "P0034": {
+      "aliases": [
+        "P0034",
+        "Thép Pomina D16 cây",
+        "Thép Pomina D16 Cây",
+        "Thép Pomina D16 cây",
+        "thep pomina d16 cay"
+      ],
+      "name": "Thép Pomina D16 cây"
+    },
+    "P0035": {
+      "aliases": [
+        "GẠCH LÁT 60X60 TRẮNG",
+        "Gạch lát 60x60 trắng",
+        "P0035",
+        "gach lat 60x60 trang",
+        "gạch lát 60x60 trắng"
+      ],
+      "name": "Gạch lát 60x60 trắng"
+    },
+    "P0036": {
+      "aliases": [
+        "Dây  điện Cadivi 2.5mm m",
+        "Dây điện Cadivi 2.5mm m",
+        "P0036",
+        "day dien cadivi 2.5mm m",
+        "dây điện cadivi 2.5mm m"
+      ],
+      "name": "Dây điện Cadivi 2.5mm m"
+    }
+  },
+  "start": "2025-05-01"
+}

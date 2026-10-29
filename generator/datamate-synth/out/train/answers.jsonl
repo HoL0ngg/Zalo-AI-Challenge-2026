@@ -1,0 +1,320 @@
+{"id":"train_01_q001","type":"percent","answer":-39.54}
+{"id":"train_01_q002","type":"string","answer":"Revive chanh muối 500ml","alias":["P0001","REVIVE CHANH MUỐI 500ML","Revive  chanh muối 500ml","Revive Chanh Muối 500Ml","Revive chanh muối 500ml","Revive chanh muối 500ml","revive chanh muoi 500 ml","revive chanh muối 500ml"]}
+{"id":"train_01_q003","type":"date","answer":"2026-06-21"}
+{"id":"train_01_q004","type":"string","answer":"Đồ uống"}
+{"id":"train_01_q005","type":"number","answer":511000}
+{"id":"train_01_q006","type":"string","answer":"Chủ nhật"}
+{"id":"train_01_q007","type":"list","answer":["Revive chanh muối 500ml","Sting dâu 330ml","Trứng gà hộp 10 quả"]}
+{"id":"train_01_q008","type":"string","answer":"Revive chanh muối 500ml","alias":["P0001","REVIVE CHANH MUỐI 500ML","Revive  chanh muối 500ml","Revive Chanh Muối 500Ml","Revive chanh muối 500ml","Revive chanh muối 500ml","revive chanh muoi 500 ml","revive chanh muối 500ml"]}
+{"id":"train_01_q009","type":"number","answer":1}
+{"id":"train_01_q010","type":"list","answer":["7Up 390ml","Bánh ChocoPie hộp 6 cái","Bột giặt OMO 2.7kg","Coca-Cola lon 320ml","Dầu gội Clear 340ml","Dầu ăn Neptune 1L","Gạo ST25 5kg","Kem đánh răng P/S 180g","Khăn giấy Bless You 180 tờ","Kẹo Alpenliebe 90g","Lavie 1.5L","Muối i-ốt 500g","Nước mắm Nam Ngư 750ml","Nước rửa chén Sunlight 750ml","Nước tương Maggi 700ml","Pepsi lon 320ml","Red Bull 250ml","Trà Lipton túi lọc 25 gói","Trà xanh Không Độ 455ml"]}
+{"id":"train_01_q011","type":"number","answer":6798000}
+{"id":"train_01_q012","type":"number","answer":2640369}
+{"id":"train_01_q013","type":"table","answer":{"columns":["ma_kh","ten_kh","so_tien_no"],"rows":[["C0056","Bùi Linh Trang",1477000],["C0054","Phan Phương Tú",970000],["C0061","Phạm Hiếu Hòa",574000],["C0018","Huỳnh Quỳnh Nam",507000],["C0031","Trần Bình Hân",506000],["C0059","Huỳnh Hiếu Đạt",505000],["C0081","Phan Ngân Mai",440000],["C0067","Bùi Chi Ngân",374000],["C0085","Đặng An Linh",229000]]}}
+{"id":"train_01_q014","type":"number","answer":0}
+{"id":"train_01_q015","type":"number","answer":197592.59}
+{"id":"train_01_q016","type":"number","answer":26}
+{"id":"train_01_q017","type":"string","answer":"Đồ uống"}
+{"id":"train_01_q018","type":"percent","answer":17.87}
+{"id":"train_01_q019","type":"number","answer":8713000}
+{"id":"train_01_q020","type":"number","answer":67}
+{"id":"train_01_q021","type":"string","answer":"Revive chanh muối 500ml","alias":["P0001","REVIVE CHANH MUỐI 500ML","Revive  chanh muối 500ml","Revive Chanh Muối 500Ml","Revive chanh muối 500ml","Revive chanh muối 500ml","revive chanh muoi 500 ml","revive chanh muối 500ml"]}
+{"id":"train_01_q022","type":"list","answer":["Bim bim O'Star 55g","Gạo ST25 5kg","Sting dâu 330ml","Sữa chua Vinamilk có đường","Tương ớt Chinsu 250g"]}
+{"id":"train_01_q023","type":"string","answer":"Trà Lipton túi lọc 25 gói","alias":["P0004","TRÀ LIPTON TÚI LỌC 25 GÓI","Trà Lipton túi lọc 25 gói","Trà  Lipton túi lọc 25 gói","Trà Lipton Túi Lọc 25 Gói","Trà Lipton túi lọc 25 gói","tra lipton tui loc 25 goi","trà lipton túi lọc 25 gói"]}
+{"id":"train_01_q024","type":"number","answer":21}
+{"id":"train_01_q025","type":"number","answer":574000}
+{"id":"train_01_q026","type":"string","answer":"Tương ớt Chinsu 250g","alias":["P0006","Tương ớt Chinsu 250g","TƯƠNG ỚT CHINSU 250G","Tương  ớt Chinsu 250g","Tương Ớt Chinsu 250G","Tương ớt Chinsu 250g","tuong ot chinsu 250g","tương ớt chinsu 250g"]}
+{"id":"train_01_q027","type":"number","answer":7932000}
+{"id":"train_01_q028","type":"number","answer":7}
+{"id":"train_01_q029","type":"string","answer":"Revive chanh muối 500ml","alias":["P0001","REVIVE CHANH MUỐI 500ML","Revive  chanh muối 500ml","Revive Chanh Muối 500Ml","Revive chanh muối 500ml","Revive chanh muối 500ml","revive chanh muoi 500 ml","revive chanh muối 500ml"]}
+{"id":"train_01_q030","type":"list","answer":["Revive chanh muối 500ml","Sữa TH true MILK 180ml","Trà Lipton túi lọc 25 gói"]}
+{"id":"train_01_q031","type":"string","answer":"Sữa chua Vinamilk có đường","alias":["P0016","Sữa chua Vinamilk có đường","SỮA CHUA VINAMILK CÓ ĐƯỜNG","Sữa chua Vinamilk có đường","sua chua vinamilk co duong"]}
+{"id":"train_01_q032","type":"number","answer":8730000}
+{"id":"train_01_q033","type":"list","answer":["Bim bim O'Star 55g","Sữa chua Vinamilk có đường","Sữa tươi Vinamilk 1L"]}
+{"id":"train_01_q034","type":"number","answer":389000}
+{"id":"train_01_q035","type":"boolean","answer":false}
+{"id":"train_01_q036","type":"string","answer":"Nguyễn Hùng Bình"}
+{"id":"train_01_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"train_01_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"train_01_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"train_01_q040","type":"unanswerable","answer":null,"reason":"Không có trường chi_phi_dien_nuoc trong dữ liệu của cơ sở."}
+{"id":"train_02_q001","type":"list","answer":["Trà chanh giã tay L","Americano nóng M","Trà sữa matcha L"]}
+{"id":"train_02_q002","type":"number","answer":1576000}
+{"id":"train_02_q003","type":"string","answer":"Lê Hòa Ngọc"}
+{"id":"train_02_q004","type":"number","answer":2203000}
+{"id":"train_02_q005","type":"number","answer":7}
+{"id":"train_02_q006","type":"list","answer":["Americano đá L","Bánh croissant bơ","Bánh tiramisu miếng","Bánh trung thu đậu xanh 150g","Bạc xỉu M","Cappuccino M","Chocolate đá xay L","Cold brew cam sả","Cookies cream đá xay","Cà phê sữa đá M","Espresso single","Latte nóng M","Mocha đá M","Nước ép cam tươi","Sinh tố bơ M","Sinh tố xoài L","Trà sữa khoai môn M","Trà sữa trân châu đường đen M","Trà tắc mật ong M","Trà vải hoa hồng M","Trà ô long kem sữa","Trà đào cam sả L"]}
+{"id":"train_02_q007","type":"number","answer":5764000}
+{"id":"train_02_q008","type":"string","answer":"Bánh su kem hộp 3","alias":["Bánh su kem hộp 3","BÁNH SU KEM HỘP 3","Bánh  su kem hộp 3","Bánh Su Kem Hộp 3","Bánh su kem hộp 3","P0004","bánh su kem hộp 3"]}
+{"id":"train_02_q009","type":"list","answer":["Trà sữa matcha L","Trà sen vàng L","Latte đá L"]}
+{"id":"train_02_q010","type":"number","answer":175718.75}
+{"id":"train_02_q011","type":"string","answer":"Trà chanh giã tay L","alias":["P0001","TRÀ CHANH GIÃ TAY L","Trà chanh giã tay L","Trà  chanh giã tay L","Trà Chanh Giã Tay L","Trà chanh giã tay L","tra chanh gia tay l","trà chanh giã tay l"]}
+{"id":"train_02_q012","type":"number","answer":83}
+{"id":"train_02_q013","type":"number","answer":3}
+{"id":"train_02_q014","type":"string","answer":"Chocolate đá xay L","alias":["CHOCOLATE ĐÁ XAY L","Chocolate  đá xay L","Chocolate Đá Xay L","Chocolate đá xay L","Chocolate đá xay L","P0009","chocolate da xay l"]}
+{"id":"train_02_q015","type":"string","answer":"Thứ năm"}
+{"id":"train_02_q016","type":"number","answer":939000}
+{"id":"train_02_q017","type":"percent","answer":-87.42}
+{"id":"train_02_q018","type":"string","answer":"Americano nóng M","alias":["AMERICANO NÓNG M","Americano  nóng M","Americano Nóng M","Americano nóng M","Americano nóng M","P0011","americano nóng m"]}
+{"id":"train_02_q019","type":"list","answer":["Trà chanh giã tay L","Bánh su kem hộp 3","Trà sen vàng L"]}
+{"id":"train_02_q020","type":"number","answer":12}
+{"id":"train_02_q021","type":"number","answer":2640804}
+{"id":"train_02_q022","type":"number","answer":6423000}
+{"id":"train_02_q023","type":"string","answer":"Latte đá L","alias":["LATTE ĐÁ L","Latte Đá L","Latte đá L","Latte đá L","P0021","latte da l"]}
+{"id":"train_02_q024","type":"date","answer":"2026-04-30"}
+{"id":"train_02_q025","type":"string","answer":"Trà"}
+{"id":"train_02_q026","type":"string","answer":"Trà chanh giã tay L","alias":["P0001","TRÀ CHANH GIÃ TAY L","Trà chanh giã tay L","Trà  chanh giã tay L","Trà Chanh Giã Tay L","Trà chanh giã tay L","tra chanh gia tay l","trà chanh giã tay l"]}
+{"id":"train_02_q027","type":"boolean","answer":false}
+{"id":"train_02_q028","type":"number","answer":267125.0}
+{"id":"train_02_q029","type":"number","answer":0}
+{"id":"train_02_q030","type":"string","answer":"Trà chanh giã tay L","alias":["P0001","TRÀ CHANH GIÃ TAY L","Trà chanh giã tay L","Trà  chanh giã tay L","Trà Chanh Giã Tay L","Trà chanh giã tay L","tra chanh gia tay l","trà chanh giã tay l"]}
+{"id":"train_02_q031","type":"string","answer":"Trà"}
+{"id":"train_02_q032","type":"percent","answer":48.16}
+{"id":"train_02_q033","type":"list","answer":[]}
+{"id":"train_02_q034","type":"number","answer":2}
+{"id":"train_02_q035","type":"string","answer":"Trà chanh giã tay L","alias":["P0001","TRÀ CHANH GIÃ TAY L","Trà chanh giã tay L","Trà  chanh giã tay L","Trà Chanh Giã Tay L","Trà chanh giã tay L","tra chanh gia tay l","trà chanh giã tay l"]}
+{"id":"train_02_q036","type":"list","answer":["Americano nóng M","Bánh trung thu thập cẩm 150g","Hồng trà sữa L"]}
+{"id":"train_02_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"train_02_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"train_02_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"train_02_q040","type":"unanswerable","answer":null,"reason":"Không có trường chi_phi_dien_nuoc trong dữ liệu của cơ sở."}
+{"id":"train_03_q001","type":"string","answer":"Panadol Extra vỉ 12","alias":["P0009","PANADOL EXTRA VỈ 12","Panadol  Extra vỉ 12","Panadol Extra vỉ 12","panadol extra vi 12","panadol extra vỉ 12"]}
+{"id":"train_03_q002","type":"list","answer":["Dầu gội trị gàu 100ml","Găng tay y tế hộp 100","Máy đo huyết áp Omron M2"]}
+{"id":"train_03_q003","type":"list","answer":["Băng cá nhân Urgo 100 miếng","Băng gạc vô trùng 10x10","Canxi 500mg hộp 30","Dung dịch NaCl 0.9% 500ml","Dầu cá Omega 3 hộp 30","Efferalgan 500mg tuýp 16","Ibuprofen 200mg hộp 20","Kem dưỡng da 100g","Khẩu trang y tế hộp 50","Kẽm gluconat hộp 30","Miếng dán hạ sốt hộp 4","Nhiệt kế điện tử Microlife","Panadol Extra vỉ 12","Paracetamol 500mg hộp 100","Siro ho thảo dược 100ml","Smecta gói 3g","Sữa rửa mặt dịu nhẹ 150ml","Thuốc nhỏ mắt 0.9% 10ml","Vitamin B1 50mg hộp 100","Vitamin C 500mg lọ 100","Vitamin D3 1000IU lọ 60","Viên ngậm ho bạc hà 24v"]}
+{"id":"train_03_q004","type":"number","answer":1}
+{"id":"train_03_q005","type":"number","answer":826000.0}
+{"id":"train_03_q006","type":"number","answer":10897000}
+{"id":"train_03_q007","type":"percent","answer":-97.57}
+{"id":"train_03_q008","type":"string","answer":"Băng gạc vô trùng 10x10","alias":["Băng gạc vô trùng 10x10","Băng  gạc vô trùng 10x10","Băng gạc vô trùng 10x10","P0015","bang gac vo trung 10x10","băng gạc vô trùng 10x10"]}
+{"id":"train_03_q009","type":"string","answer":"Vitamin"}
+{"id":"train_03_q010","type":"string","answer":"Dầu gội trị gàu 100ml","alias":["Dầu gội trị gàu 100ml","DẦU GỘI TRỊ GÀU 100ML","Dầu  gội trị gàu 100ml","Dầu Gội Trị Gàu 100Ml","Dầu gội trị gàu 100ml","P0001","dau goi tri gau 100 ml","dầu gội trị gàu 100ml"]}
+{"id":"train_03_q011","type":"list","answer":["Băng gạc vô trùng 10x10","Nhiệt kế điện tử Microlife","Smecta gói 3g"]}
+{"id":"train_03_q012","type":"list","answer":["Băng cá nhân Urgo 100 miếng","Băng gạc vô trùng 10x10","Canxi 500mg hộp 30","Decolgen hộp 25","Dung dịch NaCl 0.9% 500ml","Dầu cá Omega 3 hộp 30","Ibuprofen 200mg hộp 20","Kem dưỡng da 100g","Khẩu trang y tế hộp 50","Miếng dán hạ sốt hộp 4","Nhiệt kế điện tử Microlife","Panadol Extra vỉ 12","Paracetamol 500mg hộp 100","Que thử đường huyết 25 chiếc","Smecta gói 3g","Sữa rửa mặt dịu nhẹ 150ml","Thuốc nhỏ mắt 0.9% 10ml","Tiffy hộp 25","Vitamin B1 50mg hộp 100","Vitamin C 500mg lọ 100","Vitamin D3 1000IU lọ 60","Viên ngậm ho bạc hà 24v"]}
+{"id":"train_03_q013","type":"list","answer":["Kem chống nắng SPF50 50ml","Men vi sinh gói 10","Nước muối sinh lý 10ml","Oresol gói 5.6g","Povidine 10% chai 20ml","Than hoạt tính hộp 20"]}
+{"id":"train_03_q014","type":"number","answer":1707000}
+{"id":"train_03_q015","type":"string","answer":"Kẽm gluconat hộp 30","alias":["Kẽm gluconat hộp 30","KẼM GLUCONAT HỘP 30","Kẽm  gluconat hộp 30","Kẽm Gluconat Hộp 30","Kẽm gluconat hộp 30","P0004","kem gluconat hop 30","kẽm gluconat hộp 30"]}
+{"id":"train_03_q016","type":"number","answer":40}
+{"id":"train_03_q017","type":"string","answer":"Máy đo huyết áp Omron M2","alias":["Máy đo huyết áp Omron M2","MÁY ĐO HUYẾT ÁP OMRON M2","Máy  đo huyết áp Omron M2","Máy Đo Huyết Áp Omron M2","Máy đo huyết áp Omron M2","P0003","may do huyet ap omron m2","máy đo huyết áp omron m2"]}
+{"id":"train_03_q018","type":"string","answer":"Thứ ba"}
+{"id":"train_03_q019","type":"number","answer":15912000}
+{"id":"train_03_q020","type":"string","answer":"Dầu gội trị gàu 100ml","alias":["Dầu gội trị gàu 100ml","DẦU GỘI TRỊ GÀU 100ML","Dầu  gội trị gàu 100ml","Dầu Gội Trị Gàu 100Ml","Dầu gội trị gàu 100ml","P0001","dau goi tri gau 100 ml","dầu gội trị gàu 100ml"]}
+{"id":"train_03_q021","type":"list","answer":["Băng gạc vô trùng 10x10","Dung dịch NaCl 0.9% 500ml","Kẽm gluconat hộp 30","Siro ho thảo dược 100ml"]}
+{"id":"train_03_q022","type":"boolean","answer":false}
+{"id":"train_03_q023","type":"percent","answer":173.5}
+{"id":"train_03_q024","type":"string","answer":"Bùi Trang Quỳnh"}
+{"id":"train_03_q025","type":"number","answer":751551.72}
+{"id":"train_03_q026","type":"date","answer":"2026-08-06"}
+{"id":"train_03_q027","type":"list","answer":["Máy đo huyết áp Omron M2","Gel rửa tay khô 100ml","Găng tay y tế hộp 100"]}
+{"id":"train_03_q028","type":"number","answer":2}
+{"id":"train_03_q029","type":"number","answer":427000}
+{"id":"train_03_q030","type":"number","answer":11}
+{"id":"train_03_q031","type":"number","answer":7777000}
+{"id":"train_03_q032","type":"number","answer":8783000}
+{"id":"train_03_q033","type":"number","answer":3385688}
+{"id":"train_03_q034","type":"number","answer":5}
+{"id":"train_03_q035","type":"number","answer":1}
+{"id":"train_03_q036","type":"string","answer":"Kẽm gluconat hộp 30","alias":["Kẽm gluconat hộp 30","KẼM GLUCONAT HỘP 30","Kẽm  gluconat hộp 30","Kẽm Gluconat Hộp 30","Kẽm gluconat hộp 30","P0004","kem gluconat hop 30","kẽm gluconat hộp 30"]}
+{"id":"train_03_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"train_03_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"train_03_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"train_03_q040","type":"unanswerable","answer":null,"reason":"Không có trường chi_phi_dien_nuoc trong dữ liệu của cơ sở."}
+{"id":"train_04_q001","type":"number","answer":3}
+{"id":"train_04_q002","type":"number","answer":5818000}
+{"id":"train_04_q003","type":"string","answer":"Xi măng"}
+{"id":"train_04_q004","type":"list","answer":["Cát bê tông m3","Dây thép buộc 1kg","Dây điện Cadivi 2.5mm m","Gạch lát 60x60 trắng","Gạch lát 80x80 xám","Gạch thẻ đặc 4x8x18","Gạch ống 8x8x18","Lưới thép B40 mét","Sơn Dulux trắng 5L","Sơn Jotun ngoại thất 5L","Sơn Nippon chống thấm 5L","Thép Hòa Phát D10 cây 11.7m","Tê PVC D27","Tôn Hoa Sen 0.4mm mét","Tôn Đông Á 0.45mm mét","Xi măng Hà Tiên PCB40 bao 50kg","Xi măng Nghi Sơn 50kg","Đinh thép 5cm 1kg","Đá 1x2 m3","Đá mi sàng m3","Ống PVC Bình Minh D21 4m","Ống PVC Tiền Phong D27 4m","Ổ cắm Panasonic 3 chấu"]}
+{"id":"train_04_q005","type":"percent","answer":431.3}
+{"id":"train_04_q006","type":"number","answer":965111.11}
+{"id":"train_04_q007","type":"list","answer":["Xi măng INSEE đa dụng 50kg","Rulo sơn 9 inch","Dây thép buộc 1kg"]}
+{"id":"train_04_q008","type":"number","answer":2}
+{"id":"train_04_q009","type":"boolean","answer":false}
+{"id":"train_04_q010","type":"number","answer":2}
+{"id":"train_04_q011","type":"string","answer":"Vít bê tông 8cm hộp 100","alias":["P0005","Vít bê tông 8cm hộp 100","VÍT BÊ TÔNG 8CM HỘP 100","Vít  bê tông 8cm hộp 100","Vít Bê Tông 8Cm Hộp 100","Vít bê tông 8cm hộp 100","vit be tong 8cm hop 100","vít bê tông 8cm hộp 100"]}
+{"id":"train_04_q012","type":"number","answer":14969000}
+{"id":"train_04_q013","type":"number","answer":90}
+{"id":"train_04_q014","type":"string","answer":"Phan An Bình"}
+{"id":"train_04_q015","type":"string","answer":"Thứ sáu"}
+{"id":"train_04_q016","type":"number","answer":5233000}
+{"id":"train_04_q017","type":"number","answer":0}
+{"id":"train_04_q018","type":"list","answer":["Dây thép buộc 1kg","Keo dán ống PVC 100g","Ke góc L inox 5cm"]}
+{"id":"train_04_q019","type":"percent","answer":0.43}
+{"id":"train_04_q020","type":"string","answer":"Xi măng INSEE đa dụng 50kg","alias":["P0001","XI MĂNG INSEE ĐA DỤNG 50KG","Xi  măng INSEE đa dụng 50kg","Xi Măng Insee Đa Dụng 50Kg","Xi măng INSEE đa dụng 50kg","Xi măng INSEE đa dụng 50kg","xi mang insee da dung 50kg","xi măng insee đa dụng 50kg"]}
+{"id":"train_04_q021","type":"list","answer":["Co PVC D21","Cát vàng xây tô m3","Ke góc L inox 5cm","Thép Pomina D16 cây","Thép Việt Nhật D12 cây"]}
+{"id":"train_04_q022","type":"string","answer":"Xi măng INSEE đa dụng 50kg","alias":["P0001","XI MĂNG INSEE ĐA DỤNG 50KG","Xi  măng INSEE đa dụng 50kg","Xi Măng Insee Đa Dụng 50Kg","Xi măng INSEE đa dụng 50kg","Xi măng INSEE đa dụng 50kg","xi mang insee da dung 50kg","xi măng insee đa dụng 50kg"]}
+{"id":"train_04_q023","type":"string","answer":"Xi măng INSEE đa dụng 50kg","alias":["P0001","XI MĂNG INSEE ĐA DỤNG 50KG","Xi  măng INSEE đa dụng 50kg","Xi Măng Insee Đa Dụng 50Kg","Xi măng INSEE đa dụng 50kg","Xi măng INSEE đa dụng 50kg","xi mang insee da dung 50kg","xi măng insee đa dụng 50kg"]}
+{"id":"train_04_q024","type":"date","answer":"2026-05-01"}
+{"id":"train_04_q025","type":"string","answer":"Xi măng INSEE đa dụng 50kg","alias":["P0001","XI MĂNG INSEE ĐA DỤNG 50KG","Xi  măng INSEE đa dụng 50kg","Xi Măng Insee Đa Dụng 50Kg","Xi măng INSEE đa dụng 50kg","Xi măng INSEE đa dụng 50kg","xi mang insee da dung 50kg","xi măng insee đa dụng 50kg"]}
+{"id":"train_04_q026","type":"number","answer":11904000}
+{"id":"train_04_q027","type":"list","answer":["Ống PVC Tiền Phong D27 4m","Xi măng INSEE đa dụng 50kg","Co PVC D21"]}
+{"id":"train_04_q028","type":"number","answer":4}
+{"id":"train_04_q029","type":"string","answer":"Thứ sáu"}
+{"id":"train_04_q030","type":"table","answer":{"columns":["ma_kh","ten_kh","so_tien_no"],"rows":[["C0034","Bùi Duyên Hà",1582000],["C0076","Hoàng Ngân Vy",1340000],["C0029","Hoàng Lan Hà",1326000],["C0054","Đặng Trúc Hùng",1293000],["C0040","Trần Bình Tú",1278000],["C0067","Trần Quỳnh Lan",1233000],["C0012","Lê Khang An",1007000],["C0049","Lê Đạt Hân",927000],["C0044","Nguyễn Tú Lan",777000],["C0027","Nguyễn Chi Quân",613000],["C0001","Lê Hà Tú",597000],["C0017","Trần Hân Minh",438000],["C0006","Vũ Khang Hà",415000],["C0036","Bùi Tú Hùng",338000],["C0037","Phạm Ngọc Hân",281000],["C0035","Huỳnh Quỳnh Lan",171000],["C0007","Vũ Lan Chi",146000]]}}
+{"id":"train_04_q031","type":"number","answer":0}
+{"id":"train_04_q032","type":"string","answer":"Xi măng INSEE đa dụng 50kg","alias":["P0001","XI MĂNG INSEE ĐA DỤNG 50KG","Xi  măng INSEE đa dụng 50kg","Xi Măng Insee Đa Dụng 50Kg","Xi măng INSEE đa dụng 50kg","Xi măng INSEE đa dụng 50kg","xi mang insee da dung 50kg","xi măng insee đa dụng 50kg"]}
+{"id":"train_04_q033","type":"string","answer":"Vít bê tông 8cm hộp 100","alias":["P0005","Vít bê tông 8cm hộp 100","VÍT BÊ TÔNG 8CM HỘP 100","Vít  bê tông 8cm hộp 100","Vít Bê Tông 8Cm Hộp 100","Vít bê tông 8cm hộp 100","vit be tong 8cm hop 100","vít bê tông 8cm hộp 100"]}
+{"id":"train_04_q034","type":"number","answer":927000}
+{"id":"train_04_q035","type":"number","answer":20659000}
+{"id":"train_04_q036","type":"string","answer":"Xi măng INSEE đa dụng 50kg","alias":["P0001","XI MĂNG INSEE ĐA DỤNG 50KG","Xi  măng INSEE đa dụng 50kg","Xi Măng Insee Đa Dụng 50Kg","Xi măng INSEE đa dụng 50kg","Xi măng INSEE đa dụng 50kg","xi mang insee da dung 50kg","xi măng insee đa dụng 50kg"]}
+{"id":"train_04_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"train_04_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"train_04_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"train_04_q040","type":"unanswerable","answer":null,"reason":"Thiếu trường giá vốn và giá nhập lô nên không thể tính lợi nhuận."}
+{"id":"train_05_q001","type":"number","answer":10}
+{"id":"train_05_q002","type":"boolean","answer":false}
+{"id":"train_05_q003","type":"number","answer":5048000}
+{"id":"train_05_q004","type":"number","answer":16006000}
+{"id":"train_05_q005","type":"number","answer":99}
+{"id":"train_05_q006","type":"date","answer":"2026-06-29"}
+{"id":"train_05_q007","type":"number","answer":0}
+{"id":"train_05_q008","type":"number","answer":20063000}
+{"id":"train_05_q009","type":"percent","answer":-41.73}
+{"id":"train_05_q010","type":"string","answer":"Bố thắng trước Wave Alpha","alias":["Bố thắng trước Wave Alpha","BỐ THẮNG TRƯỚC WAVE ALPHA","Bố  thắng trước Wave Alpha","Bố Thắng Trước Wave Alpha","Bố thắng trước Wave Alpha","P0001","bo thang truoc wave alpha","bố thắng trước wave alpha"]}
+{"id":"train_05_q011","type":"string","answer":"Bố thắng trước Wave Alpha","alias":["Bố thắng trước Wave Alpha","BỐ THẮNG TRƯỚC WAVE ALPHA","Bố  thắng trước Wave Alpha","Bố Thắng Trước Wave Alpha","Bố thắng trước Wave Alpha","P0001","bo thang truoc wave alpha","bố thắng trước wave alpha"]}
+{"id":"train_05_q012","type":"string","answer":"Bugi Denso U20EPR9","alias":["Bugi  Denso U20EPR9","Bugi Denso U20EPR9","Bugi Denso U20Epr9","P0012","bugi denso u20epr9"]}
+{"id":"train_05_q013","type":"string","answer":"Bố thắng trước Wave Alpha","alias":["Bố thắng trước Wave Alpha","BỐ THẮNG TRƯỚC WAVE ALPHA","Bố  thắng trước Wave Alpha","Bố Thắng Trước Wave Alpha","Bố thắng trước Wave Alpha","P0001","bo thang truoc wave alpha","bố thắng trước wave alpha"]}
+{"id":"train_05_q014","type":"string","answer":"Bố thắng trước Wave Alpha","alias":["Bố thắng trước Wave Alpha","BỐ THẮNG TRƯỚC WAVE ALPHA","Bố  thắng trước Wave Alpha","Bố Thắng Trước Wave Alpha","Bố thắng trước Wave Alpha","P0001","bo thang truoc wave alpha","bố thắng trước wave alpha"]}
+{"id":"train_05_q015","type":"number","answer":10476077}
+{"id":"train_05_q016","type":"string","answer":"Ruột xe 70/90-17","alias":["P0007","RUỘT XE 70/90-17","Ruột xe 70/90-17","Ruột  xe 70/90-17","Ruột Xe 70/90-17","Ruột xe 70/90-17","ruot xe 70/90-17","ruột xe 70/90-17"]}
+{"id":"train_05_q017","type":"string","answer":"Công căn chỉnh phanh","alias":["Công căn chỉnh phanh","P0033"]}
+{"id":"train_05_q018","type":"list","answer":["Bố thắng trước Wave Alpha","Ruột xe 70/90-17","Dung dịch vệ sinh kim phun"]}
+{"id":"train_05_q019","type":"number","answer":7806000}
+{"id":"train_05_q020","type":"string","answer":"Thứ hai"}
+{"id":"train_05_q021","type":"number","answer":1}
+{"id":"train_05_q022","type":"percent","answer":-77.1}
+{"id":"train_05_q023","type":"list","answer":["Công căn chỉnh phanh","Công thay lốp","Dầu nhớt Motul 10W40 1L","Lọc gió Yamaha Janus","Má phanh đĩa Winner X"]}
+{"id":"train_05_q024","type":"number","answer":30531000}
+{"id":"train_05_q025","type":"string","answer":"Lê Hùng Duyên"}
+{"id":"train_05_q026","type":"list","answer":["Bugi Denso U20EPR9","Bình ắc quy GS GTZ5S","Bóng đèn pha H4 35W","Bố thắng sau Air Blade","Chai xịt sên Motul 400ml","Công bảo dưỡng tổng thể","Công chỉnh xăng gió","Công thay nhớt","Công vá vỏ không ruột","Công vệ sinh nồi","Dung dịch rửa xe 1L","Dung dịch vệ sinh kim phun","Dây curoa Honda Lead","Dầu láp xe tay ga 120ml","Dầu nhớt Castrol Power1 1L","Dầu nhớt Shell Advance 0.8L","Lọc gió Honda Vision","Lốp IRC 80/90-14","Lốp Michelin City Grip 90/90","Tẩy rỉ WD-40 200ml","Van không ruột cao su"]}
+{"id":"train_05_q027","type":"number","answer":790333.33}
+{"id":"train_05_q028","type":"number","answer":1}
+{"id":"train_05_q029","type":"number","answer":9}
+{"id":"train_05_q030","type":"number","answer":16006000}
+{"id":"train_05_q031","type":"number","answer":3113000}
+{"id":"train_05_q032","type":"list","answer":["Bố thắng trước Wave Alpha","Dung dịch rửa xe 1L","Dầu thắng DOT4 250ml"]}
+{"id":"train_05_q033","type":"number","answer":36}
+{"id":"train_05_q034","type":"percent","answer":206.34}
+{"id":"train_05_q035","type":"table","answer":{"columns":["ma_kh","ten_kh","so_tien_no"],"rows":[["C0062","Vũ Hùng Nam",1457000],["C0018","Vũ Hà Bình",1274000],["C0019","Hoàng Khang Hùng",1217000],["C0053","Phan Nam Chi",656000],["C0077","Lê Hùng Duyên",624000],["C0067","Lê Hùng An",494000],["C0036","Lê Mai Hân",475000],["C0068","Phan Phúc Duyên",344000]]}}
+{"id":"train_05_q036","type":"string","answer":"Phụ tùng"}
+{"id":"train_05_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"train_05_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"train_05_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"train_05_q040","type":"unanswerable","answer":null,"reason":"Không có trường chi_phi_dien_nuoc trong dữ liệu của cơ sở."}
+{"id":"train_06_q001","type":"date","answer":"2026-02-05"}
+{"id":"train_06_q002","type":"list","answer":["Sữa Meiji số 0 800g","Bột ăn dặm HiPP 250g","Bình sữa Pigeon 160ml"]}
+{"id":"train_06_q003","type":"list","answer":["Bánh ăn dặm Gerber 42g","Kem chống hăm Bepanthen 30g","Sữa Enfamil A+ số 2 830g"]}
+{"id":"train_06_q004","type":"number","answer":14719000}
+{"id":"train_06_q005","type":"number","answer":0}
+{"id":"train_06_q006","type":"string","answer":"Bình sữa Pigeon 160ml","alias":["Bình sữa Pigeon 160ml","BÌNH SỮA PIGEON 160ML","Bình  sữa Pigeon 160ml","Bình Sữa Pigeon 160Ml","Bình sữa Pigeon 160ml","P0003","bình sữa pigeon 160ml"]}
+{"id":"train_06_q007","type":"list","answer":["Bộ sơ sinh cotton size 3M","Dầu massage Johnson's 200ml","Gối chống bẹp đầu","Kem chống hăm Bepanthen 30g","Khăn ướt Huggies 80 tờ","Mũ len trẻ em 0-6M","Núm ti Pigeon size M","Nước giặt D-nee 3L","Sách vải cho bé 0-12M","Sữa Aptamil Profutura 800g","Ti giả Chicco 0-6 tháng","Tã Bobby size XL 48 miếng","Tã Huggies size L 56 miếng","Tã Merries size M 64 miếng","Tã Moony size M 58 miếng","Tã Pampers size S 72 miếng","Tất chống trượt size S","Xe đẩy Combi gấp gọn","Yếm ăn dặm silicone","Áo body cotton size 6M","Đồ chơi xúc xắc Fisher Price"]}
+{"id":"train_06_q008","type":"percent","answer":-56.7}
+{"id":"train_06_q009","type":"string","answer":"Váng sữa Monte hộp 4","alias":["P0001","Váng sữa Monte hộp 4","VÁNG SỮA MONTE HỘP 4","Váng  sữa Monte hộp 4","Váng Sữa Monte Hộp 4","Váng sữa Monte hộp 4","vang sua monte hop 4","váng sữa monte hộp 4"]}
+{"id":"train_06_q010","type":"number","answer":11870000}
+{"id":"train_06_q011","type":"percent","answer":-86.51}
+{"id":"train_06_q012","type":"number","answer":17}
+{"id":"train_06_q013","type":"table","answer":{"columns":["ma_kh","ten_kh","so_tien_no"],"rows":[["C0018","Phan Minh Phương",1513000],["C0039","Huỳnh Trúc Mai",1320000],["C0022","Bùi Vy Thảo",1252000],["C0033","Vũ Hùng Phúc",1074000],["C0007","Đặng Linh Long",935000],["C0002","Đặng Quân Thảo",916000],["C0009","Hoàng Chi Linh",772000],["C0010","Vũ Thảo Phúc",680000],["C0044","Bùi Đạt Phương",679000],["C0036","Nguyễn Duyên Minh",514000],["C0030","Trần Quỳnh Quân",494000],["C0015","Lê Lan Long",412000],["C0013","Trần Hòa Quỳnh",259000],["C0024","Lê Hân Hà",167000]]}}
+{"id":"train_06_q014","type":"string","answer":"Núm ti Pigeon size M","alias":["Núm ti Pigeon size M","Núm  ti Pigeon size M","Núm ti Pigeon size M","P0009","núm ti pigeon size m"]}
+{"id":"train_06_q015","type":"number","answer":4206000}
+{"id":"train_06_q016","type":"string","answer":"Váng sữa Monte hộp 4","alias":["P0001","Váng sữa Monte hộp 4","VÁNG SỮA MONTE HỘP 4","Váng  sữa Monte hộp 4","Váng Sữa Monte Hộp 4","Váng sữa Monte hộp 4","vang sua monte hop 4","váng sữa monte hộp 4"]}
+{"id":"train_06_q017","type":"number","answer":28996000}
+{"id":"train_06_q018","type":"number","answer":78}
+{"id":"train_06_q019","type":"number","answer":514000}
+{"id":"train_06_q020","type":"string","answer":"Tã"}
+{"id":"train_06_q021","type":"list","answer":["Váng sữa Monte hộp 4","Tã Merries size M 64 miếng","Bánh ăn dặm Gerber 42g"]}
+{"id":"train_06_q022","type":"string","answer":"Váng sữa Monte hộp 4","alias":["P0001","Váng sữa Monte hộp 4","VÁNG SỮA MONTE HỘP 4","Váng  sữa Monte hộp 4","Váng Sữa Monte Hộp 4","Váng sữa Monte hộp 4","vang sua monte hop 4","váng sữa monte hộp 4"]}
+{"id":"train_06_q023","type":"number","answer":1}
+{"id":"train_06_q024","type":"number","answer":10}
+{"id":"train_06_q025","type":"number","answer":638250.0}
+{"id":"train_06_q026","type":"string","answer":"Thứ sáu"}
+{"id":"train_06_q027","type":"number","answer":0}
+{"id":"train_06_q028","type":"list","answer":["Cháo ăn dặm Wakodo 80g","Ghế ăn dặm Mastela","Sữa Enfamil A+ số 2 830g","Sữa Friso Gold số 3 850g","Sữa NAN Optipro số 1 800g","Thìa ăn dặm Munchkin"]}
+{"id":"train_06_q029","type":"string","answer":"Phạm Trang Mai"}
+{"id":"train_06_q030","type":"string","answer":"Thứ bảy"}
+{"id":"train_06_q031","type":"boolean","answer":false}
+{"id":"train_06_q032","type":"string","answer":"Váng sữa Monte hộp 4","alias":["P0001","Váng sữa Monte hộp 4","VÁNG SỮA MONTE HỘP 4","Váng  sữa Monte hộp 4","Váng Sữa Monte Hộp 4","Váng sữa Monte hộp 4","vang sua monte hop 4","váng sữa monte hộp 4"]}
+{"id":"train_06_q033","type":"string","answer":"Xe đẩy Combi gấp gọn","alias":["P0021","Xe Đẩy Combi Gấp Gọn","Xe đẩy Combi gấp gọn","xe đẩy combi gấp gọn"]}
+{"id":"train_06_q034","type":"number","answer":662000}
+{"id":"train_06_q035","type":"string","answer":"Mũ len trẻ em 0-6M","alias":["Mũ  len trẻ em 0-6M","Mũ Len Trẻ Em 0-6M","Mũ len trẻ em 0-6M","P0031"]}
+{"id":"train_06_q036","type":"number","answer":5363555}
+{"id":"train_06_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"train_06_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"train_06_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"train_06_q040","type":"unanswerable","answer":null,"reason":"Không có trường chi_phi_dien_nuoc trong dữ liệu của cơ sở."}
+{"id":"train_07_q001","type":"boolean","answer":false}
+{"id":"train_07_q002","type":"list","answer":["Aquafina 500ml","Dầu gội Clear 340ml","Mì 3 Miền tôm chua cay","Mì Hảo Hảo tôm chua cay","Mì Omachi bò hầm","Nước tương Maggi 700ml","Sting dâu 330ml","Sữa TH true MILK 180ml","Trà Lipton túi lọc 25 gói","Trà xanh Không Độ 455ml","Tương ớt Chinsu 250g","Đường Biên Hòa 1kg"]}
+{"id":"train_07_q003","type":"number","answer":206233.33}
+{"id":"train_07_q004","type":"percent","answer":-13.59}
+{"id":"train_07_q005","type":"number","answer":1925000}
+{"id":"train_07_q006","type":"string","answer":"Nước tương Maggi 700ml","alias":["Nước tương Maggi 700ml","Nước  tương Maggi 700ml","Nước Tương Maggi 700Ml","Nước tương Maggi 700ml","P0019","nước tương maggi 700ml"]}
+{"id":"train_07_q007","type":"number","answer":27}
+{"id":"train_07_q008","type":"number","answer":4386000}
+{"id":"train_07_q009","type":"string","answer":"Phạm Hân Duyên"}
+{"id":"train_07_q010","type":"number","answer":1457672}
+{"id":"train_07_q011","type":"number","answer":0}
+{"id":"train_07_q012","type":"number","answer":996000}
+{"id":"train_07_q013","type":"number","answer":2745000}
+{"id":"train_07_q014","type":"string","answer":"Thứ bảy"}
+{"id":"train_07_q015","type":"number","answer":651000}
+{"id":"train_07_q016","type":"string","answer":"Bàn chải Colgate Slim Soft","alias":["Bàn chải Colgate Slim Soft","BÀN CHẢI COLGATE SLIM SOFT","Bàn  chải Colgate Slim Soft","Bàn Chải Colgate Slim Soft","Bàn chải Colgate Slim Soft","P0004","ban chai colgate slim soft","bàn chải colgate slim soft"]}
+{"id":"train_07_q017","type":"string","answer":"Bột giặt OMO 2.7kg","alias":["Bột giặt OMO 2.7kg","BỘT GIẶT OMO 2.7KG","Bột Giặt Omo 2.7Kg","Bột giặt OMO 2.7kg","P0028","bột giặt omo 2.7kg"]}
+{"id":"train_07_q018","type":"list","answer":["Bánh quy Cosy 192g","7Up 390ml","Bàn chải Colgate Slim Soft"]}
+{"id":"train_07_q019","type":"table","answer":{"columns":["ma_kh","ten_kh","so_tien_no"],"rows":[["C0081","Lê Ngân Quỳnh",1425000],["C0082","Phan Hòa Minh",772000],["C0040","Phạm Ngân Quân",744000],["C0001","Đặng Đạt Đạt",661000],["C0017","Đặng Phúc Vy",651000],["C0083","Hoàng Bảo Trang",568000],["C0075","Nguyễn Duyên Nam",474000],["C0027","Đặng Phúc Ngọc",387000]]}}
+{"id":"train_07_q020","type":"string","answer":"7Up 390ml","alias":["7UP 390ML","7Up  390ml","7Up 390Ml","7Up 390ml","7up 390 ml","7up 390ml","P0002"]}
+{"id":"train_07_q021","type":"list","answer":["Bánh Oreo 133g","Dầu gội Clear 340ml","Mì 3 Miền tôm chua cay","Sữa TH true MILK 180ml"]}
+{"id":"train_07_q022","type":"number","answer":6}
+{"id":"train_07_q023","type":"number","answer":23}
+{"id":"train_07_q024","type":"number","answer":6771000}
+{"id":"train_07_q025","type":"list","answer":["7Up 390ml","Bàn chải Colgate Slim Soft","Cà phê G7 3in1 hộp 20"]}
+{"id":"train_07_q026","type":"number","answer":661000}
+{"id":"train_07_q027","type":"number","answer":7090000}
+{"id":"train_07_q028","type":"percent","answer":-24.5}
+{"id":"train_07_q029","type":"list","answer":["Bánh Oreo 133g","Coca-Cola lon 320ml","Gạo ST25 5kg","Kẹo Alpenliebe 90g","Lavie 1.5L","Pepsi lon 320ml","Revive chanh muối 500ml","Sữa chua Vinamilk có đường"]}
+{"id":"train_07_q030","type":"percent","answer":-45.57}
+{"id":"train_07_q031","type":"string","answer":"Gia dụng"}
+{"id":"train_07_q032","type":"date","answer":"2026-03-01"}
+{"id":"train_07_q033","type":"string","answer":"Cà phê G7 3in1 hộp 20","alias":["Cà phê G7 3in1 hộp 20","CÀ PHÊ G7 3IN1 HỘP 20","Cà  phê G7 3in1 hộp 20","Cà Phê G7 3In1 Hộp 20","Cà phê G7 3in1 hộp 20","P0001","ca phe g7 3in1 hop 20","cà phê g7 3in1 hộp 20"]}
+{"id":"train_07_q034","type":"string","answer":"Cà phê G7 3in1 hộp 20","alias":["Cà phê G7 3in1 hộp 20","CÀ PHÊ G7 3IN1 HỘP 20","Cà  phê G7 3in1 hộp 20","Cà Phê G7 3In1 Hộp 20","Cà phê G7 3in1 hộp 20","P0001","ca phe g7 3in1 hop 20","cà phê g7 3in1 hộp 20"]}
+{"id":"train_07_q035","type":"number","answer":110}
+{"id":"train_07_q036","type":"string","answer":"Cà phê G7 3in1 hộp 20","alias":["Cà phê G7 3in1 hộp 20","CÀ PHÊ G7 3IN1 HỘP 20","Cà  phê G7 3in1 hộp 20","Cà Phê G7 3In1 Hộp 20","Cà phê G7 3in1 hộp 20","P0001","ca phe g7 3in1 hop 20","cà phê g7 3in1 hộp 20"]}
+{"id":"train_07_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"train_07_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"train_07_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"train_07_q040","type":"unanswerable","answer":null,"reason":"Không có trường chi_phi_dien_nuoc trong dữ liệu của cơ sở."}
+{"id":"train_08_q001","type":"list","answer":["Cold brew truyền thống","Sinh tố xoài L"]}
+{"id":"train_08_q002","type":"number","answer":755000}
+{"id":"train_08_q003","type":"number","answer":21}
+{"id":"train_08_q004","type":"string","answer":"Bánh cookie chocolate","alias":["Bánh cookie chocolate","BÁNH COOKIE CHOCOLATE","Bánh  cookie chocolate","Bánh Cookie Chocolate","Bánh cookie chocolate","P0004","banh cookie chocolate"]}
+{"id":"train_08_q005","type":"number","answer":87636.36}
+{"id":"train_08_q006","type":"string","answer":"Chocolate đá xay L","alias":["Chocolate  đá xay L","Chocolate đá xay L","Chocolate đá xay L","P0035"]}
+{"id":"train_08_q007","type":"number","answer":654000}
+{"id":"train_08_q008","type":"percent","answer":-80.62}
+{"id":"train_08_q009","type":"number","answer":42000}
+{"id":"train_08_q010","type":"number","answer":3892000}
+{"id":"train_08_q011","type":"string","answer":"Trà sữa thái xanh M","alias":["P0014","Trà sữa thái xanh M","Trà  sữa thái xanh M","Trà Sữa Thái Xanh M","Trà sữa thái xanh M","tra sua thai xanh m"]}
+{"id":"train_08_q012","type":"string","answer":"Cà phê"}
+{"id":"train_08_q013","type":"string","answer":"Cold brew cam sả","alias":["COLD BREW CAM SẢ","Cold  brew cam sả","Cold Brew Cam Sả","Cold brew cam sả","Cold brew cam sả","P0002","cold brew cam sa","cold brew cam sả"]}
+{"id":"train_08_q014","type":"number","answer":9}
+{"id":"train_08_q015","type":"list","answer":["Mocha đá M","Bánh trung thu thập cẩm 150g","Caramel macchiato L"]}
+{"id":"train_08_q016","type":"percent","answer":174.64}
+{"id":"train_08_q017","type":"boolean","answer":false}
+{"id":"train_08_q018","type":"string","answer":"Mocha đá M","alias":["MOCHA ĐÁ M","Mocha  đá M","Mocha Đá M","Mocha đá M","Mocha đá M","P0003","mocha da m","mocha đá m"]}
+{"id":"train_08_q019","type":"string","answer":"Phạm Hiếu Hòa"}
+{"id":"train_08_q020","type":"number","answer":88}
+{"id":"train_08_q021","type":"string","answer":"Chủ nhật"}
+{"id":"train_08_q022","type":"number","answer":6}
+{"id":"train_08_q023","type":"number","answer":3}
+{"id":"train_08_q024","type":"percent","answer":-100.0}
+{"id":"train_08_q025","type":"string","answer":"Chocolate đá xay L","alias":["Chocolate  đá xay L","Chocolate đá xay L","Chocolate đá xay L","P0035"]}
+{"id":"train_08_q026","type":"string","answer":"Caramel macchiato L","alias":["CARAMEL MACCHIATO L","Caramel  macchiato L","Caramel Macchiato L","Caramel macchiato L","P0001","caramel macchiato l"]}
+{"id":"train_08_q027","type":"number","answer":2328000}
+{"id":"train_08_q028","type":"list","answer":["Mocha đá M","Cold brew cam sả","Trà đào cam sả L"]}
+{"id":"train_08_q029","type":"number","answer":3518000}
+{"id":"train_08_q030","type":"list","answer":["Americano đá L","Bánh croissant bơ","Cà phê sữa đá M","Latte nóng M","Matcha latte M","Trà sữa trân châu đường đen M","Trà ô long kem sữa"]}
+{"id":"train_08_q031","type":"string","answer":"Trà chanh giã tay L","alias":["P0012","TRÀ CHANH GIÃ TAY L","Trà chanh giã tay L","Trà  chanh giã tay L","Trà Chanh Giã Tay L","Trà chanh giã tay L","tra chanh gia tay l","trà chanh giã tay l"]}
+{"id":"train_08_q032","type":"boolean","answer":false}
+{"id":"train_08_q033","type":"list","answer":["Americano nóng M","Americano đá L","Bánh cookie chocolate","Bánh croissant bơ","Bánh mì pate trứng","Bánh su kem hộp 3","Bánh tiramisu miếng","Bánh trung thu đậu xanh 150g","Bạc xỉu M","Cappuccino M","Chocolate đá xay L","Cookies cream đá xay","Cà phê sữa đá M","Cà phê đen đá M","Espresso single","Hồng trà sữa L","Latte nóng M","Matcha latte M","Nước ép cam tươi","Trà chanh giã tay L","Trà sen vàng L","Trà sữa khoai môn M","Trà sữa matcha L","Trà sữa trân châu đường đen M","Trà vải hoa hồng M","Trà ô long kem sữa","Trà đào cam sả L"]}
+{"id":"train_08_q034","type":"number","answer":1195387}
+{"id":"train_08_q035","type":"number","answer":3404000}
+{"id":"train_08_q036","type":"date","answer":"2026-05-28"}
+{"id":"train_08_q037","type":"unanswerable","answer":null,"reason":"Không có mã hoặc tên sản phẩm được hỏi trong dữ liệu cơ sở."}
+{"id":"train_08_q038","type":"unanswerable","answer":null,"reason":"Không có trường nhan_vien_ca_toi trong dữ liệu của cơ sở."}
+{"id":"train_08_q039","type":"unanswerable","answer":null,"reason":"Không có lịch sử giao dịch tháng 01/2023, nằm ngoài khoảng dữ liệu."}
+{"id":"train_08_q040","type":"unanswerable","answer":null,"reason":"Không có trường chi_phi_dien_nuoc trong dữ liệu của cơ sở."}

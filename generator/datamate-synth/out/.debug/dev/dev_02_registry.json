@@ -1,0 +1,340 @@
+{
+  "business_id": "dev_02",
+  "end": "2026-08-31",
+  "format": "sqlite",
+  "kind": "dien_thoai",
+  "products": {
+    "P0001": {
+      "aliases": [
+        "IPHONE 15 128GB ĐEN",
+        "Iphone 15 128Gb Đen",
+        "P0001",
+        "iPhone  15 128GB đen",
+        "iPhone 15 128GB đen",
+        "iphone 15 128gb den",
+        "iphone 15 128gb đen"
+      ],
+      "name": "iPhone 15 128GB đen"
+    },
+    "P0002": {
+      "aliases": [
+        "OPPO  A79 128GB",
+        "OPPO A79 128GB",
+        "Oppo A79 128Gb",
+        "P0002",
+        "oppo a79 128gb"
+      ],
+      "name": "OPPO A79 128GB"
+    },
+    "P0003": {
+      "aliases": [
+        "P0003",
+        "VIVO V30E 256GB",
+        "Vivo V30E 256Gb",
+        "vivo  V30e 256GB",
+        "vivo V30e 256GB",
+        "vivo v30e 256gb"
+      ],
+      "name": "vivo V30e 256GB"
+    },
+    "P0004": {
+      "aliases": [
+        "LOA BLUETOOTH JBL GO 4",
+        "Loa  Bluetooth JBL Go 4",
+        "Loa Bluetooth JBL Go 4",
+        "Loa Bluetooth Jbl Go 4",
+        "P0004",
+        "loa bluetooth jbl go 4"
+      ],
+      "name": "Loa Bluetooth JBL Go 4"
+    },
+    "P0005": {
+      "aliases": [
+        "Dịch vụ dán kính",
+        "Dịch  vụ dán kính",
+        "Dịch Vụ Dán Kính",
+        "Dịch vụ dán kính",
+        "P0005",
+        "dich vu dan kinh",
+        "dịch vụ dán kính"
+      ],
+      "name": "Dịch vụ dán kính"
+    },
+    "P0006": {
+      "aliases": [
+        "IPHONE 16 128GB HỒNG",
+        "Iphone 16 128Gb Hồng",
+        "P0006",
+        "iPhone  16 128GB hồng",
+        "iPhone 16 128GB hồng",
+        "iPhone 16 128GB hồng",
+        "iphone 16 128gb hong",
+        "iphone 16 128gb hồng"
+      ],
+      "name": "iPhone 16 128GB hồng"
+    },
+    "P0007": {
+      "aliases": [
+        "P0007",
+        "SAMSUNG GALAXY A35 256GB",
+        "Samsung  Galaxy A35 256GB",
+        "Samsung Galaxy A35 256GB",
+        "Samsung Galaxy A35 256Gb",
+        "samsung galaxy a35 256gb"
+      ],
+      "name": "Samsung Galaxy A35 256GB"
+    },
+    "P0008": {
+      "aliases": [
+        "IPAD AIR M2 128GB",
+        "Ipad Air M2 128Gb",
+        "P0008",
+        "iPad  Air M2 128GB",
+        "iPad Air M2 128GB",
+        "ipad air m2 128gb"
+      ],
+      "name": "iPad Air M2 128GB"
+    },
+    "P0009": {
+      "aliases": [
+        "P0009",
+        "Tai  nghe Galaxy Buds FE",
+        "Tai nghe Galaxy Buds FE",
+        "tai nghe galaxy buds fe"
+      ],
+      "name": "Tai nghe Galaxy Buds FE"
+    },
+    "P0010": {
+      "aliases": [
+        "NOKIA 105 4G",
+        "Nokia  105 4G",
+        "Nokia 105 4G",
+        "P0010",
+        "nokia 105 4g"
+      ],
+      "name": "Nokia 105 4G"
+    },
+    "P0011": {
+      "aliases": [
+        "Ốp lưng Samsung A35",
+        "P0011",
+        "op lung samsung a35",
+        "Ốp  lưng Samsung A35",
+        "Ốp Lưng Samsung A35",
+        "Ốp lưng Samsung A35"
+      ],
+      "name": "Ốp lưng Samsung A35"
+    },
+    "P0012": {
+      "aliases": [
+        "P0012",
+        "SAMSUNG TAB A9 64GB",
+        "Samsung Tab A9 64GB",
+        "Samsung Tab A9 64Gb",
+        "samsung tab a9 64gb"
+      ],
+      "name": "Samsung Tab A9 64GB"
+    },
+    "P0013": {
+      "aliases": [
+        "CÁP USB-C ANKER 1M",
+        "Cáp USB-C Anker 1m",
+        "Cáp Usb-C Anker 1M",
+        "P0013",
+        "cap usb-c anker 1m"
+      ],
+      "name": "Cáp USB-C Anker 1m"
+    },
+    "P0014": {
+      "aliases": [
+        "KÍNH CƯỜNG LỰC SAMSUNG S24",
+        "Kính cường lực Samsung S24",
+        "P0014",
+        "kinh cuong luc samsung s24",
+        "kính cường lực samsung s24"
+      ],
+      "name": "Kính cường lực Samsung S24"
+    },
+    "P0015": {
+      "aliases": [
+        "P0015",
+        "USB KINGSTON 64GB",
+        "USB Kingston 64GB",
+        "Usb Kingston 64Gb",
+        "usb kingston 64gb"
+      ],
+      "name": "USB Kingston 64GB"
+    },
+    "P0016": {
+      "aliases": [
+        "P0016",
+        "TAI NGHE JBL TUNE 510BT",
+        "Tai Nghe Jbl Tune 510Bt",
+        "Tai nghe JBL Tune 510BT",
+        "tai nghe jbl tune 510bt"
+      ],
+      "name": "Tai nghe JBL Tune 510BT"
+    },
+    "P0017": {
+      "aliases": [
+        "P0017",
+        "Xiaomi  Redmi Note 14 256GB",
+        "Xiaomi Redmi Note 14 256GB",
+        "Xiaomi Redmi Note 14 256Gb"
+      ],
+      "name": "Xiaomi Redmi Note 14 256GB"
+    },
+    "P0018": {
+      "aliases": [
+        "P0018",
+        "SAMSUNG GALAXY S24 256GB",
+        "Samsung  Galaxy S24 256GB",
+        "Samsung Galaxy S24 256GB",
+        "Samsung Galaxy S24 256Gb"
+      ],
+      "name": "Samsung Galaxy S24 256GB"
+    },
+    "P0019": {
+      "aliases": [
+        "P0019",
+        "Pin  dự phòng Anker 20000mAh",
+        "Pin Dự Phòng Anker 20000Mah",
+        "Pin dự phòng Anker 20000mAh",
+        "pin du phong anker 20000mah",
+        "pin dự phòng anker 20000mah"
+      ],
+      "name": "Pin dự phòng Anker 20000mAh"
+    },
+    "P0020": {
+      "aliases": [
+        "Kính cường lực iPhone 16",
+        "P0020",
+        "kinh cuong luc iphone 16"
+      ],
+      "name": "Kính cường lực iPhone 16"
+    },
+    "P0021": {
+      "aliases": [
+        "P0021",
+        "realme C67 128GB"
+      ],
+      "name": "realme C67 128GB"
+    },
+    "P0022": {
+      "aliases": [
+        "P0022",
+        "Pin  dự phòng Xiaomi 10000mAh",
+        "Pin Dự Phòng Xiaomi 10000Mah",
+        "Pin dự phòng Xiaomi 10000mAh",
+        "pin du phong xiaomi 10000mah"
+      ],
+      "name": "Pin dự phòng Xiaomi 10000mAh"
+    },
+    "P0023": {
+      "aliases": [
+        "P0023",
+        "Thẻ  nhớ SanDisk 128GB",
+        "Thẻ Nhớ Sandisk 128Gb",
+        "Thẻ nhớ SanDisk 128GB",
+        "the nho sandisk 128gb",
+        "thẻ nhớ sandisk 128gb"
+      ],
+      "name": "Thẻ nhớ SanDisk 128GB"
+    },
+    "P0024": {
+      "aliases": [
+        "P0024",
+        "SAMSUNG GALAXY S25 256GB",
+        "Samsung  Galaxy S25 256GB",
+        "Samsung Galaxy S25 256GB",
+        "samsung galaxy s25 256gb"
+      ],
+      "name": "Samsung Galaxy S25 256GB"
+    },
+    "P0025": {
+      "aliases": [
+        "Cáp Lightning Baseus 1m",
+        "Cáp Lightning Baseus 1m",
+        "P0025",
+        "cáp lightning baseus 1m"
+      ],
+      "name": "Cáp Lightning Baseus 1m"
+    },
+    "P0026": {
+      "aliases": [
+        "OPPO Reno11 256GB",
+        "P0026",
+        "oppo reno11 256gb"
+      ],
+      "name": "OPPO Reno11 256GB"
+    },
+    "P0027": {
+      "aliases": [
+        "P0027",
+        "SẠC NHANH SAMSUNG 25W",
+        "Sạc  nhanh Samsung 25W",
+        "Sạc nhanh Samsung 25W",
+        "sac nhanh samsung 25w"
+      ],
+      "name": "Sạc nhanh Samsung 25W"
+    },
+    "P0028": {
+      "aliases": [
+        "Ốp lưng iPhone 15 silicon",
+        "P0028",
+        "ỐP LƯNG IPHONE 15 SILICON",
+        "Ốp  lưng iPhone 15 silicon",
+        "Ốp lưng iPhone 15 silicon",
+        "ốp lưng iphone 15 silicon"
+      ],
+      "name": "Ốp lưng iPhone 15 silicon"
+    },
+    "P0029": {
+      "aliases": [
+        "IPHONE 16 PRO 256GB TITAN",
+        "P0029",
+        "iPhone  16 Pro 256GB titan",
+        "iPhone 16 Pro 256GB titan"
+      ],
+      "name": "iPhone 16 Pro 256GB titan"
+    },
+    "P0030": {
+      "aliases": [
+        "P0030",
+        "XIAOMI REDMI NOTE 13 128GB",
+        "Xiaomi  Redmi Note 13 128GB",
+        "Xiaomi Redmi Note 13 128GB",
+        "Xiaomi Redmi Note 13 128Gb",
+        "xiaomi redmi note 13 128gb"
+      ],
+      "name": "Xiaomi Redmi Note 13 128GB"
+    },
+    "P0031": {
+      "aliases": [
+        "P0031",
+        "iPhone  15 Plus 128GB xanh",
+        "iPhone 15 Plus 128GB xanh",
+        "iphone 15 plus 128gb xanh"
+      ],
+      "name": "iPhone 15 Plus 128GB xanh"
+    },
+    "P0032": {
+      "aliases": [
+        "Dịch vụ vệ sinh máy",
+        "Dịch Vụ Vệ Sinh Máy",
+        "Dịch vụ vệ sinh máy",
+        "P0032"
+      ],
+      "name": "Dịch vụ vệ sinh máy"
+    },
+    "P0033": {
+      "aliases": [
+        "Củ sạc Apple USB-C 20W",
+        "Củ sạc Apple USB-C 20W",
+        "P0033"
+      ],
+      "name": "Củ sạc Apple USB-C 20W"
+    }
+  },
+  "start": "2025-05-01"
+}
