@@ -29,6 +29,14 @@ Edit [configs/default.yaml](configs/default.yaml) only after the baseline is
 working. The optional Linux/CUDA stack is in `requirements-gpu.txt`; it
 includes vLLM and must not be installed on Windows.
 
+## Kaggle GPU smoke test
+
+`notebooks/kaggle_run.ipynb` clones this repo on Kaggle (GPU T4 x2), prepares
+AWQ weights, and runs the real vLLM backend through `configs/kaggle.yaml` /
+`configs/models_kaggle.yaml`. It only checks that the pipeline runs end to end
+with an LLM; Kaggle hardware is not the grading machine. See
+[docs/11_deployment_runtime.md](docs/11_deployment_runtime.md).
+
 ## Synthetic benchmark
 
 The deterministic benchmark generator is under [synth/](synth/):

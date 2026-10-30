@@ -13,6 +13,7 @@ from datamate.execution.sandbox import execute
 from datamate.formatting.formatter import format_answer
 from datamate.formatting.schemas import ANSWER_SCHEMA
 from datamate.ingest.loader import BusinessLoader
+from datamate.llm.vllm_backend import engine_kwargs
 from datamate.io.question_reader import read_records
 from datamate.io.submission_writer import SubmissionWriter
 from datamate.runtime.model_budget import check_model_budget
@@ -90,6 +91,19 @@ def test_model_budget(tmp_path):
         with pytest.raises(ValueError):
             check_model_budget(path)
     assert check_model_budget(Path("configs/models.yaml"))
+    kaggle = check_model_budget(Path("configs/models_kaggle.yaml"))
+    assert kaggle["models"]["code_generation"]["enabled"]
+
+
+def test_vllm_engine_kwargs_from_declaration():
+    default = engine_kwargs(yaml.safe_load(Path("configs/models.yaml").read_text(encoding="utf-8"))
+                            ["models"]["code_generation"])
+    assert default == {"dtype": "bfloat16", "enforce_eager": True}
+    kaggle = engine_kwargs(yaml.safe_load(Path("configs/models_kaggle.yaml").read_text(encoding="utf-8"))
+                           ["models"]["code_generation"])
+    assert kaggle == {"dtype": "float16", "enforce_eager": True, "quantization": "awq",
+                      "tensor_parallel_size": 1, "max_model_len": 8192, "gpu_memory_utilization": 0.9}
+    assert engine_kwargs({"quantization": None, "enforce_eager": False}) == {"dtype": "auto", "enforce_eager": False}
 
 
 @pytest.mark.parametrize("kind,value,expected", [

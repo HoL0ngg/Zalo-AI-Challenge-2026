@@ -1,0 +1,41 @@
+# Kaggle variant of models.yaml. T4/P100 lack bfloat16 and have 16 GB each, so the
+# 7B model is served as 4-bit AWQ in float16 on one GPU. Set tensor_parallel_size: 2
+# for an unquantized float16 checkpoint on T4 x2.
+# Weights are not downloaded here: symlink/copy them into local_path before running.
+budget:
+  max_parameters_billion: 15.0
+
+models:
+  code_generation:
+    enabled: true
+    backend: vllm
+    model_id: Qwen/Qwen2.5-Coder-7B-Instruct-AWQ
+    local_path: models/qwen-coder-awq
+    parameters_billion: 7.61
+    dtype: float16
+    quantization: awq
+    tensor_parallel_size: 1
+    max_model_len: 8192
+    gpu_memory_utilization: 0.90
+    trust_remote_code: false
+
+  embedding:
+    enabled: false
+    backend: sentence-transformers
+    model_id: BAAI/bge-m3
+    local_path: models/bge-m3
+    parameters_billion: 0.568
+    dtype: float16
+    trust_remote_code: false
+
+  reranker:
+    enabled: false
+    backend: none
+    model_id: null
+    parameters_billion: 0.0
+
+  classifier:
+    enabled: false
+    backend: none
+    model_id: null
+    parameters_billion: 0.0

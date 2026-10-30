@@ -1,0 +1,24 @@
+# Kaggle smoke-test profile: real LLM via vLLM on Kaggle GPUs (T4 x2 / P100).
+# Not a benchmark of the 6h limit; Kaggle hardware differs from the grading machine.
+# Usage (from repo root):
+#   python -m datamate.cli run --config configs/kaggle.yaml \
+#       --data-dir dataset/train --result-dir /kaggle/working/result/train
+runtime:
+  backend: vllm
+  seed: 20261030
+  offline: true
+  device: auto
+  max_question_seconds: 60
+  total_budget_seconds: 10800
+  reserve_seconds: 60
+  output_dir: /kaggle/working/result
+  data_dir: dataset/train
+
+pipeline:
+  candidate_count: 1
+  max_repair_attempts: 1
+  voting_confidence_threshold: 1.0
+  fail_safe_answer: abstain
+
+models: configs/models_kaggle.yaml
+rules: configs/rules_defaults.yaml
