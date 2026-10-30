@@ -21,6 +21,7 @@ from typing import Any, Mapping, Sequence
 
 import duckdb
 
+from datamate.ingest.consistency import check_consistency, issues
 from datamate.ingest.profiler import quote
 from datamate.understanding.resources import load_rule_defaults, load_schema_roles
 from datamate.understanding.temporal import json_objects
@@ -255,6 +256,7 @@ class CanonicalSchema:
     views: dict[str, list[tuple[str, str]]] = field(default_factory=dict)
     complete: bool = False
     capabilities: dict[str, Any] = field(default_factory=dict)
+    quality: dict[str, int | None] = field(default_factory=dict)   # cross-table consistency counts, see consistency.py
     flags: dict[str, Any] = field(default_factory=dict)
     raw_columns: tuple[str, ...] = ()
     warnings: list[str] = field(default_factory=list)
@@ -266,9 +268,13 @@ class CanonicalSchema:
             doc, column_docs = VIEW_DOCS.get(name, ("", {}))
             views[name] = {"about": doc, "columns": [{"name": c, "type": t, "meaning": column_docs.get(c, "")}
                                                      for c, t in columns]}
-        return {"views": views, "capabilities": self.capabilities,
-                "roles": {r: {"table": b.table, "columns": dict(b.columns)} for r, b in self.roles.items()},
-                "rules": {k: v for k, v in self.flags.items() if k != "sources"}}
+        described = {"views": views, "capabilities": self.capabilities,
+                     "roles": {r: {"table": b.table, "columns": dict(b.columns)} for r, b in self.roles.items()},
+                     "rules": {k: v for k, v in self.flags.items() if k != "sources"}}
+        found = issues(self.quality)
+        if found:   # clean data adds nothing, so its prompt is unchanged
+            described["data_quality"] = found
+        return described
 
 
 def _select_all(role: RoleBinding, wanted: Sequence[tuple[str, str]], slash: str,
@@ -387,6 +393,8 @@ def build_canonical(connection: duckdb.DuckDBPyConnection, profile: Mapping[str,
                         f"unit_price, discount, line_revenue, {revenue} AS revenue FROM tot")
         schema.complete = "v_sales" in schema.views
         schema.capabilities = _capabilities(connection, schema)
+        schema.quality = check_consistency(connection, schema.views)
+        schema.warnings.extend(f"consistency:{name}={count}" for name, count in issues(schema.quality).items())
     except Exception as error:  # noqa: BLE001
         schema.warnings.append(f"canonical:{type(error).__name__}: {str(error)[:160]}")
         logging.warning("Canonical layer failed: %s", error)

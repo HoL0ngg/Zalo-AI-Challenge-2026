@@ -24,6 +24,20 @@ Biến gói dữ liệu thô (nhiều định dạng, lộn xộn) thành một 
 ## Đầu ra
 `BusinessContext`: tên bảng/view, schema + thống kê, tham số rulebook (dạng cấu trúc + văn bản gốc), từ điển giá trị, calendar.
 
+## Kiểm tra nhất quán giữa các bảng (Phase 4, mục 2)
+`ingest/consistency.py` đếm bằng SQL trên view chuẩn (sau `_capabilities`, trong `build_canonical`), kết quả ở `CanonicalSchema.quality`:
+| Khóa | Ý nghĩa | Hậu quả nếu bỏ qua |
+|---|---|---|
+| `lines_without_order` | dòng bán có `order_id` không có trong đơn hàng | bị loại **im lặng** khỏi `v_sales` (INNER JOIN), doanh thu thiếu |
+| `line_skus_not_in_products` | SKU trên dòng bán không có trong bảng sản phẩm | tên sản phẩm rơi về SKU, nhóm hàng rỗng |
+| `order_customers_not_in_customers` | mã khách trên đơn trỏ vào hư không (khách trống là bình thường, không tính) | thống kê theo khách lệch |
+| `orders_without_date` | ngày đơn không đọc được | đơn biến mất khỏi mọi truy vấn theo kỳ |
+
+Mỗi khóa là `0` (sạch), `N > 0` (có vấn đề) hoặc `None` (không biết: thiếu view hoặc truy vấn lỗi). Chỉ **ghi nhận, không chặn câu hỏi**:
+mỗi mục `> 0` thành warning `consistency:<khóa>=<N>` (vào `ingest_warnings` trong log), và `describe()` thêm khóa `data_quality` cho prompt **chỉ khi có vấn đề**,
+nên business sạch giữ nguyên prompt. Dữ liệu train/dev của bộ sinh không có lỗi nào trong số này (0 warning); giá trị là độ bền cho business mới ở private test.
+Không làm: "ngày tương lai" (kỳ đã giải luôn ≤ `as_of`) và tỉ lệ rỗng tổng quát (không có quyết định nào phụ thuộc).
+
 ## Lưu ý
 - Dữ liệu lớn tới ~300.000 dòng: DuckDB xử lý nhanh, không cần nạp hết vào RAM của LLM; chỉ đưa schema + vài dòng mẫu vào prompt.
 - Không bao giờ ghi vào `/data`.

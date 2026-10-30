@@ -8,7 +8,7 @@ from business_fixture import VOUCHER_RULEBOOK, make_package
 from datamate.codegen.prompt_builder import build_prompt
 from datamate.core import Candidate, Question
 from datamate.formatting.formatter import format_answer
-from datamate.gate import gate
+from datamate.gate import EMPTY_PERIOD_REASON, ZERO_BASE_REASON, gate
 from datamate.ingest.loader import BusinessLoader
 from datamate.linking import link, link_to_log
 from datamate.linking.entity_index import build_entity_index, entity_key
@@ -111,7 +111,8 @@ def test_missing_entities_are_flagged_and_blocked(shop, text):
 def test_generic_questions_produce_no_entities_and_no_false_missing(shop, text):
     linked, decision = run(shop, text)
     assert linked.entities == [] and not linked.flags["missing_entity"], (text, linked.flags)
-    assert decision.allowed or "dữ liệu" in decision.reason  # blocked only for a data reason, never a mention
+    # blocked only for a data reason, never a mention
+    assert decision.allowed or "dữ liệu" in decision.reason or decision.reason in {EMPTY_PERIOD_REASON, ZERO_BASE_REASON}
 
 
 def test_single_word_after_a_cue_must_match_the_cue_kind(shop):
@@ -177,6 +178,46 @@ def test_period_outside_the_data_range_is_flagged(shop):
     assert inside.flags["period_outside_data"] == [] and allowed.allowed
     expiry, _ = run(shop, "Sản phẩm nào hết hạn trong 30 ngày tới?")
     assert expiry.flags["period_outside_data"] == []     # expiry uses another date column
+
+
+@pytest.mark.parametrize("text,reason", [
+    ("Doanh thu tháng này tăng trưởng bao nhiêu phần trăm so với tháng trước?", ZERO_BASE_REASON),   # April has no sales
+    ("Mặt hàng nào bán chạy nhất ngày 03/05/2026?", EMPTY_PERIOD_REASON),   # inside the range, but only a cancelled order
+    ("Giá trị đơn hàng trung bình ngày 03/05/2026 là bao nhiêu?", EMPTY_PERIOD_REASON),
+    ("Mặt hàng nào bán chạy nhất ngày 04/05/2026?", EMPTY_PERIOD_REASON),   # the only order has a returned line
+])
+def test_empty_periods_block_questions_that_are_undefined_on_them(shop, text, reason):
+    linked, decision = run(shop, text)
+    assert linked.flags["period_outside_data"] == [] and linked.flags["period_stats"]
+    assert not decision.allowed and decision.reason == reason
+
+
+@pytest.mark.parametrize("text", [
+    "Doanh thu ngày 5/5 tăng trưởng bao nhiêu phần trăm so với ngày 2/5?",   # both periods have sales
+    "Mặt hàng nào bán chạy nhất ngày 05/05/2026?",
+    "Cho mình top 3 sản phẩm bán nhiều nhất ngày 03/05/2026",    # topN on an empty period is []
+    "Doanh thu ngày 03/05/2026 là bao nhiêu?",                    # a sum on an empty period is 0
+    "Ngày 03/05/2026 có bao nhiêu đơn hàng?",
+])
+def test_empty_period_does_not_block_questions_that_have_a_defined_result(shop, text):
+    assert run(shop, text)[1].allowed, text
+
+
+def test_period_stats_count_valid_sales_only(shop):
+    linked, _ = run(shop, "Doanh thu ngày 5/5 tăng trưởng bao nhiêu phần trăm so với ngày 03/05/2026?")
+    by_label = {(s["role"], s["rows"] > 0) for s in linked.flags["period_stats"]}
+    assert by_label == {("primary", True), ("comparison", False)}     # a cancelled order is not a sale
+
+
+def test_period_stats_are_unknown_not_empty_without_the_canonical_layer(tmp_path):
+    root = tmp_path / "package"
+    directory = root / "data" / "shop"
+    directory.mkdir(parents=True)
+    (root / "rulebook.md").write_text("x", encoding="utf-8")
+    (directory / "export.csv").write_text("foo,bar\n1,2\n", encoding="utf-8")
+    context = BusinessLoader(root, tmp_path / "work").load("shop")
+    linked, decision = run(context, "Mặt hàng nào bán chạy nhất tháng này?")
+    assert linked.flags["period_stats"] is None and decision.allowed
 
 
 def test_unknown_business_is_never_blocked_on_capabilities(tmp_path):
@@ -257,7 +298,7 @@ def test_pipeline_blocks_before_calling_the_model(tmp_path):
 
 def test_percent_and_list_types_are_forced_from_the_question(tmp_path):
     result, _, _ = answer(tmp_path, VOUCHER_RULEBOOK,
-                          "Doanh thu tháng này tăng trưởng bao nhiêu phần trăm so với tháng trước?", "SELECT 12.345")
+                          "Doanh thu ngày 5/5 tăng trưởng bao nhiêu phần trăm so với ngày 2/5?", "SELECT 12.345")
     assert result.to_dict() == {"id": "t", "type": "percent", "answer": 12.35}
     result, _, _ = answer(tmp_path / "2", VOUCHER_RULEBOOK, "Liệt kê ba mặt hàng doanh thu cao nhất trong tháng này.",
                           "SELECT 'Bánh quy bơ'")

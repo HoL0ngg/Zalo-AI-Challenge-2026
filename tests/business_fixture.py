@@ -69,35 +69,57 @@ DATA = {
                    display_name="Bánh quy bơ")],
     "debts": [dict(customer_id="C2", amount="1.500.000", debt_date="2026-05-06")],
 }
+# Opt-in extras (CSV layout only, kept out of STYLES so the default package is unchanged).
+# Lots all predate the sales, so every SKU listed in `purchase_skus` is costed for the whole month.
+PURCHASES_STYLE = ("phieu_nhap", dict(lot_id="lo_id", purchase_date="ngay_nhap", sku="ma_sp", qty="so_luong",
+                                      unit_cost="gia_nhap"))
+PURCHASES = [dict(lot_id="B1", purchase_date="2026-05-01", sku="P1", qty=50, unit_cost="9.000"),
+             dict(lot_id="B2", purchase_date="2026-05-01", sku="P2", qty=50, unit_cost="12.000"),
+             dict(lot_id="B3", purchase_date="2026-05-01", sku="P3", qty=50, unit_cost="3.000")]
+# `dirty=True`: a sale line whose order and product do not exist, an order of an unknown customer
+# with an unreadable date. None of them may change a valid sale.
+DIRTY = {"lines": [dict(line_id="L9", order_id="O99", sku="P9", qty=4, unit_price="10.000", discount="0",
+                        returned=False, display_name="Hang la")],
+         "orders": [dict(order_id="O5", order_date="khong ro", customer_id="C9", status="hoàn thành", voucher="0")]}
 # Expected values the views must reproduce.
 VALID_ORDERS = {"O1", "O4"}
 REVENUE_NO_VOUCHER = 30000 + 15000 + 60000
 REVENUE_VOUCHER = REVENUE_NO_VOUCHER - 10000
 
 
-def _frame(style: str, role: str, include_debts: bool) -> pd.DataFrame | None:
-    spec = STYLES[style].get(role)
+def _frame(style: str, role: str, include_debts: bool, dirty: bool = False,
+           spec: tuple | None = None, rows: list | None = None) -> pd.DataFrame | None:
+    spec = spec or STYLES[style].get(role)
     if spec is None or (role == "debts" and not include_debts):
         return None
     names = spec[1]
-    rows = DATA[role]
+    rows = DATA[role] + (DIRTY.get(role, []) if dirty else []) if rows is None else rows
     frame = pd.DataFrame([{names[c]: v for c, v in row.items() if c in names} for row in rows])
     return frame[[names[c] for c in names if names[c] in frame.columns]]
 
 
 def make_package(root: Path, style: str, rulebook: str = TRAIN_RULEBOOK, readme: str = "A shop.",
-                 include_debts: bool = True, business: str = "shop") -> Path:
-    """Create root/{rulebook.md, calendar.csv, data/<business>/...} and return root."""
+                 include_debts: bool = True, business: str = "shop", dirty: bool = False,
+                 purchase_skus: tuple[str, ...] | None = None) -> Path:
+    """Create root/{rulebook.md, calendar.csv, data/<business>/...} and return root.
+
+    `dirty` and `purchase_skus` (SKUs that have a costed purchase lot; None = no purchase table) are
+    opt-in and only supported by the CSV layout.
+    """
     directory = root / "data" / business
     directory.mkdir(parents=True)
     (root / "rulebook.md").write_text(rulebook, encoding="utf-8")
     (root / "calendar.csv").write_text("date,is_tet_window\n2026-05-01,0\n", encoding="utf-8")
     (directory / "README.md").write_text(readme, encoding="utf-8")
-    frames = {role: _frame(style, role, include_debts) for role in STYLES[style]}
+    frames = {role: _frame(style, role, include_debts, dirty) for role in STYLES[style]}
     frames = {role: frame for role, frame in frames.items() if frame is not None}
     if style == "csv":
         for role, frame in frames.items():
             frame.to_csv(directory / f"{STYLES[style][role][0]}.csv", index=False, encoding="utf-8")
+        if purchase_skus is not None:
+            lots = [row for row in PURCHASES if row["sku"] in purchase_skus]
+            _frame(style, "purchases", include_debts, spec=PURCHASES_STYLE, rows=lots).to_csv(
+                directory / f"{PURCHASES_STYLE[0]}.csv", index=False, encoding="utf-8")
     elif style == "xlsx":
         book = Workbook()
         book.remove(book.active)

@@ -31,7 +31,7 @@ def link(resolved: ResolvedQuestion, context: BusinessContext) -> LinkResult:
     result = LinkResult(resolved, context)
     flags: dict[str, Any] = {"missing_entity": False, "ambiguous": False, "missing_mentions": [],
                              "ambiguous_mentions": [], "missing_capability": [], "period_outside_data": [],
-                             "errors": []}
+                             "period_stats": None, "uncosted_skus": None, "errors": []}
     config = load_schema_roles()
     if context.entities is not None:
         try:

@@ -81,9 +81,9 @@ python -m datamate.cli run --data-dir dataset/train --result-dir result/train_p3
 - Chỉ xử lý business có đủ vai trò `orders` và `lines`; bảng phẳng một sheet chưa được hỗ trợ (khi đó không có view và không có gì bị chặn).
 - Tồn kho và hàng sắp hết hạn chưa có view riêng; LLM tính từ `v_purchases` và `v_sales`.
 - Khái niệm chi phí vận hành, nhân viên chỉ nhận qua từ khóa; từ ngoài danh sách sẽ không bị chặn.
-- Chưa dùng embedding (BGE-M3). Chưa kiểm tra tính nhất quán dữ liệu (ví dụ SKU có trên dòng bán nhưng không có trong bảng sản phẩm).
+- Chưa dùng embedding (BGE-M3). Tính nhất quán giữa các bảng chỉ được ghi nhận, không chặn (SKU không có trong bảng sản phẩm, dòng bán không có đơn, v.v.; xem [02_ingest_profile.md](02_ingest_profile.md)).
 - Đo entity là in-sample với nhiễu của chính bộ sinh; nhiễu thật có thể khác.
 
 ## Phase 4 cần gì
 Số đo end-to-end với LLM thật trên Kaggle trước và sau Phase 3 (chưa chạy trong phiên này), few-shot theo từng loại câu hỏi dùng `schema.expected` và `linked_entities`,
-nhiều ứng viên và voting theo kết quả thực thi, kiểm tra cú pháp bằng sqlglot, và gate theo dữ liệu (ví dụ kỳ trước bằng 0 khi tính tăng trưởng, kỳ rỗng khi hỏi top 1).
+nhiều ứng viên và voting theo kết quả thực thi, kiểm tra cú pháp bằng sqlglot, và gate theo dữ liệu (đã làm: kỳ so sánh bằng 0 khi tính tăng trưởng, kỳ rỗng khi hỏi top 1, xem [05_answerability_gate.md](05_answerability_gate.md)).

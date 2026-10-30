@@ -13,6 +13,7 @@ from typing import Any, Mapping, Sequence
 
 from datamate.core import BusinessContext, Entity, Period, ResolvedQuestion
 from datamate.ingest.canonical import _match_score
+from datamate.linking.data_facts import period_stats, uncosted_skus
 
 METRIC_COLUMN = {
     "quantity": "v_sales.qty", "revenue": "v_sales.revenue", "profit": "v_sales.revenue - cost of goods",
@@ -96,6 +97,15 @@ def link_schema(resolved: ResolvedQuestion, context: BusinessContext, concepts: 
     if span and uses_sales:
         low, high = date.fromisoformat(span[0]), date.fromisoformat(span[1])
         outside = [p.label for p in resolved.periods if p.role == "primary" and (p.end < low or p.start > high)]
+    # Only ranking, average and growth questions can be undefined on an empty period, so only they pay for the query.
+    needs_stats = hints.get("operation") in {"top1", "bottom1", "date_of_max", "avg", "compare_percent"}
+    stats = period_stats(context, resolved.periods) if complete and uses_sales and needs_stats and not outside else None
+    # Profit needs a cost for every product sold in the period; "some lot has a cost" (has_cost) is not enough.
+    primary_period = next((p for p in resolved.periods if p.role == "primary"), None)
+    uncosted = None
+    if (complete and metric == "profit" and capabilities.get("has_cost") is True
+            and primary_period is not None and not outside):
+        uncosted = uncosted_skus(context, primary_period, resolved.question.as_of_date)
 
     views = sorted(canonical.views) if complete else []
     primary = metric if metric != "none" else None
@@ -108,5 +118,6 @@ def link_schema(resolved: ResolvedQuestion, context: BusinessContext, concepts: 
         "needs": needs,
         "expected": expected_answer(hints, ascii_text),
     }
-    flags = {"missing_capability": missing, "missing_capability_reasons": reasons, "period_outside_data": outside}
+    flags = {"missing_capability": missing, "missing_capability_reasons": reasons, "period_outside_data": outside,
+             "period_stats": stats, "uncosted_skus": uncosted}
     return schema, flags
