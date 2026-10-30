@@ -22,3 +22,9 @@ Hai loại được chấm khác nhau; cần đối chiếu luật chấm chính
 
 ## Rủi ro
 Chặn nhầm câu trả lời được (mất điểm chắc chắn) tệ hơn bỏ sót câu không trả lời được. Mặc định nghiêng về cho đi tiếp, trừ khi bằng chứng rõ ràng.
+
+## Phần luật đã triển khai (Phase 3)
+`gate/__init__.py` chặn (`unanswerable`) chỉ khi có bằng chứng rõ: thực thể được hỏi không tồn tại (`missing_entity`), khái niệm câu hỏi cần
+không có trong dữ liệu (`missing_capability`: công nợ, giá vốn, hạn dùng, nhân viên, chi phí vận hành), hoặc kỳ thời gian nằm hoàn toàn ngoài
+dữ liệu (`period_outside_data`). Mơ hồ và lỗi ánh xạ không chặn. Chưa có LLM judge, ngưỡng `abstain` và các kiểm tra theo dữ liệu
+(ví dụ kỳ trước bằng 0 khi tính tăng trưởng); những phần đó thuộc Phase 4. Chi tiết: [15_phase3.md](15_phase3.md).

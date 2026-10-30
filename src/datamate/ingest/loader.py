@@ -1,6 +1,7 @@
 import io
 import csv
 import logging
+import re
 import sqlite3
 from pathlib import Path
 
@@ -9,8 +10,10 @@ import pandas as pd
 from openpyxl import load_workbook
 
 from datamate.core import BusinessContext
+from datamate.ingest.canonical import build_canonical
 from datamate.ingest.profiler import profile_table, quote
 from datamate.ingest.readers import read_calendar, read_text
+from datamate.linking.entity_index import build_entity_index
 
 
 def from_rows(rows: list[tuple]) -> pd.DataFrame:
@@ -28,6 +31,35 @@ def from_rows(rows: list[tuple]) -> pd.DataFrame:
     return pd.DataFrame(values, columns=names).infer_objects()
 
 
+_INT = re.compile(r"^-?\d+$")
+_FLOAT = re.compile(r"^-?\d+\.\d+$")
+_AMBIGUOUS = re.compile(r"^-?\d{1,3}\.\d{3}$")  # 93.000 is a Vietnamese thousand-grouped number, not 93.0
+_LEADING_ZERO = re.compile(r"^-?0\d")
+_BOOLEAN = {"true": True, "false": False}
+
+
+def coerce_csv_types(frame: pd.DataFrame) -> pd.DataFrame:
+    """Typed columns from an all-text CSV, only where the reading cannot be ambiguous.
+
+    pandas' own inference turns "10.000" into 10.0, which is a thousand times too small for a
+    Vietnamese amount. Columns with grouped numbers, leading zeros (phones, codes) or mixed
+    content stay text; the canonical layer parses them with explicit rules.
+    """
+    for column in frame.columns:
+        values = frame[column].dropna().astype(str).str.strip()
+        if values.empty:
+            continue
+        lowered = values.str.lower()
+        if lowered.isin(_BOOLEAN).all():
+            frame[column] = frame[column].map(lambda v: _BOOLEAN.get(str(v).strip().lower()) if pd.notna(v) else None)
+        elif values.map(lambda v: bool(_INT.match(v))).all() and not values.map(lambda v: bool(_LEADING_ZERO.match(v))).any():
+            frame[column] = pd.to_numeric(frame[column], errors="coerce")
+        elif (values.map(lambda v: bool(_FLOAT.match(v) or _INT.match(v))).all()
+              and not values.map(lambda v: bool(_AMBIGUOUS.match(v) or _LEADING_ZERO.match(v))).any()):
+            frame[column] = pd.to_numeric(frame[column], errors="coerce")
+    return frame
+
+
 def read_tables(path: Path):
     if path.suffix.lower() == ".csv":
         raw = path.read_bytes()
@@ -40,7 +72,9 @@ def read_tables(path: Path):
         delimiter = csv.Sniffer().sniff(sample, delimiters=",;\t|").delimiter if sample else ","
         rows = list(csv.reader(io.StringIO(text), delimiter=delimiter))
         header = max(range(min(10, len(rows))), key=lambda i: (len(rows[i]), -i))
-        yield path.stem, pd.read_csv(io.StringIO(text), sep=delimiter, skiprows=header)
+        frame = pd.read_csv(io.StringIO(text), sep=delimiter, skiprows=header, dtype=str,
+                            keep_default_na=False, na_values=[""])
+        yield path.stem, coerce_csv_types(frame)
     elif path.suffix.lower() == ".xlsx":
         book = load_workbook(path, read_only=True, data_only=True)
         try:
@@ -78,6 +112,9 @@ class BusinessLoader:
         database = self.work / f"business_{self.next_database}.duckdb"
         self.next_database += 1
         profile, warnings = {}, []
+        readme = read_text(directory / "README.md")
+        rulebook = read_text(self.root / "rulebook.md")
+        canonical = entities = None
         connection = duckdb.connect(str(database), config={"enable_external_access": "false"})
         try:
             for path in sorted(directory.iterdir()):
@@ -96,12 +133,22 @@ class BusinessLoader:
                 except Exception as error:
                     warnings.append(f"{path.name}: {error}")
                     logging.warning("Ingest: %s", warnings[-1])
+            if profile:
+                # Canonical views and the entity index are built in the same private database.
+                canonical = build_canonical(connection, profile, readme, rulebook)
+                warnings.extend(canonical.warnings)
+                if canonical.complete:
+                    try:
+                        entities = build_entity_index(connection, list(canonical.views))
+                    except Exception as error:  # noqa: BLE001
+                        warnings.append(f"entity_index: {error}")
         finally:
             connection.close()
         if not profile:
             raise ValueError("No readable tables: " + "; ".join(warnings))
-        context = BusinessContext(database, profile, read_text(directory / "README.md"),
-                                  read_text(self.root / "rulebook.md"),
-                                  read_calendar(self.root / "calendar.csv"), warnings)
+        context = BusinessContext(database, profile, readme, rulebook,
+                                  read_calendar(self.root / "calendar.csv"), warnings,
+                                  canonical=canonical, entities=entities,
+                                  protected_values=entities.protected if entities else ())
         self.cache[business_id] = context
         return context

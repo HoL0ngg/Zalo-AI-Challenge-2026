@@ -6,12 +6,12 @@ from datamate.core import Answer, Question
 from datamate.execution.repair import repair
 from datamate.execution.sandbox import execute
 from datamate.formatting.formatter import format_answer
-from datamate.gate import gate_stub
+from datamate.gate import gate
 from datamate.ingest.loader import BusinessLoader
-from datamate.linking import link_stub
+from datamate.linking import link, link_to_log
 from datamate.llm.base import LLMBackend
 from datamate.runtime.time_guard import TimeGuard
-from datamate.understanding import understand_stub
+from datamate.understanding import periods_to_dicts, understand
 from datamate.voting import vote_stub
 
 
@@ -31,13 +31,20 @@ class Pipeline:
                 raise TimeoutError("Global time budget exhausted")
             context = self.loader.load(question.business_id)
             log["ingest_warnings"] = context.warnings
-            linked = link_stub(understand_stub(question, context), context)
-            gate = gate_stub(linked)
-            if not gate.allowed:
-                answer = Answer(question.id, "unanswerable", reason=gate.reason)
+            resolved = understand(question, context)
+            log["understanding"] = {
+                "normalized": resolved.normalized, "normalized_ascii": resolved.normalized_ascii,
+                "periods": periods_to_dicts(resolved.periods), "intent_hints": resolved.intent_hints,
+                "rule_params": resolved.rule_params, "warnings": resolved.warnings,
+            }
+            linked = link(resolved, context)
+            log["linking"] = link_to_log(linked)
+            decision = gate(linked)
+            if not decision.allowed:
+                answer = Answer(question.id, "unanswerable", reason=decision.reason)
             else:
                 results = []
-                for candidate in generate(gate, self.backend):
+                for candidate in generate(decision, self.backend):
                     for attempt in range(self.repair_attempts + 1):
                         remaining = min(self.guard.remaining, self.timeout - (time.monotonic() - started))
                         result = execute(context, candidate, remaining)

@@ -30,6 +30,10 @@ def clean(value: Any, integer: bool = False) -> Any:
 def format_answer(question: Question, result: ExecResult) -> Answer:
     if result.error:
         raise ValueError(result.error)
+    if (result.candidate.unit in {"VND", "count"} and len(result.columns) == 1 and len(result.rows) == 1
+            and result.rows[0][0] is None):
+        # SUM/COUNT-style money or count over no rows is 0, not a missing answer.
+        result = ExecResult(result.candidate, result.columns, [[0]], result.error)
     kind = result.candidate.answer_type
     if kind is None:
         if len(result.columns) > 1:

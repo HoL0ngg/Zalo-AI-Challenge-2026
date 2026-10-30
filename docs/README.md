@@ -15,6 +15,9 @@
 | 10_evaluation_data.md | Đánh giá, dữ liệu tự sinh, đo từng bước |
 | 11_deployment_runtime.md | Docker, predict.sh, time guard, tái lập |
 | 12_roadmap.md | Lộ trình thực hiện và rủi ro |
+| 13_baseline.md | Baseline chạy được và giới hạn hiện tại |
+| 14_phase2.md | Phase 2: Question Understanding, cách chạy, mở rộng, hạn chế |
+| 15_phase3.md | Phase 3: lớp ngữ nghĩa chuẩn, Entity/Schema Linking, gate luật |
 # Baseline implementation
 
 See [13_baseline.md](13_baseline.md) for the runnable baseline and current boundaries.

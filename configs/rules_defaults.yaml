@@ -13,3 +13,50 @@ formatting:
   numeric_decimals: 2
   percent_decimals: 2
   string_normalization: nfc_lowercase_whitespace
+
+# Business rules used by the canonical views (Phase 3). The rulebook JSON block of the split
+# being answered overrides every key below that it also defines (same key names).
+business:
+  deduplicate_by_record_id: true            # drop repeated export rows with the same line/order/lot id
+  exclude_cancelled: true                   # cancelled orders do not count as sales
+  exclude_entire_order_if_any_return: true  # one returned line removes the whole order
+  revenue_subtract_order_voucher: false     # order voucher spread pro rata over the order's valid lines
+  revenue_include_vat: false
+  revenue_include_shipping: false
+
+# ---------------------------------------------------------------------------
+# Time resolution parameters (Phase 2). The rulebook JSON block of the split being
+# answered overrides every key below that it also defines (same key names).
+# ASSUMPTION = the rulebook is silent; the value is our choice, documented in
+# docs/03_question_understanding.md, and a warning is emitted when it is used.
+time:
+  month_to_as_of: true              # rulebook: "tháng này" = day 1..as_of
+  this_week_mode: week_to_date      # ASSUMPTION: "tuần này" = week start..as_of (or full_week)
+  quarter_to_as_of: true            # ASSUMPTION: "quý này" = quarter start..as_of
+  year_to_as_of: true               # ASSUMPTION: "năm nay" = Jan 1..as_of
+  rolling_window_includes_as_of: true   # ASSUMPTION: "30 ngày qua" = as_of-29..as_of
+  bare_cung_ky: year                # ASSUMPTION: bare "cùng kỳ" = same period last year (or month)
+  pre_tet_days: 7                   # ASSUMPTION: "trước Tết" = 7 days before the Tết window
+  post_tet_days: 7                  # ASSUMPTION: "sau Tết" = 7 days after the Tết window
+  tet_lunar_start: "12-23"          # lunar month-day, used only if calendar has no Tết flag
+  tet_lunar_end: "01-10"
+
+# Light intent hints (regexes on diacritic-free lowercase text; first match wins).
+intent_keywords:
+  ranking_words: "nhat|dung dau|cao|thap"
+  metric:
+    profit: ["loi nhuan", "lai gop", "(?<![a-z])lai(?![a-z])"]
+    debt: ["cong no", "dang no", "(?<![a-z])no(?![a-z])"]
+    expiry: ["het han", "han dung", "sap het han", "(?<![a-z])date(?![a-z])"]
+    stock: ["ton kho", "hang ton", "con ton", "(?<![a-z])ton(?![a-z])"]
+    revenue: ["doanh thu", "doanh so", "tien ban hang", "thu duoc", "gia tri don"]
+    quantity: ["so luong", "ban nhieu", "ban chay", "ban it", "ban cham", "luong ban", "ban ra"]
+  operation:
+    compare_percent: ["tang truong", "tang giam", "phan tram", "%", "ty le tang", "ti le tang"]
+    date_of_max: ["ngay nao.*(?:cao nhat|nhieu nhat|thap nhat|it nhat)"]
+    exists: ['(?<![a-z])co(?![a-z]).*(?<![a-z])khong\??\s*$']
+    top1: ["(?:cao|nhieu|lon|chay) nhat", "dung dau"]
+    bottom1: ["(?:thap|it|nho|cham) nhat"]
+    avg: ["trung binh", "binh quan"]
+    count: ["bao nhieu (?:don|khach|san pham|mat hang|ngay|lan)", "(?<![a-z])dem(?![a-z])", "co bao nhieu"]
+    sum: ["(?<![a-z])tong(?![a-z])", "tat ca"]

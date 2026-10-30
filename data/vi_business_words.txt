@@ -1,0 +1,309 @@
+# Hand-curated Vietnamese words and phrases for small-business questions.
+# One entry per line, lowercase, diacritics kept. Phrases are restored as a unit.
+# Several entries deliberately add accented alternatives of a common ASCII key
+# (ban/bạn/bàn/bản, co/có/cô/cỏ ...) so that ambiguous keys are never restored.
+
+# time
+tháng
+tuần
+ngày
+năm
+quý
+hôm
+hôm nay
+hôm qua
+hôm kia
+tháng này
+tháng trước
+tháng rồi
+tháng sau
+tuần này
+tuần rồi
+tuần trước
+tuần sau
+tuần liền trước
+năm nay
+năm ngoái
+năm trước
+quý này
+quý trước
+cùng kỳ
+kỳ trước
+từ ngày
+đến ngày
+cuối tuần
+đầu tháng
+cuối tháng
+đầu năm
+cuối năm
+vừa rồi
+vừa qua
+gần đây
+tính đến
+đến nay
+dịp tết
+trong dịp
+trước tết
+sau tết
+nấm
+nắm
+
+# shop / people
+cửa hàng
+cửa
+cưa
+chi nhánh
+nhân viên
+nhân
+viên
+thu ngân
+ca sáng
+ca chiều
+ca tối
+ca
+khách
+khách hàng
+khách lẻ
+khách sỉ
+khách quen
+người mua
+người bán
+nhà cung cấp
+nhà
+
+# orders / products
+sản phẩm
+mặt hàng
+nhóm hàng
+danh mục
+loại hàng
+hàng hóa
+hàng
+đơn
+đơn hàng
+hóa đơn
+phiếu
+mã
+mã đơn
+mã khách
+mã hàng
+mã sản phẩm
+tên
+tên hàng
+tên khách
+số điện thoại
+địa chỉ
+lô hàng
+lô
+hạn dùng
+hết hạn
+sắp hết hạn
+còn hạn
+tồn kho
+hàng tồn
+tồn
+còn tồn
+hết hàng
+sắp hết hàng
+nhập hàng
+nhập kho
+xuất kho
+trả hàng
+hoàn trả
+đã hủy
+bị hủy
+hủy
+hợp lệ
+đơn hợp lệ
+không hợp lệ
+hoàn thành
+đã hoàn thành
+đã giao
+đang giao
+
+# money
+doanh thu
+doanh số
+lợi nhuận
+lãi gộp
+lãi
+giá vốn
+giá bán
+giá
+đơn giá
+thành tiền
+tiền
+tiền mặt
+chuyển khoản
+thanh toán
+đã thanh toán
+chưa thanh toán
+công nợ
+nợ
+đang nợ
+trả nợ
+còn nợ
+giảm giá
+khuyến mãi
+chiết khấu
+phí ship
+phí vận chuyển
+vận chuyển
+thuế
+điện nước
+chi phí
+tổng chi phí
+tiền điện
+
+# metrics and ranking
+bán
+bạn
+bàn
+bản
+bắn
+bán chạy
+bán nhiều
+bán nhiều nhất
+bán ít
+bán ít nhất
+bán chậm
+bán được
+bán ra
+mua
+mua nhiều
+mua nhiều nhất
+nhiều
+nhiều nhất
+ít
+ít nhất
+cao
+cao nhất
+thấp
+thấp nhất
+lớn nhất
+nhỏ nhất
+trung bình
+tổng
+tổng cộng
+tất cả
+đếm
+bao nhiêu
+mấy
+có bao nhiêu
+bao nhiêu đơn
+tăng
+giảm
+tăng giảm
+tăng trưởng
+so với
+phần trăm
+tỷ lệ
+tỉ lệ
+liệt kê
+danh sách
+bảng
+xếp hạng
+thống kê
+kèm
+theo
+theo số lượng
+theo doanh thu
+số lượng
+số đơn
+số khách
+khác nhau
+thứ mấy
+ngày nào
+ngày
+top
+
+# question words and glue
+nào
+gì
+đâu
+khi nào
+thế nào
+không
+có không
+được không
+có
+cô
+cỏ
+cơ
+cố
+cổ
+là
+lá
+lạ
+của
+cho
+cho mình
+giúp
+giúp mình
+xem
+tính
+tính đến
+trong
+ngoài
+với
+vói
+mà
+má
+mạ
+thì
+đang
+đã
+sẽ
+vẫn
+văn
+vân
+còn
+chỉ
+tối đa
+tối thiểu
+dưới
+trên
+từ
+đến
+khoảng
+những
+các
+mỗi
+một
+hai
+ba
+bốn
+năm
+sáu
+bảy
+tám
+chín
+mười
+đó
+đỏ
+đổ
+đồ
+này
+nay
+nảy
+nấy
+đấy
+đây
+đẩy
+vậy
+vây
+hơn
+kém
+nhất
+nhật
+nhạt
+nhặt
+
+# units
+cái
+hộp
+chai
+gói
+thùng
+lốc
+đơn vị

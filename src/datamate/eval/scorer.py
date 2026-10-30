@@ -30,7 +30,7 @@ def matches(prediction: dict, expected: dict) -> bool:
     if kind == "percent":
         return clean(actual) == clean(wanted)
     if kind == "string":
-        return normalize(actual) in [normalize(v) for v in [wanted, *expected.get("aliases", [])]]
+        return normalize(actual) in [normalize(v) for v in [wanted, *expected.get("alias", expected.get("aliases", []))]]
     if kind in {"list", "table"}:
         return normalize(actual) == normalize(wanted)
     return actual == wanted

@@ -22,17 +22,53 @@ class BusinessContext:
     rulebook: str
     calendar: list[dict[str, str]]
     warnings: list[str] = field(default_factory=list)
+    # Phase 3: canonical semantic layer, entity index and entity values to protect from normalization.
+    canonical: Any = None            # datamate.ingest.canonical.CanonicalSchema | None
+    entities: Any = None             # datamate.linking.entity_index.EntityIndex | None
+    protected_values: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class Period:
+    """Inclusive date range resolved from a time expression in the question."""
+    label: str
+    start: date
+    end: date
+    role: str  # "primary" | "comparison"
+    mention: str
 
 
 @dataclass
 class ResolvedQuestion:
-    question: Question
+    question: Question  # always the original, untouched question
+    normalized: str = ""
+    normalized_ascii: str = ""
+    periods: list[Period] = field(default_factory=list)
+    intent_hints: dict[str, Any] = field(default_factory=dict)
+    rule_params: dict[str, Any] = field(default_factory=dict)
+    warnings: list[str] = field(default_factory=list)
+
+
+@dataclass(frozen=True)
+class Entity:
+    """A question mention linked to a value that really exists in the business data."""
+    mention: str
+    kind: str                        # product | customer | category
+    id: str
+    matched: str                     # canonical in-data name
+    score: float
+    match_type: str                  # exact | code | fuzzy
+    aliases: tuple[str, ...] = ()
+    alternatives: tuple[tuple[str, str, float], ...] = ()   # (name, id, score)
 
 
 @dataclass
 class LinkResult:
     resolved: ResolvedQuestion
     context: BusinessContext
+    entities: list[Entity] = field(default_factory=list)
+    schema: dict[str, Any] = field(default_factory=dict)
+    flags: dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass

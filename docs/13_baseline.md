@@ -1,6 +1,6 @@
 # Baseline plumbing
 
-Implemented pipeline: ingest -> understanding stub -> linking stub -> gate stub ->
+Implemented pipeline: ingest (canonical views since Phase 3) -> understanding (real since Phase 2) -> linking (real since Phase 3) -> rule gate ->
 one SQL candidate -> read-only execution -> optional single repair -> first valid
 result stub -> Pydantic formatter -> durable logs and submission.
 
@@ -45,8 +45,10 @@ input-contract errors: no valid output ID can be invented.
 * Mock grammar: `count TABLE` / `đếm TABLE`, `sum|tổng|avg|min|max COLUMN from|trong TABLE`,
   `list|danh sách COLUMN from|trong TABLE`, `table|bảng TABLE`. Names are literal
   identifiers, and all answers come from SQL execution. Unsupported questions abstain.
-* No temporal, linking, gate, or multi-candidate voting logic is implemented.
-  The gate currently always passes. Currency/count integer rounding is available
+* Phase 2 added real question understanding (normalizer, temporal resolver, intent hints; see
+  `docs/03_question_understanding.md` and `docs/14_phase2.md`). Phase 3 added the canonical views, entity/schema linking and a
+  rule gate (`docs/15_phase3.md`); multi-candidate voting is still not implemented.
+  The gate blocks only on provable evidence (missing entity, capability or period). Currency/count integer rounding is available
   via candidate unit metadata; the mock marks count queries only. Percent/date
   intent beyond native SQL result types needs future understanding work.
 * Optional vLLM is a local-path skeleton, temperature zero, seed fixed, remote

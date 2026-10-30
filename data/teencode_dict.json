@@ -1,0 +1,437 @@
+{
+ "sản phẩm": [
+  "sp",
+  "san pham"
+ ],
+ "được": [
+  "dc",
+  "đc"
+ ],
+ "không": [
+  "ko",
+  "k",
+  "hok",
+  "hông",
+  "hem"
+ ],
+ "bao nhiêu": [
+  "bn",
+  "bnh",
+  "bnhieu",
+  "bao nhiu"
+ ],
+ "hôm nay": [
+  "hnay",
+  "hom nay",
+  "hôm ni"
+ ],
+ "hôm qua": [
+  "hqua",
+  "hom qua"
+ ],
+ "nhiều nhất": [
+  "nhìu nhất",
+  "nhieu nhat"
+ ],
+ "ít nhất": [
+  "it nhat"
+ ],
+ "doanh thu": [
+  "dthu",
+  "doanhthu"
+ ],
+ "đơn hàng": [
+  "dh",
+  "don hang",
+  "đh"
+ ],
+ "khách hàng": [
+  "kh",
+  "khach hang"
+ ],
+ "tháng này": [
+  "thang nay",
+  "thg này"
+ ],
+ "tháng trước": [
+  "thg trước",
+  "thang truoc"
+ ],
+ "tuần rồi": [
+  "tuan roi",
+  "tuan r"
+ ],
+ "tuần trước": [
+  "tuan truoc"
+ ],
+ "năm ngoái": [
+  "nam ngoai"
+ ],
+ "cùng kỳ": [
+  "cung ky"
+ ],
+ "giá vốn": [
+  "gia von"
+ ],
+ "lợi nhuận": [
+  "loi nhuan"
+ ],
+ "lãi": [
+  "lai"
+ ],
+ "trả hàng": [
+  "tra hang"
+ ],
+ "hủy": [
+  "huy"
+ ],
+ "hoàn thành": [
+  "hoan thanh"
+ ],
+ "đã bán": [
+  "da ban"
+ ],
+ "bán chạy": [
+  "ban chay"
+ ],
+ "bán được": [
+  "ban dc"
+ ],
+ "tổng": [
+  "tong"
+ ],
+ "số lượng": [
+  "sl",
+  "so luong"
+ ],
+ "số đơn": [
+  "so don"
+ ],
+ "đơn": [
+  "don"
+ ],
+ "giảm giá": [
+  "giam gia"
+ ],
+ "chiết khấu": [
+  "chiet khau"
+ ],
+ "giá bán": [
+  "gia ban"
+ ],
+ "đơn giá": [
+  "don gia"
+ ],
+ "thành tiền": [
+  "thanh tien"
+ ],
+ "đơn vị": [
+  "don vi"
+ ],
+ "phí ship": [
+  "phi ship"
+ ],
+ "vận chuyển": [
+  "van chuyen"
+ ],
+ "thuế": [
+  "thue"
+ ],
+ "tăng trưởng": [
+  "tang truong"
+ ],
+ "tăng": [
+  "tang"
+ ],
+ "giảm": [
+  "giam"
+ ],
+ "so với": [
+  "so voi"
+ ],
+ "tỉ lệ": [
+  "ti le"
+ ],
+ "tỷ lệ": [
+  "ty le"
+ ],
+ "phần trăm": [
+  "phan tram",
+  "%"
+ ],
+ "trung bình": [
+  "tb",
+  "trung binh"
+ ],
+ "bình quân": [
+  "bq"
+ ],
+ "cao nhất": [
+  "cao nhat"
+ ],
+ "thấp nhất": [
+  "thap nhat"
+ ],
+ "ngày nào": [
+  "ngay nao"
+ ],
+ "thứ mấy": [
+  "thu may"
+ ],
+ "thứ hai": [
+  "thu 2"
+ ],
+ "chủ nhật": [
+  "chu nhat"
+ ],
+ "cuối tuần": [
+  "cuoi tuan"
+ ],
+ "đầu tuần": [
+  "dau tuan"
+ ],
+ "thời gian": [
+  "thoi gian"
+ ],
+ "khoảng": [
+  "khoang"
+ ],
+ "trong dịp": [
+  "trong dip"
+ ],
+ "dịp Tết": [
+  "dip tet"
+ ],
+ "Tết": [
+  "tet"
+ ],
+ "vừa rồi": [
+  "vua roi"
+ ],
+ "gần đây": [
+  "gan day"
+ ],
+ "gần nhất": [
+  "gan nhat"
+ ],
+ "hết hạn": [
+  "het han"
+ ],
+ "hạn dùng": [
+  "han dung"
+ ],
+ "sắp hết hạn": [
+  "sap het han"
+ ],
+ "tồn kho": [
+  "ton kho"
+ ],
+ "tồn nhiều": [
+  "ton nhieu"
+ ],
+ "hàng tồn": [
+  "hang ton"
+ ],
+ "hàng bán chậm": [
+  "hang ban cham"
+ ],
+ "bán chậm": [
+  "ban cham"
+ ],
+ "nhập hàng": [
+  "nhap hang"
+ ],
+ "nhập kho": [
+  "nhap kho"
+ ],
+ "mua hàng": [
+  "mua hang"
+ ],
+ "nợ": [
+  "no"
+ ],
+ "công nợ": [
+  "cong no"
+ ],
+ "đang nợ": [
+  "dang no"
+ ],
+ "danh sách": [
+  "ds",
+  "danh sach"
+ ],
+ "liệt kê": [
+  "liet ke"
+ ],
+ "bảng": [
+  "bang"
+ ],
+ "thống kê": [
+  "thong ke"
+ ],
+ "xếp hạng": [
+  "xep hang"
+ ],
+ "ba mặt hàng": [
+  "3 mat hang"
+ ],
+ "mặt hàng": [
+  "mat hang"
+ ],
+ "mã hàng": [
+  "ma hang"
+ ],
+ "mã sản phẩm": [
+  "ma sp"
+ ],
+ "nhóm hàng": [
+  "nhom hang"
+ ],
+ "danh mục": [
+  "danh muc"
+ ],
+ "khu vực": [
+  "khu vuc"
+ ],
+ "địa chỉ": [
+  "dia chi"
+ ],
+ "điện thoại": [
+  "dien thoai"
+ ],
+ "tên": [
+  "ten"
+ ],
+ "hiện tại": [
+  "hien tai"
+ ],
+ "có": [
+  "co"
+ ],
+ "chưa": [
+  "chua"
+ ],
+ "vẫn": [
+  "van"
+ ],
+ "là": [
+  "la"
+ ],
+ "của": [
+  "cua"
+ ],
+ "cho": [
+  "cho"
+ ],
+ "với": [
+  "voi"
+ ],
+ "theo": [
+  "theo"
+ ],
+ "bao gồm": [
+  "bao gom"
+ ],
+ "loại trừ": [
+  "loai tru"
+ ],
+ "tính": [
+  "tinh"
+ ],
+ "xem": [
+  "xem"
+ ],
+ "giúp": [
+  "giup"
+ ],
+ "mình": [
+  "minh"
+ ],
+ "bạn": [
+  "ban"
+ ],
+ "nhé": [
+  "nhe"
+ ],
+ "nhỉ": [
+  "nhi"
+ ],
+ "đấy": [
+  "day"
+ ],
+ "đó": [
+  "do"
+ ],
+ "sao": [
+  "sao"
+ ],
+ "vậy": [
+  "vay"
+ ],
+ "chi tiết": [
+  "chi tiet"
+ ],
+ "đầu tiên": [
+  "dau tien"
+ ],
+ "cuối cùng": [
+  "cuoi cung"
+ ],
+ "hơn": [
+  "hon"
+ ],
+ "kém": [
+  "kem"
+ ],
+ "mỗi": [
+  "moi"
+ ],
+ "từng": [
+  "tung"
+ ],
+ "giữa": [
+  "giua"
+ ],
+ "lúc": [
+  "luc"
+ ],
+ "trước": [
+  "truoc",
+  "trc"
+ ],
+ "sau": [
+  "sau"
+ ],
+ "nào": [
+  "nao"
+ ],
+ "gì": [
+  "gi",
+  "j"
+ ],
+ "khi nào": [
+  "khi nao"
+ ],
+ "thế nào": [
+  "the nao"
+ ],
+ "như thế": [
+  "nhu the"
+ ],
+ "tháng": [
+  "thg"
+ ],
+ "nhiều": [
+  "nhiu",
+  "nhìu"
+ ],
+ "nhân viên": [
+  "nv"
+ ],
+ "rồi": [
+  "r"
+ ],
+ "khuyến mãi": [
+  "km"
+ ]
+}

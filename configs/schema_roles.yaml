@@ -1,0 +1,103 @@
+# Schema roles for the canonical layer (Phase 3).
+# Table/column names are matched after normalization: camelCase and snake_case are split,
+# diacritics removed, lowercase ("MaSP" -> "ma sp", "ChiTietDon" -> "chi tiet don").
+# A role needs all `required` columns to be found; otherwise it is reported as missing and
+# the question is never blocked because of a mapping we could not make ("unknown" != "missing").
+# Extend the synonym lists here, not in code. README lines such as "OrderID = ma_don" add
+# further synonyms automatically.
+roles:
+  products:
+    table: [san pham, hang hoa, mat hang, products, product, items, catalog, danh sach san pham]
+    columns:
+      sku:      {required: true,  names: [ma sp, ma hang, ma san pham, sku, ma mat hang, product id, product code, item code, id sp, ma hang hoa]}
+      name:     {required: true,  names: [ten sp, ten hang, ten san pham, product name, ten mat hang, item name, ten hang hoa, name]}
+      category: {required: false, names: [danh muc, nhom hang, loai hang, category, nhom, loai, product group, phan loai]}
+      unit:     {required: false, names: [don vi, dvt, unit, don vi tinh]}
+      price:    {required: false, names: [gia ban, gia, price, don gia ban, selling price]}
+      cost:     {required: false, names: [gia von, cost, don gia von, unit cost]}
+  customers:
+    table: [khach hang, khach, customers, customer, clients, client, kh]
+    columns:
+      customer_id: {required: true,  names: [ma kh, ma khach hang, customer id, id khach hang, customer code, ma khach]}
+      name:        {required: true,  names: [ten kh, ten khach hang, customer name, ten khach, name, ho ten]}
+      phone:       {required: false, names: [sdt, so dien thoai, dien thoai, phone, phone number, mobile, tel]}
+      region:      {required: false, names: [khu vuc, vung, region, tinh thanh, city, area, quan huyen]}
+  orders:
+    table: [don hang, hoa don, orders, order, invoices, invoice, don ban, ban hang, giao dich, sales orders]
+    columns:
+      order_id:    {required: true,  names: [ma don, ma don hang, order id, so hoa don, ma hoa don, so don, id don hang, invoice id, invoice no]}
+      order_date:  {required: true,  names: [ngay, ngay ban, order date, ngay dat, ngay don, ngay mua, ngay lap, ngay tao, date, ngay hoa don, ngay ban hang, sale date, invoice date]}
+      customer_id: {required: false, names: [ma kh, ma khach hang, customer id, id khach hang, ma khach]}
+      status:      {required: false, names: [trang thai, status, tinh trang, state]}
+      voucher:     {required: false, names: [voucher don, voucher, giam gia don, khuyen mai don, ma giam gia, order discount, coupon]}
+      shipping:    {required: false, names: [phi ship, shipping, phi van chuyen, ship, shipping fee, phi giao hang]}
+      vat:         {required: false, names: [vat, thue vat, thue, tax, thue gtgt]}
+  lines:
+    table: [chi tiet don, chi tiet, order lines, orderlines, order line, order items, order details, dong don, chi tiet hoa don, line items, dong ban]
+    columns:
+      line_id:      {required: false, names: [dong id, ma dong, line id, id dong, ma chi tiet]}
+      order_id:     {required: true,  names: [ma don, ma don hang, order id, so hoa don, ma hoa don, so don, id don hang, invoice id, invoice no]}
+      sku:          {required: true,  names: [ma sp, ma hang, ma san pham, sku, ma mat hang, product id, product code, item code, id sp, ma hang hoa]}
+      qty:          {required: true,  names: [so luong, sl, qty, quantity, luong, so luong ban]}
+      unit_price:   {required: true,  names: [don gia, unit price, gia ban, price, gia, gia dong]}
+      discount:     {required: false, names: [giam gia dong, giam gia, line discount, discount, chiet khau, giam]}
+      returned:     {required: false, names: [tra hang, returned, hoan tra, is returned, tra lai, return]}
+      display_name: {required: false, names: [ten hien thi, display name, ten hang ban, product label, ten sp ban]}
+  purchases:
+    table: [phieu nhap, nhap kho, nhap hang, purchases, purchase, lo hang, stock in, goods receipt, lo nhap, phieu nhap kho]
+    columns:
+      lot_id:        {required: false, names: [lo id, ma lo, lot id, id lo, so lo]}
+      purchase_date: {required: true,  names: [ngay nhap, purchase date, ngay nhap kho, ngay nhap hang, import date, ngay mua, receipt date, date]}
+      sku:           {required: true,  names: [ma sp, ma hang, ma san pham, sku, ma mat hang, product id, product code, item code, id sp, ma hang hoa]}
+      qty:           {required: true,  names: [so luong, sl, qty, quantity, so luong nhap]}
+      expiry_date:   {required: false, names: [han dung, expiry date, expiry, ngay het han, han su dung, hsd, exp, expiration date]}
+      unit_cost:     {required: false, names: [gia nhap, purchase cost, gia von nhap, don gia nhap, cost, unit cost, gia von]}
+  debts:
+    table: [cong no, debts, debt, no phai thu, so no, receivables, khach no, ghi no]
+    columns:
+      customer_id: {required: true,  names: [ma kh, ma khach hang, customer id, id khach hang, ma khach]}
+      amount:      {required: true,  names: [so tien no, amount due, so tien, amount, cong no, tien no, no, debt amount, so no]}
+      debt_date:   {required: false, names: [ngay no, debt date, ngay ghi no, ngay phat sinh, date, ngay]}
+
+# Concepts a question may require. A concept is available when its capability is true, or when
+# any raw column name of the business matches `column_names` (token subset after normalization).
+# capability: key of CanonicalSchema.capabilities, or null when only raw columns can provide it.
+# Keywords are regexes on the diacritic-free lowercase question.
+concepts:
+  debt:
+    keywords: ['cong no', 'dang no', 'con no', 'khach no', '(?<![a-z])no(?![a-z])']
+    capability: has_debts
+    column_names: []
+    reason: "Không có dữ liệu công nợ của khách trong dữ liệu của cơ sở."
+  cost:
+    keywords: ['loi nhuan', 'lai gop', 'lai rong', 'gia von', 'gia nhap']
+    capability: has_cost
+    column_names: []
+    reason: "Không có giá vốn hoặc giá nhập trong dữ liệu của cơ sở."
+  expiry:
+    keywords: ['het han', 'han dung', 'sap het han', 'han su dung', '(?<![a-z])date(?![a-z])']
+    capability: has_expiry
+    column_names: []
+    reason: "Không có hạn dùng của lô hàng trong dữ liệu của cơ sở."
+  employee:
+    keywords: ['nhan vien', 'thu ngan', 'ca (?:sang|chieu|toi)', 'nhan su']
+    capability: null
+    column_names: [nhan vien, nv, ma nv, employee, staff, thu ngan, cashier, ca lam, shift]
+    reason: "Không có trường nhân viên hoặc ca làm việc trong dữ liệu của cơ sở."
+  utilities:
+    keywords: ['dien nuoc', 'tien dien', 'tien nuoc', 'chi phi', 'tien thue mat bang', 'mat bang']
+    capability: null
+    column_names: [chi phi, dien nuoc, tien dien, tien nuoc, utilities, expense, expenses, tien thue]
+    reason: "Không có dữ liệu chi phí vận hành trong dữ liệu của cơ sở."
+
+# Function words that end an entity mention after a cue ("sản phẩm X <terminator>"), diacritic-free.
+# Deliberately short: product words such as "kem", "dầu", "quy", "hộp" must stay inside a mention.
+# Time words are not needed here because resolved time mentions are masked before linking.
+mention_cues:
+  product:  [san pham, mat hang, mon]
+  customer: [khach hang, khach]
+  category: [nhom hang, danh muc]
+mention_stopwords: [
+  khong, hien, con, no, bao, nhieu, may, nao, nhat, ban, duoc, co, la, gi, trong, voi, va, hoac, theo,
+  vao, luc, tinh, den, tu, duoi, tren, khoang, doanh, tong, luong, tien, gia, tri
+]

@@ -37,3 +37,9 @@ Khớp quá tay (bánh quy ↔ bánh quế); từ chung chung (danh mục hay t�
 
 ## Đo lường
 Với dữ liệu tự sinh: top-1 accuracy và recall@K theo từng loại nhiễu. Thường là điểm nghẽn lớn nhất của hệ thống.
+
+## Triển khai thực tế (Phase 3)
+Đã triển khai theo hướng "lớp ngữ nghĩa chuẩn trước, linking sau": xem [15_phase3.md](15_phase3.md).
+Khác với thiết kế ban đầu: chỉ mục dựng từ các view chuẩn (không từ bảng thô); alias sản phẩm lấy từ tên hiển thị trên dòng bán và gộp về SKU;
+khớp chính xác theo n-gram dài nhất, mã dính chữ, rồi rapidfuzz (kể cả hoán vị ký tự) với điều kiện số và kích thước phải khớp chính xác;
+chưa dùng BM25 hay embedding. Đầu ra là `LinkResult.entities`, `schema`, `flags` (`missing_entity`, `ambiguous`, `missing_capability`, `period_outside_data`).

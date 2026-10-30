@@ -40,12 +40,12 @@ Quantization (AWQ/GPTQ/FP8) is allowed. Serve with vLLM (data parallel across 2 
 
 ## 5. Repository layout
 ```
-configs/        default.yaml, models.yaml, rules_defaults.yaml, prompts/
+configs/        default.yaml, models.yaml, rules_defaults.yaml, schema_roles.yaml, prompts/
 data/           teencode_dict.json, fewshot/, samples/ (tiny sample package)
 src/datamate/
-  ingest/         loader (DuckDB), profiler, readers for README / rulebook / calendar
+  ingest/         loader (DuckDB), profiler, canonical views (roles, rulebook rules), readers for README / rulebook / calendar
   understanding/  normalizer.py, temporal.py  (rule-based dates)
-  linking/        entity_linker.py, schema_linker.py
+  linking/        entity_index.py, entity_linker.py, schema_linker.py
   gate/           answerability.py
   codegen/        prompt_builder.py, generator.py
   execution/      sandbox.py, repair.py
