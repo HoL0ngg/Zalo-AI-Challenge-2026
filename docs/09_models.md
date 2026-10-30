@@ -30,3 +30,17 @@ DuckDB, pandas, openpyxl, rapidfuzz, unidecode, sqlglot, Pydantic, pytest, Docke
 
 ## Backend mock
 `llm/mock_backend.py` cho phép chạy test và pipeline trên CPU không cần mô hình.
+
+## Cài đặt baseline
+
+Phụ thuộc Python được tách thành:
+
+- `requirements.txt`: stack CPU/Windows, gồm DuckDB, xử lý bảng, validation,
+  Transformers, Sentence Transformers và mock/test tooling.
+- `requirements-gpu.txt`: tuỳ chọn cho Linux/CUDA, cài thêm vLLM và các gói
+  phục vụ fine-tune. Không cài file này trên Windows.
+
+`configs/models.yaml` là nguồn khai báo duy nhất cho model ID, đường dẫn local
+và số tham số. `pip` không tải model weights; weights phải được chuẩn bị sẵn
+trong image hoặc thư mục local trước khi chạy offline. Baseline mặc định dùng
+`mock` backend và tắt các model thật để có thể kiểm thử không cần GPU hay mạng.

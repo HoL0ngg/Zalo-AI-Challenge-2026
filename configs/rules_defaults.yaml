@@ -1,0 +1,15 @@
+# Fallback values only. A split's rulebook always takes precedence at runtime.
+week:
+  starts_on: monday
+  ends_on: sunday
+revenue:
+  exclude_cancelled_orders: true
+  exclude_returned_orders: true
+  exclude_vat: true
+  exclude_shipping: true
+  subtract_order_vouchers: false
+formatting:
+  currency_decimals: 0
+  numeric_decimals: 2
+  percent_decimals: 2
+  string_normalization: nfc_lowercase_whitespace

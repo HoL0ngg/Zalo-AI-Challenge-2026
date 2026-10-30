@@ -1,0 +1,36 @@
+# Single source of truth for inference model declarations and parameter budget.
+# Weight files must be mounted/copied into the image; pip does not install them.
+budget:
+  max_parameters_billion: 15.0
+
+models:
+  code_generation:
+    enabled: false
+    backend: mock
+    model_id: Qwen/Qwen2.5-Coder-7B-Instruct
+    local_path: models/Qwen2.5-Coder-7B-Instruct
+    parameters_billion: 7.61
+    dtype: bfloat16
+    quantization: none
+    trust_remote_code: false
+
+  embedding:
+    enabled: false
+    backend: sentence-transformers
+    model_id: BAAI/bge-m3
+    local_path: models/bge-m3
+    parameters_billion: 0.568
+    dtype: float16
+    trust_remote_code: false
+
+  reranker:
+    enabled: false
+    backend: none
+    model_id: null
+    parameters_billion: 0.0
+
+  classifier:
+    enabled: false
+    backend: none
+    model_id: null
+    parameters_billion: 0.0

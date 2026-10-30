@@ -1,0 +1,9 @@
+# Optional Linux/CUDA inference stack.
+# Install requirements.txt first. vLLM currently targets Linux; do not install
+# this file on Windows. Pin torch/vLLM together for the target CUDA base image.
+
+-r requirements.txt
+vllm>=0.6,<1
+peft>=0.13,<1
+trl>=0.10,<1
+bitsandbytes>=0.44,<1

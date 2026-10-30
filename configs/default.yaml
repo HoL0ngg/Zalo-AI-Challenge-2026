@@ -1,0 +1,19 @@
+# Conservative offline baseline. Change this file before enabling a real model.
+runtime:
+  backend: mock
+  seed: 20261030
+  offline: true
+  device: auto
+  max_question_seconds: 30
+  total_budget_seconds: 19800
+  output_dir: /result
+  data_dir: /data
+
+pipeline:
+  candidate_count: 1
+  max_repair_attempts: 0
+  voting_confidence_threshold: 1.0
+  fail_safe_answer: abstain
+
+models: configs/models.yaml
+rules: configs/rules_defaults.yaml
