@@ -15,3 +15,6 @@
 | 10_evaluation_data.md | Đánh giá, dữ liệu tự sinh, đo từng bước |
 | 11_deployment_runtime.md | Docker, predict.sh, time guard, tái lập |
 | 12_roadmap.md | Lộ trình thực hiện và rủi ro |
+# Baseline implementation
+
+See [13_baseline.md](13_baseline.md) for the runnable baseline and current boundaries.

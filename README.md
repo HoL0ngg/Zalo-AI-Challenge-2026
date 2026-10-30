@@ -22,7 +22,7 @@ The default configuration is intentionally safe:
 
 - `runtime.backend: mock`
 - no network calls at inference
-- one candidate and no self-repair
+- one candidate and at most one self-repair
 - fail-safe result: `abstain`
 
 Edit [configs/default.yaml](configs/default.yaml) only after the baseline is
@@ -39,6 +39,20 @@ py -3 -m pip install -r ..\requirements.txt
 py -3 -m src.cli all
 ```
 
-The production pipeline is being implemented incrementally under
-[src/](src/). Configuration and model declarations are ready first so later
-fine-tuning and serving changes have one stable source of truth.
+## Runnable baseline
+
+Install only the baseline dependencies with `python -m pip install -e ".[test]"`.
+Then run `make test`, `make run-sample`, and `make eval-sample`.
+See [baseline usage and limitations](docs/13_baseline.md) for Windows commands,
+input layout, mock grammar, stage boundaries, resume and timeout behavior.
+
+| Model | Parameters (B) | Default inference status |
+|---|---:|---|
+| Qwen2.5-Coder-7B-Instruct | 7.61 | Disabled; optional local vLLM |
+| BGE-M3 | 0.568 | Disabled; no embedding stage yet |
+| Reranker / classifier | 0 | None |
+| Mock backend | 0 | Enabled |
+
+Declarations and enabled-model budget checks use `configs/models.yaml`.
+Model weights and pre-cutoff publication eligibility must be verified before freezing
+the optional GPU configuration. No model weights are required for baseline tests.

@@ -1,0 +1,10 @@
+{"id": "sample-1", "business_id": "shop", "question": "đếm sales", "as_of_date": "2026-01-01"}
+{"id": "sample-2", "business_id": "shop", "question": "tổng amount trong sales", "as_of_date": "2026-01-01"}
+{"id": "sample-3", "business_id": "shop", "question": "avg quantity from sales", "as_of_date": "2026-01-01"}
+{"id": "sample-4", "business_id": "shop", "question": "min product from sales", "as_of_date": "2026-01-01"}
+{"id": "sample-5", "business_id": "shop", "question": "danh sách product trong sales", "as_of_date": "2026-01-01"}
+{"id": "sample-6", "business_id": "shop", "question": "bảng sales", "as_of_date": "2026-01-01"}
+{"id": "sample-7", "business_id": "shop", "question": "sum stock from inventory", "as_of_date": "2026-01-01"}
+{"id": "sample-8", "business_id": "shop", "question": "max active from branches", "as_of_date": "2026-01-01"}
+{"id": "sample-9", "business_id": "shop", "question": "count customers", "as_of_date": "2026-01-01"}
+{"id": "sample-10", "business_id": "shop", "question": "predict next year profit", "as_of_date": "2026-01-01"}

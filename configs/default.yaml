@@ -6,12 +6,13 @@ runtime:
   device: auto
   max_question_seconds: 30
   total_budget_seconds: 19800
+  reserve_seconds: 60
   output_dir: /result
   data_dir: /data
 
 pipeline:
   candidate_count: 1
-  max_repair_attempts: 0
+  max_repair_attempts: 1
   voting_confidence_threshold: 1.0
   fail_safe_answer: abstain
 

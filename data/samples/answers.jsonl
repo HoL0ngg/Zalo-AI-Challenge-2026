@@ -1,0 +1,10 @@
+{"id": "sample-1", "type": "number", "answer": 2}
+{"id": "sample-2", "type": "number", "answer": 30000}
+{"id": "sample-3", "type": "number", "answer": 2.5}
+{"id": "sample-4", "type": "string", "answer": "Cà phê"}
+{"id": "sample-5", "type": "list", "answer": ["Cà phê", "Trà"]}
+{"id": "sample-6", "type": "table", "answer": {"columns": ["product", "amount", "quantity"], "rows": [["Cà phê", 10000, 2], ["Trà", 20000, 3]]}}
+{"id": "sample-7", "type": "number", "answer": 13}
+{"id": "sample-8", "type": "boolean", "answer": true}
+{"id": "sample-9", "type": "number", "answer": 2}
+{"id": "sample-10", "type": "abstain"}
