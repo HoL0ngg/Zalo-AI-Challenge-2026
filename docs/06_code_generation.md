@@ -22,5 +22,8 @@ Từ ngữ cảnh đã chuẩn bị, LLM sinh **SQL (DuckDB) hoặc Python (pand
 - SQL: gọn, nhanh, phù hợp tổng hợp/lọc/nhóm.
 - Python: dùng khi cần logic phức tạp (giá vốn bình quân theo lô, so sánh kỳ, xử lý chuỗi).
 
+## Cài đặt hiện tại
+Prompt dạng chat (system + user), đầu ra `<sql>…</sql>`, parser và báo cáo theo bước: xem [16_phase4_p0.md](16_phase4_p0.md).
+
 ## Rủi ro và cách giảm
 Quên loại đơn hủy/trả hàng; dùng sai cột ngày; JOIN nhân đôi dòng; nhầm số lượng với doanh thu. → Đưa rulebook vào prompt, thêm checklist trong system prompt, và bước Voting bắt các lệch.

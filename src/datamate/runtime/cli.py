@@ -2,6 +2,7 @@ import argparse
 import json
 from pathlib import Path
 
+from datamate.eval.report import build_report
 from datamate.eval.scorer import score
 from datamate.formatting.schemas import ANSWER_SCHEMA
 from datamate.io.question_reader import read_records
@@ -20,9 +21,19 @@ def main() -> None:
     evaluating = sub.add_parser("eval")
     evaluating.add_argument("submission", type=Path)
     evaluating.add_argument("answers", type=Path)
+    reporting = sub.add_parser("report", help="stage-by-stage accuracy and failure report for a finished run")
+    reporting.add_argument("result_dir", type=Path)
+    reporting.add_argument("answers", type=Path)
+    reporting.add_argument("--meta", type=Path, default=None,
+                           help="synth questions_meta.jsonl: adds accuracy per question template")
     args = parser.parse_args()
     if args.command == "run":
         result = run(args.data_dir, args.result_dir, args.config)
+    elif args.command == "report":
+        templates = ({m["id"]: m["spec"]["template"] for m in read_records(args.meta)} if args.meta else None)
+        result = build_report(list(read_records(args.result_dir / "submission.jsonl")),
+                              list(read_records(args.result_dir / "logs" / "questions.jsonl")),
+                              list(read_records(args.answers)), templates)
     elif args.command == "eval":
         result = score(list(read_records(args.submission)), list(read_records(args.answers)))
     else:

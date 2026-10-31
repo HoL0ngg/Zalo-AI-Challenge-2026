@@ -5,5 +5,7 @@ from datamate.llm.base import LLMBackend
 
 
 def repair(linked: LinkResult, failed: ExecResult, backend: LLMBackend) -> Candidate:
-    prompt = build_prompt(linked) + f"\nRepair this SQL once:\n{failed.candidate.code}\nError: {failed.error}"
+    prompt = (build_prompt(linked)
+              + f"\nRepair this SQL once:\n{failed.candidate.code}\nError: {failed.error}"
+              + "\nReply with the corrected statement inside <sql></sql> tags.")
     return apply_expected(backend.generate(prompt, linked), linked)

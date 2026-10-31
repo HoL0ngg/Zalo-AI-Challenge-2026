@@ -17,6 +17,8 @@ models:
     tensor_parallel_size: 1
     max_model_len: 8192
     gpu_memory_utilization: 0.90
+    max_tokens: 768          # generation cap per reply (the SQL is short)
+    enable_thinking: false   # Qwen3-style templates only; keep false for speed and reproducibility
     trust_remote_code: false
 
   embedding:

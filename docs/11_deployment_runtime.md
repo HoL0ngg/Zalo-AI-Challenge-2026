@@ -46,6 +46,11 @@ Chỉ dùng để xác nhận pipeline chạy được với LLM thật, không 
 - `llm/vllm_backend.py` đọc thêm `quantization`, `tensor_parallel_size`, `max_model_len`,
   `gpu_memory_utilization`, `max_num_seqs`, `enforce_eager` từ khai báo mô hình (chỉ truyền khi có khai báo).
   `enforce_eager` mặc định bật để tránh bước capture CUDA graph hay lỗi trên T4; tắt trên máy chấm để tăng tốc.
+- **2 GPU (data parallel)**: `python -m datamate.runtime.dataparallel --config configs/kaggle.yaml --data-dir dataset/train --result-dir <dir> --gpus 0,1`
+  (notebook cell 8a–8c). Mỗi GPU một tiến trình `datamate run` (`CUDA_VISIBLE_DEVICES`, `tensor_parallel_size: 1`), chia **theo business** (cân bằng theo số câu, thứ tự cố định,
+  không phụ thuộc đồng hồ); kết quả được gộp lại đúng thứ tự `questions.jsonl`. Dữ liệu từng shard được **copy** vào `<dir>/.shards/in_*` (loader từ chối symlink ra ngoài gói) rồi xóa
+  sau khi chạy; log từng shard ở `<dir>/.shards/shard_*.log`. Pipeline vẫn tuần tự trong mỗi tiến trình, nên đây mới là bước đầu của W2 (Phase 5), chưa phải batch.
+  Không dùng tensor parallel cho 5090 (không NVLink).
 - Ghi kết quả vào `/kaggle/working`, không ghi vào `/kaggle/input` (read-only, tương đương `/data`).
 - Không gọi `scripts/predict.sh` trên Kaggle (cứng `/data`, `/result`); gọi `python -m datamate.cli run` với `--data-dir`/`--result-dir`.
 - Prompt hiện chưa dùng chat template của Qwen Instruct nên đáp án sẽ phần lớn sai; mục tiêu giai đoạn này chỉ là chạy thông.

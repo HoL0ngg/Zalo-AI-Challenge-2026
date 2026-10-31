@@ -18,6 +18,7 @@
 | 13_baseline.md | Baseline chạy được và giới hạn hiện tại |
 | 14_phase2.md | Phase 2: Question Understanding, cách chạy, mở rộng, hạn chế |
 | 15_phase3.md | Phase 3: lớp ngữ nghĩa chuẩn, Entity/Schema Linking, gate luật |
+| 16_phase4_p0.md | Phase 4 / P0: chat template, parser SQL, prompt gọn, báo cáo theo bước |
 # Baseline implementation
 
 See [13_baseline.md](13_baseline.md) for the runnable baseline and current boundaries.

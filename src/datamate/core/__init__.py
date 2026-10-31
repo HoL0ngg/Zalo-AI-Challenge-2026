@@ -83,6 +83,8 @@ class Candidate:
     code: str
     answer_type: str | None = None
     unit: str | None = None
+    # Audit data from the backend (raw_output, finish_reason, prompt_tokens, ...); logged with each attempt.
+    meta: dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass
