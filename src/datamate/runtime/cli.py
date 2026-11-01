@@ -16,6 +16,7 @@ def main() -> None:
     running.add_argument("--data-dir", type=Path, default=Path("/data"))
     running.add_argument("--result-dir", type=Path, default=Path("/result"))
     running.add_argument("--config", type=Path, default=Path("configs/default.yaml"))
+    running.add_argument("--business", nargs="*", default=None, help="answer only these business ids")
     running.add_argument("--max-per-business", type=int, default=None,
                          help="answer only the first N questions of each business (quick sample, not for submission)")
     validating = sub.add_parser("validate")
@@ -32,7 +33,8 @@ def main() -> None:
                            help="synth questions_meta.jsonl: adds accuracy per question template")
     args = parser.parse_args()
     if args.command == "run":
-        result = run(args.data_dir, args.result_dir, args.config, max_per_business=args.max_per_business)
+        result = run(args.data_dir, args.result_dir, args.config, max_per_business=args.max_per_business,
+                     businesses=set(args.business) if args.business else None)
     elif args.command == "report":
         templates = ({m["id"]: m["spec"]["template"] for m in read_records(args.meta)} if args.meta else None)
         logs = list(read_records(args.result_dir / "logs" / "questions.jsonl"))

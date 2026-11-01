@@ -22,6 +22,13 @@ class VLLMBackend:
         self.model = LLM(model=str(path), tokenizer=str(path), trust_remote_code=False,
                          seed=seed, **engine_kwargs(model))
         self.tokenizer = self.model.get_tokenizer()
+        self.lora_request = None
+        if model.get("lora_path"):
+            from vllm.lora.request import LoRARequest
+            adapter = Path(model["lora_path"]).resolve()
+            if not (adapter / "adapter_config.json").is_file():
+                raise ValueError(f"LoRA adapter not found: {adapter}")
+            self.lora_request = LoRARequest("datamate", 1, str(adapter))
         self.enable_thinking = bool(model.get("enable_thinking", False))
         # Stop at the closing tag: the statement is complete, so the remaining tokens would be wasted.
         self.sampling = SamplingParams(temperature=0, seed=seed, stop=["</sql>"],
@@ -29,7 +36,8 @@ class VLLMBackend:
 
     def generate(self, prompt: str, linked: LinkResult) -> Candidate:
         text = render_chat(self.tokenizer, SYSTEM_PROMPT, prompt, self.enable_thinking)
-        result = self.model.generate([text], self.sampling, use_tqdm=False)[0]
+        result = self.model.generate([text], self.sampling, use_tqdm=False,
+                                     **({"lora_request": self.lora_request} if self.lora_request else {}))[0]
         output = result.outputs[0]
         return candidate_from_reply(output.text, output.finish_reason, len(result.prompt_token_ids))
 
@@ -59,6 +67,8 @@ def engine_kwargs(model: dict) -> dict:
     quantization = model.get("quantization")
     if quantization not in (None, "", "none"):
         kwargs["quantization"] = str(quantization)
+    if model.get("lora_path"):
+        kwargs.update(enable_lora=True, max_lora_rank=int(model.get("max_lora_rank", 64)))
     for key, cast in (("tensor_parallel_size", int), ("max_model_len", int),
                       ("gpu_memory_utilization", float), ("max_num_seqs", int)):
         if model.get(key) is not None:

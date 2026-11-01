@@ -16,7 +16,8 @@ from datamate.runtime.time_guard import TimeGuard
 
 
 def run(data_dir: Path, result_dir: Path, config_path: Path = Path("configs/default.yaml"),
-        backend=None, max_per_business: int | None = None) -> dict:
+        backend=None, max_per_business: int | None = None,
+        businesses: set[str] | None = None) -> dict:
     """`max_per_business` answers only the first N questions of each business (file order): a deterministic
     sample for quick checks on large packages. Never use it for a final submission."""
     config = yaml.safe_load(config_path.read_text(encoding="utf-8"))
@@ -48,6 +49,8 @@ def run(data_dir: Path, result_dir: Path, config_path: Path = Path("configs/defa
         for record in read_records(data_dir / "questions.jsonl"):
             if not isinstance(record.get("id"), str):
                 raise ValueError("Each input record needs a string ID")
+            if businesses is not None and record.get("business_id") not in businesses:
+                continue
             if max_per_business is not None:
                 taken[record.get("business_id")] += 1
                 if taken[record.get("business_id")] > max_per_business:

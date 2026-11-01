@@ -72,11 +72,13 @@ def merge(order: list[str], shard_results: list[Path], result_dir: Path) -> dict
 
 
 def run_data_parallel(data_dir: Path, result_dir: Path, config: Path, gpus: list[str],
-                      max_per_business: int | None = None) -> dict:
+                      max_per_business: int | None = None, businesses: list[str] | None = None) -> dict:
     data_dir, result_dir = data_dir.resolve(), result_dir.resolve()
     if result_dir.is_relative_to(data_dir):
         raise ValueError("Output must be outside read-only input package")
     questions = list(read_records(data_dir / "questions.jsonl"))
+    if businesses:
+        questions = [q for q in questions if q["business_id"] in set(businesses)]
     plan = shard_businesses(questions, len(gpus))
     scratch = result_dir / ".shards"
     shutil.rmtree(scratch, ignore_errors=True)
@@ -116,11 +118,13 @@ def main() -> None:
     parser.add_argument("--result-dir", type=Path, required=True)
     parser.add_argument("--config", type=Path, default=Path("configs/default.yaml"))
     parser.add_argument("--gpus", default="0,1", help="comma-separated CUDA device ids, one process each")
+    parser.add_argument("--business", nargs="*", default=None, help="answer only these business ids")
     parser.add_argument("--max-per-business", type=int, default=None,
                         help="answer only the first N questions of each business (quick sample)")
     args = parser.parse_args()
     summary = run_data_parallel(args.data_dir, args.result_dir, args.config,
-                                [g.strip() for g in args.gpus.split(",") if g.strip()], args.max_per_business)
+                                [g.strip() for g in args.gpus.split(",") if g.strip()], args.max_per_business,
+                                args.business)
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     if any(s["exit_code"] for s in summary["shards"]):
         sys.exit(1)

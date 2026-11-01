@@ -278,7 +278,7 @@ def build_readme_layer(connection: duckdb.DuckDBPyConnection, profile: Mapping[s
     carry = ("oid0" if order_list else
              "last_value(oid0 IGNORE NULLS) OVER (ORDER BY _ln ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)")
     helper = (
-        "CREATE OR REPLACE VIEW _readme_lines AS "
+        "CREATE OR REPLACE TABLE _readme_lines AS "
         f"WITH src AS (SELECT rowid AS _ln, {order_id} AS oid0, {select_order}, "
         f"{sku} AS sku, {name} AS product_name, {category} AS category, {unit} AS unit, "
         f"{qty} AS qty, {price} AS unit_price, {discount} AS discount, {amount} AS line_amount FROM {q_lines}), "
@@ -301,7 +301,7 @@ def build_readme_layer(connection: duckdb.DuckDBPyConnection, profile: Mapping[s
         "ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)) "
         "SELECT * FROM joined")
     orders_sql = (
-        "CREATE OR REPLACE VIEW _readme_orders AS WITH per AS (SELECT order_id, min(odate) AS order_date, "
+        "CREATE OR REPLACE TABLE _readme_orders AS WITH per AS (SELECT order_id, min(odate) AS order_date, "
         "max(customer_id) AS customer_id, max(customer_name) AS customer_name, max(status) AS status, "
         "bool_or(COALESCE(qty, 0) < 0) AS has_negative FROM _readme_lines GROUP BY order_id) "
         f"SELECT order_id, order_date, customer_id, customer_name, status, has_negative, {status_class} AS status_class "
