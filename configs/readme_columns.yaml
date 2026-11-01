@@ -1,0 +1,34 @@
+# README-driven column meaning -> canonical concept (see src/datamate/ingest/readme_layer.py).
+# Each business README documents its columns as "- **<column>**: <meaning>". The meaning phrases are
+# standardised, so this file maps phrases (regex, matched against the lowercase meaning) to concepts.
+# First matching concept wins, so keep specific rules above general ones.
+concepts:
+  qty_base:        ['^số lượng.*(?:đổi ra|quy đổi|đơn vị cơ bản)']
+  qty:             ['^số lượng$', '^số lượng (?:bán|mua)']
+  unit_price:      ['^đơn giá$']
+  line_amount:     ['^thành tiền sau giảm$', '^thành tiền$', '^thành tiền của dòng']
+  discount:        ['^giảm giá$', '^tiền giảm của cả dòng']
+  # Order-level goods total (sum of the line amounts, before order discount, without delivery fee): the revenue
+  # of an order for packages that only list orders.
+  order_total:     ['^tiền hàng của đơn', '^tổng tiền hàng của đơn', '^tiền hàng$']
+  status:          ['^trạng thái đơn$']
+  date:            ['^ngày bán$', '^thời điểm đặt đơn', '^ngày đặt', '^ngày tạo đơn', '^ngày (?:lập )?hóa đơn']
+  customer_name:   ['^tên khách']
+  customer_id:     ['^mã khách']
+  sku:             ['^mã hàng$', '^mã sản phẩm$', '^mã hàng hóa$']
+  product_name:    ['^tên hàng$', '^tên hàng \(', '^tên sản phẩm$', '^tên mặt hàng$']
+  category:        ['^nhóm hàng$']
+  unit:            ['^đơn vị tính$']
+  order_id:        ['^mã đơn$', '^mã (?:hóa đơn|đơn hàng)$']
+
+# Order status text (diacritic-free, lowercase) -> the four states of the rulebook. First match wins;
+# anything else (including empty) is a completed order.
+status_patterns:
+  cancelled: ['huy', 'cancel', 'khong giao duoc', 'that bai']
+  returned:  ['tra hang', 'tra ve', 'tra lai', 'hoan hang', 'hoan tra', 'doi tra', 'return', 'hang tra']
+  shipping:  ['dang giao', 'dang gui', 'dang van chuyen', 'cho giao', 'shipping', 'dang xu ly']
+
+# Lines that are not products (excluded from product rankings and counts, still part of revenue).
+service_fee_patterns: ['^phi phuc vu']
+# Customer names that mean "no customer" (walk-in), diacritic-free lowercase.
+walk_in_patterns: ['^khach le$', '^khach vang lai$', '^le$']

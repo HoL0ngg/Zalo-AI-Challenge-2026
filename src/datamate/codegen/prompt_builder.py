@@ -1,4 +1,5 @@
 import json
+import re
 
 from datamate.core import LinkResult
 
@@ -29,6 +30,11 @@ BASE = ("Return one read-only DuckDB SELECT, no explanation. Never guess numeric
 CANONICAL = ("Query only the v_* views listed in `schema.views`: they are already typed, de-duplicated and follow the "
              "rulebook (use v_sales for sales, quantity and revenue; do not re-apply cancelled/returned/duplicate rules). "
              "Use `linked_entities` ids and names verbatim and match the answer type in `expected_answer`.\n")
+
+RAW = ("Query the tables in `schema` exactly as named. Double-quote every table or column name that contains "
+       "spaces, accents or punctuation (\"Thành tiền\", \"02.2025\"). Values may be text with thousands separators, "
+       "currency signs or unit words: convert them with TRY_CAST(REPLACE(...)) and parse dates explicitly; read the "
+       "readme for what each column means and for unit conversions.\n")
 
 # Caps (characters) so the prompt always leaves room for the answer inside max_model_len.
 # Vietnamese is roughly 2-3 characters per token, so 16000 characters stay near 6-7k tokens.
@@ -94,6 +100,29 @@ def clip(text: str, limit: int) -> str:
     return cut + "\n...[truncated]"
 
 
+SAMPLE_CHARS = 28     # one sample value is cut to this many characters
+SAMPLES_PER_COLUMN = 3
+
+
+def needs_quotes(name: str) -> bool:
+    return not re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", name)
+
+
+def compact_profile(profile: dict, samples: int = SAMPLES_PER_COLUMN) -> dict:
+    """Raw tables for the prompt: one line per column with the identifier already quoted when needed and a
+    few short sample values. The full profile (null ratios, min/max, distinct counts) is several times larger
+    and pushed real business exports past the model's context window."""
+    tables = {}
+    for table, info in profile.items():
+        lines = []
+        for column in info["columns"]:
+            name = f'"{column["name"]}"' if needs_quotes(column["name"]) else column["name"]
+            shown = [str(v)[:SAMPLE_CHARS] for v in (column.get("samples") or [])[:samples]]
+            lines.append(f"{name} {column.get('type', '')}".rstrip() + (f" e.g. {' | '.join(shown)}" if shown else ""))
+        tables[f'"{table}"' if needs_quotes(table) else table] = {"rows": info.get("rows"), "columns": lines}
+    return tables
+
+
 def compact_schema(described: dict) -> dict:
     """Shrink `CanonicalSchema.describe()` for the prompt: one string per column ("name TYPE: meaning") and no
     `roles` (raw table/column names would only tempt the model to bypass the v_* views)."""
@@ -121,7 +150,7 @@ def build_prompt(linked: LinkResult, caps: bool = True) -> str:
     if caps:
         readme, rulebook = clip(readme, README_CHARS), clip(rulebook, RULEBOOK_CHARS)
     payload = {
-        "schema": compact_schema(canonical.describe()) if canonical else context.profile,
+        "schema": compact_schema(canonical.describe()) if canonical else compact_profile(context.profile),
         "readme": readme, "rulebook": rulebook, "as_of_date": question.as_of_date,
         "question": question.question,
         "original_question": question.question,
@@ -134,7 +163,7 @@ def build_prompt(linked: LinkResult, caps: bool = True) -> str:
     if canonical:
         payload["linked_entities"] = entities
         payload["expected_answer"] = expected
-    head = BASE + (CANONICAL if canonical else "")
+    head = BASE + (CANONICAL if canonical else RAW)
     text = head + json.dumps(payload, ensure_ascii=False, default=str)
     # Still too long: drop the free-text notes first (the schema, periods and question are never dropped).
     for key, keep in (("readme", 0), ("rulebook", RULEBOOK_CHARS // 3), ("rulebook", 0)):

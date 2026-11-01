@@ -331,4 +331,4 @@ def test_prompt_without_canonical_layer_keeps_the_raw_schema(tmp_path):
     context = BusinessLoader(root, tmp_path / "work").load("shop")
     linked, _ = run(context, "tổng foo")
     prompt = build_prompt(linked)
-    assert "Query only the v_* views" not in prompt and '"foo"' in prompt
+    assert "Query only the v_* views" not in prompt and "foo BIGINT" in prompt and "Double-quote every table" in prompt

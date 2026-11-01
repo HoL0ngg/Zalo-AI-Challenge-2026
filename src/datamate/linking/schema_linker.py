@@ -77,6 +77,8 @@ def link_schema(resolved: ResolvedQuestion, context: BusinessContext, concepts: 
     hints = resolved.intent_hints or {}
 
     needs = detect_needs(ascii_text, concepts)
+    if "employee" in needs and "shift" in needs:
+        needs.remove("shift")   # "nhân viên ca tối" asks about staff; "ca tối" alone is the time of the order
     missing: list[str] = []
     reasons: dict[str, str] = {}
     if complete:

@@ -102,7 +102,7 @@ def test_vllm_engine_kwargs_from_declaration():
     kaggle = engine_kwargs(yaml.safe_load(Path("configs/models_kaggle.yaml").read_text(encoding="utf-8"))
                            ["models"]["code_generation"])
     assert kaggle == {"dtype": "float16", "enforce_eager": True, "quantization": "awq",
-                      "tensor_parallel_size": 1, "max_model_len": 8192, "gpu_memory_utilization": 0.9}
+                      "tensor_parallel_size": 1, "max_model_len": 16384, "gpu_memory_utilization": 0.9}
     assert engine_kwargs({"quantization": None, "enforce_eager": False}) == {"dtype": "auto", "enforce_eager": False}
 
 

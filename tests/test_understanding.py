@@ -179,7 +179,7 @@ def test_pipeline_logs_understanding_and_prompt_uses_periods(tmp_path):
     json.dumps(log, default=str)  # the log stays serializable (dates are ISO strings)
     prompt = backend.prompts[0]
     assert "do not compute relative dates yourself" in prompt
-    payload = json.loads(prompt.split("\n", 2)[2])
+    payload = json.loads(prompt[prompt.index('{"schema"'):])
     assert payload["original_question"] == record["question"]
     assert payload["normalized_question"] == info["normalized"]
     assert payload["periods"] == [{"label": "last_month", "start": "2026-04-01", "end": "2026-04-30", "role": "primary"}]

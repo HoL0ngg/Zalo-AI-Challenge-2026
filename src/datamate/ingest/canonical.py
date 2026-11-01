@@ -48,7 +48,8 @@ VIEW_DOCS: dict[str, tuple[str, dict[str, str]]] = {
     "v_orders": ("One row per order, de-duplicated, ALL statuses (including cancelled).",
                  {"order_id": "order code", "order_date": "DATE of the order", "customer_id": "customer code",
                   "status": "raw status text", "voucher": "order-level voucher amount", "shipping": "shipping fee",
-                  "vat": "VAT amount"}),
+                  "vat": "VAT amount", "customer": "customer name (NULL for walk-in)",
+                  "status_class": "completed | cancelled | returned | shipping"}),
     "v_lines": ("One row per order line, de-duplicated by line id, ALL orders.",
                 {"line_id": "line code", "order_id": "order code", "sku": "product code", "qty": "quantity sold",
                  "unit_price": "price per unit", "discount": "line discount amount", "returned": "BOOLEAN returned line",
@@ -71,6 +72,8 @@ VIEW_DOCS: dict[str, tuple[str, dict[str, str]]] = {
                  "category": "product group", "qty": "quantity sold", "unit_price": "price per unit",
                  "discount": "line discount", "line_revenue": "max(qty*unit_price-discount, 0)",
                  "revenue": "line revenue after rulebook adjustments",
+                 "customer": "customer name (NULL for walk-in)", "unit": "unit the line was sold in",
+                 "is_item": "false for non-product lines such as the service fee (exclude from rankings and counts)",
                  "weekday_vi": "Vietnamese weekday name of sale_date (Thứ hai ... Chủ nhật); use it for 'thứ mấy'"}),
 }
 
@@ -192,9 +195,12 @@ def _date(col: str, dtype: str, slash: str) -> str:
     if _is(dtype, DATE_TYPES):
         return f"CAST({quote(col)} AS DATE)"
     s = f"trim(CAST({quote(col)} AS VARCHAR))"
+    serial = f"TRY_CAST({s} AS DOUBLE)"   # Excel date stored as a number in a text column
     return (f"CAST(COALESCE(TRY_STRPTIME(substr({s}, 1, 10), '%Y-%m-%d'), "
             f"TRY_STRPTIME(substr({s}, 1, 10), '{slash}'), TRY_STRPTIME({s}, '%d-%m-%Y'), "
-            f"TRY_STRPTIME({s}, '%d.%m.%Y')) AS DATE)")
+            f"TRY_STRPTIME({s}, '%d.%m.%Y'), TRY_STRPTIME({s}, '%d thg %m %Y'), "
+            f"CASE WHEN {serial} BETWEEN 20000 AND 80000 "
+            f"THEN CAST(DATE '1899-12-30' + CAST(floor({serial}) AS INTEGER) AS TIMESTAMP) END) AS DATE)")
 
 
 def _number(col: str, dtype: str) -> str:
@@ -204,6 +210,12 @@ def _number(col: str, dtype: str) -> str:
     s = (f"replace(replace(regexp_replace(lower(trim(CAST({quote(col)} AS VARCHAR))), '(vnd|vnđ|₫|đ)$', ''), "
          f"' ', ''), chr(160), '')")
     return (f"CASE WHEN {s} = '' THEN NULL "
+            f"WHEN regexp_matches({s}, '^[0-9]+tr[0-9]*$') THEN (CAST(regexp_extract({s}, '^([0-9]+)tr', 1) AS DOUBLE) "
+            f"+ COALESCE(TRY_CAST('0.' || NULLIF(regexp_extract({s}, 'tr([0-9]+)$', 1), '') AS DOUBLE), 0)) * 1000000 "
+            f"WHEN regexp_matches({s}, '^-?[0-9]+(\\.[0-9]+)?k$') THEN TRY_CAST(replace({s}, 'k', '') AS DOUBLE) * 1000 "
+            f"WHEN regexp_matches({s}, '^-?[0-9]{{1,3}}(,[0-9]{{3}})+\\.[0-9]+$') THEN TRY_CAST(replace({s}, ',', '') AS DOUBLE) "
+            f"WHEN regexp_matches({s}, '^-?[0-9]{{1,3}}(\\.[0-9]{{3}})+,[0-9]+$') "
+            f"THEN TRY_CAST(replace(replace({s}, '.', ''), ',', '.') AS DOUBLE) "
             f"WHEN regexp_matches({s}, '^-?[0-9]{{1,3}}([.,][0-9]{{3}})+$') "
             f"THEN TRY_CAST(replace(replace({s}, ',', ''), '.', '') AS DOUBLE) "
             f"WHEN regexp_matches({s}, '^-?[0-9]+[.,][0-9]{{1,2}}$') THEN TRY_CAST(replace({s}, ',', '.') AS DOUBLE) "
@@ -312,7 +324,7 @@ def _select_all(role: RoleBinding, wanted: Sequence[tuple[str, str]], slash: str
 
 
 def _dedup_view(name: str, role: RoleBinding, wanted: Sequence[tuple[str, str]], key: str | None,
-                slash: str, dedupe: bool, require_key: bool = True) -> str:
+                slash: str, dedupe: bool, require_key: bool = True, distinct_rows: bool = False) -> str:
     inner = _select_all(role, wanted, slash)
     table = quote(role.table)
     names = ", ".join(c for c, _ in wanted)
@@ -321,7 +333,9 @@ def _dedup_view(name: str, role: RoleBinding, wanted: Sequence[tuple[str, str]],
                     f"ORDER BY rowid) AS _rn FROM {table}")
         condition = "_rn = 1" + (f" AND {key} IS NOT NULL" if require_key else "")
         return f"CREATE OR REPLACE VIEW {name} AS SELECT {names} FROM ({windowed}) WHERE {condition}"
-    return f"CREATE OR REPLACE VIEW {name} AS SELECT {names} FROM (SELECT {inner} FROM {table})"
+    # No record id: identical rows are the same export line repeated (rulebook section 8), count it once.
+    keep = "DISTINCT " if (distinct_rows and dedupe) else ""
+    return f"CREATE OR REPLACE VIEW {name} AS SELECT {keep}{names} FROM (SELECT {inner} FROM {table})"
 
 
 def _create(connection: duckdb.DuckDBPyConnection, schema: CanonicalSchema, name: str, sql: str) -> bool:
@@ -339,6 +353,16 @@ def build_canonical(connection: duckdb.DuckDBPyConnection, profile: Mapping[str,
                     readme: str, rulebook: str) -> CanonicalSchema:
     """Detect roles and create the canonical views on an open (writable, temporary) connection."""
     schema = CanonicalSchema(raw_columns=tuple(sorted({c["name"] for t in profile.values() for c in t["columns"]})))
+    # A README that documents its columns is the most reliable source (amounts, base units, order status);
+    # the synonym-based mapping below is the fallback for packages whose README does not.
+    try:
+        from datamate.ingest.readme_layer import build_readme_layer
+        if build_readme_layer(connection, profile, readme, rulebook, schema):
+            return schema
+    except Exception as error:  # noqa: BLE001
+        schema.warnings.append(f"readme_layer:{type(error).__name__}: {str(error)[:160]}")
+    schema.views.clear()
+    schema.roles.clear()
     try:
         schema.flags = business_flags(rulebook)
         schema.roles = map_roles(profile, readme)
@@ -359,7 +383,7 @@ def build_canonical(connection: duckdb.DuckDBPyConnection, profile: Mapping[str,
                        "order_id"),
             "lines": ("v_lines", [("line_id", "text"), ("order_id", "text"), ("sku", "text"), ("qty", "number"),
                                   ("unit_price", "number"), ("discount", "zero"), ("returned", "bool"),
-                                  ("display_name", "text")], "line_id"),
+                                  ("line_amount", "number"), ("display_name", "text")], "line_id"),
             "purchases": ("v_purchases", [("lot_id", "text"), ("purchase_date", "date"), ("sku", "text"),
                                           ("qty", "number"), ("expiry_date", "date"), ("unit_cost", "number")],
                           "lot_id"),
@@ -368,15 +392,19 @@ def build_canonical(connection: duckdb.DuckDBPyConnection, profile: Mapping[str,
         for role, (view, wanted, key) in specs.items():
             if role in roles:
                 _create(connection, schema, view, _dedup_view(view, roles[role], wanted, key, slash, dedupe,
-                                                              require_key=role != "lines"))
+                                                              require_key=role != "lines",
+                                                              distinct_rows=role == "lines"))
         flags = schema.flags
         if "v_orders" in schema.views and "v_lines" in schema.views:
-            invalid = ["lower(replace(strip_accents(COALESCE(status, '')), 'đ', 'd')) LIKE '%huy%'",
-                       "lower(replace(strip_accents(COALESCE(status, '')), 'đ', 'd')) LIKE '%cancel%'"] \
-                if flags["exclude_cancelled"] else []
-            cancelled = f"({' OR '.join(invalid)})" if invalid else "false"
-            returned = "order_id IN (SELECT order_id FROM v_lines WHERE returned)" \
-                if flags["exclude_entire_order_if_any_return"] else "false"
+            from datamate.ingest.readme_layer import _any, load_config, norm_sql
+            status_patterns = load_config().get("status_patterns") or {}
+            status = norm_sql("COALESCE(status, '')")
+            cancelled = _any(status_patterns.get("cancelled") or ["huy", "cancel"], status) \
+                if flags["exclude_cancelled"] else "false"
+            # A returned order is one with a returned line or a "trả hàng"-type status.
+            returned = (f"order_id IN (SELECT order_id FROM v_lines WHERE returned) OR "
+                        f"{_any(status_patterns.get('returned') or [], status)}"
+                        if flags["exclude_entire_order_if_any_return"] else "false")
             _create(connection, schema, "v_valid_orders",
                     f"CREATE OR REPLACE VIEW v_valid_orders AS SELECT order_id, order_date, customer_id, voucher, "
                     f"shipping, vat, {weekday_sql('order_date')} AS weekday_vi FROM v_orders WHERE NOT {cancelled} AND NOT ({returned})")
@@ -396,7 +424,8 @@ def build_canonical(connection: duckdb.DuckDBPyConnection, profile: Mapping[str,
                         "CREATE OR REPLACE VIEW v_sales AS WITH base AS (SELECT l.line_id, l.order_id, "
                         f"o.order_date AS sale_date, o.customer_id, l.sku, {product_name} AS product_name, "
                         f"{category} AS category, l.qty, l.unit_price, l.discount, "
-                        "GREATEST(l.qty * l.unit_price - l.discount, 0) AS line_revenue, o.voucher, o.shipping, o.vat "
+                        "COALESCE(l.line_amount, GREATEST(l.qty * l.unit_price - l.discount, 0)) AS line_revenue, "
+                        "o.voucher, o.shipping, o.vat "
                         f"FROM v_lines l JOIN v_valid_orders o ON l.order_id = o.order_id {join_products}), "
                         "tot AS (SELECT *, SUM(line_revenue) OVER (PARTITION BY order_id) AS order_total FROM base) "
                         "SELECT line_id, order_id, sale_date, customer_id, sku, product_name, category, qty, "

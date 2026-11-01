@@ -95,6 +95,34 @@ def read_tables(path: Path):
             connection.close()
 
 
+_PART_SUFFIX = re.compile(r"[\s_\-.]*(?:part|phan)?[\s_\-.]*\d+$", re.I)
+
+
+def merge_same_schema(entries: list[tuple[str, str, pd.DataFrame]]) -> list[tuple[str, str, pd.DataFrame]]:
+    """Concatenate tables that are slices of one table: the sheets of one workbook ("02.2025", "03.2025", ...)
+    or files split in parts ("HoaDonChiTiet_1", "HoaDonChiTiet_2") that share exactly the same columns.
+
+    entries are (file stem, table name, frame). A merged table is named after the file (without the part
+    number) and gets a `_sheet` column holding the original sheet/part name, so nothing is lost. Tables that
+    stand alone, or whose columns differ, are returned unchanged and in the same order.
+    """
+    groups: dict[tuple, list[int]] = {}
+    for index, (stem, _name, frame) in enumerate(entries):
+        groups.setdefault((_PART_SUFFIX.sub("", stem) or stem, tuple(frame.columns)), []).append(index)
+    merged, done = [], set()
+    for index, (stem, name, frame) in enumerate(entries):
+        if index in done:
+            continue
+        members = next(m for m in groups.values() if index in m)
+        if len(members) == 1 or "_sheet" in frame.columns:
+            merged.append((stem, name, frame))
+            continue
+        parts = [entries[i][2].assign(_sheet=entries[i][1] if entries[i][1] != "Sheet1" else entries[i][0]) for i in members]
+        done.update(members)
+        merged.append((stem, _PART_SUFFIX.sub("", stem) or stem, pd.concat(parts, ignore_index=True)))
+    return merged
+
+
 class BusinessLoader:
     def __init__(self, root: Path, work: Path):
         self.root = root.resolve()
@@ -119,21 +147,27 @@ class BusinessLoader:
         canonical = entities = None
         connection = duckdb.connect(str(database), config={"enable_external_access": "false"})
         try:
+            entries = []
             for path in sorted(directory.iterdir()):
                 if path.suffix.lower() not in {".csv", ".xlsx", ".sqlite", ".sqlite3", ".db"}:
                     continue
                 try:
                     if not path.resolve().is_relative_to(self.root):
                         raise ValueError("Input symlink escapes package")
-                    for name, frame in read_tables(path):
-                        if name.casefold() in {key.casefold() for key in profile}:
-                            name = f"{path.stem}__{name}"
-                        connection.register("input_frame", frame)
-                        connection.execute(f"CREATE TABLE {quote(name)} AS SELECT * FROM input_frame")
-                        connection.unregister("input_frame")
-                        profile[name] = profile_table(connection, name)
+                    entries.extend((path.stem, name, frame) for name, frame in read_tables(path))
                 except Exception as error:
                     warnings.append(f"{path.name}: {error}")
+                    logging.warning("Ingest: %s", warnings[-1])
+            for stem, name, frame in merge_same_schema(entries):
+                try:
+                    if name.casefold() in {key.casefold() for key in profile}:
+                        name = f"{stem}__{name}"
+                    connection.register("input_frame", frame)
+                    connection.execute(f"CREATE TABLE {quote(name)} AS SELECT * FROM input_frame")
+                    connection.unregister("input_frame")
+                    profile[name] = profile_table(connection, name)
+                except Exception as error:
+                    warnings.append(f"{stem}: {error}")
                     logging.warning("Ingest: %s", warnings[-1])
             if profile:
                 # Canonical views and the entity index are built in the same private database.

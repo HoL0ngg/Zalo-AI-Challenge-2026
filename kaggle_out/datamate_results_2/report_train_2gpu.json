@@ -1,0 +1,76 @@
+{
+  "total": 64,
+  "accuracy": 0.7188,
+  "stages": {
+    "gated": 0,
+    "generated": 64,
+    "sql_extracted": 64,
+    "exec_ok": 61,
+    "repaired_ok": 7,
+    "answered": 61,
+    "correct": 46
+  },
+  "rates_over_generated": {
+    "sql_extracted": 1.0,
+    "exec_ok": 0.9531,
+    "answered": 0.9531
+  },
+  "precision_when_answered": 0.7541,
+  "failures": {
+    "wrong_value": 13,
+    "abstain:exec_binder": 3,
+    "wrong_type": 2
+  },
+  "exec_errors": {
+    "binder": 16
+  },
+  "per_type": {
+    "boolean": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0
+    },
+    "date": {
+      "correct": 2,
+      "total": 3,
+      "accuracy": 0.6667
+    },
+    "list": {
+      "correct": 3,
+      "total": 12,
+      "accuracy": 0.25
+    },
+    "number": {
+      "correct": 23,
+      "total": 28,
+      "accuracy": 0.8214
+    },
+    "percent": {
+      "correct": 6,
+      "total": 6,
+      "accuracy": 1.0
+    },
+    "string": {
+      "correct": 10,
+      "total": 13,
+      "accuracy": 0.7692
+    }
+  },
+  "points": {
+    "correct": 46,
+    "wrong": 15,
+    "abstain": 3,
+    "score": 31
+  },
+  "latency_seconds": {
+    "mean": 4.675,
+    "p95": 13.391
+  },
+  "prompt_tokens": {
+    "mean": 2502,
+    "max": 3067
+  },
+  "finish_reasons": {
+    "stop": 77
+  }
+}

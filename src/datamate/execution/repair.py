@@ -43,6 +43,26 @@ def _qualifiers(tree: exp.Expression) -> set[str]:
     return {column.table for column in tree.find_all(exp.Column) if column.table}
 
 
+_PROTECTED = re.compile(r"('(?:[^']|'')*'|\"(?:[^\"]|\"\")*\")")
+
+
+def quote_known_identifiers(code: str, columns: dict[str, list[str]]) -> str:
+    """Double-quote table/column names that need it ("Thành tiền", "02.2025") wherever the model left them bare.
+
+    Only names that really exist in the schema are touched, longest first, outside string literals and
+    already-quoted identifiers, so it cannot change what a correct statement means.
+    """
+    names = {n for table, cols in columns.items() for n in (table, *cols)}
+    needy = sorted((n for n in names if not re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", n)), key=lambda n: (-len(n), n))
+    if not needy:
+        return code
+    parts = _PROTECTED.split(code)
+    for i in range(0, len(parts), 2):          # even parts are outside quotes
+        for name in needy:
+            parts[i] = re.sub(rf"(?<![\w\"]){re.escape(name)}(?![\w\"])", '"' + name.replace('"', '""') + '"', parts[i])
+    return "".join(parts)
+
+
 def quick_fix(failed: ExecResult) -> Candidate | None:
     """`SELECT SUM(v_sales.x) ...` with no FROM: add `FROM v_sales` when exactly one table is qualified.
 

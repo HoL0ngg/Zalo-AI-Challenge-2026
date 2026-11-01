@@ -3,7 +3,7 @@ from dataclasses import asdict
 
 from datamate.codegen.generator import generate
 from datamate.core import Answer, Question
-from datamate.execution.repair import quick_fix, repair
+from datamate.execution.repair import available_columns, quick_fix, quote_known_identifiers, repair
 from datamate.execution.sandbox import execute
 from datamate.formatting.formatter import format_answer
 from datamate.gate import gate
@@ -51,6 +51,7 @@ class Pipeline:
                     failed: list = []
                     for attempt in range(self.repair_attempts + 1):
                         remaining = min(self.guard.remaining, self.timeout - (time.monotonic() - started))
+                        candidate.code = quote_known_identifiers(candidate.code, available_columns(linked))
                         result = execute(context, candidate, remaining)
                         log["attempts"].append(asdict(result))
                         if result.error is None or attempt == self.repair_attempts or self.guard.exhausted:
