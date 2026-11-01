@@ -67,17 +67,19 @@ concepts:
   debt:
     keywords: ['cong no', 'dang no', 'con no', 'khach no', '(?<![a-z])no(?![a-z])']
     capability: has_debts
-    column_names: []
+    # Raw names that prove the data does track debt even when the canonical mapping missed it
+    # (POS exports keep it as paid-vs-total columns, a payment ledger or a due date).
+    column_names: [cong no, con no, du no, tien no, so no, debt, khach da tra, da tra, han thanh toan, thanh toan, payment, paid]
     reason: "Không có dữ liệu công nợ của khách trong dữ liệu của cơ sở."
   cost:
     keywords: ['loi nhuan', 'lai gop', 'lai rong', 'gia von', 'gia nhap']
     capability: has_cost
-    column_names: []
+    column_names: [gia von, gia nhap, don gia nhap, gia mua, cost, unit cost, can tra ncc]
     reason: "Không có giá vốn hoặc giá nhập trong dữ liệu của cơ sở."
   expiry:
     keywords: ['het han', 'han dung', 'sap het han', 'han su dung', '(?<![a-z])date(?![a-z])']
     capability: has_expiry
-    column_names: []
+    column_names: [han dung, han su dung, hsd, expiry, exp date, expire, ngay het han, lo hang]
     reason: "Không có hạn dùng của lô hàng trong dữ liệu của cơ sở."
   employee:
     keywords: ['nhan vien', 'thu ngan', 'ca (?:sang|chieu|toi)', 'nhan su']

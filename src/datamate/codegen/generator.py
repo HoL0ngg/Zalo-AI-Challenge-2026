@@ -10,6 +10,8 @@ def apply_expected(candidate: Candidate, linked: LinkResult) -> Candidate:
     the VND/count unit makes the formatter round money and counts to integers.
     """
     expected = (linked.schema or {}).get("expected") or {}
+    if expected.get("type"):
+        candidate.meta.setdefault("expected_type", expected["type"])
     if candidate.answer_type is None and expected.get("force_type"):
         candidate.answer_type = expected["type"]
     if candidate.unit is None and expected.get("unit"):

@@ -19,6 +19,8 @@
 | 14_phase2.md | Phase 2: Question Understanding, cách chạy, mở rộng, hạn chế |
 | 15_phase3.md | Phase 3: lớp ngữ nghĩa chuẩn, Entity/Schema Linking, gate luật |
 | 16_phase4_p0.md | Phase 4 / P0: chat template, parser SQL, prompt gọn, báo cáo theo bước |
+| 17_phase4_p1_format.md | Phase 4 / P1: số đo LLM thật đầu tiên, sửa hình dạng đáp án (list, string, thứ trong tuần), `replay_format.py` |
+| 18_phase4_p2_official_data.md | Phase 4 / P2: bộ train/public_test chính thức, luật chấm +1/−1, growth, repair, kiểm tra gói dữ liệu, việc còn thiếu |
 # Baseline implementation
 
 See [13_baseline.md](13_baseline.md) for the runnable baseline and current boundaries.

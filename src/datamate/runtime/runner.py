@@ -16,7 +16,9 @@ from datamate.runtime.time_guard import TimeGuard
 
 
 def run(data_dir: Path, result_dir: Path, config_path: Path = Path("configs/default.yaml"),
-        backend=None) -> dict:
+        backend=None, max_per_business: int | None = None) -> dict:
+    """`max_per_business` answers only the first N questions of each business (file order): a deterministic
+    sample for quick checks on large packages. Never use it for a final submission."""
     config = yaml.safe_load(config_path.read_text(encoding="utf-8"))
     runtime = config["runtime"]
     guard = TimeGuard(min(float(runtime["total_budget_seconds"]), 21600), runtime.get("reserve_seconds", 60))
@@ -39,12 +41,17 @@ def run(data_dir: Path, result_dir: Path, config_path: Path = Path("configs/defa
         else:
             raise ValueError("Unknown backend")
     counts = Counter()
+    taken: Counter = Counter()
     with tempfile.TemporaryDirectory(prefix="datamate-") as temporary:
         pipeline = Pipeline(BusinessLoader(data_dir, Path(temporary)), backend, guard,
                             runtime["max_question_seconds"], config["pipeline"]["max_repair_attempts"])
         for record in read_records(data_dir / "questions.jsonl"):
             if not isinstance(record.get("id"), str):
                 raise ValueError("Each input record needs a string ID")
+            if max_per_business is not None:
+                taken[record.get("business_id")] += 1
+                if taken[record.get("business_id")] > max_per_business:
+                    continue
             if record["id"] in writer.seen:
                 counts["skipped"] += 1
                 continue

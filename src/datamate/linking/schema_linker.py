@@ -23,6 +23,7 @@ DATE_COLUMN = {"expiry": "v_purchases.expiry_date", "debt": "v_debts.debt_date",
 MONEY_METRICS = {"revenue", "profit", "debt"}
 TABLE_RE = re.compile(r"(?:lap|ve|ke)\s+bang|bang\s+(?:cac|danh sach|thong ke|khach)|dang bang")
 LIST_RE = re.compile(r"liet ke|danh sach")
+WEEKDAY_RE = re.compile(r"(?<![a-z])thu may(?![a-z])")
 
 
 def detect_needs(ascii_text: str, concepts: Mapping[str, Any]) -> list[str]:
@@ -45,6 +46,8 @@ def expected_answer(hints: Mapping[str, Any], ascii_text: str) -> dict[str, Any]
         expected = {"type": "list", "force_type": True}
     elif TABLE_RE.search(ascii_text):
         expected = {"type": "table", "force_type": True}
+    elif WEEKDAY_RE.search(ascii_text):
+        expected = {"type": "string"}
     elif operation == "exists":
         expected = {"type": "boolean"}
     elif operation == "date_of_max":

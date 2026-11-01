@@ -29,7 +29,8 @@ NUMBER_WORDS = {
     "mot": 1, "hai": 2, "ba": 3, "bon": 4, "nam": 5, "sau": 6, "bay": 7, "tam": 8, "chin": 9, "muoi": 10,
     "muoi mot": 11, "muoi hai": 12, "muoi lam": 15, "hai muoi": 20, "ba muoi": 30,
 }
-_BOOL_KEYS = ("month_to_as_of", "quarter_to_as_of", "year_to_as_of", "rolling_window_includes_as_of")
+_BOOL_KEYS = ("month_to_as_of", "quarter_to_as_of", "year_to_as_of", "rolling_window_includes_as_of",
+              "month_compare_same_days")
 _INT_KEYS = ("pre_tet_days", "post_tet_days")
 _ENUMS = {"this_week_mode": {"week_to_date", "full_week"}, "bare_cung_ky": {"year", "month"}}
 
@@ -95,6 +96,13 @@ def _week_start_from_prose(rulebook: str) -> str | None:
     return None
 
 
+def _same_days_from_prose(rulebook: str) -> bool:
+    """Rulebook sentence like "so với tháng trước thì lấy cùng số ngày" (this month so far vs the same
+    number of days of the previous month)."""
+    text = fold(unicodedata.normalize("NFC", rulebook))
+    return bool(re.search(r"so\s+voi\s+thang\s+truoc[^.|]{0,60}cung\s+so\s+ngay", text))
+
+
 def _valid(key: str, value: Any, default: Any) -> Any:
     """Return the validated value or raise ValueError."""
     if key == "week_start":
@@ -145,6 +153,9 @@ def parse_rule_params(rulebook: str, defaults: Mapping[str, Any]) -> tuple[dict[
                 warnings.append(f"rulebook_param_invalid:{key}")
     if not found and "{" in (rulebook or "") and "json" in (rulebook or "").lower():
         warnings.append("rulebook_json_unreadable")
+    if sources.get("month_compare_same_days") != "rulebook" and _same_days_from_prose(rulebook or ""):
+        params["month_compare_same_days"] = True
+        sources["month_compare_same_days"] = "rulebook_prose"
     if sources.get("week_start") != "rulebook":
         prose = _week_start_from_prose(rulebook or "")
         if prose:
@@ -376,7 +387,8 @@ def _handle_year_explicit(ctx: _Ctx, m: re.Match) -> Any:
 
 
 def _relative_unit(unit: str) -> str:
-    return {"tuan": "week", "thang": "month", "quy": "quarter", "nam": "year", "ky": "period"}[unit]
+    return {"tuan": "week", "thang": "month", "thg": "month", "th": "month", "quy": "quarter", "nam": "year",
+            "ky": "period"}[unit]
 
 
 def _handle_prior_of_primary(ctx: _Ctx, m: re.Match) -> Any:
@@ -524,7 +536,7 @@ _PATTERNS: list[tuple[str, re.Pattern, Callable[[_Ctx, re.Match], Any]]] = [
     ("range", re.compile(rf"{_B}tu\s+(?P<a>{_ATOM})\s+(?:den|toi)\s+(?P<b>{_ATOM}){_E}"), _handle_range),
     ("until_today", re.compile(rf"{_B}(?:tinh\s+)?(?:cho\s+)?(?:den|toi)\s+(?:het\s+)?(?:ngay\s+)?(?:hom\s+)?nay{_E}"),
      lambda ctx, m: _CONSUME),
-    ("prior_of_primary", re.compile(rf"{_B}(?P<u>tuan|thang|quy|nam)\s+(?:lien\s+)?truoc\s+do{_E}"), _handle_prior_of_primary),
+    ("prior_of_primary", re.compile(rf"{_B}(?P<u>tuan|thang|thg|th|quy|nam)\s+(?:lien\s+)?truoc\s+do{_E}"), _handle_prior_of_primary),
     ("prior_period", re.compile(rf"{_B}(?P<u>ky)\s+truoc(?:\s+do)?{_E}"), _handle_prior_of_primary),
     ("same_period_month", re.compile(rf"{_B}cung\s+ky\s+thang\s+(?:truoc|roi|vua\s+roi){_E}"), _same_period("month")),
     ("same_period_year", re.compile(rf"{_B}cung\s+ky\s+(?:nam\s+)?(?:ngoai|truoc|roi){_E}"), _same_period("year")),
@@ -551,7 +563,7 @@ _PATTERNS: list[tuple[str, re.Pattern, Callable[[_Ctx, re.Match], Any]]] = [
     ("last_week", re.compile(rf"{_B}tuan\s+{_LAST}{_E}"), _week("last")),
     ("next_week", re.compile(rf"{_B}tuan\s+{_NEXT}{_E}"), _week("next")),
     ("this_month", re.compile(rf"{_B}thang\s+nay{_E}"), _month("this")),
-    ("last_month", re.compile(rf"{_B}thang\s+{_LAST}{_E}"), _month("last")),
+    ("last_month", re.compile(rf"{_B}(?:thang|thg|th)\s+{_LAST}{_E}"), _month("last")),
     ("next_month", re.compile(rf"{_B}thang\s+{_NEXT}{_E}"), _month("next")),
     ("this_quarter", re.compile(rf"{_B}quy\s+nay{_E}"), _quarter("this")),
     ("last_quarter", re.compile(rf"{_B}quy\s+{_LAST}{_E}"), _quarter("last")),
@@ -560,7 +572,11 @@ _PATTERNS: list[tuple[str, re.Pattern, Callable[[_Ctx, re.Match], Any]]] = [
     ("last_year", re.compile(rf"{_B}nam\s+(?:ngoai|truoc|roi|vua\s+roi){_E}"), _year("last")),
 ]
 
-_MARKER = re.compile(r"(?:so\s+voi|so\s+sanh\s+voi|doi\s+chieu\s+voi|so\s+cung\s+voi)$")
+_MARKER = re.compile(r"(?:so\s+voi|so\s+vs|so\s+sanh\s+voi|doi\s+chieu\s+voi|so\s+cung\s+voi|(?<![a-z])vs)$")
+# "so voi thang truoc" with an explicit primary means the period before the primary, not before today.
+_LAST_AS_PRIOR = {"last_week": "week", "last_month": "month", "last_quarter": "quarter", "last_year": "year"}
+_FROM_THEN = re.compile(rf"{_B}(?P<n>\d{{1,3}})\s*ngay\s+ke\s+tu\s+(?:ngay\s+)?do{_E}")
+_BEFORE_THEN = re.compile(rf"{_B}(?P<n>\d{{1,3}})\s*ngay\s+(?:lien\s+|ngay\s+)?truoc(?:\s+(?:ngay\s+)?do)?{_E}")
 
 
 def _shift_prior(base: Period | None, unit: str, ctx: _Ctx) -> tuple[date, date]:
@@ -573,7 +589,12 @@ def _shift_prior(base: Period | None, unit: str, ctx: _Ctx) -> tuple[date, date]
         return base_start - timedelta(days=7), base_end - timedelta(days=7)
     if unit == "month":
         first = add_months(base_start.replace(day=1), -1)
-        return first, month_end(first.year, first.month)
+        last = month_end(first.year, first.month)
+        if (ctx.params.get("month_compare_same_days") and base_start.day == 1
+                and base_end < month_end(base_start.year, base_start.month)):
+            # "this month so far": same number of days of the previous month, capped at its last day
+            return first, min(first.replace(day=1) + timedelta(days=(base_end - base_start).days), last)
+        return first, last
     if unit == "quarter":
         first = add_months(quarter_start(base_start), -3)
         return first, quarter_end(first)
@@ -581,6 +602,25 @@ def _shift_prior(base: Period | None, unit: str, ctx: _Ctx) -> tuple[date, date]
         return date(base_start.year - 1, 1, 1), date(base_start.year - 1, 12, 31)
     length = (base_end - base_start).days + 1
     return base_start - timedelta(days=length), base_start - timedelta(days=1)
+
+
+def _price_change_windows(folded: str, text: str, periods: list[Period]) -> list[Period]:
+    """"N ngày kể từ ngày đó" vs "N ngày liền trước" around an explicit change date D (rulebook section 5):
+    primary = [D, D+N-1], comparison = [D-N, D-1]. Without the date or the two phrases nothing changes."""
+    after, before = _FROM_THEN.search(folded), _BEFORE_THEN.search(folded)
+    dates = [p for p in periods if p.label == "explicit_date"]
+    if not (after and before and len(dates) == 1) or before.start() < after.end():
+        return periods
+    n_after, n_before = int(after.group("n")), int(before.group("n"))
+    if n_after < 1 or n_before < 1:
+        return periods
+    day = dates[0].start
+    keep = [p for p in periods if p is not dates[0]]
+    keep.append(Period(f"last_{n_after}_days_from_change", day, day + timedelta(days=n_after - 1), "primary",
+                       text[after.start():after.end()]))
+    keep.append(Period(f"{n_before}_days_before_change", day - timedelta(days=n_before), day - timedelta(days=1),
+                       "comparison", text[before.start():before.end()]))
+    return keep
 
 
 def resolve_periods(text: str, as_of: date, params: Mapping[str, Any],
@@ -611,13 +651,31 @@ def resolve_periods(text: str, as_of: date, params: Mapping[str, Any],
 
     periods: list[Period] = []
     primary: Period | None = None
+    # The comparison phrase may come first ("so với tháng trước, doanh thu tháng 1/2026 ..."): find the
+    # period it refers to before the main loop, in text order.
+    anchor: Period | None = None
+    for start, end, spec in hits:
+        if not spec.relative and not _MARKER.search(folded[:start].rstrip()):
+            anchor = Period(spec.label, spec.start, spec.end, "primary", text[start:end])
+            break
     for start, end, spec in hits:
         mention = text[start:end]
         marker = bool(_MARKER.search(folded[:start].rstrip()))
         s, e = spec.start, spec.end
+        base = primary or anchor
         if spec.relative:
-            s, e = _shift_prior(primary, spec.relative, ctx)
+            s, e = _shift_prior(base, spec.relative, ctx)
             role = "comparison"
+        elif marker and base is not None and spec.label in _LAST_AS_PRIOR:
+            unit = _LAST_AS_PRIOR[spec.label]
+            # Against an open "this week/quarter/year" keep the full previous unit; "this month so far" uses
+            # the same number of days (rulebook), and an explicit period uses the one right before it.
+            if base.label.startswith("this_") and not (unit == "month" and ctx.params.get("month_compare_same_days")):
+                role = "comparison"
+            else:
+                s, e = _shift_prior(base, unit, ctx)
+                spec = _Spec("previous_" + unit, s, e)
+                role = "comparison"
         elif primary is None and not marker:
             role = "primary"
         else:
@@ -629,6 +687,7 @@ def resolve_periods(text: str, as_of: date, params: Mapping[str, Any],
             primary = period
         periods.append(period)
 
+    periods = _price_change_windows(folded, text, periods)
     lows = [d for d in (_parse_iso(r.get("date")) for r in calendar) if d is not None]
     for period in periods:
         if period.end > as_of:

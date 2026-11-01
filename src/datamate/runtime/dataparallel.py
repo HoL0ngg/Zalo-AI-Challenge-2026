@@ -71,7 +71,8 @@ def merge(order: list[str], shard_results: list[Path], result_dir: Path) -> dict
             "missing": [i for i in order if i not in answers]}
 
 
-def run_data_parallel(data_dir: Path, result_dir: Path, config: Path, gpus: list[str]) -> dict:
+def run_data_parallel(data_dir: Path, result_dir: Path, config: Path, gpus: list[str],
+                      max_per_business: int | None = None) -> dict:
     data_dir, result_dir = data_dir.resolve(), result_dir.resolve()
     if result_dir.is_relative_to(data_dir):
         raise ValueError("Output must be outside read-only input package")
@@ -93,6 +94,8 @@ def run_data_parallel(data_dir: Path, result_dir: Path, config: Path, gpus: list
         log = (scratch / f"shard_{index}.log").open("w", encoding="utf-8")
         command = [sys.executable, "-m", "datamate.runtime.cli", "run", "--config", str(config),
                    "--data-dir", str(inputs), "--result-dir", str(outputs)]
+        if max_per_business is not None:
+            command += ["--max-per-business", str(max_per_business)]
         processes.append((index, gpu, businesses, outputs, log,
                           subprocess.Popen(command, env=env, stdout=log, stderr=subprocess.STDOUT)))
     shards = []
@@ -113,9 +116,11 @@ def main() -> None:
     parser.add_argument("--result-dir", type=Path, required=True)
     parser.add_argument("--config", type=Path, default=Path("configs/default.yaml"))
     parser.add_argument("--gpus", default="0,1", help="comma-separated CUDA device ids, one process each")
+    parser.add_argument("--max-per-business", type=int, default=None,
+                        help="answer only the first N questions of each business (quick sample)")
     args = parser.parse_args()
     summary = run_data_parallel(args.data_dir, args.result_dir, args.config,
-                                [g.strip() for g in args.gpus.split(",") if g.strip()])
+                                [g.strip() for g in args.gpus.split(",") if g.strip()], args.max_per_business)
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     if any(s["exit_code"] for s in summary["shards"]):
         sys.exit(1)

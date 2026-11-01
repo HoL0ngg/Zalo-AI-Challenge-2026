@@ -26,6 +26,8 @@ def from_rows(rows: list[tuple]) -> pd.DataFrame:
     if len(set(n.casefold() for n in names)) != len(names):
         raise ValueError("Duplicate column names")
     values = [row for row in rows[header + 1:] if any(v is not None for v in row)]
+    # openpyxl read-only mode drops trailing empty cells, so a row can be shorter than the header.
+    values = [tuple(row)[:len(names)] + (None,) * (len(names) - len(row)) for row in values]
     while values and str(values[-1][0]).strip().casefold() in {"total", "tổng", "tổng cộng"}:
         values.pop()
     return pd.DataFrame(values, columns=names).infer_objects()

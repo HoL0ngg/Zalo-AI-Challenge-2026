@@ -44,4 +44,8 @@ def intent_hints(normalized_ascii: str, keywords: Mapping[str, Any] | None) -> d
             top_n = int(token) if token.isdigit() else NUMBER_WORDS.get(token)
     if top_n is not None and top_n > 1:
         operation = "topN"
-    return {"metric": metric, "operation": operation or "none", "top_n": top_n}
+    hints = {"metric": metric, "operation": operation or "none", "top_n": top_n}
+    if operation == "compare_percent":
+        # "percent" is not always growth: shares, cancel rates and price effects need different SQL.
+        hints["percent_kind"] = _first(keywords.get("percent_kind") or {}, text) or "growth"
+    return hints

@@ -16,7 +16,7 @@ runtime:
 
 pipeline:
   candidate_count: 1
-  max_repair_attempts: 1
+  max_repair_attempts: 2
   voting_confidence_threshold: 1.0
   fail_safe_answer: abstain
 

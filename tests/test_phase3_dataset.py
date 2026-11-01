@@ -17,7 +17,7 @@ from datamate.io.question_reader import read_records
 from datamate.linking import link
 from datamate.understanding import understand
 
-DATASET = Path("dataset")
+DATASET = Path("synth/out")  # the synthetic benchmark these regressions were written for (dataset/ now holds the official data)
 pytestmark = pytest.mark.skipif(not (DATASET / "train" / "questions.jsonl").exists(), reason="dataset not present")
 
 

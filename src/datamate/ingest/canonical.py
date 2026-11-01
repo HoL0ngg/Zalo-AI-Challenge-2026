@@ -31,6 +31,13 @@ ROLE_ORDER = ("products", "customers", "orders", "lines", "purchases", "debts")
 NUMERIC_TYPES = ("TINYINT", "SMALLINT", "INTEGER", "BIGINT", "HUGEINT", "UBIGINT", "UINTEGER", "USMALLINT",
                  "UTINYINT", "FLOAT", "DOUBLE", "DECIMAL", "REAL")
 DATE_TYPES = ("DATE", "TIMESTAMP")
+# DuckDB dayofweek(): Sunday = 0. Names are what the data and the gold answers use ("Thứ hai" ... "Chủ nhật").
+WEEKDAY_NAMES = ("Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy")
+
+
+def weekday_sql(column: str) -> str:
+    cases = " ".join(f"WHEN {i} THEN '{name}'" for i, name in enumerate(WEEKDAY_NAMES))
+    return f"CASE dayofweek({column}) {cases} END"
 
 VIEW_DOCS: dict[str, tuple[str, dict[str, str]]] = {
     "v_products": ("One row per product (de-duplicated by sku).",
@@ -54,14 +61,17 @@ VIEW_DOCS: dict[str, tuple[str, dict[str, str]]] = {
                 {"customer_id": "customer code", "amount": "amount owed", "debt_date": "DATE of the entry"}),
     "v_valid_orders": ("Orders that count for sales: not cancelled and, per rulebook, without any returned line.",
                        {"order_id": "order code", "order_date": "DATE", "customer_id": "customer code",
-                        "voucher": "order voucher", "shipping": "shipping fee", "vat": "VAT"}),
+                        "voucher": "order voucher", "shipping": "shipping fee", "vat": "VAT",
+                        "weekday_vi": "Vietnamese weekday name of order_date (Thứ hai ... Chủ nhật); "
+                                      "use it for 'thứ mấy' questions"}),
     "v_sales": ("USE THIS for sales, quantity and revenue: valid lines of valid orders. `revenue` already "
                 "follows the rulebook (line value, voucher / VAT / shipping handling).",
                 {"line_id": "line code", "order_id": "order code", "sale_date": "DATE of the sale",
                  "customer_id": "customer code", "sku": "product code", "product_name": "canonical product name",
                  "category": "product group", "qty": "quantity sold", "unit_price": "price per unit",
                  "discount": "line discount", "line_revenue": "max(qty*unit_price-discount, 0)",
-                 "revenue": "line revenue after rulebook adjustments"}),
+                 "revenue": "line revenue after rulebook adjustments",
+                 "weekday_vi": "Vietnamese weekday name of sale_date (Thứ hai ... Chủ nhật); use it for 'thứ mấy'"}),
 }
 
 
@@ -369,7 +379,7 @@ def build_canonical(connection: duckdb.DuckDBPyConnection, profile: Mapping[str,
                 if flags["exclude_entire_order_if_any_return"] else "false"
             _create(connection, schema, "v_valid_orders",
                     f"CREATE OR REPLACE VIEW v_valid_orders AS SELECT order_id, order_date, customer_id, voucher, "
-                    f"shipping, vat FROM v_orders WHERE NOT {cancelled} AND NOT ({returned})")
+                    f"shipping, vat, {weekday_sql('order_date')} AS weekday_vi FROM v_orders WHERE NOT {cancelled} AND NOT ({returned})")
             if "v_valid_orders" in schema.views:
                 revenue = "line_revenue"
                 share = "line_revenue / NULLIF(order_total, 0)"
@@ -390,7 +400,8 @@ def build_canonical(connection: duckdb.DuckDBPyConnection, profile: Mapping[str,
                         f"FROM v_lines l JOIN v_valid_orders o ON l.order_id = o.order_id {join_products}), "
                         "tot AS (SELECT *, SUM(line_revenue) OVER (PARTITION BY order_id) AS order_total FROM base) "
                         "SELECT line_id, order_id, sale_date, customer_id, sku, product_name, category, qty, "
-                        f"unit_price, discount, line_revenue, {revenue} AS revenue FROM tot")
+                        f"unit_price, discount, line_revenue, {revenue} AS revenue, "
+                        f"{weekday_sql('sale_date')} AS weekday_vi FROM tot")
         schema.complete = "v_sales" in schema.views
         schema.capabilities = _capabilities(connection, schema)
         schema.quality = check_consistency(connection, schema.views)

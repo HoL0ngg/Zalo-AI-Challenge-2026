@@ -146,7 +146,8 @@ def test_protected_values_come_from_profile_samples():
 ])
 def test_intent_hints(text, metric, operation, top_n):
     resolved = understand(question(text), context())
-    assert resolved.intent_hints == {"metric": metric, "operation": operation, "top_n": top_n}, text
+    hints = {k: v for k, v in resolved.intent_hints.items() if k != "percent_kind"}  # kind has its own tests
+    assert hints == {"metric": metric, "operation": operation, "top_n": top_n}, text
 
 
 def test_intent_without_keywords_is_neutral():

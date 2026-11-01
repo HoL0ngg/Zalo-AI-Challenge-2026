@@ -36,7 +36,9 @@ def format_answer(question: Question, result: ExecResult) -> Answer:
         result = ExecResult(result.candidate, result.columns, [[0]], result.error)
     kind = result.candidate.answer_type
     if kind is None:
-        if len(result.columns) > 1:
+        if len(result.columns) > 1 and result.candidate.meta.get("expected_type") == "string" and len(result.rows) == 1:
+            kind = "string"  # "which product/customer ..." with the measure selected next to the name
+        elif len(result.columns) > 1:
             kind = "table"
         elif len(result.rows) != 1:
             kind = "list"
@@ -47,10 +49,13 @@ def format_answer(question: Question, result: ExecResult) -> Answer:
     if kind == "table":
         value = {"columns": result.columns, "rows": result.rows}
     elif kind == "list":
-        if len(result.columns) != 1:
-            raise ValueError("List requires one column")
+        # A ranked list asks for names; a model often adds the measure (qty, revenue) as a second column.
+        # The first column is the entity and ORDER BY already fixed the order, so extra columns are dropped.
         value = [row[0] for row in result.rows]
     else:
+        if (kind == "string" and result.candidate.meta.get("expected_type") == "string"
+                and len(result.columns) > 1 and len(result.rows) == 1):
+            result = ExecResult(result.candidate, result.columns[:1], [result.rows[0][:1]], result.error)
         if len(result.rows) != 1 or len(result.columns) != 1 or result.rows[0][0] is None:
             raise ValueError("Scalar requires one non-null cell")
         value = result.rows[0][0]

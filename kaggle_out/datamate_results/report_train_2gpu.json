@@ -1,0 +1,213 @@
+{
+  "total": 320,
+  "accuracy": 0.6219,
+  "stages": {
+    "gated": 32,
+    "generated": 288,
+    "sql_extracted": 288,
+    "exec_ok": 257,
+    "repaired_ok": 8,
+    "answered": 231,
+    "correct": 199
+  },
+  "rates_over_generated": {
+    "sql_extracted": 1.0,
+    "exec_ok": 0.8924,
+    "answered": 0.8021
+  },
+  "precision_when_answered": 0.7229,
+  "failures": {
+    "wrong_value": 45,
+    "abstain:exec_binder": 31,
+    "abstain:format_or_sanity": 26,
+    "wrong_type": 19
+  },
+  "exec_errors": {
+    "binder": 70
+  },
+  "per_type": {
+    "boolean": {
+      "correct": 9,
+      "total": 9,
+      "accuracy": 1.0
+    },
+    "date": {
+      "correct": 4,
+      "total": 8,
+      "accuracy": 0.5
+    },
+    "list": {
+      "correct": 1,
+      "total": 42,
+      "accuracy": 0.0238
+    },
+    "number": {
+      "correct": 94,
+      "total": 117,
+      "accuracy": 0.8034
+    },
+    "percent": {
+      "correct": 0,
+      "total": 19,
+      "accuracy": 0.0
+    },
+    "string": {
+      "correct": 59,
+      "total": 88,
+      "accuracy": 0.6705
+    },
+    "table": {
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0
+    },
+    "unanswerable": {
+      "correct": 32,
+      "total": 32,
+      "accuracy": 1.0
+    }
+  },
+  "per_template": {
+    "aov": {
+      "correct": 0,
+      "total": 10,
+      "accuracy": 0.0
+    },
+    "best_day": {
+      "correct": 4,
+      "total": 8,
+      "accuracy": 0.5
+    },
+    "bottom_qty": {
+      "correct": 1,
+      "total": 9,
+      "accuracy": 0.1111
+    },
+    "cancel_count": {
+      "correct": 5,
+      "total": 10,
+      "accuracy": 0.5
+    },
+    "customer_debt": {
+      "correct": 5,
+      "total": 6,
+      "accuracy": 0.8333
+    },
+    "debt_table": {
+      "correct": 0,
+      "total": 5,
+      "accuracy": 0.0
+    },
+    "growth": {
+      "correct": 0,
+      "total": 19,
+      "accuracy": 0.0
+    },
+    "low_stock": {
+      "correct": 0,
+      "total": 8,
+      "accuracy": 0.0
+    },
+    "missing_metric": {
+      "correct": 15,
+      "total": 15,
+      "accuracy": 1.0
+    },
+    "near_expiry": {
+      "correct": 1,
+      "total": 7,
+      "accuracy": 0.1429
+    },
+    "orders_count": {
+      "correct": 16,
+      "total": 16,
+      "accuracy": 1.0
+    },
+    "outside_range": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0
+    },
+    "profit": {
+      "correct": 1,
+      "total": 8,
+      "accuracy": 0.125
+    },
+    "qty_total": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0
+    },
+    "revenue": {
+      "correct": 52,
+      "total": 52,
+      "accuracy": 1.0
+    },
+    "slow_high_stock": {
+      "correct": 0,
+      "total": 9,
+      "accuracy": 0.0
+    },
+    "sold_product": {
+      "correct": 9,
+      "total": 9,
+      "accuracy": 1.0
+    },
+    "top3_qty": {
+      "correct": 0,
+      "total": 9,
+      "accuracy": 0.0
+    },
+    "top3_revenue": {
+      "correct": 0,
+      "total": 9,
+      "accuracy": 0.0
+    },
+    "top_category": {
+      "correct": 10,
+      "total": 10,
+      "accuracy": 1.0
+    },
+    "top_customer": {
+      "correct": 0,
+      "total": 8,
+      "accuracy": 0.0
+    },
+    "top_qty": {
+      "correct": 31,
+      "total": 34,
+      "accuracy": 0.9118
+    },
+    "top_revenue": {
+      "correct": 17,
+      "total": 17,
+      "accuracy": 1.0
+    },
+    "top_weekday": {
+      "correct": 0,
+      "total": 10,
+      "accuracy": 0.0
+    },
+    "unique_customers": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0
+    },
+    "unknown_product": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0
+    }
+  },
+  "latency_seconds": {
+    "mean": 3.379,
+    "p95": 13.396
+  },
+  "prompt_tokens": {
+    "mean": 2354,
+    "max": 2635
+  },
+  "finish_reasons": {
+    "stop": 327
+  }
+}

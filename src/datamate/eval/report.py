@@ -119,6 +119,10 @@ def build_report(submission: Iterable[Mapping], logs: Iterable[Mapping], gold: I
         "exec_errors": dict(exec_errors.most_common()),
         "per_type": _table(per_type),
     }
+    # Official scoring (rulebook section 9): +1 right, -1 wrong, 0 abstain.
+    wrong = sum(n for key, n in failures.items() if not key.startswith("abstain"))
+    report["points"] = {"correct": stages["correct"], "wrong": wrong,
+                        "abstain": total - stages["correct"] - wrong, "score": stages["correct"] - wrong}
     if per_template:
         report["per_template"] = _table(per_template)
     if elapsed:
