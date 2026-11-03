@@ -10,7 +10,9 @@ The adapter (a few hundred MB) is served by vLLM next to the AWQ base model (`lo
 Uses only the train data the user passes; never the public or private test.
 """
 import argparse
+import inspect
 import json
+import math
 import os
 import random
 from pathlib import Path
@@ -80,9 +82,28 @@ def main() -> None:
     model = get_peft_model(model, LoraConfig(
         r=args.rank, lora_alpha=2 * args.rank, lora_dropout=0.05, task_type="CAUSAL_LM",
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]))
+    # Kaggle's latest Transformers builds do not always expose warmup_ratio.
+    # Calculate the equivalent warmup in optimizer steps, including DDP and
+    # gradient accumulation, and select the argument supported by this build.
+    world_size = max(1, int(os.environ.get("WORLD_SIZE", "1")))
+    batches_per_device = math.ceil(len(kept) / world_size)
+    optimizer_steps_per_epoch = math.ceil(batches_per_device / args.accum)
+    total_steps = max(1, math.ceil(optimizer_steps_per_epoch * args.epochs))
+    warmup_steps = max(1, math.ceil(total_steps * 0.05))
+    supported = inspect.signature(TrainingArguments).parameters
+    schedule = {}
+    if "warmup_ratio" in supported:
+        schedule["warmup_ratio"] = 0.05
+    elif "warmup_steps" in supported:
+        schedule["warmup_steps"] = warmup_steps
+    else:
+        raise RuntimeError("This Transformers build supports neither warmup_ratio nor warmup_steps")
+    if local == 0:
+        print(f"optimizer steps ~= {total_steps}; warmup ~= {warmup_steps}; "
+              f"TrainingArguments schedule: {schedule}", flush=True)
     arguments = TrainingArguments(
         output_dir=str(args.out / "checkpoints"), per_device_train_batch_size=1, gradient_accumulation_steps=args.accum,
-        num_train_epochs=args.epochs, learning_rate=args.lr, lr_scheduler_type="cosine", warmup_ratio=0.05,
+        num_train_epochs=args.epochs, learning_rate=args.lr, lr_scheduler_type="cosine", **schedule,
         fp16=True, logging_steps=10, save_strategy="no", report_to=[], seed=args.seed, remove_unused_columns=False,
         ddp_find_unused_parameters=False, group_by_length=False, optim="paged_adamw_8bit")
     trainer = Trainer(model=model, args=arguments, train_dataset=Examples(kept),
