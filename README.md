@@ -57,6 +57,7 @@ input layout, mock grammar, stage boundaries, resume and timeout behavior.
 | Model | Parameters (B) | Default inference status |
 |---|---:|---|
 | Qwen2.5-Coder-7B-Instruct | 7.61 | Disabled; optional local vLLM |
+| Qwen2.5-Coder-7B-Instruct-AWQ + LoRA r=32 | <=7.70 | Optional Kaggle fine-tune profile |
 | BGE-M3 | 0.568 | Disabled; no embedding stage yet |
 | Reranker / classifier | 0 | None |
 | Mock backend | 0 | Enabled |
@@ -64,3 +65,8 @@ input layout, mock grammar, stage boundaries, resume and timeout behavior.
 Declarations and enabled-model budget checks use `configs/models.yaml`.
 Model weights and pre-cutoff publication eligibility must be verified before freezing
 the optional GPU configuration. No model weights are required for baseline tests.
+
+For the T4 x2 fine-tuning run, use [notebooks/kaggle_finetune.ipynb](notebooks/kaggle_finetune.ipynb).
+The diagnosis, held-out scores, and run instructions are in
+[docs/19_finetune_plan.md](docs/19_finetune_plan.md). Kaggle dependency versions are
+recorded in [requirements-kaggle.txt](requirements-kaggle.txt).

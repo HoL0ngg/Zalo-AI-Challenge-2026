@@ -14,7 +14,7 @@ models:
     local_path: models/qwen-coder-awq
     lora_path: models/lora         # QLoRA adapter trained by notebooks/kaggle_finetune.ipynb
     max_lora_rank: 64
-    parameters_billion: 7.61
+    parameters_billion: 7.70   # base 7.61B + rank-32 adapter ~0.081B (rank <= 32)
     dtype: float16
     quantization: awq
     tensor_parallel_size: 1

@@ -19,8 +19,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from datamate.codegen.prompt_builder import SYSTEM_PROMPT, build_prompt  # noqa: E402
-from datamate.core import Candidate, ExecResult, Question  # noqa: E402
+from datamate.codegen.generator import apply_expected  # noqa: E402
+from datamate.core import Candidate, LinkResult, Question  # noqa: E402
 from datamate.eval.scorer import matches  # noqa: E402
+from datamate.execution.sandbox import execute  # noqa: E402
 from datamate.formatting.formatter import format_answer  # noqa: E402
 from datamate.gate import gate  # noqa: E402
 from datamate.ingest.loader import BusinessLoader  # noqa: E402
@@ -39,6 +41,16 @@ def example(prompt: str, code: str) -> dict:
                          {"role": "assistant", "content": f"<sql>\n{code.strip()}\n</sql>"}]}
 
 
+def verified_example(linked: LinkResult, code: str, gold: dict) -> dict | None:
+    """Old logs may predate schema/rule changes; re-execute before teaching their SQL."""
+    result = execute(linked.context, apply_expected(Candidate(code), linked))
+    try:
+        answer = format_answer(linked.resolved.question, result).to_dict()
+    except ValueError:
+        return None
+    return example(build_prompt(linked), code) if matches(answer, gold) else None
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("run_dir", type=Path)
@@ -47,12 +59,15 @@ def main() -> None:
     parser.add_argument("--holdout-out", type=Path, required=True)
     parser.add_argument("--holdout-every", type=int, default=5, help="hold out every N-th business (default 5: 6 of 30)")
     args = parser.parse_args()
+    if args.holdout_every < 2:
+        parser.error("--holdout-every must be at least 2")
     logs = list(read_records(args.run_dir / "logs" / "questions.jsonl"))
     gold = {r["id"]: r for r in read_records(args.train_dir / "answers.jsonl")}
     submission = {r["id"]: r for r in read_records(args.run_dir / "submission.jsonl")}
     businesses = sorted({log["question"]["business_id"] for log in logs})
     holdout = pick_holdout(businesses, args.holdout_every)
     args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.holdout_out.parent.mkdir(parents=True, exist_ok=True)
     stats = Counter()
     with tempfile.TemporaryDirectory(prefix="sft-") as work, args.out.open("w", encoding="utf-8", newline="\n") as stream:
         loader = BusinessLoader(args.train_dir, Path(work))
@@ -75,7 +90,11 @@ def main() -> None:
             if not gate(linked).allowed:
                 continue
             code = good[-1]["candidate"]["code"]
-            stream.write(json.dumps(example(build_prompt(linked), code), ensure_ascii=False) + "\n")
+            row = verified_example(linked, code, gold[record["id"]])
+            if row is None:
+                stats["reverification_failed"] += 1
+                continue
+            stream.write(json.dumps(row, ensure_ascii=False) + "\n")
             stats["examples"] += 1
     args.holdout_out.write_text(json.dumps({"businesses": holdout}, ensure_ascii=False), encoding="utf-8")
     print(json.dumps({**stats, "holdout_businesses": holdout}, ensure_ascii=False, indent=1))

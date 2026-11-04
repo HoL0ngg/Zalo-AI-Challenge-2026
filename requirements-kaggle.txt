@@ -1,0 +1,6 @@
+# Versions recorded in kaggle_log/zalo-ai-challenge (3).log; T4 stack only.
+# vLLM selects its compatible torch build. Official 5090 image needs separate validation.
+vllm==0.33.0
+transformers==5.16.1
+peft==0.20.0
+bitsandbytes==0.50.2

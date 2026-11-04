@@ -1,0 +1,781 @@
+7.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.7s 3 0.00s - to python to disable frozen modules.
+7.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.4s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.4s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.4s 7 0.00s - to python to disable frozen modules.
+8.4s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.8s 9 local : 43b407b Fix Kaggle QLoRA training compatibility and fail-fast diagnostics (#1)
+10.8s 10 remote: 43b407b (đầu nhánh main trên GitHub)
+10.8s 11 name, memory.total [MiB]
+10.8s 12 Tesla T4, 15360 MiB
+10.8s 13 Tesla T4, 15360 MiB
+12.0s 14 train: 3000 questions
+12.0s 15 Path: /kaggle/input/datasets/longgh/zalo-dataset/Zalo_dataset/train
+12.3s 16 public_test: 1000 questions
+12.3s 17 Path: /kaggle/input/datasets/longgh/zalo-dataset/Zalo_dataset/public_test
+40.3s 18 AWQ checkpoints:
+40.3s 19 /kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ
+40.3s 20 AWQ model: /kaggle/working/datamate/models/qwen-coder-awq -> /kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ
+44.6s 21 Installing build dependencies ... [?25l[?25hdone
+45.0s 22 Checking if build backend supports build_editable ... [?25l[?25hdone
+45.4s 23 Getting requirements to build editable ... [?25l[?25hdone
+45.6s 24 Preparing editable metadata (pyproject.toml) ... [?25l[?25hdone
+47.6s 25 Building editable for datamate (pyproject.toml) ... [?25l[?25hdone
+49.0s 26 Note: you may need to restart the kernel to use updated packages.
+51.3s 27 Note: you may need to restart the kernel to use updated packages.
+420.1s 28 [31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+420.1s 29 grpcio-tools 1.71.2 requires protobuf<6.0dev,>=5.26.1, but you have protobuf 7.36.2 which is incompatible.
+420.1s 30 ydata-profiling 4.18.4 requires numba<0.63,>=0.60, but you have numba 0.65.0 which is incompatible.
+420.1s 31 aiobotocore 2.26.0 requires multidict<7.0.0,>=6.0.0, but you have multidict 7.2.1 which is incompatible.
+420.1s 32 dask-cuda 26.2.0 requires cuda-core==0.3.*, but you have cuda-core 1.2.2 which is incompatible.
+420.1s 33 gradio 6.26.0 requires pillow<13.0,>=8.0, but you have pillow 13.0.0 which is incompatible.
+420.1s 34 pylibcudf-cu12 26.2.1 requires cuda-python<13.0,>=12.9.2, but you have cuda-python 13.4.4 which is incompatible.
+420.1s 35 numba-cuda 0.22.2 requires cuda-core<1.0.0,>=0.3.2, but you have cuda-core 1.2.2 which is incompatible.
+420.1s 36 libcuml-cu12 26.2.0 requires cuda-toolkit[cublas,cufft,curand,cusolver,cusparse]==12.*, but you have cuda-toolkit 13.0.3.0 which is incompatible.
+420.1s 37 rmm-cu12 26.2.0 requires cuda-python<13.0,>=12.9.2, but you have cuda-python 13.4.4 which is incompatible.
+420.1s 38 cuml-cu12 26.2.0 requires cuda-python<13.0,>=12.9.2, but you have cuda-python 13.4.4 which is incompatible.
+420.1s 39 cuml-cu12 26.2.0 requires cuda-toolkit[cublas,cufft,curand,cusolver,cusparse]==12.*, but you have cuda-toolkit 13.0.3.0 which is incompatible.
+420.1s 40 cuml-cu12 26.2.0 requires numba<0.62.0,>=0.60.0, but you have numba 0.65.0 which is incompatible.
+420.1s 41 pylibraft-cu12 26.2.0 requires cuda-python<13.0,>=12.9.2, but you have cuda-python 13.4.4 which is incompatible.
+420.1s 42 cuvs-cu12 26.2.0 requires cuda-python<13.0,>=12.9.2, but you have cuda-python 13.4.4 which is incompatible.
+420.1s 43 google-ai-generativelanguage 0.6.15 requires protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2, but you have protobuf 7.36.2 which is incompatible.
+420.1s 44 ydf 0.15.0 requires protobuf<7.0.0,>=5.29.1, but you have protobuf 7.36.2 which is incompatible.
+420.1s 45 cudf-cu12 26.2.1 requires cuda-python<13.0,>=12.9.2, but you have cuda-python 13.4.4 which is incompatible.
+420.1s 46 cudf-cu12 26.2.1 requires cuda-toolkit[nvcc,nvrtc]==12.*, but you have cuda-toolkit 13.0.3.0 which is incompatible.
+420.1s 47 cudf-cu12 26.2.1 requires numba<0.62.0,>=0.60.0, but you have numba 0.65.0 which is incompatible.
+420.1s 48 libcuvs-cu12 26.2.0 requires cuda-toolkit[cublas,curand,cusolver,cusparse]==12.*, but you have cuda-toolkit 13.0.3.0 which is incompatible.
+420.1s 49 libraft-cu12 26.2.0 requires cuda-toolkit[cublas,curand,cusolver,cusparse]==12.*, but you have cuda-toolkit 13.0.3.0 which is incompatible.
+420.1s 50 grpcio-status 1.71.2 requires protobuf<6.0dev,>=5.26.1, but you have protobuf 7.36.2 which is incompatible.
+420.1s 51 google-adk 2.7.1 requires opentelemetry-api<=1.42.1,>=1.39, but you have opentelemetry-api 1.45.2 which is incompatible.
+420.1s 52 google-adk 2.7.1 requires opentelemetry-sdk<=1.42.1,>=1.39, but you have opentelemetry-sdk 1.45.2 which is incompatible.[0m[31m
+420.9s 53 [0mNote: you may need to restart the kernel to use updated packages.
+424.3s 54 Note: you may need to restart the kernel to use updated packages.
+431.8s 55 torchvision 0.29.0+cu130
+433.8s 56 vllm 0.33.0 | torch 2.14.0+cu130 | cuda True
+440.9s 57 transformers 5.16.1 OK
+444.8s 58 Note: you may need to restart the kernel to use updated packages.
+451.2s 59 peft 0.20.0 | bitsandbytes 0.50.2
+451.2s 60 Preflight: model AWQ + train input OK
+451.5s 61 Smoke-test business: biz_128
+710.9s 62 {
+710.9s 63 "questions": 118,
+710.9s 64 "answered_rows": 1,
+710.9s 65 "missing": [
+710.9s 66 "q_01a47607f90c",
+710.9s 67 "q_0283688e44df",
+710.9s 68 "q_04293d2ed907",
+710.9s 69 "q_049799837470",
+710.9s 70 "q_0a98d8875225",
+710.9s 71 "q_0bcf0fcf8740",
+710.9s 72 "q_0d01c7956980",
+710.9s 73 "q_0f3c04bf12df",
+710.9s 74 "q_0fe9a120b8f8",
+710.9s 75 "q_16b37ce3fa48",
+710.9s 76 "q_181cc188c78a",
+710.9s 77 "q_1837da83c4a5",
+710.9s 78 "q_1eca36df20a0",
+710.9s 79 "q_1f89d8d8fb78",
+710.9s 80 "q_22f4655dbaf2",
+710.9s 81 "q_25501a11062a",
+710.9s 82 "q_255991af3110",
+710.9s 83 "q_2674d035b36f",
+710.9s 84 "q_2b300a0c0e75",
+710.9s 85 "q_2b3dc5e6e597",
+710.9s 86 "q_2b6777422039",
+710.9s 87 "q_2b95dbd2615b",
+710.9s 88 "q_2e8a1220169c",
+710.9s 89 "q_3163962d5127",
+710.9s 90 "q_32c6bd8dd5ce",
+710.9s 91 "q_34997f47db48",
+710.9s 92 "q_3678c41a83a7",
+710.9s 93 "q_38f97c85110d",
+710.9s 94 "q_3a42c85e7dac",
+710.9s 95 "q_3a82fed20d91",
+710.9s 96 "q_3d33c5ce3a37",
+710.9s 97 "q_3dbf22046dcb",
+710.9s 98 "q_3de3612a7279",
+710.9s 99 "q_3f6ddf38634d",
+710.9s 100 "q_40198f0271d6",
+710.9s 101 "q_42ecf5280436",
+710.9s 102 "q_4379ec5b27a2",
+710.9s 103 "q_44ab47ab8b70",
+710.9s 104 "q_4606d94fe71e",
+710.9s 105 "q_46d72d387508",
+710.9s 106 "q_4a5595c6f8b5",
+710.9s 107 "q_4f237461d11c",
+710.9s 108 "q_5214682a5c4f",
+710.9s 109 "q_52430f256eb8",
+710.9s 110 "q_53c1b3b3781d",
+710.9s 111 "q_5896eacd1f84",
+710.9s 112 "q_5abc31fde219",
+710.9s 113 "q_5b2c830cb331",
+710.9s 114 "q_5b2ef4e4d0c0",
+710.9s 115 "q_603e52a71c57",
+710.9s 116 "q_6257a245a516",
+710.9s 117 "q_635a91eb5125",
+710.9s 118 "q_6639dbf30814",
+710.9s 119 "q_68aecd447341",
+710.9s 120 "q_68e09809a798",
+710.9s 121 "q_6ae18162fd02",
+710.9s 122 "q_6ba2569c233f",
+710.9s 123 "q_6e2abaee2f8e",
+710.9s 124 "q_6ef1743ece30",
+710.9s 125 "q_6f6501ac8723",
+710.9s 126 "q_706fd1892b0b",
+710.9s 127 "q_770ce52e8313",
+710.9s 128 "q_7882e23cdfab",
+710.9s 129 "q_78928d7dfc95",
+710.9s 130 "q_79e0701ead7f",
+710.9s 131 "q_7acbbee1cad3",
+710.9s 132 "q_7c548fdb25ce",
+710.9s 133 "q_7fdf3b666412",
+710.9s 134 "q_805e7ed807cc",
+710.9s 135 "q_8269e70e643e",
+710.9s 136 "q_8af586388813",
+710.9s 137 "q_8d681ea2db80",
+710.9s 138 "q_90ab41628eb0",
+710.9s 139 "q_94cb5e6611ed",
+710.9s 140 "q_9882a4330cc0",
+710.9s 141 "q_990a9512c0a9",
+710.9s 142 "q_9a3b9473390e",
+710.9s 143 "q_9d4e0c5b09e4",
+710.9s 144 "q_9eafaad47912",
+710.9s 145 "q_9fd096dfdb84",
+710.9s 146 "q_a2d48f9495dc",
+710.9s 147 "q_a3c4c02107ee",
+710.9s 148 "q_a60561aea274",
+710.9s 149 "q_a61172c8c90e",
+710.9s 150 "q_a6a9f7956af1",
+710.9s 151 "q_af3626a4166e",
+710.9s 152 "q_b0687f344c46",
+710.9s 153 "q_b0b4a9ccf846",
+710.9s 154 "q_b152b20b0297",
+710.9s 155 "q_b223a263aa50",
+710.9s 156 "q_bac17d689ee8",
+710.9s 157 "q_bbdd76a5546c",
+710.9s 158 "q_bc18dfcaca8b",
+710.9s 159 "q_bd2d824bb0a9",
+710.9s 160 "q_beb4b5d17be0",
+710.9s 161 "q_bf91db6d5335",
+710.9s 162 "q_c131e600dc25",
+710.9s 163 "q_c164d6293108",
+710.9s 164 "q_c521172503eb",
+710.9s 165 "q_ce4eddbf26f2",
+710.9s 166 "q_cf59f2267ea1",
+710.9s 167 "q_d4f8f031e663",
+710.9s 168 "q_d7f76b76a687",
+710.9s 169 "q_db90a7f06103",
+710.9s 170 "q_e0ce7c75c91c",
+710.9s 171 "q_e12fa5131e05",
+710.9s 172 "q_e3a84595133f",
+710.9s 173 "q_eba1135546c4",
+710.9s 174 "q_edc6c6cd6326",
+710.9s 175 "q_f2f2c2bbf231",
+710.9s 176 "q_f512a1665ff9",
+710.9s 177 "q_f600b251dc02",
+710.9s 178 "q_f8463af39982",
+710.9s 179 "q_fa9cecb59163",
+710.9s 180 "q_fb0b5ef48e60",
+710.9s 181 "q_fc39150ef084",
+710.9s 182 "q_ff15a54587af"
+710.9s 183 ],
+710.9s 184 "shards": [
+710.9s 185 {
+710.9s 186 "shard": 0,
+710.9s 187 "gpu": "0",
+710.9s 188 "businesses": [
+710.9s 189 "biz_128"
+710.9s 190 ],
+710.9s 191 "exit_code": 0,
+710.9s 192 "wall_seconds": 259.0
+710.9s 193 }
+710.9s 194 ],
+710.9s 195 "total_wall_seconds": 259.1
+710.9s 196 }
+710.9s 197 
+710.9s 198 
+710.9s 199 === shard_0.log ===
+710.9s 200 W1103 14:34:14.128000 180 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+710.9s 201 W1103 14:34:14.129000 180 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+710.9s 202 W1103 14:34:14.129000 180 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+710.9s 203 (MainProcess pid=180) INFO 11-03 14:34:28 [startup.py:96] non-default args: {'tokenizer': '/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ', 'dtype': 'float16', 'seed': 20261030, 'max_model_len': 16384, 'gpu_memory_utilization': 0.9, 'disable_log_stats': True, 'quantization': 'awq', 'enforce_eager': True, 'model': '/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ'}
+710.9s 204 (MainProcess pid=180) INFO 11-03 14:34:47 [model.py:744] Resolved architecture: Qwen2ForCausalLM
+710.9s 205 (MainProcess pid=180) INFO 11-03 14:34:47 [model.py:2170] Using max model len 16384
+710.9s 206 (MainProcess pid=180) INFO 11-03 14:34:49 [scheduler.py:310] Chunked prefill is enabled with max_num_batched_tokens=8192.
+710.9s 207 (MainProcess pid=180) WARNING 11-03 14:34:50 [vllm.py:1778] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+710.9s 208 (MainProcess pid=180) WARNING 11-03 14:34:50 [vllm.py:1802] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+710.9s 209 (MainProcess pid=180) INFO 11-03 14:34:50 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+710.9s 210 (MainProcess pid=180) INFO 11-03 14:34:50 [vllm.py:2005] Cudagraph is disabled under eager mode
+710.9s 211 (MainProcess pid=180) INFO 11-03 14:34:50 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+710.9s 212 (EngineCore pid=246) INFO 11-03 14:34:55 [core.py:139] Initializing a V1 LLM engine (v0.33.0) with config: model='/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ', speculative_config=None, tokenizer='/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=auto_awq, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20261030, served_model_name=/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=False, monokernel=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+710.9s 213 (EngineCore pid=246) INFO 11-03 14:34:55 [parallel_state.py:1929] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_cf8a277e1745425cbe5f661eae7ba782 backend=nccl
+710.9s 214 (EngineCore pid=246) INFO 11-03 14:34:55 [parallel_state.py:2385] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+710.9s 215 (EngineCore pid=246) INFO 11-03 14:34:55 [gpu_worker.py:513] Using V2 Model Runner
+710.9s 216 (EngineCore pid=246) INFO 11-03 14:34:57 [model_runner.py:399] Loading model from scratch...
+710.9s 217 (EngineCore pid=246) INFO 11-03 14:34:57 [__init__.py:945] Using MarlinLinearKernel for mixed-precision linear
+710.9s 218 (EngineCore pid=246) INFO 11-03 14:34:57 [auto_awq.py:451] Using MarlinLinearKernel for AutoAWQMarlinLinearMethod
+710.9s 219 (EngineCore pid=246) ERROR 11-03 14:34:57 [fa_utils.py:212] Cannot use FA version 2 is not supported due to FA2 is only supported on devices with compute capability >= 8
+710.9s 220 (EngineCore pid=246) INFO 11-03 14:34:58 [cuda.py:508] Using TRITON_ATTN attention backend out of potential backends: ['TRITON_ATTN', 'FLEX_ATTENTION'].
+710.9s 221 (EngineCore pid=246) INFO 11-03 14:34:58 [base_loader.py:82] Initializing model took 1.021187 seconds
+710.9s 222 (EngineCore pid=246) INFO 11-03 14:34:58 [weight_utils.py:1144] Filesystem type for checkpoints: FUSE.GCSFUSE. Checkpoint size: 5.19 GiB. Available RAM: 5.46 GiB.
+710.9s 223 (EngineCore pid=246) INFO 11-03 14:34:58 [weight_utils.py:1174] Auto-prefetch is disabled because the filesystem (FUSE.GCSFUSE) is not a recognized network FS (NFS/Lustre) and the checkpoint size (5.19 GiB) exceeds 90% of available RAM (5.46 GiB).
+710.9s 224 
+710.9s 225 Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+710.9s 226 
+710.9s 227 Loading safetensors checkpoint shards:  50% Completed | 1/2 [01:48<01:48, 108.76s/it]
+710.9s 228 
+710.9s 229 Loading safetensors checkpoint shards: 100% Completed | 2/2 [02:20<00:00, 63.26s/it]
+710.9s 230 
+710.9s 231 Loading safetensors checkpoint shards: 100% Completed | 2/2 [02:20<00:00, 70.08s/it]
+710.9s 232 
+710.9s 233 (EngineCore pid=246) INFO 11-03 14:37:18 [default_loader.py:506] Loading weights took 140.21 seconds
+710.9s 234 (EngineCore pid=246) INFO 11-03 14:37:22 [model_runner.py:428] Model loading took 5.29 GiB memory and 145.865545 seconds
+710.9s 235 (EngineCore pid=246) WARNING 11-03 14:37:22 [topk_topp_sampler.py:156] FlashInfer top-p/top-k sampling unavailable: unsupported compute capability 7.5; falling back. Set VLLM_USE_FLASHINFER_SAMPLER=0 to silence.
+710.9s 236 (EngineCore pid=246) INFO 11-03 14:37:22 [torch_utils.py:281] Reducing Torch threads from 2 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+710.9s 237 (EngineCore pid=246) INFO 11-03 14:37:22 [utils.py:381] Using LBNHC KV cache layout.
+710.9s 238 (EngineCore pid=246) INFO 11-03 14:37:37 [gpu_worker.py:772] Available KV cache memory: 6.49 GiB
+710.9s 239 (EngineCore pid=246) INFO 11-03 14:37:37 [kv_cache_utils.py:1147] GPU KV cache size: 121,456 tokens, Maximum concurrency for 16,384 tokens per request: 7.41x
+710.9s 240 (EngineCore pid=246) INFO 11-03 14:37:37 [gpu_worker.py:1066] Free memory on device (14.41/14.56 GiB) on startup. Desired GPU memory utilization is (0.9, 13.11 GiB). Actual usage is 5.56 GiB for consumed memory (weights + non-torch), 1.06 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=6807502541` (6.34 GiB) to fit into requested memory, or `--kv-cache-memory=8210805248` (7.65 GiB) to fully utilize gpu memory. Current kv cache memory in use is 6.49 GiB.
+710.9s 241 (EngineCore pid=246) INFO 11-03 14:37:38 [core.py:412] init engine (profile, create kv cache, warmup model) took 15.22 s
+710.9s 242 (EngineCore pid=246) INFO 11-03 14:37:38 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+710.9s 243 (MainProcess pid=180) INFO 11-03 14:37:38 [hf.py:736] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+710.9s 244 (MainProcess pid=180) INFO 11-03 14:38:20 [utils.py:628] [shutdown] Process manager: send sigterm to process EngineCore
+710.9s 245 (EngineCore pid=246) INFO 11-03 14:38:20 [core.py:1525] [shutdown] EngineCore: trigger received signal=SIGTERM
+710.9s 246 (EngineCore pid=246) INFO 11-03 14:38:20 [core.py:1712] [shutdown] EngineCore: start mode=abort timeout=0s
+710.9s 247 (EngineCore pid=246) INFO 11-03 14:38:20 [core.py:1743] [shutdown] EngineCore: request processing complete; starting resource teardown
+710.9s 248 (EngineCore pid=246) INFO 11-03 14:38:20 [core.py:1573] [shutdown] EngineCore: exiting busy loop
+710.9s 249 {
+710.9s 250 "number": 1
+710.9s 251 }
+710.9s 252 
+710.9s 253 Smoke test passed
+11234.8s 254 Stage 1 summary (last 4000 chars):
+11234.8s 255 {
+11234.8s 256 "questions": 3000,
+11234.8s 257 "answered_rows": 3000,
+11234.8s 258 "missing": [],
+11234.8s 259 "shards": [
+11234.8s 260 {
+11234.8s 261 "shard": 0,
+11234.8s 262 "gpu": "0",
+11234.8s 263 "businesses": [
+11234.8s 264 "biz_102",
+11234.8s 265 "biz_104",
+11234.8s 266 "biz_106",
+11234.8s 267 "biz_109",
+11234.8s 268 "biz_112",
+11234.8s 269 "biz_116",
+11234.8s 270 "biz_118",
+11234.8s 271 "biz_120",
+11234.8s 272 "biz_122",
+11234.8s 273 "biz_124",
+11234.8s 274 "biz_128",
+11234.8s 275 "biz_130",
+11234.8s 276 "biz_113",
+11234.8s 277 "biz_125"
+11234.8s 278 ],
+11234.8s 279 "exit_code": 0,
+11234.8s 280 "wall_seconds": 10507.9
+11234.8s 281 },
+11234.8s 282 {
+11234.8s 283 "shard": 1,
+11234.8s 284 "gpu": "1",
+11234.8s 285 "businesses": [
+11234.8s 286 "biz_103",
+11234.8s 287 "biz_105",
+11234.8s 288 "biz_108",
+11234.8s 289 "biz_111",
+11234.8s 290 "biz_115",
+11234.8s 291 "biz_117",
+11234.8s 292 "biz_119",
+11234.8s 293 "biz_121",
+11234.8s 294 "biz_123",
+11234.8s 295 "biz_127",
+11234.8s 296 "biz_129",
+11234.8s 297 "biz_101",
+11234.8s 298 "biz_107",
+11234.8s 299 "biz_110",
+11234.8s 300 "biz_114",
+11234.8s 301 "biz_126"
+11234.8s 302 ],
+11234.8s 303 "exit_code": 0,
+11234.8s 304 "wall_seconds": 10507.9
+11234.8s 305 }
+11234.8s 306 ],
+11234.8s 307 "total_wall_seconds": 10523.3
+11234.8s 308 }
+11234.8s 309 
+11234.8s 310 Stage 1 elapsed: 175.4 min
+11234.8s 311 
+11234.8s 312 ===== shard_0.log (tail) =====
+11234.8s 313 W1103 14:38:44.277000 340 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+11234.8s 314 W1103 14:38:44.277000 340 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+11234.8s 315 W1103 14:38:44.278000 340 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+11234.8s 316 (MainProcess pid=340) INFO 11-03 14:38:56 [startup.py:96] non-default args: {'tokenizer': '/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ', 'dtype': 'float16', 'seed': 20261030, 'max_model_len': 16384, 'gpu_memory_utilization': 0.9, 'disable_log_stats': True, 'quantization': 'awq', 'enforce_eager': True, 'model': '/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ'}
+11234.8s 317 (MainProcess pid=340) INFO 11-03 14:38:56 [model.py:744] Resolved architecture: Qwen2ForCausalLM
+11234.8s 318 (MainProcess pid=340) INFO 11-03 14:38:56 [model.py:2170] Using max model len 16384
+11234.8s 319 (MainProcess pid=340) INFO 11-03 14:38:58 [scheduler.py:310] Chunked prefill is enabled with max_num_batched_tokens=8192.
+11234.8s 320 (MainProcess pid=340) WARNING 11-03 14:38:58 [vllm.py:1778] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+11234.8s 321 (MainProcess pid=340) WARNING 11-03 14:38:58 [vllm.py:1802] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+11234.8s 322 (MainProcess pid=340) INFO 11-03 14:38:58 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+11234.8s 323 (MainProcess pid=340) INFO 11-03 14:38:58 [vllm.py:2005] Cudagraph is disabled under eager mode
+11234.8s 324 (MainProcess pid=340) INFO 11-03 14:38:58 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+11234.8s 325 (EngineCore pid=395) INFO 11-03 14:39:03 [core.py:139] Initializing a V1 LLM engine (v0.33.0) with config: model='/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ', speculative_config=None, tokenizer='/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=auto_awq, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20261030, served_model_name=/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=False, monokernel=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+11234.8s 326 (EngineCore pid=395) INFO 11-03 14:39:04 [parallel_state.py:1929] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_8f6c7bf4cf424a809aa19767c482fdf4 backend=nccl
+11234.8s 327 (EngineCore pid=395) INFO 11-03 14:39:04 [parallel_state.py:2385] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+11234.8s 328 (EngineCore pid=395) INFO 11-03 14:39:04 [gpu_worker.py:513] Using V2 Model Runner
+11234.8s 329 (EngineCore pid=395) INFO 11-03 14:39:06 [model_runner.py:399] Loading model from scratch...
+11234.8s 330 (EngineCore pid=395) INFO 11-03 14:39:06 [__init__.py:945] Using MarlinLinearKernel for mixed-precision linear
+11234.8s 331 (EngineCore pid=395) INFO 11-03 14:39:06 [auto_awq.py:451] Using MarlinLinearKernel for AutoAWQMarlinLinearMethod
+11234.8s 332 (EngineCore pid=395) ERROR 11-03 14:39:06 [fa_utils.py:212] Cannot use FA version 2 is not supported due to FA2 is only supported on devices with compute capability >= 8
+11234.8s 333 (EngineCore pid=395) INFO 11-03 14:39:07 [cuda.py:508] Using TRITON_ATTN attention backend out of potential backends: ['TRITON_ATTN', 'FLEX_ATTENTION'].
+11234.8s 334 (EngineCore pid=395) INFO 11-03 14:39:07 [base_loader.py:82] Initializing model took 1.125124 seconds
+11234.8s 335 (EngineCore pid=395) INFO 11-03 14:39:07 [weight_utils.py:1144] Filesystem type for checkpoints: FUSE.GCSFUSE. Checkpoint size: 5.19 GiB. Available RAM: 3.66 GiB.
+11234.8s 336 (EngineCore pid=395) INFO 11-03 14:39:07 [weight_utils.py:1174] Auto-prefetch is disabled because the filesystem (FUSE.GCSFUSE) is not a recognized network FS (NFS/Lustre) and the checkpoint size (5.19 GiB) exceeds 90% of available RAM (3.66 GiB).
+11234.8s 337 
+11234.8s 338 Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+11234.8s 339 
+11234.8s 340 Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:01<00:01,  1.25s/it]
+11234.8s 341 
+11234.8s 342 Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.05it/s]
+11234.8s 343 
+11234.8s 344 Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.00it/s]
+11234.8s 345 
+11234.8s 346 (EngineCore pid=395) INFO 11-03 14:39:09 [default_loader.py:506] Loading weights took 2.11 seconds
+11234.8s 347 (EngineCore pid=395) INFO 11-03 14:39:14 [model_runner.py:428] Model loading took 5.29 GiB memory and 8.521031 seconds
+11234.8s 348 (EngineCore pid=395) WARNING 11-03 14:39:14 [topk_topp_sampler.py:156] FlashInfer top-p/top-k sampling unavailable: unsupported compute capability 7.5; falling back. Set VLLM_USE_FLASHINFER_SAMPLER=0 to silence.
+11234.8s 349 (EngineCore pid=395) INFO 11-03 14:39:14 [torch_utils.py:281] Reducing Torch threads from 2 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+11234.8s 350 (EngineCore pid=395) INFO 11-03 14:39:14 [utils.py:381] Using LBNHC KV cache layout.
+11234.8s 351 (EngineCore pid=395) INFO 11-03 14:39:21 [gpu_worker.py:772] Available KV cache memory: 6.49 GiB
+11234.8s 352 (EngineCore pid=395) INFO 11-03 14:39:21 [kv_cache_utils.py:1147] GPU KV cache size: 121,456 tokens, Maximum concurrency for 16,384 tokens per request: 7.41x
+11234.8s 353 (EngineCore pid=395) INFO 11-03 14:39:21 [gpu_worker.py:1066] Free memory on device (14.41/14.56 GiB) on startup. Desired GPU memory utilization is (0.9, 13.11 GiB). Actual usage is 5.56 GiB for consumed memory (weights + non-torch), 1.06 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=6807502541` (6.34 GiB) to fit into requested memory, or `--kv-cache-memory=8210805248` (7.65 GiB) to fully utilize gpu memory. Current kv cache memory in use is 6.49 GiB.
+11234.8s 354 (EngineCore pid=395) INFO 11-03 14:39:21 [core.py:412] init engine (profile, create kv cache, warmup model) took 7.42 s
+11234.8s 355 (EngineCore pid=395) INFO 11-03 14:39:21 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+11234.8s 356 (MainProcess pid=340) INFO 11-03 14:39:22 [hf.py:736] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+11234.8s 357 (MainProcess pid=340) INFO 11-03 17:33:29 [utils.py:628] [shutdown] Process manager: send sigterm to process EngineCore
+11234.8s 358 (EngineCore pid=395) INFO 11-03 17:33:29 [core.py:1525] [shutdown] EngineCore: trigger received signal=SIGTERM
+11234.8s 359 (EngineCore pid=395) INFO 11-03 17:33:29 [core.py:1712] [shutdown] EngineCore: start mode=abort timeout=0s
+11234.8s 360 (EngineCore pid=395) INFO 11-03 17:33:29 [core.py:1743] [shutdown] EngineCore: request processing complete; starting resource teardown
+11234.8s 361 (EngineCore pid=395) INFO 11-03 17:33:29 [core.py:1573] [shutdown] EngineCore: exiting busy loop
+11234.8s 362 {
+11234.8s 363 "number": 799,
+11234.8s 364 "abstain": 236,
+11234.8s 365 "percent": 241,
+11234.8s 366 "table": 23,
+11234.8s 367 "list": 85,
+11234.8s 368 "string": 29,
+11234.8s 369 "date": 29,
+11234.8s 370 "unanswerable": 50,
+11234.8s 371 "boolean": 7
+11234.8s 372 }
+11234.8s 373 
+11234.8s 374 
+11234.8s 375 ===== shard_1.log (tail) =====
+11234.8s 376 W1103 14:38:56.517000 355 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+11234.8s 377 W1103 14:38:56.518000 355 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+11234.8s 378 W1103 14:38:56.518000 355 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+11234.8s 379 (MainProcess pid=355) INFO 11-03 14:39:10 [startup.py:96] non-default args: {'tokenizer': '/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ', 'dtype': 'float16', 'seed': 20261030, 'max_model_len': 16384, 'gpu_memory_utilization': 0.9, 'disable_log_stats': True, 'quantization': 'awq', 'enforce_eager': True, 'model': '/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ'}
+11234.8s 380 (MainProcess pid=355) INFO 11-03 14:39:11 [model.py:744] Resolved architecture: Qwen2ForCausalLM
+11234.8s 381 (MainProcess pid=355) INFO 11-03 14:39:11 [model.py:2170] Using max model len 16384
+11234.8s 382 (MainProcess pid=355) INFO 11-03 14:39:12 [scheduler.py:310] Chunked prefill is enabled with max_num_batched_tokens=8192.
+11234.8s 383 (MainProcess pid=355) WARNING 11-03 14:39:12 [vllm.py:1778] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+11234.8s 384 (MainProcess pid=355) WARNING 11-03 14:39:12 [vllm.py:1802] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+11234.8s 385 (MainProcess pid=355) INFO 11-03 14:39:12 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+11234.8s 386 (MainProcess pid=355) INFO 11-03 14:39:12 [vllm.py:2005] Cudagraph is disabled under eager mode
+11234.8s 387 (MainProcess pid=355) INFO 11-03 14:39:12 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+11234.8s 388 (EngineCore pid=470) INFO 11-03 14:39:19 [core.py:139] Initializing a V1 LLM engine (v0.33.0) with config: model='/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ', speculative_config=None, tokenizer='/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=auto_awq, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20261030, served_model_name=/kaggle/input/datasets/longgh/qwen25-coder-7b-awq/Qwen2.5-Coder-7B-Instruct-AWQ, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=False, monokernel=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+11234.8s 389 (EngineCore pid=470) INFO 11-03 14:39:19 [parallel_state.py:1929] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_a64508e93fa04723b411803d5ff0c3d2 backend=nccl
+11234.8s 390 (EngineCore pid=470) INFO 11-03 14:39:19 [parallel_state.py:2385] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+11234.8s 391 (EngineCore pid=470) INFO 11-03 14:39:19 [gpu_worker.py:513] Using V2 Model Runner
+11234.8s 392 (EngineCore pid=470) INFO 11-03 14:39:21 [model_runner.py:399] Loading model from scratch...
+11234.8s 393 (EngineCore pid=470) INFO 11-03 14:39:21 [__init__.py:945] Using MarlinLinearKernel for mixed-precision linear
+11234.8s 394 (EngineCore pid=470) INFO 11-03 14:39:21 [auto_awq.py:451] Using MarlinLinearKernel for AutoAWQMarlinLinearMethod
+11234.8s 395 (EngineCore pid=470) ERROR 11-03 14:39:21 [fa_utils.py:212] Cannot use FA version 2 is not supported due to FA2 is only supported on devices with compute capability >= 8
+11234.8s 396 (EngineCore pid=470) INFO 11-03 14:39:22 [cuda.py:508] Using TRITON_ATTN attention backend out of potential backends: ['TRITON_ATTN', 'FLEX_ATTENTION'].
+11234.8s 397 (EngineCore pid=470) INFO 11-03 14:39:22 [base_loader.py:82] Initializing model took 1.050199 seconds
+11234.8s 398 (EngineCore pid=470) INFO 11-03 14:39:22 [weight_utils.py:1144] Filesystem type for checkpoints: FUSE.GCSFUSE. Checkpoint size: 5.19 GiB. Available RAM: 3.54 GiB.
+11234.8s 399 (EngineCore pid=470) INFO 11-03 14:39:22 [weight_utils.py:1174] Auto-prefetch is disabled because the filesystem (FUSE.GCSFUSE) is not a recognized network FS (NFS/Lustre) and the checkpoint size (5.19 GiB) exceeds 90% of available RAM (3.54 GiB).
+11234.8s 400 
+11234.8s 401 Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+11234.8s 402 
+11234.8s 403 Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:01<00:01,  1.24s/it]
+11234.8s 404 
+11234.8s 405 Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.19it/s]
+11234.8s 406 
+11234.8s 407 Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.11it/s]
+11234.8s 408 
+11234.8s 409 (EngineCore pid=470) INFO 11-03 14:39:24 [default_loader.py:506] Loading weights took 1.84 seconds
+11234.8s 410 (EngineCore pid=470) INFO 11-03 14:39:28 [model_runner.py:428] Model loading took 5.29 GiB memory and 7.494377 seconds
+11234.8s 411 (EngineCore pid=470) WARNING 11-03 14:39:28 [topk_topp_sampler.py:156] FlashInfer top-p/top-k sampling unavailable: unsupported compute capability 7.5; falling back. Set VLLM_USE_FLASHINFER_SAMPLER=0 to silence.
+11234.8s 412 (EngineCore pid=470) INFO 11-03 14:39:28 [torch_utils.py:281] Reducing Torch threads from 2 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+11234.8s 413 (EngineCore pid=470) INFO 11-03 14:39:28 [utils.py:381] Using LBNHC KV cache layout.
+11234.8s 414 (EngineCore pid=470) INFO 11-03 14:39:34 [gpu_worker.py:772] Available KV cache memory: 6.49 GiB
+11234.8s 415 (EngineCore pid=470) INFO 11-03 14:39:34 [kv_cache_utils.py:1147] GPU KV cache size: 121,456 tokens, Maximum concurrency for 16,384 tokens per request: 7.41x
+11234.8s 416 (EngineCore pid=470) INFO 11-03 14:39:35 [gpu_worker.py:1066] Free memory on device (14.41/14.56 GiB) on startup. Desired GPU memory utilization is (0.9, 13.11 GiB). Actual usage is 5.56 GiB for consumed memory (weights + non-torch), 1.06 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=6807502541` (6.34 GiB) to fit into requested memory, or `--kv-cache-memory=8210805248` (7.65 GiB) to fully utilize gpu memory. Current kv cache memory in use is 6.49 GiB.
+11234.8s 417 (EngineCore pid=470) INFO 11-03 14:39:35 [core.py:412] init engine (profile, create kv cache, warmup model) took 7.26 s
+11234.8s 418 (EngineCore pid=470) INFO 11-03 14:39:35 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+11234.8s 419 (MainProcess pid=355) INFO 11-03 14:39:36 [hf.py:736] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+11234.8s 420 (MainProcess pid=355) INFO 11-03 17:01:06 [utils.py:628] [shutdown] Process manager: send sigterm to process EngineCore
+11234.8s 421 (EngineCore pid=470) INFO 11-03 17:01:06 [core.py:1525] [shutdown] EngineCore: trigger received signal=SIGTERM
+11234.8s 422 (EngineCore pid=470) INFO 11-03 17:01:06 [core.py:1712] [shutdown] EngineCore: start mode=abort timeout=0s
+11234.8s 423 (EngineCore pid=470) INFO 11-03 17:01:06 [core.py:1743] [shutdown] EngineCore: request processing complete; starting resource teardown
+11234.8s 424 (EngineCore pid=470) INFO 11-03 17:01:06 [core.py:1573] [shutdown] EngineCore: exiting busy loop
+11234.8s 425 {
+11234.8s 426 "percent": 240,
+11234.8s 427 "abstain": 234,
+11234.8s 428 "string": 42,
+11234.8s 429 "number": 786,
+11234.8s 430 "unanswerable": 37,
+11234.8s 431 "table": 25,
+11234.8s 432 "list": 78,
+11234.8s 433 "date": 50,
+11234.8s 434 "boolean": 9
+11234.8s 435 }
+11234.8s 436 
+11237.2s 437 {
+11237.2s 438 "total": 3000,
+11237.2s 439 "accuracy": 0.3853,
+11237.2s 440 "stages": {
+11237.2s 441 "gated": 87,
+11237.2s 442 "generated": 2913,
+11237.2s 443 "sql_extracted": 2913,
+11237.2s 444 "exec_ok": 2645,
+11237.2s 445 "repaired_ok": 205,
+11237.2s 446 "answered": 2443,
+11237.2s 447 "correct": 1156
+11237.2s 448 },
+11237.2s 449 "rates_over_generated": {
+11237.2s 450 "sql_extracted": 1.0,
+11237.2s 451 "exec_ok": 0.908,
+11237.2s 452 "answered": 0.8387
+11237.2s 453 },
+11237.2s 454 "precision_when_answered": 0.4625,
+11237.2s 455 "failures": {
+11237.2s 456 "wrong_value": 1123,
+11237.2s 457 "abstain:exec_binder": 201,
+11237.2s 458 "abstain:format_or_sanity": 198,
+11237.2s 459 "wrong_type": 163,
+11237.2s 460 "wrongly_blocked": 61,
+11237.2s 461 "should_be_unanswerable": 27,
+11237.2s 462 "abstain:exec_syntax": 22,
+11237.2s 463 "abstained_on_unanswerable": 17,
+11237.2s 464 "abstain:exec_conversion": 12,
+11237.2s 465 "abstain:exec_catalog": 11,
+11237.2s 466 "abstain:exec_timeout": 9
+11237.2s 467 },
+11237.2s 468 "exec_errors": {
+11237.2s 469 "binder": 863,
+11237.2s 470 "syntax": 82,
+11237.2s 471 "catalog": 58,
+11237.2s 472 "conversion": 26,
+11237.2s 473 "timeout": 18,
+11237.2s 474 "other": 5
+11237.2s 475 },
+11237.2s 476 "per_type": {
+11237.2s 477 "boolean": {
+11237.2s 478 "correct": 9,
+11237.2s 479 "total": 23,
+11237.2s 480 "accuracy": 0.3913
+11237.2s 481 },
+11237.2s 482 "date": {
+11237.2s 483 "correct": 30,
+11237.2s 484 "total": 145,
+11237.2s 485 "accuracy": 0.2069
+11237.2s 486 },
+11237.2s 487 "list": {
+11237.2s 488 "correct": 40,
+11237.2s 489 "total": 193,
+11237.2s 490 "accuracy": 0.2073
+11237.2s 491 },
+11237.2s 492 "number": {
+11237.2s 493 "correct": 859,
+11237.2s 494 "total": 1884,
+11237.2s 495 "accuracy": 0.4559
+11237.2s 496 },
+11237.2s 497 "percent": {
+11237.2s 498 "correct": 168,
+11237.2s 499 "total": 578,
+11237.2s 500 "accuracy": 0.2907
+11237.2s 501 },
+11237.2s 502 "string": {
+11237.2s 503 "correct": 24,
+11237.2s 504 "total": 88,
+11237.2s 505 "accuracy": 0.2727
+11237.2s 506 },
+11237.2s 507 "table": {
+11237.2s 508 "correct": 0,
+11237.2s 509 "total": 19,
+11237.2s 510 "accuracy": 0.0
+11237.2s 511 },
+11237.2s 512 "unanswerable": {
+11237.2s 513 "correct": 26,
+11237.2s 514 "total": 70,
+11237.2s 515 "accuracy": 0.3714
+11237.2s 516 }
+11237.2s 517 },
+11237.2s 518 "points": {
+11237.2s 519 "correct": 1156,
+11237.2s 520 "wrong": 1374,
+11237.2s 521 "abstain": 470,
+11237.2s 522 "score": -218
+11237.2s 523 },
+11237.2s 524 "latency_seconds": {
+11237.2s 525 "mean": 6.305,
+11237.2s 526 "p95": 21.207
+11237.2s 527 },
+11237.2s 528 "prompt_tokens": {
+11237.2s 529 "mean": 3336,
+11237.2s 530 "max": 6854
+11654.4s 531 {
+11654.4s 532 "questions": 3000,
+11654.4s 533 "not_correct": 1559,
+11654.4s 534 "held_out": 553,
+11654.4s 535 "examples": 888,
+11654.4s 536 "holdout_businesses": [
+11654.4s 537 "biz_105",
+11654.4s 538 "biz_110",
+11654.4s 539 "biz_115",
+11654.4s 540 "biz_120",
+11654.4s 541 "biz_125",
+11654.4s 542 "biz_130"
+11654.4s 543 ]
+11654.4s 544 }
+11654.7s 545 ví dụ huấn luyện: 888 | business giữ lại: ['biz_105', 'biz_110', 'biz_115', 'biz_120', 'biz_125', 'biz_130']
+11666.9s 546 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+11666.9s 547 
+11666.9s 548 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+11743.0s 549 model nền fp16: /tmp/qwen-fp16 | safetensors: 4
+11836.7s 550 Train exit: 1 minutes: 1.6
+11836.7s 551 %|██▋       | 90/339 [00:22<00:45,  5.51it/s]
+11836.7s 552 Loading weights:  27%|██▋       | 90/339 [00:22<00:45,  5.50it/s]
+11836.7s 553 Loading weights:  28%|██▊       | 96/339 [00:22<00:27,  8.84it/s]
+11836.7s 554 Loading weights:  28%|██▊       | 96/339 [00:22<00:27,  8.84it/s]
+11836.7s 555 Loading weights:  29%|██▉       | 100/339 [00:23<00:28,  8.37it/s]
+11836.7s 556 Loading weights:  29%|██▉       | 100/339 [00:23<00:28,  8.37it/s]
+11836.7s 557 Loading weights:  30%|███       | 102/339 [00:24<00:42,  5.63it/s]
+11836.7s 558 Loading weights:  30%|███       | 102/339 [00:24<00:42,  5.63it/s]
+11836.7s 559 Loading weights:  32%|███▏      | 108/339 [00:24<00:26,  8.84it/s]
+11836.7s 560 Loading weights:  32%|███▏      | 108/339 [00:24<00:26,  8.84it/s]
+11836.7s 561 Loading weights:  33%|███▎      | 112/339 [00:24<00:27,  8.34it/s]
+11836.7s 562 Loading weights:  33%|███▎      | 112/339 [00:24<00:27,  8.33it/s]
+11836.7s 563 Loading weights:  34%|███▎      | 114/339 [00:25<00:32,  6.91it/s]
+11836.7s 564 Loading weights:  34%|███▎      | 114/339 [00:25<00:32,  6.91it/s]
+11836.7s 565 Loading weights:  37%|███▋      | 124/339 [00:26<00:20, 10.35it/s]
+11836.7s 566 Loading weights:  37%|███▋      | 124/339 [00:26<00:20, 10.35it/s]
+11836.7s 567 Loading weights:  37%|███▋      | 126/339 [00:27<00:33,  6.39it/s]
+11836.7s 568 Loading weights:  37%|███▋      | 126/339 [00:27<00:33,  6.39it/s]
+11836.7s 569 Loading weights:  39%|███▉      | 132/339 [00:27<00:22,  9.08it/s]
+11836.7s 570 Loading weights:  39%|███▉      | 132/339 [00:27<00:22,  9.08it/s]
+11836.7s 571 Loading weights:  40%|████      | 136/339 [00:27<00:24,  8.34it/s]
+11836.7s 572 Loading weights:  40%|████      | 136/339 [00:27<00:24,  8.34it/s]
+11836.7s 573 Loading weights:  41%|████      | 138/339 [00:29<00:36,  5.43it/s]
+11836.7s 574 Loading weights:  41%|████      | 138/339 [00:28<00:37,  5.43it/s]
+11836.7s 575 Loading weights:  42%|████▏     | 144/339 [00:29<00:23,  8.18it/s]
+11836.7s 576 Loading weights:  42%|████▏     | 144/339 [00:29<00:23,  8.18it/s]
+11836.7s 577 Loading weights:  44%|████▎     | 148/339 [00:29<00:24,  7.77it/s]
+11836.7s 578 Loading weights:  44%|████▎     | 148/339 [00:29<00:24,  7.77it/s]
+11836.7s 579 Loading weights:  44%|████▍     | 150/339 [00:30<00:37,  5.11it/s]
+11836.7s 580 Loading weights:  44%|████▍     | 150/339 [00:30<00:37,  5.10it/s]
+11836.7s 581 Loading weights:  46%|████▌     | 156/339 [00:31<00:23,  7.86it/s]
+11836.7s 582 Loading weights:  46%|████▌     | 156/339 [00:31<00:23,  7.86it/s]
+11836.7s 583 Loading weights:  47%|████▋     | 160/339 [00:31<00:23,  7.48it/s]
+11836.7s 584 Loading weights:  47%|████▋     | 160/339 [00:31<00:23,  7.48it/s]
+11836.7s 585 Loading weights:  48%|████▊     | 162/339 [00:32<00:35,  4.97it/s]
+11836.7s 586 Loading weights:  48%|████▊     | 162/339 [00:32<00:35,  4.97it/s]
+11836.7s 587 Loading weights:  50%|████▉     | 168/339 [00:32<00:22,  7.72it/s]
+11836.7s 588 Loading weights:  50%|████▉     | 168/339 [00:32<00:22,  7.72it/s]
+11836.7s 589 Loading weights:  51%|█████     | 172/339 [00:33<00:22,  7.40it/s]
+11836.7s 590 Loading weights:  51%|█████     | 172/339 [00:33<00:22,  7.40it/s]
+11836.7s 591 Loading weights:  51%|█████▏    | 174/339 [00:34<00:33,  4.92it/s]
+11836.7s 592 Loading weights:  51%|█████▏    | 174/339 [00:34<00:33,  4.92it/s]
+11836.7s 593 Loading weights:  53%|█████▎    | 180/339 [00:34<00:20,  7.67it/s]
+11836.7s 594 Loading weights:  53%|█████▎    | 180/339 [00:34<00:20,  7.67it/s]
+11836.7s 595 Loading weights:  54%|█████▍    | 184/339 [00:35<00:20,  7.40it/s]
+11836.7s 596 Loading weights:  54%|█████▍    | 184/339 [00:35<00:20,  7.40it/s]
+11836.7s 597 Loading weights:  55%|█████▍    | 186/339 [00:36<00:31,  4.92it/s]
+11836.7s 598 Loading weights:  55%|█████▍    | 186/339 [00:36<00:31,  4.92it/s]
+11836.7s 599 Loading weights:  57%|█████▋    | 192/339 [00:36<00:19,  7.68it/s]
+11836.7s 600 Loading weights:  57%|█████▋    | 192/339 [00:36<00:19,  7.68it/s]
+11836.7s 601 Loading weights:  58%|█████▊    | 196/339 [00:37<00:19,  7.38it/s]
+11836.7s 602 Loading weights:  58%|█████▊    | 196/339 [00:37<00:19,  7.38it/s]
+11836.7s 603 Loading weights:  58%|█████▊    | 198/339 [00:38<00:28,  4.90it/s]
+11836.7s 604 Loading weights:  58%|█████▊    | 198/339 [00:38<00:28,  4.90it/s]
+11836.7s 605 Loading weights:  60%|██████    | 204/339 [00:38<00:17,  7.63it/s]
+11836.7s 606 Loading weights:  60%|██████    | 204/339 [00:38<00:17,  7.63it/s]
+11836.7s 607 Loading weights:  61%|██████▏   | 208/339 [00:39<00:17,  7.36it/s]
+11836.7s 608 Loading weights:  61%|██████▏   | 208/339 [00:38<00:17,  7.36it/s]
+11836.7s 609 Loading weights:  62%|██████▏   | 210/339 [00:40<00:26,  4.88it/s]
+11836.7s 610 Loading weights:  62%|██████▏   | 210/339 [00:40<00:26,  4.88it/s]
+11836.7s 611 Loading weights:  64%|██████▎   | 216/339 [00:40<00:16,  7.61it/s]
+11836.7s 612 Loading weights:  64%|██████▎   | 216/339 [00:40<00:16,  7.61it/s]
+11836.7s 613 Loading weights:  65%|██████▍   | 220/339 [00:40<00:16,  7.31it/s]
+11836.7s 614 Loading weights:  65%|██████▍   | 220/339 [00:40<00:16,  7.30it/s]
+11836.7s 615 Loading weights:  65%|██████▌   | 222/339 [00:42<00:24,  4.79it/s]
+11836.7s 616 Loading weights:  65%|██████▌   | 222/339 [00:41<00:24,  4.79it/s]
+11836.7s 617 Loading weights:  67%|██████▋   | 228/339 [00:42<00:14,  7.51it/s]
+11836.7s 618 Loading weights:  67%|██████▋   | 228/339 [00:42<00:14,  7.51it/s]
+11836.7s 619 Loading weights:  68%|██████▊   | 232/339 [00:42<00:14,  7.17it/s]
+11836.7s 620 Loading weights:  68%|██████▊   | 232/339 [00:42<00:14,  7.16it/s]
+11836.7s 621 Loading weights:  69%|██████▉   | 234/339 [00:43<00:22,  4.75it/s]
+11836.7s 622 Loading weights:  69%|██████▉   | 234/339 [00:43<00:22,  4.75it/s]
+11836.7s 623 Loading weights:  71%|███████   | 240/339 [00:44<00:13,  7.43it/s]
+11836.7s 624 Loading weights:  71%|███████   | 240/339 [00:44<00:13,  7.43it/s]
+11836.7s 625 Loading weights:  72%|███████▏  | 244/339 [00:44<00:13,  7.20it/s]
+11836.7s 626 Loading weights:  72%|███████▏  | 244/339 [00:44<00:13,  7.20it/s]
+11836.7s 627 Loading weights:  73%|███████▎  | 246/339 [00:45<00:19,  4.80it/s]
+11836.7s 628 Loading weights:  73%|███████▎  | 246/339 [00:45<00:19,  4.79it/s]
+11836.7s 629 Loading weights:  74%|███████▍  | 252/339 [00:45<00:11,  7.53it/s]
+11836.7s 630 Loading weights:  74%|███████▍  | 252/339 [00:45<00:11,  7.53it/s]
+11836.7s 631 Loading weights:  76%|███████▌  | 256/339 [00:46<00:11,  7.26it/s]
+11836.7s 632 Loading weights:  76%|███████▌  | 256/339 [00:46<00:11,  7.26it/s]
+11836.7s 633 Loading weights:  76%|███████▌  | 258/339 [00:47<00:16,  4.86it/s]
+11836.7s 634 Loading weights:  76%|███████▌  | 258/339 [00:47<00:16,  4.85it/s]
+11836.7s 635 Loading weights:  78%|███████▊  | 264/339 [00:47<00:09,  7.58it/s]
+11836.7s 636 Loading weights:  78%|███████▊  | 264/339 [00:47<00:09,  7.58it/s]
+11836.7s 637 Loading weights:  79%|███████▉  | 268/339 [00:48<00:09,  7.30it/s]
+11836.7s 638 Loading weights:  79%|███████▉  | 268/339 [00:48<00:09,  7.30it/s]
+11836.7s 639 Loading weights:  80%|███████▉  | 270/339 [00:49<00:14,  4.88it/s]
+11836.7s 640 Loading weights:  80%|███████▉  | 270/339 [00:49<00:14,  4.87it/s]
+11836.7s 641 Loading weights:  81%|████████▏ | 276/339 [00:49<00:08,  7.61it/s]
+11836.7s 642 Loading weights:  81%|████████▏ | 276/339 [00:49<00:08,  7.60it/s]
+11836.7s 643 Loading weights:  83%|████████▎ | 280/339 [00:50<00:08,  7.20it/s]
+11836.7s 644 Loading weights:  83%|████████▎ | 280/339 [00:50<00:08,  7.20it/s]
+11836.7s 645 Loading weights:  83%|████████▎ | 282/339 [00:51<00:11,  4.88it/s]
+11836.7s 646 Loading weights:  83%|████████▎ | 282/339 [00:51<00:11,  4.88it/s]
+11836.7s 647 Loading weights:  85%|████████▍ | 288/339 [00:51<00:06,  7.62it/s]
+11836.7s 648 Loading weights:  85%|████████▍ | 288/339 [00:51<00:06,  7.62it/s]
+11836.7s 649 Loading weights:  86%|████████▌ | 292/339 [00:52<00:06,  7.31it/s]
+11836.7s 650 Loading weights:  86%|████████▌ | 292/339 [00:52<00:06,  7.31it/s]
+11836.7s 651 Loading weights:  87%|████████▋ | 294/339 [00:53<00:09,  4.87it/s]
+11836.7s 652 Loading weights:  87%|████████▋ | 294/339 [00:53<00:09,  4.87it/s]
+11836.7s 653 Loading weights:  88%|████████▊ | 300/339 [00:53<00:05,  7.61it/s]
+11836.7s 654 Loading weights:  88%|████████▊ | 300/339 [00:53<00:05,  7.61it/s]
+11836.7s 655 Loading weights:  90%|████████▉ | 304/339 [00:53<00:04,  7.33it/s]
+11836.7s 656 Loading weights:  90%|████████▉ | 304/339 [00:54<00:04,  7.32it/s]
+11836.7s 657 Loading weights:  90%|█████████ | 306/339 [00:55<00:06,  4.88it/s]
+11836.7s 658 Loading weights:  90%|█████████ | 306/339 [00:55<00:06,  4.88it/s]
+11836.7s 659 Loading weights:  92%|█████████▏| 312/339 [00:55<00:03,  7.64it/s]
+11836.7s 660 Loading weights:  92%|█████████▏| 312/339 [00:55<00:03,  7.64it/s]
+11836.7s 661 Loading weights:  93%|█████████▎| 316/339 [00:55<00:03,  7.39it/s]
+11836.7s 662 Loading weights:  93%|█████████▎| 316/339 [00:55<00:03,  7.38it/s]
+11836.7s 663 Loading weights:  94%|█████████▍| 318/339 [00:56<00:04,  4.95it/s]
+11836.7s 664 Loading weights:  94%|█████████▍| 318/339 [00:56<00:04,  4.94it/s]
+11836.7s 665 Loading weights:  96%|█████████▌| 324/339 [00:57<00:01,  7.75it/s]
+11836.7s 666 Loading weights:  96%|█████████▌| 324/339 [00:57<00:01,  7.75it/s]
+11836.7s 667 Loading weights:  97%|█████████▋| 328/339 [00:57<00:01,  7.46it/s]
+11836.7s 668 Loading weights:  97%|█████████▋| 328/339 [00:57<00:01,  7.46it/s]
+11836.7s 669 Loading weights:  97%|█████████▋| 330/339 [00:58<00:01,  4.92it/s]
+11836.7s 670 Loading weights:  97%|█████████▋| 330/339 [00:58<00:01,  4.91it/s]
+11836.7s 671 Loading weights:  99%|█████████▉| 336/339 [00:58<00:00,  7.67it/s]
+11836.7s 672 Loading weights:  99%|█████████▉| 336/339 [00:58<00:00,  7.67it/s]
+11836.7s 673 Loading weights: 100%|██████████| 339/339 [00:58<00:00,  5.75it/s]
+11836.7s 674 
+11836.7s 675 Loading weights: 100%|██████████| 339/339 [00:58<00:00,  5.75it/s]
+11836.7s 676 Traceback (most recent call last):
+11836.7s 677 File "/kaggle/working/datamate/scripts/train_lora.py", line 119, in <module>
+11836.7s 678 main()
+11836.7s 679 ~~~~^^
+11836.7s 680 File "/kaggle/working/datamate/scripts/train_lora.py", line 104, in main
+11836.7s 681 arguments = TrainingArguments(
+11836.7s 682 output_dir=str(args.out / "checkpoints"), per_device_train_batch_size=1, gradient_accumulation_steps=args.accum,
+11836.7s 683 num_train_epochs=args.epochs, learning_rate=args.lr, lr_scheduler_type="cosine", **schedule,
+11836.7s 684 fp16=True, logging_steps=10, save_strategy="no", report_to=[], seed=args.seed, remove_unused_columns=False,
+11836.7s 685 ddp_find_unused_parameters=False, group_by_length=False, optim="paged_adamw_8bit")
+11836.7s 686 TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'group_by_length'
+11836.7s 687 optimizer steps ~= 112; warmup ~= 6; TrainingArguments schedule: {'warmup_steps': 6}
+11836.7s 688 Traceback (most recent call last):
+11836.7s 689 File "/kaggle/working/datamate/scripts/train_lora.py", line 119, in <module>
+11836.7s 690 main()
+11836.7s 691 ~~~~^^
+11836.7s 692 File "/kaggle/working/datamate/scripts/train_lora.py", line 104, in main
+11836.7s 693 arguments = TrainingArguments(
+11836.7s 694 output_dir=str(args.out / "checkpoints"), per_device_train_batch_size=1, gradient_accumulation_steps=args.accum,
+11836.7s 695 num_train_epochs=args.epochs, learning_rate=args.lr, lr_scheduler_type="cosine", **schedule,
+11836.7s 696 fp16=True, logging_steps=10, save_strategy="no", report_to=[], seed=args.seed, remove_unused_columns=False,
+11836.7s 697 ddp_find_unused_parameters=False, group_by_length=False, optim="paged_adamw_8bit")
+11836.7s 698 TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'group_by_length'
+11836.7s 699 E1103 17:43:50.917000 4415 torch/distributed/elastic/multiprocessing/api.py:1002] failed (exitcode: 1) local_rank: 0 (pid: 4424) of binary: /usr/bin/python3
+11836.7s 700 Traceback (most recent call last):
+11836.7s 701 File "/usr/local/bin/torchrun", line 6, in <module>
+11836.7s 702 sys.exit(main())
+11836.7s 703 ~~~~^^
+11836.7s 704 File "/usr/local/lib/python3.13/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 380, in wrapper
+11836.7s 705 return f(*args, **kwargs)
+11836.7s 706 File "/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py", line 1138, in main
+11836.7s 707 run(args)
+11836.7s 708 ~~~^^^^^^
+11836.7s 709 File "/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py", line 1129, in run
+11836.7s 710 elastic_launch(
+11836.7s 711 ~~~~~~~~~~~~~~~
+11836.7s 712 config=config,
+11836.7s 713 ~~~~~~~~~~~~~~
+11836.7s 714 entrypoint=cmd,
+11836.7s 715 ~~~~~~~~~~~~~~~
+11836.7s 716 )(*cmd_args)
+11836.7s 717 ~^^^^^^^^^^^
+11836.7s 718 File "/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py", line 197, in __call__
+11836.7s 719 return launch_agent(
+11836.7s 720 self._config,
+11836.7s 721 ...<2 lines>...
+11836.7s 722 health_check_server=self._health_check_server,
+11836.7s 723 )
+11836.7s 724 File "/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py", line 386, in launch_agent
+11836.7s 725 raise ChildFailedError(
+11836.7s 726 ...<2 lines>...
+11836.7s 727 )
+11836.7s 728 torch.distributed.elastic.multiprocessing.errors.ChildFailedError:
+11836.7s 729 ============================================================
+11836.7s 730 scripts/train_lora.py FAILED
+11836.7s 731 ------------------------------------------------------------
+11836.7s 732 Failures:
+11836.7s 733 [1]:
+11836.7s 734 time      : 2026-11-03_17:43:50
+11836.7s 735 host      : da32d61f9390
+11836.7s 736 rank      : 1 (local_rank: 1)
+11836.7s 737 exitcode  : 1 (pid: 4425)
+11836.7s 738 error_file: <N/A>
+11836.7s 739 traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+11836.7s 740 ------------------------------------------------------------
+11836.7s 741 Root Cause (first observed failure):
+11836.7s 742 [0]:
+11836.7s 743 time      : 2026-11-03_17:43:50
+11836.7s 744 host      : da32d61f9390
+11836.7s 745 rank      : 0 (local_rank: 0)
+11836.7s 746 exitcode  : 1 (pid: 4424)
+11836.7s 747 error_file: <N/A>
+11836.7s 748 traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+11836.7s 749 ============================================================
+11836.7s 750 
+11839.2s 751 Traceback (most recent call last):
+11839.2s 752 File "<string>", line 1, in <module>
+11839.2s 753 import sys;import papermill as pm;pm.execute_notebook("__notebook__.ipynb","__notebook__.ipynb",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)
+11839.2s 754 ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+11839.2s 755 File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 131, in execute_notebook
+11839.2s 756 raise_for_execution_errors(nb, output_path)
+11839.2s 757 ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+11839.2s 758 File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+11839.2s 759 raise error
+11839.2s 760 papermill.exceptions.PapermillExecutionError:
+11839.2s 761 ---------------------------------------------------------------------------
+11839.2s 762 Exception encountered at "In [12]":
+11839.2s 763 ---------------------------------------------------------------------------
+11839.2s 764 RuntimeError                              Traceback (most recent call last)
+11839.2s 765 /tmp/ipykernel_23/340814229.py in <cell line: 0>()
+11839.2s 766 15 print(log.read_text(encoding='utf-8', errors='replace')[-12000:])
+11839.2s 767 16 if result.returncode:
+11839.2s 768 ---> 17     raise RuntimeError(f'torchrun failed ({result.returncode}); check {log}')
+11839.2s 769 18 adapter = Path('/kaggle/working/lora')
+11839.2s 770 19 for filename in ('adapter_config.json', 'adapter_model.safetensors'):
+11839.2s 771 
+11839.2s 772 RuntimeError: torchrun failed (1); check /kaggle/working/qlora_train.log
+11839.2s 773 
+11842.0s 774 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+11842.0s 775 cells[i][c] = re.sub('\\\\\|', '|', cell)
+11842.3s 776 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+11842.3s 777 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+11843.5s 778 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+11843.6s 779 [NbConvertApp] Writing 131065 bytes to __notebook__.ipynb
+11846.4s 780 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+11847.4s 781 [NbConvertApp] Writing 450496 bytes to __results__.html
