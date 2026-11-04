@@ -135,3 +135,49 @@ không phải hai model khác nhau. Nếu tăng rank hoặc thêm embedding ph�
 Tham khảo API chính thức:
 [TrainingArguments/Trainer](https://huggingface.co/docs/transformers/main_classes/trainer),
 [train_sampling_strategy thay cho group_by_length](https://huggingface.co/docs/transformers/trainer_recipes).
+
+## Sửa OOM từ lần chạy 04/11/2026 (T4 ×2)
+
+`kaggle_log/zalo-ai-challenge.log` xác nhận dùng đúng `53dafa3`, qua lỗi API cũ nhưng dừng ở
+0/2 optimizer step của smoke test. Rank 0 thiếu 1,65 GiB tại cross entropy; rank 1 thiếu
+1,85 GiB tại `logits.float()`. DDP không cộng VRAM hai GPU. Mask prompt bằng -100 chưa tránh
+việc tạo logits cho prompt; NF4 chỉ giảm bộ nhớ trọng số, không tự giảm tensor logits/loss.
+
+`CompletionCollator` giữ nguyên input, attention mask và labels đầy đủ, chọn chỉ số t mà label t+1
+khác -100. `logits_to_keep` khiến Qwen2 chỉ chiếu các hidden state đó qua lm_head;
+`shift_labels` cung cấp đúng đích đã dịch một token, tránh dịch lần hai. Dùng loss chuẩn HF,
+giữ nguyên đếm token của Trainer cho gradient accumulation/DDP; không thêm thư viện kernel mới,
+không đổi định dạng adapter inference hay cắt ngắn prompt để tránh OOM.
+
+Đã so loss và gradient LoRA với đường logits đầy đủ trên Qwen nhỏ khởi tạo ngẫu nhiên bằng
+Transformers 5.16.1/PEFT 0.20.0, batch 1 và 2 có padding; chạy Trainer CPU hai optimizer step
+với accumulation 2. Test không tải trọng số. Đây là kiểm chứng toán/luồng train, **không phải đo VRAM T4**.
+Smoke test GPU mới chọn các mẫu dài nhất, báo peak allocated/reserved của từng rank.
+Giữ rank 32, context 4096, LR 5e-5, 2 epoch; chưa khẳng định cấu hình này hết OOM trên GPU thật.
+
+Baseline lần mới đạt 1136/3000 (37,87%), 1352 sai, 512 abstain, điểm -216; SFT có 873 mẫu
+trước tokenization. Stage 1 mất 179,5 phút sát ngân sách 3 giờ cũ. Tăng ngân sách **Kaggle**
+lên 4 giờ để có dư thời gian load/ingest; không thay giới hạn chính thức 6 giờ. Log tổng hợp
+có 46 generation_error, chưa có log câu cụ thể để khẳng định nguyên nhân từng câu.
+
+### Chạy và lấy điểm sớm
+
+1. Dùng `notebooks/kaggle_finetune.ipynb`, GPU T4 ×2, các Input model AWQ và dữ liệu như trước.
+2. Nếu giữ Output cũ, Add Input chứa `stage1_sft.zip`, đặt `STAGE1_ARCHIVE` ở cell siêu tham số
+   bằng đường dẫn thực tế `/kaggle/input/.../stage1_sft.zip`. Mặc định None chạy lại từ đầu.
+   Chỉ dùng archive khi dữ liệu/rulebook/pipeline inference không đổi. Helper chỉ đọc hai thành viên
+   cố định submission/log của baseline, kiểm tra đủ ID và câu hỏi khớp train hiện tại; không giải nén
+   đường dẫn tùy ý và không tin lại SFT cũ. SFT được tạo lại và thực thi kiểm chứng từ log.
+3. Sau baseline, notebook suy luận public_test bằng base, kiểm tra đủ ID, ghi
+   `/kaggle/working/submission_base.jsonl` và tạm chép nó thành `submission.jsonl`.
+   Bạn đã có file nộp ngay cả nếu train phía sau lỗi. Chạy thêm lượt base này tốn thời gian GPU;
+   nếu base thắng holdout thì dùng lại kết quả đó thay vì chạy public_test lần nữa.
+4. Train và chọn checkpoint theo holdout như trước; nếu adapter thắng thì chạy public_test
+   trong thư mục riêng và thay `submission.jsonl` bằng bản được chọn. Không resume output base
+   vào thư mục output adapter. `selection.json` ghi đúng/sai/abstain, accuracy và điểm/ số câu.
+5. Nộp file submission lên hệ thống thi để biết điểm public. Notebook không có gold public_test,
+   nên không thể tự tính hoặc cam kết điểm chính thức. Điểm holdout chỉ là mốc tham khảo trên train
+   giữ riêng theo business; không dùng public_test để fine-tune hay chỉnh hyperparameter.
+
+API tham khảo: [Qwen2 logits_to_keep](https://huggingface.co/docs/transformers/model_doc/qwen2),
+[ForCausalLMLoss/shift_labels](https://github.com/huggingface/transformers/blob/main/src/transformers/loss/loss_utils.py).

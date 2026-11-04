@@ -13,6 +13,7 @@ import argparse
 import json
 import sys
 import tempfile
+import zipfile
 from collections import Counter
 from pathlib import Path
 
@@ -39,6 +40,29 @@ def pick_holdout(businesses: list[str], every: int) -> list[str]:
 def example(prompt: str, code: str) -> dict:
     return {"messages": [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": prompt},
                          {"role": "assistant", "content": f"<sql>\n{code.strip()}\n</sql>"}]}
+
+
+def restore_baseline(archive: Path, train_dir: Path, result_dir: Path) -> None:
+    """Read only two known archive members; never extract arbitrary ZIP paths or reuse archived SFT."""
+    if result_dir.resolve().is_relative_to(train_dir.resolve()):
+        raise ValueError("Output must be outside the input package")
+    with zipfile.ZipFile(archive) as source:
+        files = {name: source.read("result/stage1/" + name)
+                 for name in ("submission.jsonl", "logs/questions.jsonl")}
+    predictions = [json.loads(line) for line in files["submission.jsonl"].decode("utf-8").splitlines() if line.strip()]
+    logs = [json.loads(line) for line in files["logs/questions.jsonl"].decode("utf-8").splitlines() if line.strip()]
+    questions = list(read_records(train_dir / "questions.jsonl"))
+    expected = {q["id"]: q for q in questions}
+    if (len(predictions) != len(expected) or {p["id"] for p in predictions} != set(expected)
+            or len(logs) != len(expected) or {r["id"]: r["question"] for r in logs} != expected):
+        raise ValueError("Archived baseline IDs/questions do not match the current train package")
+    for name in files:
+        if (result_dir / name).exists():
+            raise ValueError("Refusing to overwrite an existing baseline")
+    for name, contents in files.items():
+        target = result_dir / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(contents)
 
 
 def verified_example(linked: LinkResult, code: str, gold: dict) -> dict | None:

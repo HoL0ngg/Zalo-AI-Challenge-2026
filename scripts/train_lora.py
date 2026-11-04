@@ -10,6 +10,7 @@ The adapter (a few hundred MB) is served by vLLM next to the AWQ base model (`lo
 Uses only the train data the user passes; never the public or private test.
 """
 import argparse
+import inspect
 import json
 import math
 import os
@@ -43,6 +44,25 @@ class Examples:
 
     def __getitem__(self, index: int) -> dict:
         return self.rows[index]
+
+
+class CompletionCollator:
+    """Keep the full context, but project only positions that predict supervised SQL tokens."""
+    def __init__(self, collate):
+        self.collate = collate
+
+    def __call__(self, features: list[dict]) -> dict:
+        import torch
+
+        batch = self.collate(features)
+        targets = batch["labels"][:, 1:]
+        positions = torch.nonzero((targets != IGNORE).any(dim=0), as_tuple=True)[0]
+        if positions.numel() == 0:
+            raise ValueError("Batch has no supervised completion tokens")
+        batch["logits_to_keep"] = positions
+        # Position t predicts label t+1; supplying shift_labels prevents a second shift in HF loss.
+        batch["shift_labels"] = targets[:, positions].contiguous()
+        return batch
 
 
 def training_options(args, examples: int, world_size: int) -> dict:
@@ -79,6 +99,12 @@ def main() -> None:
     from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
     from transformers import (AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, DataCollatorForSeq2Seq,
                               Trainer, TrainingArguments)
+    from transformers.models.qwen2.modeling_qwen2 import Qwen2ForCausalLM
+    from transformers.loss.loss_utils import ForCausalLMLoss
+
+    if ("logits_to_keep" not in inspect.signature(Qwen2ForCausalLM.forward).parameters
+            or "shift_labels" not in inspect.signature(ForCausalLMLoss).parameters):
+        raise RuntimeError("Completion-only logits require the pinned Kaggle Transformers API")
 
     os.environ.update(HF_HUB_OFFLINE="1", TRANSFORMERS_OFFLINE="1")
     random.seed(args.seed)
@@ -110,14 +136,22 @@ def main() -> None:
                                                  device_map={"": local}, attn_implementation="sdpa",
                                                  local_files_only=True)
     model.config.use_cache = False
+    if model.config.model_type != "qwen2":
+        raise ValueError("Completion-only training is validated for the declared Qwen2 code model only")
     model = prepare_model_for_kbit_training(model, use_gradient_checkpointing=True,
                                             gradient_checkpointing_kwargs={"use_reentrant": False})
     model = get_peft_model(model, LoraConfig(
         r=args.rank, lora_alpha=2 * args.rank, lora_dropout=0.05, task_type="CAUSAL_LM",
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]))
-    trainer = Trainer(model=model, args=arguments, train_dataset=Examples(kept),
-                      data_collator=DataCollatorForSeq2Seq(tokenizer, padding=True, label_pad_token_id=IGNORE))
+    # Smoke test the longest examples, rather than hoping two random short samples cover peak memory.
+    if args.max_steps > 0:
+        kept = sorted(kept, key=lambda row: len(row["input_ids"]), reverse=True)[:world]
+    collator = CompletionCollator(DataCollatorForSeq2Seq(tokenizer, padding=True, label_pad_token_id=IGNORE))
+    trainer = Trainer(model=model, args=arguments, train_dataset=Examples(kept), data_collator=collator)
+    torch.cuda.reset_peak_memory_stats(local)
     metrics = trainer.train().metrics
+    print(f"rank {local}: peak allocated={torch.cuda.max_memory_allocated(local) / 2**30:.2f} GiB, "
+          f"peak reserved={torch.cuda.max_memory_reserved(local) / 2**30:.2f} GiB", flush=True)
     if trainer.is_world_process_zero():
         args.out.mkdir(parents=True, exist_ok=True)
         model.save_pretrained(str(args.out))

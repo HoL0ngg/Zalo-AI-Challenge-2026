@@ -6,7 +6,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from build_sft_data import example, pick_holdout, verified_example  # noqa: E402
+from build_sft_data import example, pick_holdout, restore_baseline, verified_example  # noqa: E402
 from train_lora import IGNORE, encode, training_options  # noqa: E402
 from datamate.codegen.prompt_builder import SYSTEM_PROMPT  # noqa: E402
 from datamate.llm.vllm_backend import engine_kwargs  # noqa: E402
@@ -90,3 +90,30 @@ def test_sft_reexecutes_sql_instead_of_trusting_old_correct_logs(tmp_path):
     assert verified_example(linked, "SELECT count(*) FROM sales", gold)
     assert verified_example(linked, "SELECT 3", gold) is None
     assert verified_example(linked, "SELECT nonexistent FROM sales", gold) is None
+
+
+def test_restore_baseline_checks_questions_and_never_extracts_other_zip_members(tmp_path):
+    import json
+    import zipfile
+
+    train = tmp_path / "train"
+    train.mkdir()
+    question = {"id": "q", "business_id": "shop", "question": "q", "as_of_date": "2026-01-01"}
+    (train / "questions.jsonl").write_text(json.dumps(question) + "\n")
+    archive = tmp_path / "stage1.zip"
+    with zipfile.ZipFile(archive, "w") as z:
+        z.writestr("result/stage1/submission.jsonl", json.dumps({"id": "q", "type": "abstain"}))
+        z.writestr("result/stage1/logs/questions.jsonl", json.dumps({"id": "q", "question": question}))
+        z.writestr("../../escape.txt", "bad")
+        z.writestr("sft/train.jsonl", "unverified SFT")
+    output = tmp_path / "out"
+    restore_baseline(archive, train, output)
+    assert (output / "submission.jsonl").exists() and (output / "logs/questions.jsonl").exists()
+    assert not (tmp_path / "sft").exists() and not (tmp_path / "escape.txt").exists()
+    with pytest.raises(ValueError, match="overwrite"):
+        restore_baseline(archive, train, output)
+    question["question"] = "changed"
+    (train / "questions.jsonl").write_text(json.dumps(question) + "\n")
+    with pytest.raises(ValueError, match="do not match"):
+        restore_baseline(archive, train, tmp_path / "other")
+    assert not (tmp_path / "other").exists()

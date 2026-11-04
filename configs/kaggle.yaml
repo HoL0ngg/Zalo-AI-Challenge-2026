@@ -9,7 +9,7 @@ runtime:
   offline: true
   device: auto
   max_question_seconds: 60
-  total_budget_seconds: 10800
+  total_budget_seconds: 14400  # baseline took ~179.5 min on T4; 3h left almost no loading margin
   reserve_seconds: 60
   output_dir: /kaggle/working/result
   data_dir: dataset/train

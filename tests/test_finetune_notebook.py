@@ -76,3 +76,29 @@ def test_checkpoint_selection_uses_full_holdout_and_keeps_base_on_tie(tmp_path, 
     assert selection["questions"] == 4 and selection["selected"] == winner
     if winner != "base":
         assert (adapter_dir / "adapter_model.safetensors").read_bytes() == b"\x01"
+
+
+@pytest.mark.parametrize("duplicate", [False, True])
+def test_base_winner_reuses_public_predictions_and_checks_ids(tmp_path, monkeypatch, duplicate):
+    records = [{"id": "a", "type": "abstain"}, {"id": "b", "type": "abstain"}]
+    (tmp_path / "questions.jsonl").write_text("\n".join(json.dumps(row) for row in records))
+    (tmp_path / "submission.jsonl").write_text("\n".join(json.dumps(row) for row in
+                                                         records + ([records[0]] if duplicate else [])))
+    monkeypatch.setattr(subprocess, "run", lambda *a, **k: pytest.fail("Base inference must not run twice"))
+    copies = []
+    monkeypatch.setattr(shutil, "copy2", lambda src, dst: copies.append((src, dst)))
+
+    def read_rows(file):
+        return [json.loads(line) for line in pathlib.Path(file).read_text().splitlines()]
+
+    namespace = dict(CONFIG="configs/kaggle.yaml", PUBLIC_BASE=str(tmp_path), TEST_DIR=tmp_path,
+                     read_rows=read_rows, checked_cli=lambda *a: None, subprocess=subprocess)
+    source = "".join(notebook()["cells"][14]["source"])
+    if duplicate:
+        with pytest.raises(AssertionError, match="ID"):
+            exec(compile(source, "public-selection", "exec"), namespace)
+        assert not copies
+    else:
+        exec(compile(source, "public-selection", "exec"), namespace)
+        assert len(copies) == 1 and pathlib.Path(copies[0][0]) == tmp_path / "submission.jsonl"
+        assert copies[0][1] == "/kaggle/working/submission.jsonl"
