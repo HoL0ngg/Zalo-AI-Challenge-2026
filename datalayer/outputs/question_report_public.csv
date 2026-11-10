@@ -1,0 +1,1001 @@
+id,as_of,cau_hoi,co_tu_khoa_thoi_gian,so_ky,time_failed,cac_ky,tu_khoa
+q_008fdebb6ec9,2026-05-24,"Tháng 11 năm 2025, nhóm trà có mặt hàng nào bán được nhiều ly nhất?",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"nam 2025, thang 1"
+q_009187cd2960,2026-06-10,Tháng 5/2026 bán ra bao nhiêu cây Ống PVC Bình Minh D50 cây 4m?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_00bf8df3ea0b,2025-03-04,Rieng ngay hom nay doanh thu quan la bao nhieu?,True,1,False,ky_nay 2025-03-04→2025-03-04 [day],hom nay
+q_00c4e24fa228,2026-06-30,Nhóm đồ dùng tháng 6/2026 bán được bao nhiêu tiền?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_013b4ff35811,2025-11-16,Cho tôi biết doanh thu tuần này.,True,1,False,ky_nay 2025-11-10→2025-11-16 [week_to_date],tuan nay
+q_014cdcc1da6e,2026-09-19,8/26 tiền bán ca chiều là bnhiu?,True,0,True,,8/26
+q_01ac0fc9f2a2,2026-08-18,Tuần rồi trung bình mổi đơn quán bán được nhiêu tiền vậy?,True,1,False,ky_nay 2026-08-10→2026-08-16 [week],tuan roi
+q_01ba91ff94c6,2025-11-10,Tuần rồi 5 món bán chạy nhất là những món nàoo?,True,1,False,ky_nay 2025-11-03→2025-11-09 [week],tuan roi
+q_01d1099489a0,2025-03-18,"Từ đầu tháng này tới hết hnay, dthu cao hay thấp hơn cùng kỳ tháng trước mấy %?",True,2,False,ky_nay 2025-03-01→2025-03-18 [month_to_date] | ky_truoc 2025-02-01→2025-02-18 [month_to_date],"cung ky, dau thang, het hom, thang truoc"
+q_01d1fc600b26,2026-07-08,Doanh thu của Bia Heineken 330ml trong tháng 7 năm 2025 là bao nhiêu?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],"nam 2025, thang 7"
+q_027f5441831d,2026-08-31,Tháng 8/2025 thợ Đoàn Bảo Phúc lãnh bao nhiêu tiền huê hồng?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_02feb595d6b7,2026-06-10,Tháng 3/2026 bán ra bao nhiêu cây Ống PVC Bình Minh D32 cây 4m?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_0329c9711c55,2026-02-25,Bữa nay tiệm có bao nhiêu đơn rồi nè?,True,1,False,ky_nay 2026-02-25→2026-02-25 [day],hom nay
+q_033e37dde4d5,2026-06-25,Tuần này bán được tổng cộng bao nhiêu gói rồi ha?,True,1,False,ky_nay 2026-06-22→2026-06-25 [week_to_date],tuan nay
+q_03622bae312b,2026-06-10,Th6/2025 khách có từ 4 đơn trở lên chiếm mấy % tổng số khách mua?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_037178b58fcc,2026-03-16,Từ đầu năm tới hnay tiệm có bnhiu đơn hàng rồi?,True,1,False,ky_nay 2026-01-01→2026-03-16 [ytd],"dau nam, hom nay"
+q_0389b0c41da6,2026-08-08,Dịp Tết âm lịch 2026 có doanh thu hơn hay kém 17 ngày trước Tết bao nhiêu %?,True,2,False,ky_nay 2026-02-10→2026-02-26 [tet] | ky_truoc 2026-01-24→2026-02-09 [pre_tet],tet
+q_03bbdfa6e0d5,2025-09-09,Hom ni quan duoc may don roi?,True,1,False,ky_nay 2025-09-09→2025-09-09 [day],hom nay
+q_03bee605bf7f,2026-05-10,Tổng tiền bán tháng 10/25?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/25, thang 1"
+q_040d437fdf09,2026-05-24,trung binh moi don shop mik th1/2025 gia tri dc bnhiu z nhi,True,1,False,ky_nay 2025-01-01→2025-01-31 [month],thang 1
+q_049f0a34efdc,2026-08-08,02/2026 có mấy khách mua từ 4 đơn trở lên z?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],02/20
+q_04e55a8f8c0c,2026-05-24,6-2025 trung binh 1 don dem ve bao nhieu doanh thu?,False,0,False,,
+q_052834325528,2026-08-08,10/25 doanh thu ca chieu hon hay kem ca sang may %?,True,0,True,,10/25
+q_0537f6e4f5ab,2026-07-08,"So sánh 3/25, 4/25 và 5/25 xem tháng nào cửa hàng bán đc nhiều tiền nhất",True,0,True,,"3/25, 4/25, 5/25"
+q_05421814d0e3,2026-05-10,Thuốc kê đơn th này bán được bnhiu tiền gồi?,True,1,False,ky_nay 2026-05-01→2026-05-10 [month_to_date],thang nay
+q_0594583b3d46,2025-10-18,"Đến hết hôm nay, các hợp đồng trả góp còn lại bao nhiêu tiền chưa góp, tính cả kỳ chưa tới hạn?",True,1,False,ky_nay None→2025-10-18 [snapshot],"den het, hom nay"
+q_05ab1c71dcaa,2026-07-08,Ai là khách có số đơn mua nhiều nhất trong tháng 4 năm 2025?,True,1,False,ky_nay 2025-04-01→2025-04-30 [month],"nam 2025, thang 4"
+q_05cde771f4c3,2026-08-31,"Th2/2026 không tính xe quay lại bảo hành, bình quân 1 phiếu sửa hết bnhiu tiền?",True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_0641a621b596,2026-08-08,"Kể giúp dthu 3 tháng liền từ T4/2025 tới T6/2025, theo thứ tự thời gian.",True,2,False,ky_nay 2025-04-01→2025-04-30 [month] | ky_khac 2025-06-01→2025-06-30 [month],"thang 4, thang 6"
+q_06b7f437fcc4,2026-08-31,Tho Dam Lan An thang nay lam duoc tong bao nhieu tien roi?,True,1,False,ky_nay 2026-08-01→2026-08-31 [month_to_date],thang nay
+q_06de4545fe25,2026-07-22,T1/2026 có bao nhiêu mặt hàng có mặt trong ít nhất 187 đơn vậy?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_06dfe652d857,2026-08-21,Lãi ròng của quán trong 10/2025 là bao nhiêu?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],10/20
+q_07b7be37628b,2026-06-30,"Tháng này tới hôm nay, doanh thu so với cùng kỳ tháng trước thay đổi bao nhiêu phần trăm?",True,2,False,ky_nay 2026-06-01→2026-06-30 [month_to_date] | ky_truoc 2026-06-30→2026-06-30 [day],"cung ky, hom nay, thang nay, thang truoc"
+q_07ceefc30333,2026-08-21,T4/2026 tính cả tháng thì sp nào lãi gộp nhiều nhất?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_07e2508ad671,2026-08-31,"check jum, shop mik thang nay bn chiec SH Mode khac nhau zo sua hen",True,1,False,ky_nay 2026-08-01→2026-08-31 [month_to_date],thang nay
+q_0878814b6a76,2026-08-08,Thang nay nhap cua ncc nao nhieu tien nhat z?,True,1,False,ky_nay 2026-08-01→2026-08-08 [month_to_date],thang nay
+q_08b923f3c5c5,2026-08-21,"Xem giúp mình tháng 12/2025, nhà cung cấp chính của cửa hàng là ai?",True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_08c521dda3d9,2026-09-06,Cả quý 4/2025 cửa hàng bán được bao nhiêu tiền?,True,1,False,ky_nay 2025-10-01→2025-12-31 [quarter],quy 4
+q_08f075b54698,2025-09-12,Từ đầu năm tới hết hnay tiệm có tổng cộng bnhiu đh rồi?,True,1,False,ky_nay 2025-01-01→2025-09-12 [ytd],"dau nam, het hom"
+q_09542f67d04a,2026-03-31,Dthu bình quân mỗi đơn tuần trước là bnhiu z?,True,1,False,ky_nay 2026-03-23→2026-03-29 [week],tuan truoc
+q_099a18d1ed60,2026-06-30,Nho xem 8/2025 doanh thu tiem minh duoc bao nhieu?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],8/20
+q_09e3efc66c68,2026-07-08,T5/2025 trung bình mỗi đơn giá trị bnhiu?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_0a3308eb76bb,2026-06-10,Hom qua tiem ban dc may don?,True,1,False,ky_nay 2026-06-09→2026-06-09 [day],hom qua
+q_0a9819711554,2026-08-08,"Le Son Trung T7/2026: no them bnhiu tien, tra no bnhiu?",True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_0ac818a0f5f2,2026-05-24,T2/2026 don huy chiem bao nhieu phan tram?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_0acdf488056e,2026-09-19,Thang 4 nam 2026 so thang truoc tien ban len hay xuong bao nhieu % z?,True,2,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_truoc 2026-03-01→2026-03-31 [month],"nam 2026, thang 4, thang truoc"
+q_0ae9b7cf7003,2026-09-06,Cho tôi biết doanh thu các đơn của khách nhóm sỉ tháng 4/2026.,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_0b0081426a17,2025-02-25,Riêng hôm nay cửa hàng có doanh thu bao nhiêu?,True,1,False,ky_nay 2025-02-25→2025-02-25 [day],hom nay
+q_0b78b53675c1,2026-08-08,Tết âm lịch 2026 sp nào bán chạy nhất?,True,1,False,ky_nay 2026-02-10→2026-02-26 [tet],tet
+q_0b854610073b,2026-09-30,"9/2025 cộng các khoản tiền thu máy cũ trừ vào đơn, hết nhiêu tiền z?",True,1,False,ky_nay 2025-09-01→2025-09-30 [month],9/20
+q_0bac8c88238d,2026-04-20,Ngày hôm qua tiệm đạt doanh thu bao nhiêu?,True,1,False,ky_nay 2026-04-19→2026-04-19 [day],hom qua
+q_0bee4ad8f965,2025-06-24,Tuần trước bình quân một đơn có doanh thu bao nhiêu ha?,True,1,False,ky_nay 2025-06-16→2025-06-22 [week],tuan truoc
+q_0c0a1a780164,2026-07-22,Thang nay don tra bang vi dien tu duoc bao nhieu dthu?,True,1,False,ky_nay 2026-07-01→2026-07-22 [month_to_date],thang nay
+q_0c62d2078959,2026-05-24,Thang 6 nam 2025 quan co may don bi huy?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],"nam 2025, thang 6"
+q_0ca19cd317cb,2026-08-08,Kể giúp các sp còn lô tồn hết hạn trong 90 ngày tới.,True,1,False,ky_nay 2026-08-08→2026-11-06 [forward_days],0 ngay toi
+q_0cb6a1a6f1ef,2026-08-21,Th6/2025 ai là khách mua nhiềuđơn nhất quán z?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_0d23cc65cc7a,2025-11-08,"So với cùng kỳ tháng trước, doanh thu từ đầu tháng này đến hết hôm nay tăng hay giảm bao nhiêu %?",True,2,False,ky_nay 2025-11-01→2025-11-08 [month_to_date] | ky_truoc 2025-10-01→2025-10-08 [month_to_date],"cung ky, dau thang, den het, hom nay, thang truoc"
+q_0da15db21978,2026-05-10,Th5/2025 thuốc kê đơn chiếm bao nhiêu % tổng dthu?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_0dff1966b7c3,2025-08-05,Tuần trước bình quân 1 đơn được bnhiu dthu?,True,1,False,ky_nay 2025-07-28→2025-08-03 [week],tuan truoc
+q_0e1eff36bbc5,2026-09-06,"Dthu tháng 2/26 so tháng liền trước, tăng giảm bnhiu %?",True,2,False,ky_nay 2026-02-01→2026-02-28 [month] | ky_truoc 2026-01-01→2026-01-31 [month],thang 2
+q_0e72ff8aa98e,2026-07-22,05/2026 có bao nhiêu đơn doanh thu từ 1.100.000 đồng trở lên vậy?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],05/20
+q_0ea6fdb19b86,2026-05-10,"So số lọ Efticol 0,9% lốc 10 lọ x 10ml bán ra trong 30 ngày kể từ ngày 26/01/2026, ngày tăng giá lên 2.800đ, với 30 ngày ngay trước ngày đó: tăng hay giảm bao nhiêu %?",True,2,False,ky_nay 2026-01-26→2026-02-24 [fwd_window] | ky_truoc 2025-12-27→2026-01-25 [back_window],"6/01, ke tu, ngay 2"
+q_0ed1ebc4fe4d,2026-07-08,Khách mua ít nhất 4 đơng trong tháng 11/2025 có mấy người?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_0ef1608808dd,2026-07-22,Th3/2026 quan chi nhap hang bao nhieu tien?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_0ef28ee17f12,2026-05-24,Số ly Nước ép cam (M) bán được trong tháng 3/2025 là bao nhiêu?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_0f59f61affd1,2025-03-12,Tu dau nam toi nay co bao nhieu don roi?,True,1,False,ky_nay 2025-01-01→2025-03-12 [ytd],dau nam
+q_0f7d15097a8c,2026-09-19,Quý 3/2025 quán bán được bnhiu đh?,True,1,False,ky_nay 2025-07-01→2025-09-30 [quarter],quy 3
+q_1019063a351e,2026-09-30,Tổng tiền thu máy cũ của khách 02/2026?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],02/20
+q_101a2b744e56,2026-09-19,"Hết hnay, khách Tạ Dũng Long góp tới hạn mấy kỳ rồi, tính luôn kỳ hạn hôm nay nha?",True,2,False,ky_nay None→2026-09-19 [snapshot] | ky_khac 2026-09-19→2026-09-19 [day],"het hom, hom nay"
+q_101e84f9b702,2026-08-21,trog tháng 6 wán mik lãi gộp đc bnhiu dzạ 🤔,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_102720daf6a9,2026-02-15,"Năm nay, tính từ đầu năm đến hết hôm nay, doanh thu của cửa hàng là bao nhiêu?",True,1,False,ky_nay 2026-01-01→2026-02-15 [ytd],"dau nam, den het, hom nay, nam nay"
+q_1040545087b6,2026-07-31,Thang nay tien thu may cu tru vao don cong lai la bao nhieu?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month_to_date],thang nay
+q_105bc863feea,2026-05-10,4/2026 tiệm bán hàng ko kê đơn được nhiêu tiền z?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],4/20
+q_107e86e608dc,2026-05-10,Th6/2025 hàng ko kê đơn bán đc bnhiu tiền ha?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_10831a6f3a2b,2025-12-10,"Tới hnay, mấy đơn bán chịu ghi ngày phải trả còn sau hôm nay vậy?",True,1,False,ky_nay 2025-12-10→2025-12-10 [day],hom nay
+q_10a0c4fec3d2,2026-08-21,Từ th5/2025 đến th7/2025 dthu tháng sau có luôn hơn tháng trước hông?,True,3,False,ky_nay 2025-05-01→2025-05-31 [month] | ky_truoc 2025-04-01→2025-04-30 [month] | ky_khac 2025-07-01→2025-07-31 [month],"thang 5, thang 7, thang truoc"
+q_113d86c3eb6a,2026-08-08,Dthu th8/2025 hơn hay kém tháng trước mấy %?,True,2,False,ky_nay 2025-08-01→2025-08-31 [month] | ky_truoc 2025-07-01→2025-07-31 [month],"thang 8, thang truoc"
+q_11c915f78c7e,2026-07-02,Tuần này tiệm có bnhiu đh rồi?,True,1,False,ky_nay 2026-06-29→2026-07-02 [week_to_date],tuan nay
+q_1205eaa6091a,2026-08-31,"Doanh thu T8/2025 so thang lien truoc, cao hay thap hon bao nhieu % nhi?",True,2,False,ky_nay 2025-08-01→2025-08-31 [month] | ky_truoc 2025-07-01→2025-07-31 [month],thang 8
+q_121c6959016d,2026-07-22,thang 4/2026 bn ngay wan mik ban dc tu 40tr tro len z nha e,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_12712b3cc328,2026-07-31,Xiaomi Redmi Note 14 th này bán được bnhiu chiếc?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month_to_date],thang nay
+q_128fd07d838e,2025-08-18,Tổng cộng hôm qua được mấy đơn?,True,1,False,ky_nay 2025-08-17→2025-08-17 [day],hom qua
+q_129b29f14e89,2026-07-22,Tháng 6/2025 quán đánh hàng về hết bao nhiêu tiền?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_12d78074f059,2026-08-21,Khách nhóm thân thiết tháng 12/2025 mua trung bình bao nhiêu tiền hàng mỗi đơn?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_1341cdede99a,2026-08-21,T5/2025 co may mat hang nam trong it nhat 122 don khac nhau?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_14565ad8b459,2025-08-10,Hôm qua cửa hàng bán được bao nhiêu tiền?,True,1,False,ky_nay 2025-08-09→2025-08-09 [day],hom qua
+q_1473ee8c46fd,2025-04-17,"So với cùng số ngày đầu tháng trước, dthu tháng này hơn hay kém bao nhiêu phần trăm ha?",True,2,False,ky_nay 2025-04-01→2025-04-17 [month_to_date] | ky_truoc 2025-03-01→2025-03-17 [month_to_date],"dau thang, thang nay"
+q_14a10f251fd0,2026-06-30,"cko mik bít xíu, trog th3/2026 sữa bột số 2 kủa hãng nào bán đc nhìu lon nhứt jùm nha",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_15711c61bb0d,2026-07-22,Quán mình bạn nhân viên nào phục vụ khách thân thiện nhất nhỉ?,False,0,False,,
+q_15a8893ff6f9,2025-06-20,Tuần trước quán bán được mấy đĩa vậy?,True,1,False,ky_nay 2025-06-09→2025-06-15 [week],tuan truoc
+q_15dd37187b0d,2026-05-10,"Khách có mua hồi th6/2025, bao nhiêu % mua ít nhất 4 đơn z?",True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_1602cfcc7d42,2026-08-21,3/2026 quán bán được mấy ly size M nè?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],3/20
+q_1618b7c50ae7,2026-07-08,"Trong khách mua th7/2025, mấy % mua từ 3 đh trở lên?",True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_162c076a350d,2026-04-10,Doanh thu từ đầu năm tới hết hôm nay của tiệm là bao nhiêu nhỉ?,True,1,False,ky_nay 2026-01-01→2026-04-10 [ytd],"dau nam, het hom"
+q_16852a1ac5f7,2026-03-13,Den ngay 13/03/2026 co may khach tra gop con no ky gop qua han?,True,1,False,ky_nay 2026-03-13→2026-03-13 [date],"3/03, ngay 1"
+q_169a123623e6,2026-06-10,"Trong so khach mua th6/2025, may % co tu 3 don tro len?",True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_169bfdcce0ae,2026-08-08,"Trong tat ca khach co mua 12/2025, khach mua it nhat 6 don chiem may phan tram?",True,1,False,ky_nay 2025-12-01→2025-12-31 [month],12/20
+q_16e72d67a5f4,2026-09-06,Tổng tiền khách trả nợ 12-2025?,False,0,False,,
+q_16ec75d6c8a4,2026-06-01,"Từ đầu năm ni đến hết hôm nay, quán có tổng cộng bao nhiêu đơn?",True,2,False,ky_nay 2026-01-01→2026-06-01 [ytd] | ky_khac None→2026-06-01 [snapshot],"dau nam, den het, hom nay"
+q_16fc554b8db0,2026-08-21,Th7/2026 ca sáng có tổng cộng mấy đơn?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_17743de8e260,2026-09-06,6-2026 bị huỷ mấy đơn nhỉ?,False,0,False,,
+q_180163673aaa,2026-07-22,trog th11/2025 nv nào bán đc dthu cao nhứt nhỉ,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_188436bf8db3,2026-08-21,Quý 2/2025 quán có tổng cộng bao nhiêu đơn hàng?,True,1,False,ky_nay 2025-04-01→2025-06-30 [quarter],quy 2
+q_18b0cb2e9c4c,2026-07-08,8/2025 đếm giùm mấy đh dthu từ 180.000đ trở lên,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],8/20
+q_18d3b12b578f,2026-05-10,"Tiffy Dey hộp 25 vỉ x 4 viên lên giá 1.200đ từ ngày 02/06/2025; so 14 ngày kể từ ngày tăng giá với 14 ngày ngay trước, lượng bán tính theo viên tăng hay giảm bao nhiêu phần trăm?",True,2,False,ky_nay 2025-06-02→2025-06-15 [fwd_window] | ky_truoc 2025-05-19→2025-06-01 [back_window],"2/06, ke tu, ngay 0"
+q_1a312c2f71ac,2026-06-10,Nước kiềm Ion Life 19L lên giá 79.500đ ngày 18/10/2025; lượng bình bán trong 30 ngày kể từ 18/10/2025 thay đổi bao nhiêu phần trăm so với 30 ngày liền trước?,True,2,False,ky_nay 2025-10-18→2025-11-16 [fwd_window] | ky_truoc 2025-09-18→2025-10-17 [back_window],"18/10, 8/10, ke tu, ngay 1"
+q_1a35be96a5bd,2025-08-24,Tuan nay quan ban dc bnhiu dia?,True,1,False,ky_nay 2025-08-18→2025-08-24 [week_to_date],tuan nay
+q_1a5c000274ee,2025-11-09,Tuan nay quan ban duoc may don roi?,True,1,False,ky_nay 2025-11-03→2025-11-09 [week_to_date],tuan nay
+q_1adddf599009,2025-03-02,"Tới hôm nay, có mấy đơn bán chịu ghi ngày phải trả muộn hơn hôm nay (hạn đúng hôm nay không tính)?",True,1,False,ky_nay 2025-03-02→2025-03-02 [day],hom nay
+q_1af400957d96,2026-06-30,Đếm giùm t5/2025 có mấy đơng tiền hàng từ 760.000đ trở lên nha,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_1bd68f25b288,2026-05-10,Tiệm mình thường đông khách nhất dào mấy giờ z?,False,0,False,,
+q_1c0046277ff9,2026-08-31,"Bảng hoa hồng thợ th7/2026, ai nhiều tiền thì xếp lên trên nghe.",True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_1c0ec38b3d82,2026-08-21,Dịp Tết 2026 quán có doanh thu bao nhiêu thế?,True,1,False,ky_nay 2026-02-10→2026-02-26 [tet],tet
+q_1c2ff6b4820f,2026-08-08,2/2026 hàng mô lãi gộp nhiều nhất rứa?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],2/20
+q_1c7bef344864,2026-06-30,th6/2026 shop mik giam voucher cko khach het bnhiu tieenf?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_1d7f8fb3a5df,2026-06-30,Tháng 8/2025 khách ở Trường Chinh mua nhiều tiềng hơn hay khách ở Lạc Long Quân?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_1e1b499d3c87,2026-07-22,T7/2025 tong dthu cua quan duoc bnhiu?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_1e3b66ee62f2,2026-07-08,Thang ni doanh thu ban tai quay voi ban qua dien thoai lan luot la bao nhieu dong vay?,False,0,False,,
+q_1f1a1f45b377,2026-02-22,Hôm qua quán bán được nhiêu tiền rứa?,True,1,False,ky_nay 2026-02-21→2026-02-21 [day],hom qua
+q_1f7113a48e4b,2026-04-24,"Hom qua ban duoc bao nhieu goi, tinh tat ca mat hang ban theo goi?",True,1,False,ky_nay 2026-04-23→2026-04-23 [day],hom qua
+q_1fafcc702c72,2026-05-10,"Tháng 2 năm 2026, nhóm vitamin khoáng chất thì mặt hàng nào thu về nhiều tiền nhất?",True,1,False,ky_nay 2026-02-01→2026-02-28 [month],"nam 2026, thang 2"
+q_1fc8004b6900,2026-06-30,"Th này sốp bán ra bnhiu lon sữa bột số 4 z, gộp hết mọi hãng?",True,1,False,ky_nay 2026-06-01→2026-06-30 [month_to_date],thang nay
+q_20221903b95b,2026-06-10,Th3/2025 có mấy đơn bị huỷ vì giao trễ z?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_203767dd52af,2026-06-10,"Trong tháng 3/2026, giờ cao điểm trong ngày của cửa hàng là mấy giờ?",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_20b7bbf203c7,2026-08-31,"Hoa hồng từng thợ th 3/26, cho bảng xếp tiền giảm dần nghe?",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_20fc83f06434,2026-09-19,Quý 3 năm 2025 cửa hàng bán được tổng cộng bao nhiêu tiền?,True,1,False,ky_nay 2025-07-01→2025-09-30 [quarter],"nam 2025, quy 3"
+q_210d0cfc81e5,2026-08-08,"Tinh tai ngay 08/08/2026, Berocca Performance vien sui tuyp 10 vien con lo gan het han nhat la het han ngay may?",True,1,False,ky_nay 2026-08-08→2026-08-08 [date],"8/08, ngay 0"
+q_2199b91fe707,2026-05-10,T3/2025 ngay nao doanh thu cao nhta?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_219f01962c05,2026-09-06,"Thang 1/26 doanh thu don ban tai quay bao nhieu, don ban qua dien thoai bao nhieu?",True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_21b93db251ef,2025-02-24,30 ngay gan nhat quan co bao nhieu don?,True,1,False,ky_nay 2025-01-26→2025-02-24 [rolling],gan nhat
+q_21c1f1a2bf98,2026-05-10,Dthu thang 2 nam 2026 so cung ky nam ngoai tang hay giam bnhiu %?,True,2,False,ky_nay 2026-02-01→2026-02-28 [month] | ky_truoc 2025-02-01→2025-02-28 [month],"cung ky, nam 2026, nam ngoai, thang 2"
+q_220b5f8bc174,2026-09-30,ad oi th3/2026 tien ban shop mik cao hay thap hon thang trc do bnhiu %,True,2,False,ky_nay 2026-03-01→2026-03-31 [month] | ky_truoc 2026-02-01→2026-02-28 [month],"thang 3, thang truoc"
+q_22a7258b62bf,2025-10-29,Dthu thang nay tinh toi hom nay so cung ky thang truoc hon kem may % z?,True,2,False,ky_nay 2025-10-01→2025-10-29 [month_to_date] | ky_truoc None→2025-10-29 [snapshot],"cung ky, hom nay, thang nay, thang truoc"
+q_2302c71da33e,2026-07-22,"bé ơi th10/2025 nhóm cơm mì cháo chiếm bnhiu % tổng dthu kả wán mik, thanks e",True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_2362d5a2c101,2026-05-10,"So cùng kỳ năm trước, doanh thu tháng 4/2026 tăng/giảm mấy phần trăm?",True,2,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_truoc 2025-04-01→2025-04-30 [month],"cung ky, nam truoc, thang 4"
+q_23f483dd4193,2025-11-14,Tuần này cửa hàng có mấy đơn thế?,True,1,False,ky_nay 2025-11-10→2025-11-14 [week_to_date],tuan nay
+q_244e072341dc,2026-09-19,"Tiền nhập hàng th này, tổng bnhiu?",True,1,False,ky_nay 2026-09-01→2026-09-19 [month_to_date],thang nay
+q_24a84f354ed0,2026-06-30,"Thang nay tiem ban duoc may lon sua bot so 2, tat ca cac hang?",True,1,False,ky_nay 2026-06-01→2026-06-30 [month_to_date],thang nay
+q_2536e243a16c,2026-08-31,Quý 2/2026 tổng dthu bnhiu rứa?,True,1,False,ky_nay 2026-04-01→2026-06-30 [quarter],quy 2
+q_25af2ef67065,2026-09-30,Quý 3/2026 lượt bảo hành so với số máy bán đc chiếm bnhiu %?,True,1,False,ky_nay 2026-07-01→2026-09-30 [quarter],quy 3
+q_26212108a6e6,2026-07-22,Tháng này dá trị trung bình 1 đơn của khách nhóm thân thiết là bnhiu?,True,1,False,ky_nay 2026-07-01→2026-07-22 [month_to_date],thang nay
+q_262952036572,2026-01-27,3 mặt hàng bán chạy nhất tuần rồi là những mặt hàng nào?,True,1,False,ky_nay 2026-01-19→2026-01-25 [week],tuan roi
+q_2710e38fa0d6,2026-09-30,Tháng 2/2026 mặt hàng Cốc sạc nhanh 25W Samsung thu về bao nhiêu tiền?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_2767f0fad8f7,2026-06-30,Tháng 6/2026 cửa hàng bán được tổng cộng bao nhiêu tiền?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_278b0742d740,2026-07-08,Th4/2026 có bao nhiêu mặt hàng có mặt trong từ 84 đơn khác nhau trở lên?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_279180641d59,2026-07-08,Tháng 7/2025 có bao nhiêu mặt hàng xuất hiện trong ít nhất 74 đơn hàng?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_27b5996a5f4c,2025-10-09,7 ngay qua tinh ca hom nay ban duoc may don?,True,2,False,ky_nay 2025-10-03→2025-10-09 [rolling] | ky_khac 2025-10-09→2025-10-09 [day],"7 ngay qua, hom nay"
+q_27e230ca0ed6,2026-09-19,T8/2025 tỉ trọng nhóm khai vị trong dthu là bnhiu %?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_28f2fdb96198,2026-08-21,Doanh thu của nhân viên mã NV005 tháng 3/2026 là bao nhiêu?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_2927db159ea7,2025-10-29,30 ngày gần nhất được bnhiu đh nhỉ?,True,1,False,ky_nay 2025-09-30→2025-10-29 [rolling],gan nhat
+q_29e1057e3fbd,2026-03-11,Doanh thu thang nay tang hay giam may % so voi cung so ngay thang truoc?,True,2,False,ky_nay 2026-03-01→2026-03-11 [month_to_date] | ky_truoc 2026-02-01→2026-02-11 [month_to_date],"thang nay, thang truoc"
+q_29efb04a938b,2026-08-08,Khach nu 5-2025 dong gop may phan tram tong doanh thu?,False,0,False,,
+q_29f0281751c0,2026-08-21,7/25 nhóm nước ép chiếm mấy % dthu cả quán?,True,0,True,,7/25
+q_2ac539902fe6,2026-05-24,"Thang 2/26 so voi cung thang nam truoc, doanh thu thay doi bao nhieu %?",True,2,False,ky_nay 2026-02-01→2026-02-28 [month] | ky_truoc 2026-01-01→2026-01-31 [month],"nam truoc, thang 2"
+q_2bd15109007c,2026-02-17,30 ngày gần nhất quán bán đc tổng bnhiu lon vậy?,True,1,False,ky_nay 2026-01-19→2026-02-17 [rolling],gan nhat
+q_2c8d4481ca57,2026-08-21,"Dịp Tết âm lịch 2026 so với 17 ngày trước Tết, dthu cao hay thấp hơn mấy %?",True,2,False,ky_nay 2026-02-10→2026-02-26 [tet] | ky_truoc 2026-01-24→2026-02-09 [pre_tet],tet
+q_2d5eb3a196b7,2026-08-08,Tháng 11 năm 2025 tiệm đòi được bnhiu tiền nợ từ khách mua chịu?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"nam 2025, thang 1"
+q_2db4f43d56bd,2025-03-17,Doanh thu thang nay tinh den hom nay so voi cung ky thang truoc thi tang giam bao nhieu %?,True,2,False,ky_nay 2025-03-01→2025-03-17 [month_to_date] | ky_truoc None→2025-03-17 [snapshot],"cung ky, hom nay, thang nay, thang truoc"
+q_2dc771b39303,2026-06-30,Tháng 6/2026 có bao nhiêu ngày bán được từ 15 triệu trở lên ha?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_2e00e336cad2,2026-08-31,Tháng ni đếm phiếu sửa xe được mấy phiếu?,False,0,False,,
+q_2e131da8a651,2026-09-19,Th6/2026 đơn bị huỷ chiếm mấy % z?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_2ed4740ec705,2026-05-24,Dthu th 3/26 tang truong bnhiu % so th 3/25?,True,2,False,ky_nay 2026-03-01→2026-03-31 [month] | ky_truoc 2025-03-01→2025-03-31 [month],thang 3
+q_2edd77d63f85,2026-09-06,Tỉ nệ huỷ đơn th7/2026 bnhiu %?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_2f1be262f623,2026-09-06,Tháng 1/2026 bán Găng tay tất chân sơ sinh set 3 đôi được bao nhiêu tiền?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_2f8852d2a6bc,2026-03-23,Từ 1/1 đến hết hnay dthu năm nay đc bnhiu?,True,1,False,ky_nay 2026-01-01→2026-03-23 [ytd],"1/1, den het, hom nay, nam nay"
+q_2fba3cf485d7,2026-08-21,"So với cùng tháng năm rồi, doanh thu tháng 5/2026 của quán thay đổi mấy %?",True,2,False,ky_nay 2026-05-01→2026-05-31 [month] | ky_truoc 2026-04-01→2026-04-30 [month],thang 5
+q_30934dcc3831,2026-02-18,Tu dau nam den hom nay quan ban duco bao nhieu tien roi z?,True,1,False,ky_nay 2026-01-01→2026-02-18 [ytd],"dau nam, hom nay"
+q_30afaf6d51ca,2026-07-31,Thang 11 nam 2025 ngay nao doanh thu cao nhta?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"nam 2025, thang 1"
+q_30b4b858e958,2025-05-15,Tóp 5 sp bán nhiều nhất tuần rồi là gì z?,True,1,False,ky_nay 2025-05-05→2025-05-11 [week],tuan roi
+q_30f08ce67f3e,2026-08-21,check jum th6/2025 wan mik nhap hang cuar ncc nao nhiu tien nhut do ha,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_3176702f9d3e,2026-07-31,Tháng 1/26 sp nào bán chạy nhất?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_318e4b474262,2025-08-23,Bữa qua tiệm bán được bao nhiêu tiền dzậy?,True,1,False,ky_nay 2025-08-22→2025-08-22 [day],hom qua
+q_31cad30c7e96,2026-08-31,Tổng dthu tháng 2/26 là bnhiu hè?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_31dad3219917,2026-02-20,Năm nay tính tới hôm nay bán được tổng cộng bao nhiêu tiền?,True,2,False,ky_nay 2026-01-01→2026-02-20 [ytd] | ky_khac None→2026-02-20 [snapshot],"hom nay, nam nay"
+q_31ee2863c718,2026-03-24,Cho em hỏi từ đầu năm đến hết hôm nay quán đã có tổng cộng bao nhiêu đơn hàng ạ?,True,1,False,ky_nay 2026-01-01→2026-03-24 [ytd],"dau nam, den het, hom nay"
+q_32201ceda2ad,2026-08-21,Tổng dthu th3/2025 của quán là nhiêu z?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_32235635199c,2026-05-10,Doanh thu tháng 1/2025 của sốp mình được nhiêu ha?,True,1,False,ky_nay 2025-01-01→2025-01-31 [month],thang 1
+q_32733a8ce625,2026-08-31,10/2025 dòng xe mô đem lại nhiều tiền sửa nhất?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],10/20
+q_32b653051a42,2026-09-30,Máy cũ 8/25 bán đc mấy chiếc vậy?,True,0,True,,8/25
+q_32e315da86e6,2026-09-06,Th9/2025 ngay nao thu ve nhieu doanh thu nhat?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_32ee3f6d23b0,2026-06-10,"Doanh thu tháng 11/2025, 12/2025 và 1/2026 từng tháng là bao nhiêu?",True,3,False,ky_nay 2025-11-01→2025-11-30 [month] | ky_khac 2025-12-01→2025-12-31 [month] | ky_khac 2026-01-01→2026-01-31 [month],"1/20, 12/20, thang 1"
+q_334da0ba920d,2026-02-15,"7 ngày gần nhất có mấy mặt hàng ế, không bán được cái nào?",True,1,False,ky_nay 2026-02-09→2026-02-15 [rolling],gan nhat
+q_338d0179f66d,2026-02-08,"nè, hết ngày 8/2/2026 shop mik kó mí ngừi trả góp kòn kỳ quá hạn chưa đóng",True,1,False,ky_nay None→2026-02-08 [snapshot],"8/2, het ngay"
+q_33cb3a334a80,2026-08-31,Tháng 8/2025 thợ Hà Loan Đạt mần được bao nhiêu lượt xe?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_33dcfa1e37c9,2026-07-08,Th7/2025 đh bị huỹ chiếm bnhiu %?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_344459d9755f,2025-11-23,Doanh thu từ đầu tháng này đến hết hôm nay hơn hay kém cùng kỳ tháng trước bao nhiêu phần trăm?,True,2,False,ky_nay 2025-11-01→2025-11-23 [month_to_date] | ky_truoc 2025-10-01→2025-10-23 [month_to_date],"cung ky, dau thang, den het, hom nay, thang truoc"
+q_34a5b4766a27,2026-08-31,Phiếu có thu tiền tháng 8 năm 2025 trung bình 1 phiếu bao nhiêu tiền hè?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],"nam 2025, thang 8"
+q_34e7f4ed662a,2026-05-10,Tháng 8/25 tiệm bị huỷ mấy % đơn rứa?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_358aa8d56087,2026-07-31,Quý 4/2025 tiệm bán được bao nhiêu đơn vậy?,True,1,False,ky_nay 2025-10-01→2025-12-31 [quarter],quy 4
+q_35b891c4eebe,2026-08-31,"Trong tháng 3/2026, ai là thợ nhiệt tình nhất?",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_35c586d5d831,2026-08-08,Th9/2025 khách nhóm sỉ trung bình mỗi đơn bao nhiêu tiền hàng?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_36182821dc30,2026-06-10,03/2026 khach o duong Mai Chi Tho mua het bao nhieu tien?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],03/20
+q_363b113bf3bd,2026-05-24,T11/2025 trung binh 1 don gia tri bao nhieu?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_36edc7d2e347,2026-08-31,Th3/2026 thợ mô làm nhiều lựơt xe nhất?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_36f612a6b301,2026-08-21,Th4/2025 rieng ca chieu ban duoc tong bao nhieu tien vay?,True,1,False,ky_nay 2025-04-01→2025-04-30 [month],thang 4
+q_37305e6af527,2025-08-20,Tong tien ban hang tuan truoc?,True,1,False,ky_nay 2025-08-11→2025-08-17 [week],tuan truoc
+q_373a4857ee55,2026-08-21,Thang 3 nam 2025 co may ngay quan ban duoc tu 7.600.000 dong tro len?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],"nam 2025, ngay qua, thang 3"
+q_3751b6361499,2026-09-30,"Trong tháng 5/2026, bao nhiêu đơn có tiền hàng đạt 340.000 đồng trở lên?",True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_3766bf6cf1c6,2026-07-31,Q1/2026 tiem co tat ca bao nhieu don?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],1/20
+q_378a68e7ff82,2026-05-10,"Tiffy Dey hộp 25 vỉ x 4 viên đổi giá từ 1.200đ lên 1.300đ vào ngày 16/10/2025. 30 ngày kể từ ngày đó bán được nhiều hay ít hơn 30 ngày liền trước bao nhiêu %, tính theo viên?",True,2,False,ky_nay 2025-10-16→2025-11-14 [fwd_window] | ky_truoc 2025-09-16→2025-10-15 [back_window],"6/10, ke tu, ngay 1"
+q_37a4aca072a6,2026-06-24,Quý 4 năm 2025 tiệm chốt được bao nhiêu o đờ hả?,True,1,False,ky_nay 2025-10-01→2025-12-31 [quarter],"nam 2025, quy 4"
+q_37d9de7f49d9,2026-07-08,Dthu T4/2026 thay đổi mấy % so với tháng liền trước z?,True,2,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_truoc 2026-03-01→2026-03-31 [month],thang 4
+q_37ee6372a9be,2026-09-06,Dthu bình quân một đh T2/2026 được bnhiu?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_382bb57c049d,2026-05-10,Th3/2025 khách nào mua nhiều đơn nhất ha?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_383e2d2f282a,2026-08-21,T6/2025 mặt hàng mô cho lời nhiều nhất?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_38b56b8238b5,2025-07-09,Cửa hàng bán được bao nhiêu đơn trong 7 ngày gần nhất?,True,1,False,ky_nay 2025-07-03→2025-07-09 [rolling],gan nhat
+q_38c42c83e2ff,2026-08-21,Nhóm đá xay th5/2025 chiếm bao nhiêu phần trăm doanh thu của quán ạ?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_38f7a53691b3,2026-09-19,1/2026 dthu hơn hay kém th trước bnhiu %?,True,2,False,ky_nay 2026-01-01→2026-01-31 [month] | ky_truoc 2025-12-01→2025-12-31 [month],"1/20, thang truoc"
+q_393267cfdee1,2026-08-08,Mấy lô còn tồn có hạn dùng từ 08/08/2026 tới hết 06/12/2026 đang đọng bnhiu tiền vốn ha?,True,1,False,ky_nay 2026-08-08→2026-12-06 [range],"06/12, 08/08"
+q_393d0d4ee0e2,2026-04-16,Bữa qua bán ra được nhiêu lon vậy?,True,1,False,ky_nay 2026-04-15→2026-04-15 [day],hom qua
+q_3992410a9fd6,2026-05-10,30 ngày gần nhất bán được bao nhiêu tiền,True,1,False,ky_nay 2026-04-11→2026-05-10 [rolling],gan nhat
+q_39abf982c56e,2026-08-08,th7/2025 sp nao lãi gộp cao nhut z ta,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_39b7dafd15a3,2026-08-21,"5-2025 quan ban ra bao nhieu ly size L, cong het cac mon?",False,0,False,,
+q_39f9f14db2a0,2026-09-19,Th2/2026 có mấy đơn huỷ z?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_3a7a64626d2d,2026-09-19,Dthu từ khách nhóm thân thiết th này chiếm mấy % tổng dthu?,True,1,False,ky_nay 2026-09-01→2026-09-19 [month_to_date],thang nay
+q_3a9665052018,2026-09-30,Đơn có thu lại máy cũ 4-2026 chiếm mấy % tổng đơn?,False,0,False,,
+q_3ac94b30991c,2026-09-30,Th4/2026 máy mới chiếm mấy % tiền bán máy?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_3af7b33f08a6,2026-05-10,"Doanh thu T11/2025, T12/2025, T1/2026, ghi theo dung thu tu do giup minh",True,3,False,ky_nay 2025-11-01→2025-11-30 [month] | ky_khac 2025-12-01→2025-12-31 [month] | ky_khac 2026-01-01→2026-01-31 [month],"1/20, 2/20, thang 1"
+q_3b20bc6d6427,2026-07-08,"Lạc rang muối 200g lên giá 21.000đ từ ngày 01/09/2025; so 30 ngày kể từ ngày tăng giá với 30 ngày ngay trước, số gói bán ra tăng hay giảm bao nhiêu phần trăm?",True,2,False,ky_nay 2025-09-01→2025-09-30 [fwd_window] | ky_truoc 2025-08-02→2025-08-31 [back_window],"1/09, ke tu, ngay 0"
+q_3b30972705b7,2026-06-10,T1/2025 ban duoc bao nhieu tien?,True,1,False,ky_nay 2025-01-01→2025-01-31 [month],thang 1
+q_3b67b4302890,2026-09-19,05/2026 nhóm hải sản chiếm mấy % dthu cả quán?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],05/20
+q_3b70619cf8cc,2026-08-08,cko e coi tổng tiền hàng kác đơn nv Từ Hùng Hằng bán trog th4/2025 jùm mik nha 🙏,True,1,False,ky_nay 2025-04-01→2025-04-30 [month],thang 4
+q_3c935a94dc79,2025-12-17,"Đến hết 17/12/2025 chia tiền nợ còn lại theo tuổi nợ 0–7 ngày, 8–15 ngày và trên 15 ngày, từng nhóm có bao nhiêu tiền?",True,1,False,ky_nay None→2025-12-17 [snapshot],"17/12, den het"
+q_3cac54cdb967,2025-02-11,Dthu 7 ngay gan nhat bnhiu z?,True,1,False,ky_nay 2025-02-05→2025-02-11 [rolling],gan nhat
+q_3cd196c4dc4d,2026-09-19,7/2026 quan bi huy bao nhieu don?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],7/20
+q_3d231754f550,2026-08-21,"So với tháng ngay trước đó, dthu th4/2026 lên xuống mấy % vậy?",True,2,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_truoc 2026-03-01→2026-03-31 [month],thang 4
+q_3d519482d665,2026-04-10,Bữa nay quán bán được mấy đơn rồi?,True,1,False,ky_nay 2026-04-10→2026-04-10 [day],hom nay
+q_3d543c5b23c8,2026-09-06,Th6/2025 dthu nhóm bỉm tã chiếm bnhiu % dthu cả tháng?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_3da612131082,2026-08-31,Th2/2026 thợ mô hoa hồng cao nhất?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_3dd4582ecb10,2026-06-10,Doanh thu th 2/26 so tháng trước lên hay xuống bao nhiêu % z?,True,2,False,ky_nay 2026-02-01→2026-02-28 [month] | ky_truoc 2026-01-01→2026-01-31 [month],"thang 2, thang truoc"
+q_3de82903c4c6,2025-02-23,Nam nay tu ngay 1/1 toi het hom nay dthu duoc bnhiu roi?,True,1,False,ky_nay 2025-01-01→2025-02-23 [ytd],"het hom, nam nay, ngay 1"
+q_3e30ac2f9cc9,2026-05-15,"Đến hết ngày 15/05/2026, cửa hàng còn bao nhiêu khách hàng chưa trả hết nợ?",True,1,False,ky_nay None→2026-05-15 [snapshot],"5/05, den het, ngay 1"
+q_3e36677e62a9,2026-06-30,Tháng 6/2026 nhóm sữa bột chiếm bao nhiêu % doanh thu?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_3e6a7564332d,2026-08-31,Ngày nào trong tháng 10 năm 2025 tiệm bán được nhiều tiền nhất?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"nam 2025, thang 1"
+q_3e9418af3a85,2025-04-23,Dthu của tiệm trong 7 ngày gần nhất được bnhiu vậy?,True,1,False,ky_nay 2025-04-17→2025-04-23 [rolling],gan nhat
+q_3ed8a306be83,2026-05-10,Bìn quân 1 đơn th3/2026 bao nhiêu tiền?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_3ef55d803554,2025-11-07,Số đh hqua?,True,1,False,ky_nay 2025-11-06→2025-11-06 [day],hom qua
+q_3f0d7d1b1eb1,2026-08-21,"9/2025 khach Ha Duy Trung no them bao nhieu tien, tra bot duoc bao nhieu?",True,1,False,ky_nay 2025-09-01→2025-09-30 [month],9/20
+q_3f61cde37841,2026-09-06,Tháng 8/2025 ngày nào cửa hàng đắt khách nhất?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_3f807c338eb9,2026-09-19,Nhóm gỏi T12/2025 bán được tổng cộng bnhiu tiền?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_3fb7bbc8ec8a,2026-09-30,Th8/2025 bán được bao nhiêu máy không tính phụ kiện?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_403bdc83bc9c,2026-05-12,Top 5 khách hàng có công nợ lớn nhất đến hết ngày 12/05/2026 và số nợ của từng người?,True,1,False,ky_nay None→2026-05-12 [snapshot],"2/05, den het, ngay 1"
+q_4067c5f50ef7,2026-08-31,Th2/2026 tiệm lên bnhiu phiếu sửa xe?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_408c2137f088,2026-09-30,02/2026 mặt hàng nào lời nhiều nhất z?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],02/20
+q_409bb74c67b4,2026-05-10,06/2025 khách mua từ 6 đơn trở lên chiếm mấy % số khách có mua?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],06/20
+q_40a6843b2c37,2025-11-06,Tong tien ban hang hom qua?,True,1,False,ky_nay 2025-11-05→2025-11-05 [day],hom qua
+q_411cb8ae0f94,2026-08-08,"Lô Oresol 245 DHG hộp 20 gói gần hết hạn nhất, hsd là ngày mấy z?",False,0,False,,
+q_4162fa76a222,2026-09-30,iPhone 13 th này bán đc mấy chiếc rồi?,True,1,False,ky_nay 2026-09-01→2026-09-30 [month_to_date],thang nay
+q_416be8994e14,2026-07-22,T3/2025 co bao nhieu ngay doanh thu dat tu 34.000.000 dong tro len?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_41922e7c51ec,2026-06-10,Tháng 1 năm 2026 dthu ca chiều so với ca sáng chênh bao nhiêu %?,True,2,False,ky_nay 2026-01-01→2026-01-31 [month] | ky_truoc 2026-01-01→2026-01-31 [month],"nam 2026, thang 1"
+q_41a1d3818421,2026-08-08,Khách mua từ 6 đh trở lên chiếm bnhiu % số khách đã mua 08/2025 z?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],08/20
+q_41e962bb640f,2025-06-11,Tuần trước cửa hàng bán được bao nhiêu tiền nhỉ?,True,1,False,ky_nay 2025-06-02→2025-06-08 [week],tuan truoc
+q_4217e6c4305e,2026-08-21,Th11/2025 Bánh tiramisu bán đc mấy cái?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_4263ec258265,2026-06-30,Giá trị trung bình một đơn tháng 6/2026 là bao nhiêu?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_427b79554ed7,2026-09-06,"Nước giặt xả D-nee 3000ml tháng 9/2025, tiềng báng nhiêu z?",True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_429155557e11,2026-07-22,Tiền bán 6/2026 so tháng liền trước thay đổi mấy phần trawm?,True,2,False,ky_nay 2026-06-01→2026-06-30 [month] | ky_truoc 2026-05-01→2026-05-31 [month],6/20
+q_42f82d1abde5,2026-08-21,Th1/2026 so don ca chieu cao hay thap hon ca sang bao nhieu %?,True,2,False,ky_nay 2026-01-01→2026-01-31 [month] | ky_truoc 2026-01-01→2026-01-31 [month],thang 1
+q_435a38fb843b,2026-03-13,"Đến hết hôm nay, khách Ông Hiếu Anh còn thiếu bao nhiêu tiền góp, tính cả kỳ chưa tới hạn?",True,1,False,ky_nay None→2026-03-13 [snapshot],"den het, hom nay"
+q_4375c623b7c7,2026-08-31,"Trong tháng 1, ngày mà tiệm bán ra nhiều tiền nhất là ngày nào nhỉ?",True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_4497ce0830d8,2026-06-30,5/26 tiem thu phi ship duoc bao nhieu tien?,True,0,True,,5/26
+q_44ae4ba9010d,2026-05-10,05/2025 co bao nhieu don bi huy?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],05/20
+q_44f5bc574708,2026-04-22,"Tinh den het ngay 22/04/2026, khach con no o cac don dat qua 7 ngay tong bao nhieu tien?",True,1,False,ky_nay None→2026-04-22 [snapshot],"2/04, den het, ngay 2"
+q_459109bda652,2026-05-24,Tháng 10/2025 nhóm cà phê chiếm bao nhiêu % doanh thu?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_45cb42f4dc7b,2026-05-24,Doanh thu th8/2025 so voi thang lien truoc thay doi may %?,True,2,False,ky_nay 2025-08-01→2025-08-31 [month] | ky_truoc 2025-07-01→2025-07-31 [month],thang 8
+q_45d6cbc135b3,2026-08-21,"Từ hồi Trà vải (L) lên giá 47.000đ, so 30 ngày kể từ ngày đổi giá với 30 ngày trước đó, trung bình mỗi ngày số ly bán ra tăng hay giảm bao nhiêu %?",True,2,False,ky_nay None→None [fwd_window] | ky_truoc None→None [back_window],ke tu
+q_4633acb03075,2025-05-13,Tháng này tới giờ dthu so với tháng trước tăng hay giảm mấy % z?,True,2,False,ky_nay 2025-05-01→2025-05-13 [month_to_date] | ky_truoc 2025-04-01→2025-04-13 [month_to_date],"thang nay, thang truoc"
+q_4647d2db74e4,2026-09-06,Quý 3/2025 tiệm có bao nhiêu đơn hàng nhỉ?,True,1,False,ky_nay 2025-07-01→2025-09-30 [quarter],quy 3
+q_468d8ef6f198,2026-08-08,Th nay nhom khach si mua tong bnhiu dthu?,True,1,False,ky_nay 2026-08-01→2026-08-08 [month_to_date],thang nay
+q_473593cb045c,2026-09-30,"Quy 1/2026, 3 dong may nao ban duoc nhieu may nhat, xep tu nhieu den it?",True,1,False,ky_nay 2026-01-01→2026-03-31 [quarter],quy 1
+q_47d9c87fa49d,2026-05-10,"Tháng 2/2026 trong nhóm mắt mũi họng, mặt hàng nào bán được nhiều tiền nhất?",True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_4807f35b3b8c,2026-08-08,07/2025 bán được bao nhiêu miếng Băng cá nhân Urgo Transparent hộp 100 miếng?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],07/20
+q_4809f845893d,2026-08-21,Tháng 10/2025 có mấy bữa quán bán được từ 9.100.000 đồng trở lên?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_4812f4775924,2026-05-10,Th3/2025 bao nhieu khach mua it nhat 6 don?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_481401f5b908,2026-08-08,"Tính tại ngày 08/08/2026, lô Augmentin 625mg hộp 2 vỉ x 7 viên cận date nhứt hết hạn ngày nào?",True,1,False,ky_nay 2026-08-08→2026-08-08 [date],"8/08, ngay 0"
+q_481f40acc2f3,2026-08-21,Lai gop th6/2025 duoc bao nhieu z?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_4838293f61b5,2025-04-22,Tuần rồi bình quân mỗi đơn đem dề bao nhiêu doanh thu vậy?,True,1,False,ky_nay 2025-04-14→2025-04-20 [week],tuan roi
+q_48469d4fc5d1,2026-06-24,Th8/2025 doanh thu ngay nao cao nhat?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_4847f9b75280,2026-05-24,Tháng 11/25 ngày mô quán bná nhiều tiền nhất?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/25, thang 1"
+q_48958d7402b0,2026-06-30,"So với tháng trước đó, doanh thu tháng 6/2026 tăng hay giảm mấy phần trăm?",True,2,False,ky_nay 2026-06-01→2026-06-30 [month] | ky_truoc 2026-05-01→2026-05-31 [month],"thang 6, thang truoc"
+q_48964017991a,2026-06-10,Cho tôi hỏi tháng 6/2025 trung bình mội đơn hàng mang lại bao nhiêu doanh thu?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_48b77f4a1b30,2026-08-08,"11/2025 khách Vương Chi Hà nợ thêm bnhiu tiền, trả bớt nợ được bnhiu?",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],11/20
+q_48cbee311a9e,2026-02-25,Cho em hỏi doanh thu từ mùng 1 tháng này đến hết hôm nay so với cùng kỳ tháng trước tăng hay giảm bao nhiêu phần trăm ạ?,True,2,False,ky_nay 2026-02-01→2026-02-25 [month_to_date] | ky_truoc None→2026-02-25 [snapshot],"cung ky, den het, hom nay, thang nay, thang truoc"
+q_49286a4905a7,2026-08-21,Dthu th 7/26 được nhiêu z?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_49a2ce6052b9,2026-06-30,"Trong tháng 5/2026, bỉm size XL của mọi hãng bán được tổng cộng mấy bịch?",True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_49b8346acb90,2026-07-08,Th11/2025 doanh thu tiệm được bao nhiêu vậy?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_49f27251c376,2026-04-03,30 ngày gần nhất doanh thu được bao nhiêu?,True,1,False,ky_nay 2026-03-05→2026-04-03 [rolling],gan nhat
+q_4ad0311ba5f9,2025-08-15,"Tien ban hom qua, tong bao nhieu nhi?",True,1,False,ky_nay 2025-08-14→2025-08-14 [day],hom qua
+q_4b0def80878e,2026-06-25,Hôm qua bán được nhiêu tiền vậy?,True,1,False,ky_nay 2026-06-24→2026-06-24 [day],hom qua
+q_4b260819febf,2026-08-21,"Trong T5/2025, trung bình một đơn có doanh thu bao nhiêu?",True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_4b2f4e1688fa,2026-08-08,T4/2026 có mấy đơn bị huỷ ha?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_4b3bc2d8b207,2025-12-13,Den het ngay 13/12/2025 tiem con bao nhieu khach no chua tra xong?,True,1,False,ky_nay None→2025-12-13 [snapshot],"3/12, den het, ngay 1"
+q_4b82c6814a0d,2026-09-30,Bỏ phụ kiện ra thì dthu máy mới th này chiếm bnhiu % tổng dthu máy?,True,1,False,ky_nay 2026-09-01→2026-09-30 [month_to_date],thang nay
+q_4bb10819b3a3,2026-09-19,alo th3/2025 wan mik huy bnhiu don z ta,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_4c24acd737a8,2026-09-30,"Đơn bán 02/2026, trừ tiền bớt với tiền máy cũ thu lại rồi, khách phải trả tổng cộng bao nhiêu vậy?",True,1,False,ky_nay 2026-02-01→2026-02-28 [month],02/20
+q_4c849b6df27d,2026-08-21,Có bao nhiêu khách mua từ 9 đơn trở lên trong th12/2025 z?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_4c8fda6cf0df,2026-05-11,"Tại ngày 11/05/2026 ai đang nợ tiệm nhiều nhất, cho top 3 kèm số nợ từng người nha.",True,1,False,ky_nay 2026-05-11→2026-05-11 [date],"1/05, ngay 1"
+q_4cb8711073bd,2025-02-11,Tuan truoc so don ca chieu hon hay kem ca sang bnhiu %?,True,2,False,ky_nay 2025-02-03→2025-02-09 [week] | ky_truoc 2025-02-03→2025-02-09 [week],tuan truoc
+q_4cdc20a8b400,2026-07-22,Tỉ lệ huỷ đơn th3/2025 mấy phần trăm vậy?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_4cffc6443c2c,2026-07-08,Dthu th1/2026 đc bnhiu z?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_4d15340145ad,2026-08-31,T8/2026 ngay nao ban duoc nhieu tien nhat?,True,1,False,ky_nay 2026-08-01→2026-08-31 [month],thang 8
+q_4d20e306e0bc,2026-06-07,Cuoi ngay hom nay co may mat hang dang chay hang?,True,1,False,ky_nay 2026-06-07→2026-06-07 [day],hom nay
+q_4d7022ecbc52,2026-09-06,Dthu thang 5/26 so voi thang 5/25 tang truong bnhiu %?,True,2,False,ky_nay 2026-05-01→2026-05-31 [month] | ky_truoc 2025-05-01→2025-05-31 [month],thang 5
+q_4df5a9b089cd,2025-04-27,Tu dau nam toi hom nay quan co tat ca bao nhieu don?,True,1,False,ky_nay 2025-01-01→2025-04-27 [ytd],"dau nam, hom nay"
+q_4df64734eb4d,2026-07-22,Th1/2025 bao nhieu don co dthu tu 410.000 dong tro lne?,True,1,False,ky_nay 2025-01-01→2025-01-31 [month],thang 1
+q_4dff582efe40,2025-09-26,"Tuần trước, 5 sản phẩm nào bán chạy nhất?",True,1,False,ky_nay 2025-09-15→2025-09-21 [week],tuan truoc
+q_4e1c4ca89508,2026-09-30,Dịp Tết Nguyên đán 2026 mặt hàng chi bán chạy nhất rứa?,True,1,False,ky_nay 2026-02-10→2026-02-26 [tet],tet
+q_4e280a1755de,2026-08-31,Lượt xe sửa điện tháng 8/25 bnhiu?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_4e331ce1a042,2025-10-25,Tuần trước ca sáng bán được bao nhiêu tiền?,True,1,False,ky_nay 2025-10-13→2025-10-19 [week],tuan truoc
+q_4e3c77d294d3,2026-08-08,"hoi nhanh, th5/2026 dthu don ban tai quay chiem bn % tong dthu kua shop mik luon",True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_4e7e3bde5a15,2026-07-31,Cho em xin tỗng doanh thu quý 3/2025 cũa cửa hàng ạ.,True,1,False,ky_nay 2025-07-01→2025-09-30 [quarter],quy 3
+q_4eb97c2cc49a,2026-05-10,Th2/2026 trung bình 1 đơn mang về bnhiu dthu?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_4ef479fd4803,2026-05-24,"So voi thang lien truoc, th10/2025 doanh thu len xuong bao nhieu %?",True,2,False,ky_nay 2025-10-01→2025-10-31 [month] | ky_truoc 2025-09-01→2025-09-30 [month],"0/20, thang 1"
+q_4f77d67fdf9c,2026-07-08,T11/2025 bao nhieu ngay doanh thu tu 9.500.000d tro lne?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_4fe561cc6493,2026-09-19,07/2025 tỉ lệ đơn huỷ bnhiu %?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],07/20
+q_50152c2cebd6,2026-05-03,Đầu năm tới chừ quán được tổng cộng mấy đơn rồi?,True,0,True,,dau nam
+q_501cc0b20b1b,2026-08-08,"Kể từ ngày Acyclovir Stella kem 5% tuýp 5g tăng giá lên 18.000đ/tuýp, số tuýp bán trong 30 ngày đầu so với 30 ngày ngay trước đó nhiều hơn hay ít hơn bao nhiêu phần trăm?",True,2,False,ky_nay None→None [fwd_window] | ky_truoc None→None [back_window],"30 ngay dau, ke tu"
+q_508b7320c153,2026-08-31,"Trong quý 3 năm 2025, doanh thu của cửa hàng được bao nhiêu tiền?",True,1,False,ky_nay 2025-07-01→2025-09-30 [quarter],"nam 2025, quy 3"
+q_5160c511711f,2026-07-22,Tiền bán Đậu phụ rán giòn tháng 10/2025 là bao nhiêu?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_51621c1657c5,2026-07-31,3-2026 nhom may moi ban duoc bnhiu tien the?,False,0,False,,
+q_5176249df658,2026-02-03,Doanh thu trung bình trên một đơn tuần trước là bao nhiêu?,True,1,False,ky_nay 2026-01-26→2026-02-01 [week],tuan truoc
+q_51b4d4e4e063,2025-09-30,"Hết ngày hôm nay, tổng số tiền góp khách chưa trả, kể cả các kỳ chưa tới hạn, là bao nhiêu?",True,1,False,ky_nay None→2025-09-30 [snapshot],"het ngay, hom nay"
+q_51b767a7dd05,2026-06-30,"Từ ngày 07/06/2025, Pho mát Con Bò Cười hộp 8 miếng tăng giá lên 38.000đ. So 30 ngày kể từ ngày 07/06/2025 với 30 ngày ngay trước đó, số hộp bán ra thay đổi bao nhiêu phần trăm?",True,2,False,ky_nay 2025-06-07→2025-07-06 [fwd_window] | ky_truoc 2025-05-08→2025-06-06 [back_window],"7/06, ke tu, ngay 0"
+q_51ba2dc4fd49,2025-12-09,Tuần trước doanh thu bình quân mỗi đơn hàng là bao nhiêu?,True,1,False,ky_nay 2025-12-01→2025-12-07 [week],tuan truoc
+q_51f4751e4eb3,2026-08-08,"Th3/2026, dthu các đơn trả xi ô đi và các đơn trả ví điện tử lần lượt là bnhiu?",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_520e8c3f5c02,2026-09-10,dthu cua don ban qua Zalo OA thang nay bnhiu?,True,1,False,ky_nay 2026-09-01→2026-09-10 [month_to_date],thang nay
+q_5217c0d650c8,2026-07-22,Trong thang 4/25 hom nao quan ban dc nhieu tien nhat z?,True,1,False,ky_nay 2025-04-01→2025-04-30 [month],thang 4
+q_522627a83f38,2026-07-22,"Doanh thu th 12/25, th 1/26, th 2/26 mỗi tháng bao nhiêu, ghi theo thứ tự đó nha?",True,3,False,ky_nay 2025-12-01→2025-12-31 [month] | ky_khac 2026-01-01→2026-01-31 [month] | ky_khac 2026-02-01→2026-02-28 [month],"2/25, thang 1, thang 2"
+q_527c4e439966,2026-09-02,Tại ngày 02/09/2026 có bnhiu khách quá hạn góp z?,True,1,False,ky_nay 2026-09-02→2026-09-02 [date],"2/09, ngay 0"
+q_52dfb164f8ad,2026-06-10,"Trong T5/2026, ngày mô dthu lên cao nhất?",True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_5336ec08027b,2026-05-10,Cho tôi biết doanh thu hôm qua.,True,1,False,ky_nay 2026-05-09→2026-05-09 [day],hom qua
+q_5355ac6722f8,2026-06-30,Tháng 6/2026 tổng tiền phí ship là bao nhiêu?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_53b6abf6f47b,2026-03-31,Cho tôi hỏi doanh thu trung bình mỗi đơn của tuần trước là bao nhiêu?,True,1,False,ky_nay 2026-03-23→2026-03-29 [week],tuan truoc
+q_5415c46d8a2e,2026-07-08,Th2/2026 có mấy ngày dthu từ 18 triệu trở lên z?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_545c34b86eb0,2026-06-24,Chong quý 1/2025 tiệm bán được bao nhiêu đơn?,True,1,False,ky_nay 2025-01-01→2025-03-31 [quarter],quy 1
+q_547fb41358ed,2026-09-06,Th 6/26 dthu so với th 6/25 tăng hay giảm mấy %?,True,2,False,ky_nay 2026-06-01→2026-06-30 [month] | ky_truoc 2025-06-01→2025-06-30 [month],thang 6
+q_54bbf080f0cd,2026-05-24,Liệt kê 3 mặt hàng bán chạy nhất tháng 6/2025.,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_54e2a0754e8b,2026-08-21,Tháng 1/2026 nhóm cà phê bán được bao nhiêu ly?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_5529c849e209,2026-05-10,"T5/2025 bao nhieu % khach mua tu 6 don tro len, tinh tren so khach co mua?",True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_55929bed8ced,2026-07-08,"mk tinh set nguog tang qa ne, th2/2025 bn don tien hang tu 190k tro len gium mik nha",True,1,False,ky_nay 2025-02-01→2025-02-28 [month],thang 2
+q_5598af728eea,2026-08-08,Th11/2025 top 3 sp bán chạy nhất là gì z?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_5599ff7c9e28,2026-06-30,"Từ đầu năm nay đến hôm nay, tổng doanh thu cửa hàng là bao nhiêu?",True,1,False,ky_nay 2026-01-01→2026-06-30 [ytd],"dau nam, hom nay"
+q_55cfcde4c03f,2026-02-22,tuần trc ca chiều dduowcj mí đơn tổg cộg zị ha,True,1,False,ky_nay 2026-02-09→2026-02-15 [week],tuan truoc
+q_55e2e56d2787,2026-07-08,Thang 5 nam 2026 ngay nao tiem ban duoc nhieu tien nhat vay?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],"nam 2026, thang 5"
+q_569dcd86abb4,2026-08-31,Th3/2026 trung bình mỗi thứ Tư tiệm xửa mấy nượt xe?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_56f2859cb47d,2026-09-06,Doanh thu bình quân 1 đơn T12/2025 là bao nhiêu nhỉ?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_56ffb6b638d7,2026-07-22,"Má lợn nướng nước mắm đổi giá từ 99.000đ lên 104.000đ vào ngày 15/04/2026. 30 ngày kể từ ngày đó bán được nhiều hay ít hơn 30 ngày liền trước bao nhiêu %, tính theo đĩa?",True,2,False,ky_nay 2026-04-15→2026-05-14 [fwd_window] | ky_truoc 2026-03-16→2026-04-14 [back_window],"5/04, ke tu, ngay 1"
+q_57028085023b,2026-08-08,Lợi nhuận gộp 2/2026 được bnhiu?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],2/20
+q_575157e63e1c,2026-09-19,5 khách mua nhiều tiền nhất th3/2025 là ai z?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_57632dfbe478,2026-08-08,11-2025 tiệm bán đc bnhiu tiền?,False,0,False,,
+q_576830198619,2026-05-10,5-2025 khách nữ mua bnhiu tiền?,False,0,False,,
+q_57942b4c8feb,2026-09-06,Th11/2025 đếm đh huỷ được bnhiu?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_5816b4178500,2026-07-22,Th1/2026 dthu so với th1/2025 lên hay xuống bao nhiêu % thế?,True,2,False,ky_nay 2026-01-01→2026-01-31 [month] | ky_truoc 2025-01-01→2025-01-31 [month],thang 1
+q_58215441e762,2026-07-22,Doanh thu thang 5/2026 dem so voi thang 5 nam ngoai thi thay doi bao nhieu phan tram?,True,2,False,ky_nay 2026-05-01→2026-05-31 [month] | ky_truoc 2026-05-01→2026-05-31 [month],"nam ngoai, thang 5"
+q_583a942f4d85,2026-08-08,Khách nhóm thân thiết tháng ni bìn quân mỗi đơn mua bao nhiêu tiền rứa?,False,0,False,,
+q_585664a97754,2025-11-02,Hôm qua có mấy đơn rứa?,True,1,False,ky_nay 2025-11-01→2025-11-01 [day],hom qua
+q_5860bae9659f,2026-01-28,Dthu th này so với cùng số ngày đầu th trước hơn hay kém mấy % z?,True,2,False,ky_nay 2026-01-01→2026-01-28 [month_to_date] | ky_truoc 2025-12-01→2025-12-28 [month_to_date],"dau thang, thang nay"
+q_588a7c489b8e,2026-09-19,"Tien ban th8/2026 so th8/2025, cao hay thap hon bnhiu %?",True,2,False,ky_nay 2026-08-01→2026-08-31 [month] | ky_truoc 2025-08-01→2025-08-31 [month],thang 8
+q_5896bf2cce00,2026-05-24,Tỉ lệ đh huỷ T4/2025 bnhiu % z?,True,1,False,ky_nay 2025-04-01→2025-04-30 [month],thang 4
+q_596f5cfa121c,2026-08-21,Tháng 5/2026 bán Cà phê muối (M) được bao nhiêu tiền?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_5971d8343cc7,2026-07-22,Tháng 9/2025 Cháo ngao bán được mấy nồi?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_599716cf226a,2026-09-19,"Dthu nhân viên mã NV004 th3/2026, bnhiu?",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_599dbed4790f,2026-04-05,Hôm qua tiệm có bao nhiêu đơn hàng?,True,1,False,ky_nay 2026-04-04→2026-04-04 [day],hom qua
+q_59b28582f30e,2025-07-06,"Đến ngày 06/07/2025 tiền khách còn nợ chia theo tuổi nợ 0–7, 8–15 và trên 15 ngày thì mỗi nhóm nhiêu z?",True,1,False,ky_nay 2025-07-06→2025-07-06 [date],"6/07, ngay 0"
+q_59f27903845e,2025-05-01,"Tới hôm nay, xe đã giao tổng cộng mấy cuộn Dây điện Cadivi VCmd 2x2.5 cuộn 100m cho khách đặt tháng 4/2025?",True,2,False,ky_nay 2025-05-01→2025-05-01 [day] | ky_khac 2025-04-01→2025-04-30 [month],"hom nay, thang 4"
+q_5a5a452f87d4,2026-07-22,5/2025 dthu ca chieu chenh ca sang may %?,True,2,False,ky_nay 2025-05-01→2025-05-31 [month] | ky_truoc 2025-05-01→2025-05-31 [month],5/20
+q_5a9e0b8dce13,2026-09-30,Quý 1/2026 tiệm nhận bảo hành bnhiu lượt máy hả?,True,1,False,ky_nay 2026-01-01→2026-03-31 [quarter],quy 1
+q_5aad27b686f6,2025-12-23,Tuan truoc trung binh 1 don hang co doanh thu bao nhieu?,True,1,False,ky_nay 2025-12-15→2025-12-21 [week],tuan truoc
+q_5ab41aca6861,2026-07-22,"Trong th3/2026, mấy % khách hàng mua từ 9 đơn trở lên vậy?",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_5ac3fc3e264c,2026-09-06,Đơn chuyển khoản 7/25: dthu chiếm bnhiu % tổng dthu 7/25?,True,0,True,,7/25
+q_5aef26f2ebb6,2026-07-08,Th4/2026 khách nữ mua tổng cộng bnhiu tiền z?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_5b4680c1ccf2,2026-06-14,Tuan nay ban chay nhat la mat hang nao?,True,1,False,ky_nay 2026-06-08→2026-06-14 [week_to_date],tuan nay
+q_5b50ea8b0bae,2026-05-10,Tiền bán Savi Losartan 50mg hộp 3 vỉ x 10 viên tháng 2/2025 là bao nhiêu?,True,1,False,ky_nay 2025-02-01→2025-02-28 [month],thang 2
+q_5bfa542cd172,2026-07-31,6-2025 tổng tiền khách phải trả là bnhiu nhỉ?,False,0,False,,
+q_5c0acaa8786b,2026-08-01,"Đến hết hôm nay, khách Ngô Nam Ngân còn thiếu bao nhiêu tiền góp, tính cả kỳ chưa tới hạn?",True,1,False,ky_nay None→2026-08-01 [snapshot],"den het, hom nay"
+q_5c5d114695ca,2026-09-06,Ti le don huy th6/2026 la bao nhieu %?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_5c681795e6a0,2025-12-01,"Trong các đơn đặt tháng 11/2025, tính tới hôm nay có bao nhiêu đơn đã được giao từ 2 đợt trở lên?",True,2,False,ky_nay 2025-11-01→2025-11-30 [month] | ky_khac None→2025-12-01 [snapshot],"1/20, hom nay, thang 1"
+q_5cb9576befc6,2026-06-24,Tong cong thang 5 nam 2025 tiem ban duoc bao nhieu tien?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],"nam 2025, thang 5"
+q_5cd8a3c09d08,2026-06-30,Tháng 12/2025 vâu chơ giảm cho khách tổng bao nhiêu?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_5d05956fc827,2026-08-21,Dthu ca chiều 3-2026 cao hay thấp hơn ca sáng bnhiu %?,False,0,False,,
+q_5d6f195dd3e7,2026-06-10,Hồi tháng 1 năm 2025 bình quân mỗi đơn đem về bao nhiêu doanh thu thế?,True,1,False,ky_nay 2025-01-01→2025-01-31 [month],"nam 2025, thang 1"
+q_5da7465fcd06,2026-06-10,Th1/2025 nhập hàng tổng bnhiu tiền?,True,1,False,ky_nay 2025-01-01→2025-01-31 [month],thang 1
+q_5dce492e5f1a,2026-07-08,Dthu T3/2026 tăng hay giảm mấy % so cùng kỳ năm trước?,True,2,False,ky_nay 2026-03-01→2026-03-31 [month] | ky_truoc 2025-03-01→2025-03-31 [month],"cung ky, nam truoc, thang 3"
+q_5df03c21af61,2026-07-22,Số đh ca chiều th4/2025 nhiều hay ít hơn ca sáng mấy %?,True,2,False,ky_nay 2025-04-01→2025-04-30 [month] | ky_truoc 2025-04-01→2025-04-30 [month],thang 4
+q_5e195033ee9d,2026-09-19,Doanh thu của Bia Sài Gòn Special lon trong tháng 8 năm 2025 là bao nhiêu?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],"nam 2025, thang 8"
+q_5e570feb5c4c,2026-05-10,"So với cùng tháng năm trước, doanh thu tháng 3 năm 2026 thay đổi mấy phần trăm?",True,2,False,ky_nay 2026-03-01→2026-03-31 [month] | ky_truoc 2026-02-01→2026-02-28 [month],"nam 2026, nam truoc, thang 3"
+q_5e7b3b2822b9,2026-08-08,"Tu khi Hapacol 250 hop 24 goi tang gia len 2.100d/goi, so goi ban trong 7 ngay ke tu ngay tang so voi 7 ngay lien truoc nhieu hay it hon bao nhieu %?",True,2,False,ky_nay None→None [fwd_window] | ky_truoc None→None [back_window],ke tu
+q_5ec7806c7f29,2026-08-31,"Trong tháng 1/2026, bao nhiêu xe Air Blade khác nhau vào tiệm?",True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_5f2d481dc5d4,2025-12-09,"Từ đầu tháng này đến hết hôm nay, doanh thu thay đổi bao nhiêu % so với cùng kỳ tháng trước?",True,2,False,ky_nay 2025-12-01→2025-12-09 [month_to_date] | ky_truoc 2025-11-01→2025-11-09 [month_to_date],"cung ky, dau thang, den het, hom nay, thang truoc"
+q_5f4f4f35f9fb,2026-07-22,Th3 trung bình mỗi đơn được bao nhiêu doanh thu?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_5f750197dcc0,2026-07-22,Cho mình hỏi tháng này khách nhóm thân thiết đóng góp bao nhiêu phần trăm trên tổng doanh thu của quán?,True,1,False,ky_nay 2026-07-01→2026-07-22 [month_to_date],thang nay
+q_5fcac0749f24,2025-09-27,"7 ngày gần nhất shop mik kó bnhiu món hok bán ra đc cái nào zị, coi nha e",True,1,False,ky_nay 2025-09-21→2025-09-27 [rolling],gan nhat
+q_60022421ae73,2026-08-08,Vitamin C 500mg Quapharco hop 10 vi x 10 vien thang 9 nam 2025: lay so vien nhap vo tru so vien ban ra thi duoc bao nhieu?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],"nam 2025, thang 9"
+q_6019a30cd4fe,2025-10-05,Tu dau nam toi nay duoc bnhiu don?,True,1,False,ky_nay 2025-01-01→2025-10-05 [ytd],dau nam
+q_6022f2c64913,2026-08-21,Tháng 7/26 trừ hết chi phí quán còn lãi ròng bnhiu?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_603c21ebef86,2026-09-30,Th này bnhiu % đh có thu máy cũ của khách z?,True,1,False,ky_nay 2026-09-01→2026-09-30 [month_to_date],thang nay
+q_605c59254c52,2026-09-06,"cho mik hoi xiu, thang nay don tra tien mat voi don tra vi dien tu, tung ben dthu bnhiu",True,1,False,ky_nay 2026-09-01→2026-09-06 [month_to_date],thang nay
+q_6066d5e1f466,2026-05-10,12-2025 có mấy khách mua từ 6 đơn trở lên nhỉ?,False,0,False,,
+q_60f97553a06e,2025-05-02,"coi jùm mik, từ đầu năm nay tới hết hôm nay dthu kủa shop đc bnhiu rooif đó??",True,1,False,ky_nay 2025-01-01→2025-05-02 [ytd],"dau nam, het hom"
+q_611bf24dd2f9,2026-08-08,"Xem giúp mình tháng 11/2025, nhà cung cấp uy tín của cửa hàng là ai?",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_6172ede181a5,2026-09-19,"Dthu tháng 3 năm 2026 của đơn bán qua Zalo OA và của đơn bán qua điện thoại, mỗi kênh bnhiu?",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],"nam 2026, thang 3"
+q_617cccfd98d1,2026-06-10,Hồi T3/2025 bị huỷ mấy đơn vậy?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_618001244985,2026-06-10,8-2025 bi huy may don?,False,0,False,,
+q_61cfc26159fa,2025-05-03,Doanh thu bữa qua của quán tổng cộng được bao nhiêu?,True,1,False,ky_nay 2025-05-02→2025-05-02 [day],hom qua
+q_62010007db00,2026-08-21,"Dthu th4, th5, th6 mỗi tháng được nhiêu z?",True,3,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_khac 2026-05-01→2026-05-31 [month] | ky_khac 2026-06-01→2026-06-30 [month],"thang 4, thang 5, thang 6"
+q_621a456cc773,2026-06-10,T1/2026 khách mua từ 2 đơn trở lên là mấy người z?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_622165f81458,2025-09-27,Hôm nay tiệm bán được bao nhiêu đơn rồi nhỉ?,True,1,False,ky_nay 2025-09-27→2025-09-27 [day],hom nay
+q_624351bf768f,2026-08-08,6/2025 các đơn trả bằng chuyển khoản đem về bao nhiêu doanh thu?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],6/20
+q_625ec1abde64,2026-06-26,Hnay tiệm bán đc bnhiu tiền rồi?,True,1,False,ky_nay 2026-06-26→2026-06-26 [day],hom nay
+q_62cb89435b45,2026-05-10,T6/2025 thuoc ke don ban duoc bao nhieu tien?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_62ec9b7dc79b,2026-06-10,Cho tôi 5 mặt hàng bán chạy nhất trong tháng 3/2025.,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_632bc2910cb3,2026-05-10,Dthu các thuốc có hoạt chất Povidon iod tháng 7/25 bnhiu?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_6396e1b202a6,2026-08-21,"Dthu th7, th8, th9/2025 lan luot moi thang bao nhieu?",True,3,False,ky_nay 2026-07-01→2026-07-31 [month] | ky_khac 2026-08-01→2026-08-31 [month] | ky_khac 2025-09-01→2025-09-30 [month],"thang 7, thang 8, thang 9"
+q_63cf15f33b1c,2026-08-21,"Tháng 11 năm 2025, nhóm sinh tố có mặt hàng nào bán được nhiều ly nhất?",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"nam 2025, thang 1"
+q_64045044c253,2026-08-21,Th 3/25 quan ban ra bao nhieu cai Banh croissant?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_647711394825,2026-08-08,10-2025 nhân viên Đinh Đạt Đức bán được bnhiu tiền vậy?,False,0,False,,
+q_64e62d4bea7d,2026-03-03,Dthu bq mỗi đơn tuần trc là bnhiu?,True,1,False,ky_nay 2026-02-23→2026-03-01 [week],tuan truoc
+q_650a53225054,2026-07-31,Tổng tiền thu mua máy cũ của khách 6-2025 là bao nhiêu?,False,0,False,,
+q_65162e8741f6,2026-07-22,"chị ơi, bữa 14/11/2025 mik tăng giá bo luc lac khoai tay tu 119k len 125k á, mún bít 7 ngay tu bua do so vs 7 ngay trc do bán nhìu hay ít hơn mí %",True,2,False,ky_nay 2025-11-14→2025-11-14 [date] | ky_truoc 2025-11-13→2025-11-13 [day],14/11
+q_656e9a89ca5d,2026-08-21,"Khach mua tu 12 don tro len trong thang 12 nam 2025, dem duoc bao nhieu nguoi?",True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"nam 2025, thang 1"
+q_65b2eba9c91c,2026-08-21,Laix gộp 5/2025 bnhiu?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],5/20
+q_663c209f7209,2026-05-20,Hom qua chot duoc may don?,True,1,False,ky_nay 2026-05-19→2026-05-19 [day],hom qua
+q_665fbfdbfb70,2026-08-21,"Đơn bán tại quầy tháng ni, doanh thu mấy đồng?",False,0,False,,
+q_66ee0467ce9e,2025-03-30,Hqua có bnhiu đh z?,True,1,False,ky_nay 2025-03-29→2025-03-29 [day],hom qua
+q_67412073e116,2026-07-22,"Tính đến hết ngày 22/07/2026, 5 khách nào đang nợ nhiều nhất, mỗi người còn nợ bao nhiêu?",True,1,False,ky_nay None→2026-07-22 [snapshot],"2/07, den het, ngay 2"
+q_6779a7bd2b29,2026-08-21,"Trong nhửng khách có mua tháng 9/2025, khách mua ít nhất 12 đơn chiếm bao nhiêu phần trăm?",True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_682e548226be,2026-08-08,"Doanh thu 3 thang lien nhau tinh toi 3-2026, tung thang bao nhieu, xep tu thang cu toi thang gan nhat?",True,0,True,,gan nhat
+q_6830bf77b8c5,2026-06-30,"Trong tháng 11/2025, ai là nhà cung cấp đáng tin cậy của cửa hàng?",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_68d46c34c960,2026-08-08,"Dthu th5/2026, th6/2026, th7/2026 lần lượt bnhiu?",True,3,False,ky_nay 2026-05-01→2026-05-31 [month] | ky_khac 2026-06-01→2026-06-30 [month] | ky_khac 2026-07-01→2026-07-31 [month],"thang 5, thang 6, thang 7"
+q_690a98214478,2025-11-24,Doanh thu thang nay so voi cung so ngay cua thang truoc tang hay giam may %?,True,2,False,ky_nay 2025-11-01→2025-11-24 [month_to_date] | ky_truoc 2025-10-01→2025-10-24 [month_to_date],"thang nay, thang truoc"
+q_693e2a329c10,2025-07-29,Top 5 khach chi nhieu tien nhat tuan roi la ai vay?,True,1,False,ky_nay 2025-07-21→2025-07-27 [week],tuan roi
+q_699d8e8772a3,2026-09-19,Th2/2026 nhân viên mã NV001 bán tổng cộng nhiêu tiền?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_69a3f480bb53,2026-07-28,Hqua dthu bnhiu thế?,True,1,False,ky_nay 2026-07-27→2026-07-27 [day],hom qua
+q_69b7d08012e5,2026-03-27,Tới ngày 27/03/2026 tiền khách nợ chưa thu còn bnhiu?,True,1,False,ky_nay 2026-03-27→2026-03-27 [date],"7/03, ngay 2"
+q_69cc1e2a87ca,2026-05-10,Tháng 3/2025 có mấy ngày doanh thu đạt 10.000.000 đồng trở lên?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_69dbf1d3cdc5,2026-06-10,5-2026 khách nào mua nhiều đơn nhất hả?,False,0,False,,
+q_6a138cfe1257,2026-09-30,Th8/2025 dthu tăng hay giãm mấy % so với tháng trước đó?,True,2,False,ky_nay 2025-08-01→2025-08-31 [month] | ky_truoc 2025-07-01→2025-07-31 [month],"thang 8, thang truoc"
+q_6a52cddced60,2026-09-19,Doanh thu của Sụn gà rang muối trong tháng 8 năm 2026 là bao nhiêu?,True,1,False,ky_nay 2026-08-01→2026-08-31 [month],"nam 2026, thang 8"
+q_6a752a1d37b5,2026-08-21,"Tháng 2/2026 trong nhóm bánh, mặt hàng nào bán được nhiều tiền nhất?",True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_6ad74d9cb245,2025-05-20,Dthu binh quan mot dh tuan truoc bao nhieu tien?,True,1,False,ky_nay 2025-05-12→2025-05-18 [week],tuan truoc
+q_6b3e51830db0,2026-09-06,Đến hết ngày 06/09/2026 đếm khách còn thiếu tiền tiệm được nhiêu người z?,True,1,False,ky_nay None→2026-09-06 [snapshot],"6/09, den het, ngay 0"
+q_6b5bd6d88cc7,2026-08-31,Quý 4/2025 phiếu bảo hành chiếm bnhiu % số phiếu thu tiền rứa?,True,1,False,ky_nay 2025-10-01→2025-12-31 [quarter],quy 4
+q_6b6025944b9d,2026-09-19,Doanh thu của Trứng chiên thịt bằm trong tháng 7 năm 2025 là bao nhiêu?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],"nam 2025, thang 7"
+q_6b9c81934530,2026-09-19,T10/2025 quan ban duoc bao nhieu tien?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_6bd9c92d0d7e,2026-06-10,Doanh thu tháng 2/2026 lên hay xuống mấy % so với cùng kỳ năm rồi?,True,2,False,ky_nay 2026-02-01→2026-02-28 [month] | ky_truoc 2025-02-01→2025-02-28 [month],"cung ky, thang 2"
+q_6bf3b5bc42fc,2026-07-22,Th5 đếm giùm có mấy khách mua từ 9 đơn trở lên?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_6bf3c6b59786,2026-07-22,Thang 1 nam 2026 don ban tai quay chiem may % tong dthu?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],"nam 2026, thang 1"
+q_6c18fd06a115,2025-06-06,Hom nay ban duoc may don?,True,1,False,ky_nay 2025-06-06→2025-06-06 [day],hom nay
+q_6c4f54f5fb85,2026-08-08,Nhung sp nao con hang trong kho co hsd tu 08/08/2026 toi het 05/01/2027 vay?,True,1,False,ky_nay 2026-08-08→2027-01-05 [range],"05/01, 08/08"
+q_6c89c24d2349,2026-06-30,Tháng 7/2025 có mấy đơn tiền hàng từ 780.000đ trở lên?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_6c9f50b55906,2026-07-08,Khách mua từ 5 đh trở lên th6/2025 chiếm bnhiu % tất cả khách đạ mua tháng đó?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_6cb10c20f215,2026-09-06,Thang 7/25 khach tra no mua chiu tong bnhiu tien?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_6cb40ee1f329,2026-08-08,Cho mình xem Costar Omega 3 1000mg lọ 100 viên trong T12/2025 bán được bao nhiêu lọ?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_6cd986ac9717,2026-05-10,Số đơn huỷ th2/2025?,True,1,False,ky_nay 2025-02-01→2025-02-28 [month],thang 2
+q_6d42e3d7b79b,2026-06-01,"Den het ngay 01/06/2026, khach con chua dong bao nhieu tien thuoc cac ky gop da qua han?",True,1,False,ky_nay None→2026-06-01 [snapshot],"1/06, den het, ngay 0"
+q_6d9ad1c46242,2026-06-04,Tuần trước tổng doanh thu được bao nhiêu nhỉ?,True,1,False,ky_nay 2026-05-25→2026-05-31 [week],tuan truoc
+q_6dc8a5070da6,2026-08-08,Zyrtec 10mg hộp 1 vỉ x 10 viên th7/2026 bán được tổng bn viên?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_6dd1a1921d60,2025-09-30,Tuần trước bình quân mỗi o đờ mang về bao nhiêu doanh thu?,True,1,False,ky_nay 2025-09-22→2025-09-28 [week],tuan truoc
+q_6e929cf36203,2026-08-21,Khách trung thực nhất tháng 10/2025 là ai?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_6eb11974483f,2026-04-12,Dthu năm nay tính từ ngày 1/1 đến hết hnay là bao nhiêu?,True,1,False,ky_nay 2026-01-01→2026-04-12 [ytd],"den het, hom nay, nam nay, ngay 1"
+q_6ed01172bd03,2026-07-08,"3/26 khách đường Lý Thường Kiệt với khách đường Nguyễn Văn Nghi, bên nào mua nhiều tiền hơn z?",True,0,True,,3/26
+q_6f0c8057ccdb,2026-08-08,Nhập hàng T8/2025 tốn nhiêu tiền z?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_6f1b365ba206,2025-10-28,Sản phẩm bán được nhiều nhất tuần rồi là gì?,True,1,False,ky_nay 2025-10-20→2025-10-26 [week],tuan roi
+q_6fbb662472fc,2025-12-21,Tuần trước bán được bao nhiêu tiền z?,True,1,False,ky_nay 2025-12-08→2025-12-14 [week],tuan truoc
+q_6fe399991adb,2026-06-10,Tháng 8/2025 có bao nhiêu khách mua từ 4 đơn trở lên?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_701bf339bd9e,2026-07-31,Tháng 11 năm 2025 tiền thu máy cũ đã trừ vào các đơn cộng lại được bnhiu?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"nam 2025, thang 1"
+q_715e82ce7602,2026-07-11,"Tính đến hết 11/07/2026, đơn đặt hơn 7 ngày khách chưa trả xong còn nợ quán bnhiu?",True,1,False,ky_nay None→2026-07-11 [snapshot],"11/07, den het"
+q_715e9ea420ef,2026-08-08,Th2/2026 bnhiu ngày dthu từ 8.400.000đ trở lên?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_7196b4e35b1b,2026-07-08,9/2025 binh quan 1 don dc bao nhieu doanh thu?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],9/20
+q_71ead7c337f8,2025-05-12,Từ đầu năm đến hết hnay tổng cộng mấy đh rồi?,True,1,False,ky_nay 2025-01-01→2025-05-12 [ytd],"dau nam, den het, hom nay"
+q_7260611e1637,2026-07-22,Thangs nay NV001 ban duoc bao nhieeu tien roi?,True,1,False,ky_nay 2026-07-01→2026-07-22 [month_to_date],thang nay
+q_72e220b80878,2026-07-08,"Th 9/25 ai là khách mua nhiêuf lần nhất, đếm theo số đơn?",True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_7305db18bf51,2026-03-02,"Tính đến hôm nay, trong mọi đơn bán chịu, có mấy đơn ghi ngày phải trả trong tháng 4/2026?",True,2,False,ky_nay None→2026-03-02 [snapshot] | ky_khac 2026-04-01→2026-04-30 [month],"hom nay, thang 4"
+q_733500e5c7a7,2026-09-30,Ngày 01/12/2025 Cáp Type-C sang Lightning 1m tăng giá từ 150.000đ lên 157.500đ. Số cái bán được trong 14 ngày kể từ ngày đó so với 14 ngày trước đó thay đổi bao nhiêu %?,True,2,False,ky_nay 2025-12-01→2025-12-14 [fwd_window] | ky_truoc 2025-11-17→2025-11-30 [back_window],"1/12, ke tu, ngay 0"
+q_735ea0888aab,2026-05-24,"Tháng 3/2025, trong các khách hàng, ai trung thành nhất?",True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_73aa64c2c7cf,2026-07-22,Thang 7/2025 dem giup so ngay dthu tu 38.000.000 dong tro len?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_7470c487f115,2026-08-21,"Khách Lưu Sơn Hằng tháng 10 năm 2025 nợ thêm bnhiu, trả đc bnhiu? Cho số nợ thêm trước rồi số trả được.",True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"nam 2025, thang 1"
+q_7584b6b0ebbb,2026-08-21,"Dthu th8, th9, th10/2025 có tăng liên tục hông?",True,3,False,ky_nay 2026-08-01→2026-08-31 [month] | ky_khac 2025-09-01→2025-09-30 [month] | ky_khac 2025-10-01→2025-10-31 [month],"0/20, thang 1, thang 8, thang 9"
+q_75f74a3060c8,2026-09-19,Th2/2026 trung binh mot don duoc bao nhieu doanh thu?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_7616f1a1f0ee,2026-05-24,Doanh thu T1/2026 quán được bao nhiêu hỉ?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_763243ad81fd,2026-09-30,thang 12/25 cac don ban ra tru tien bot va tien may cu thu lai thi khach phai tra tong cong bao nhieu,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/25, thang 1"
+q_766d53528ee4,2026-05-10,"Tháng 2/25 qua tháng 3/25 rồi tháng 4/25, dthu có tăng liên tục ko ta?",True,3,False,ky_nay 2025-02-01→2025-02-28 [month] | ky_khac 2025-03-01→2025-03-31 [month] | ky_khac 2025-04-01→2025-04-30 [month],"thang 2, thang 3, thang 4"
+q_7672cf2a7ca9,2026-04-03,"Năm ni, tính từ đầu năm đến hết hôm nay, doanh thu của tiệm được bao nhiêu?",True,1,False,ky_nay 2026-01-01→2026-04-03 [ytd],"dau nam, den het, hom nay"
+q_76bdadbeb802,2026-09-06,Khách thân thiện nhất tháng 12/2025 là ai?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_76edb5c73d98,2026-04-01,"Các đơn đặt tháng 3/2026, tới hôm nay đã chở đi bao nhiêu thùng Sơn Dulux Weathershield Powerflexx 5L?",True,2,False,ky_nay 2026-03-01→2026-03-31 [month] | ky_khac 2026-04-01→2026-04-01 [day],"hom nay, thang 3"
+q_77085d36e011,2026-09-19,"Cuối ngày 19/09/2026, hàng còn dư trong kho tính theo giá vốn đáng bao nhiêu tiền?",True,1,False,ky_nay 2026-09-19→2026-09-19 [date],"9/09, ngay 1"
+q_77264ae59960,2026-08-21,Trong tháng 7/2025 quán thu được bao nhiêu tiền khách trả bớt nợ cho các đơn mua thiếu?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_77c3255f0d26,2026-06-15,Thang nay voucher giam cho khach het bao nhieu tien vay?,True,1,False,ky_nay 2026-06-01→2026-06-15 [month_to_date],thang nay
+q_77ce65543f25,2026-08-21,T12/2025 dthu trung bình mỗi đơn bnhiu?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_780126890512,2026-08-21,7-2025 quán có mấy khách mua từ 11 đơn trở lên nhỉ?,False,0,False,,
+q_78126a171991,2025-10-17,Doanh thu bữa ni của tiệm được bao nhiêu?,False,0,False,,
+q_7826ef06d11c,2026-09-30,"Top 3 dòng máy bán nhiều máy nhất th1/2026, xếp từ cao xuống thấp giúp mình?",True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_78360acadac0,2026-08-21,7/2026 có bnhiu ngày dthu đạt từ 8.900.000 đồng trở lên?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],7/20
+q_78569aa4cbd0,2026-08-08,"Thuốc kê đơn tháng ni, mấy % tổng doanh thu?",False,0,False,,
+q_78737a198776,2026-08-08,"Khách có mua th5/2025, mấy % mua từ 4 đơn trở lên?",True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_78a7454fde5d,2025-12-19,"Từ đầu tháng này tới hết hôm nay, tiền bán so cùng kỳ tháng trước lên hay xuống mấy % z?",True,2,False,ky_nay 2025-12-01→2025-12-19 [month_to_date] | ky_truoc 2025-11-01→2025-11-19 [month_to_date],"cung ky, dau thang, het hom, thang truoc"
+q_78b932b4a560,2026-07-22,"Hết ngày 22/07/2026, hàng còn dư trong kho của quán tính theo giá vốn là bao nhiêu tiền?",True,1,False,ky_nay None→2026-07-22 [snapshot],"22/07, het ngay"
+q_78b9ca050ca1,2026-09-30,"Th này khách phải trả tiệm tổng cộng bnhiu, xau khi trừ tiền bớt và tiền thu máy cũ?",True,1,False,ky_nay 2026-09-01→2026-09-30 [month_to_date],thang nay
+q_78f694893432,2026-06-30,"Thang nay bim size L, tinh tat ca cac hang, ban duoc bao nhieu bich?",True,1,False,ky_nay 2026-06-01→2026-06-30 [month_to_date],thang nay
+q_791de98789d5,2026-09-19,Th7/2026 nhân diên nào bán giỏi nhất?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_792e1070baaf,2026-09-30,T10/2025 máy Samsung chiếm bnhiu % tổng số máy bán ra?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_79a79df3f048,2026-09-19,Dthu tháng 8/25 so với th trước tăng hay giảm mấy %?,True,2,False,ky_nay 2025-08-01→2025-08-31 [month] | ky_truoc 2025-07-01→2025-07-31 [month],"thang 8, thang truoc"
+q_79b2abb21862,2025-10-05,Hôm qua tiệm thu về bao nhiêu doanh thu?,True,1,False,ky_nay 2025-10-04→2025-10-04 [day],hom qua
+q_7ab1e13137e3,2026-06-17,"Nợ còn lại đến ngày 17/06/2026, tách theo tuổi nợ 0–7, 8–15 và trên 15 ngày, mỗi nhóm bnhiu tiền?",True,1,False,ky_nay 2026-06-17→2026-06-17 [date],"7/06, ngay 1"
+q_7b45716b3dda,2026-08-08,Tháng 6/2025 tiệm cất hàng hết tổng cộng bao nhiêu tiền?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_7bc2b2afb992,2026-08-08,"So voi thang truoc, doanh thu th5/2026 tang hay giam bao nhieu %?",True,2,False,ky_nay 2026-05-01→2026-05-31 [month] | ky_truoc 2026-04-01→2026-04-30 [month],"thang 5, thang truoc"
+q_7be6937cf882,2025-06-30,"Tới hôm nay, mấy đơn đặt tháng 6/2025 đã được chở thành 2 đợt trở lên?",True,2,False,ky_nay 2025-06-30→2025-06-30 [day] | ky_khac 2025-06-01→2025-06-30 [month],"hom nay, thang 6"
+q_7c6452fd1c4b,2026-09-30,Tiem co bao nhieu khach o duong Nguyen Van Linh?,False,0,False,,
+q_7c851b82747f,2025-10-28,Dthu tu dau nam toi het hom nay la bao nhieu z?,True,1,False,ky_nay 2025-01-01→2025-10-28 [ytd],"dau nam, het hom"
+q_7c8c12f20aa2,2025-10-01,"Máy bán ra tháng 8/2025, tới hnay có bao nhiêu máy đã mang lại bảo hành rồi?",True,2,False,ky_nay 2025-08-01→2025-08-31 [month] | ky_khac 2025-10-01→2025-10-01 [day],"hom nay, thang 8"
+q_7cba4252429f,2026-07-21,Trung bình mỗi đơn tuần trước mang về bao nhiêu doanh thu?,True,1,False,ky_nay 2026-07-13→2026-07-19 [week],tuan truoc
+q_7d043dbd4908,2026-05-10,"Dthu 3 tháng 7/2025, 8/2025, 9/2025 lần lượt từng tháng là bnhiu?",True,3,False,ky_nay 2025-07-01→2025-07-31 [month] | ky_khac 2025-08-01→2025-08-31 [month] | ky_khac 2025-09-01→2025-09-30 [month],"8/20, 9/20, thang 7"
+q_7d236c308111,2026-06-30,"Bỉm Bobby tháng này chiếm bao nhiêu phần trăm tổng số bịch bỉm bán ra, gộp mọi size?",True,1,False,ky_nay 2026-06-01→2026-06-30 [month_to_date],thang nay
+q_7d4d7cb3aa73,2026-02-14,Tính luôn hnay thì 7 ngày gần nhất quán có bnhiu đơn z?,True,2,False,ky_nay 2026-02-14→2026-02-14 [day] | ky_khac 2026-02-08→2026-02-14 [rolling],"gan nhat, hom nay"
+q_7d7ea7cccf26,2026-06-12,Top 3 khách hàng có công nợ lớn nhất đến hết ngày 12/06/2026 và số nợ của từng người?,True,1,False,ky_nay None→2026-06-12 [snapshot],"2/06, den het, ngay 1"
+q_7dbd343490cd,2026-06-24,Quy 1/2026 tong cong co bao nhieu don?,True,1,False,ky_nay 2026-01-01→2026-03-31 [quarter],quy 1
+q_7de8d58e315c,2026-08-31,Tháng 9/2025 tiệm thay dầu láp cho bao nhiêu lượt xe?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_7dff48b107f0,2026-07-08,Nhom thuc pham thang 2/25 ban duoc bao nhieu tien?,True,1,False,ky_nay 2025-02-01→2025-02-28 [month],thang 2
+q_7e293cd1013a,2026-04-28,Doanh thu hôm qua của cửa hàng là bao nhiêu?,True,1,False,ky_nay 2026-04-27→2026-04-27 [day],hom qua
+q_7e5199bfe720,2026-07-22,Thang nay nhap hagn het bnhiu tien roi?,True,1,False,ky_nay 2026-07-01→2026-07-22 [month_to_date],thang nay
+q_7e7b3dc1de86,2026-07-22,"6/2025 dthu don tai quay bao nhieu, don qua dien thoai bao nhieu?",True,1,False,ky_nay 2025-06-01→2025-06-30 [month],6/20
+q_7f61dbb4d934,2026-05-10,8-2025 có bnhiu đơn doanh thu từ 40.000 đồng trở lên?,False,0,False,,
+q_7f7b0eab2ab3,2025-05-19,Hnay tiệm bán đc tổng nhiêu tiền z?,True,1,False,ky_nay 2025-05-19→2025-05-19 [day],hom nay
+q_7f8c9bee1754,2026-05-10,Thang 6/25 tiem ban duoc bao nhieu tien?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_7f91e434b0fc,2026-08-31,Tháng 10 năm 2025 có mấy chiếc xe vô sửa từ 2 lần trở lênn?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"nam 2025, thang 1"
+q_8046cdbac1d4,2026-06-10,Thang 1/2026 co may ngay dthu tu 40.000.000 dong tro len?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_807c3cdae34f,2026-09-06,Doanh thu thang 12 nam 2025 so thang lien truoc len hay xuong may %?,True,2,False,ky_nay 2025-12-01→2025-12-31 [month] | ky_truoc 2025-11-01→2025-11-30 [month],"nam 2025, thang 1"
+q_8103cddd9040,2026-09-19,3 món bán chạy nhất tháng 8 năm 2026 là món nào?,True,1,False,ky_nay 2026-08-01→2026-08-31 [month],"nam 2026, thang 8"
+q_81ad9f46a16d,2025-12-31,Top 5 khách hàng mua nhiều tiền nhất tuần rồi là ai?,True,1,False,ky_nay 2025-12-22→2025-12-28 [week],tuan roi
+q_81bd98f792f6,2026-09-06,Th4/2026 khach nhom than thiet mang ve bao nhieu doanh thu?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_82711851c76a,2026-08-31,Tháng 5 năm 2026 thợ Đoàn Bảo Phúc sửa được nhiêu lượt xe hè?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],"nam 2026, thang 5"
+q_827cb0083082,2026-05-10,Đếm giùm mấy ngày trong th1/2026 dthu cả ngày từ 9.300.000 đồng trở lên nha,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_82bbd52c42dc,2026-08-21,Nhân viên mã NV001 tháng này bán được tổng cộng bao nhiêu tiền?,True,1,False,ky_nay 2026-08-01→2026-08-21 [month_to_date],thang nay
+q_83107c3303b5,2025-05-04,Tuần trước bán được bao nhiêu tền ha?,True,1,False,ky_nay 2025-04-21→2025-04-27 [week],tuan truoc
+q_837cd5892764,2025-10-22,Doanh thu tháng này so với cùng số ngày đầu tháng rồi tăng hay giảm mấy %?,True,2,False,ky_nay 2025-10-01→2025-10-22 [month_to_date] | ky_truoc 2025-09-01→2025-09-22 [month_to_date],"dau thang, thang nay"
+q_83e204622a9f,2026-07-31,Tháng 7/2026 bán Cốc sạc nhanh 20W Type-C được bao nhiêu tiền?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_84201f553dff,2026-08-21,Tháng 2 năm 2026 có bnhiu đơn bị huỷ z?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],"nam 2026, thang 2"
+q_8426163ea7bd,2025-12-08,Tuan truoc tong doanh thu duoc bao nhieu?,True,1,False,ky_nay 2025-12-01→2025-12-07 [week],tuan truoc
+q_848a1bcdb5f9,2026-08-21,Tháng 9/2025 số đơn có mua hàng nhóm trà là bao nhiêu?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_84ccc0e4f51d,2026-09-06,Khach nhom than thiet 08/2026 mang ve may % tong doanh thu cua hang?,True,1,False,ky_nay 2026-08-01→2026-08-31 [month],08/20
+q_84edb29b003b,2026-08-21,"T3/2025 trong so khach da mua, khach mua tu 11 don tro len chiem bao nhieu %?",True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_856d8521b9ea,2026-05-16,Dau nam den hnay tong so dh bnhiu?,True,1,False,ky_nay 2026-05-16→2026-05-16 [day],"dau nam, hom nay"
+q_859861209455,2026-09-19,Tháng 8/2026 quán cất hàng hết bao nhiêu tiền?,True,1,False,ky_nay 2026-08-01→2026-08-31 [month],thang 8
+q_85b3a96e689b,2026-09-06,5/2025 nhom binh sua ban duoc tong cong bao nhieu tien?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],5/20
+q_86198c3c128b,2025-07-20,Tuần này 5 mặt hàng nào bán chạy nhất?,True,1,False,ky_nay 2025-07-14→2025-07-20 [week_to_date],tuan nay
+q_8620011d3670,2026-06-24,Dthu th2/2025 bnhiu?,True,1,False,ky_nay 2025-02-01→2025-02-28 [month],thang 2
+q_8694ac4443ef,2026-07-08,Tháng 1/2026 có bao nhiêu đơn mua hàng nhóm bia?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_86a32a09633a,2026-09-30,8-2025 cộng tiền thu máy cũ của khách được bnhiu?,False,0,False,,
+q_86dd535ae674,2026-07-22,T10/2025 số đơn ca chiều chênh so với ca sáng mấy phần trăm vậy?,True,2,False,ky_nay 2025-10-01→2025-10-31 [month] | ky_truoc 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_8728cb609428,2026-07-08,"2/26 so với cùng kỳ năm trước, doanh thu lên hay xuống bao nhiêu % vậy?",True,1,False,ky_nay 2025-01-01→2025-12-31 [year],"2/26, cung ky, nam truoc"
+q_8818447349a6,2026-09-19,"Th này đơn bán qua Zalo OA dthu bnhiu, còn đơn bán tại quầy bnhiu?",True,1,False,ky_nay 2026-09-01→2026-09-19 [month_to_date],thang nay
+q_8865baf2a84d,2026-08-08,Th6/2026 dthu ca chiều so ca sáng chênh bnhiu %?,True,2,False,ky_nay 2026-06-01→2026-06-30 [month] | ky_truoc 2026-06-01→2026-06-30 [month],thang 6
+q_88aeb2f7b1a7,2026-06-20,Hqua có dthu tổng bnhiu?,True,1,False,ky_nay 2026-06-19→2026-06-19 [day],hom qua
+q_8960949c2614,2025-09-12,Hqua được bnhiu đơn hàng thế?,True,1,False,ky_nay 2025-09-11→2025-09-11 [day],hom qua
+q_89d88aa1eae8,2026-05-10,th9/2025 khach nao mua nhìu đơn nhứt á,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_8a1878ffe6e6,2026-07-31,06/2026 ban dc bnhiu may Samsung Galaxy A56 5G?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],06/20
+q_8a85aa9be5ef,2026-07-22,"Đến hết ngày 22/07/2026, nợ còn lại chia theo tuổi nợ: nhóm 0–7 ngày, 8–15 ngày, trên 15 ngày mỗi nhóm bao nhiêu?",True,1,False,ky_nay None→2026-07-22 [snapshot],"2/07, den het, ngay 2"
+q_8ab2403c8c80,2026-09-19,Th7/2026 quán đc bnhiu dthu?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_8c680cbcf6b0,2026-05-10,"Trong 3 tháng 4/2025, 5/2025, 6/2025 tháng nào bán được nhiều tiền nhất ha?",True,3,False,ky_nay 2025-04-01→2025-04-30 [month] | ky_khac 2025-05-01→2025-05-31 [month] | ky_khac 2025-06-01→2025-06-30 [month],"5/20, 6/20, thang 4"
+q_8c88fcb609eb,2026-08-08,"Phosphalugel hộp 26 gói từ hồi lên giá 5.400 đồng/gói, 30 ngày đầu bán nhiều hay ít hơn 30 ngày liền trước bao nhiêu %, tính theo số gói?",True,2,False,ky_nay None→None [fwd_window] | ky_truoc None→None [back_window],30 ngay dau
+q_8caa49a3fc7d,2026-05-10,Tháng này các thuốc có hoạt chất Vitamin C bán được bnhiu tiền?,True,1,False,ky_nay 2026-05-01→2026-05-10 [month_to_date],thang nay
+q_8cb214a6bdcd,2026-07-31,"Tháng 5/2026 báng đượt mấy máy, không kể phụ kiện nha?",True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_8ce765944937,2026-08-31,"ê, kac ngay thứ 3 thang nay trung binh 1 ngay kó bnhiu luot xe zô shop mik z nè 📊",True,1,False,ky_nay 2026-08-01→2026-08-31 [month_to_date],thang nay
+q_8d52a75f3314,2026-07-22,"Tháng 1/2026 khách nào mua nhiều lần nhất nhỉ, đếm theo xố đơn ấy?",True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_8db0ee0aa5d1,2026-07-31,Tháng ni khách phãi trả tổng bao nhiêu?,False,0,False,,
+q_8db445924873,2026-07-22,T11/2025 bn khach mua tu 8 don tro len?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_8df7e247960b,2026-08-21,Doanh thu tháng 4/2026 so với cùng kỳ năm ngoái thay đổi bao nhiêu phần trăm?,True,2,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_truoc 2025-04-01→2025-04-30 [month],"cung ky, nam ngoai, thang 4"
+q_8e44f654589f,2026-08-03,"Tới bữa ni khách Triệu Thu Trang tới hạn mấy kỳ góp rồi, tính cả kỳ hạn đúng bữa ni?",False,0,False,,
+q_8e50e264d157,2026-09-30,"Th này ko tính phụ kiện, trung bình 1 máy đt bán đc bnhiu tiền?",True,1,False,ky_nay 2026-09-01→2026-09-30 [month_to_date],thang nay
+q_8eacb946fa1a,2026-04-07,Tien ban hang 7 ngay gan nhat duoc bao nhieu?,True,1,False,ky_nay 2026-04-01→2026-04-07 [rolling],gan nhat
+q_8ee6eb9187d0,2026-08-21,"Trong th8/2025, đơn có doanh thu từ 52.000đ trở lên đếm được mấy đơn vậy?",True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_8ef1f824e97e,2026-05-10,"Trong tháng 1 năm 2026, bao nhiêu đơn có ít nhất một mặt hàng nhóm dùng ngoài?",True,1,False,ky_nay 2026-01-01→2026-01-31 [month],"nam 2026, thang 1"
+q_8ef70e6d70f8,2026-09-19,Th5/2025 tóp 3 món chạy nhất là gì?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_8f668570af59,2026-02-17,Tuan truoc tinh trung binh 1 don duoc bao nhieu tien?,True,1,False,ky_nay 2026-02-09→2026-02-15 [week],tuan truoc
+q_8fafcdce942f,2025-09-23,Từ đầu năm tới hnay tiệm bán được bnhiu tiền rồi?,True,1,False,ky_nay 2025-01-01→2025-09-23 [ytd],"dau nam, hom nay"
+q_8fef6f1e6ff0,2026-02-20,Hôm nay bán đc mấy đơn rồi ta?,True,1,False,ky_nay 2026-02-20→2026-02-20 [day],hom nay
+q_900c545f4ed7,2026-08-21,07/2026 doanh thu binh quan 1 don dc bao nhieu,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],07/20
+q_90375e5beeab,2025-04-09,Tuần này tiệm bán được bao nhiêu đơn rồi nhỉ?,True,1,False,ky_nay 2025-04-07→2025-04-09 [week_to_date],tuan nay
+q_908ce2873a57,2026-09-06,Khách nào chi nhiều tiền nhất cho cửa hàng trong T5/2026?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_908d0d681cd8,2026-08-08,6-2026 co may ngay ban duoc tu 9.700.000 dong tro len?,False,0,False,,
+q_91368b04415b,2026-08-30,"cko mik bít xíu, tuan trc dthu ca chieu cao hay thap hon ca sang bnhiu %",True,2,False,ky_nay 2026-08-17→2026-08-23 [week] | ky_truoc 2026-08-17→2026-08-23 [week],tuan truoc
+q_9142ba5ec94a,2025-08-08,"xem jup mik, dthu shop mk tu mung 1 toi het hom nay so vs cung ky thang trc cao hay thap hon bnhiu %",True,1,False,ky_nay None→2025-08-08 [snapshot],"cung ky, het hom, thang truoc"
+q_914529f4d2e2,2026-07-28,Hqua có bnhiu đh?,True,1,False,ky_nay 2026-07-27→2026-07-27 [day],hom qua
+q_917d6af4418e,2026-09-30,"e ơi check jùm, quý 2/2026 bên mik dòng máy nào kó nhìu lượt bảo hành nhứt á 🤔",True,1,False,ky_nay 2026-04-01→2026-06-30 [quarter],quy 2
+q_91a333e16eae,2026-06-10,"Dthu tháng 3/26 cao hơn tháng 2/26 và tháng 4/26 cũng cao hơn tháng 3/26, phải ko?",True,3,False,ky_nay 2026-03-01→2026-03-31 [month] | ky_khac 2026-02-01→2026-02-28 [month] | ky_khac 2026-04-01→2026-04-30 [month],"thang 2, thang 3, thang 4"
+q_92353891a456,2026-08-21,Dthu ca sáng tháng 3 năm 2025 đc bnhiu z?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],"nam 2025, thang 3"
+q_928423a8bbc6,2026-08-08,Dthu tháng 7/26 so với tháng 7/25 tăng hay giảm bnhiu %?,True,2,False,ky_nay 2026-07-01→2026-07-31 [month] | ky_truoc 2025-07-01→2025-07-31 [month],thang 7
+q_929a9dcb0a38,2026-08-21,"Trong tháng 9 năm 2025, các mặt hàng nhóm trà sữa bán ra tổng cộng bao nhiêu ly?",True,1,False,ky_nay 2025-09-01→2025-09-30 [month],"nam 2025, thang 9"
+q_92c6660df209,2026-07-08,T2/2025 tiem co bao nhieu don bi huy?,True,1,False,ky_nay 2025-02-01→2025-02-28 [month],thang 2
+q_935d887c9cd9,2025-07-16,"Tính đến hết ngày 16/07/2025, có bao nhiêu khách còn nợ cửa hàng?",True,1,False,ky_nay None→2025-07-16 [snapshot],"6/07, den het, ngay 1"
+q_936c6ef612b2,2026-03-31,"Tới hnay, đơn đặt th3/2026 có mấy đơn đã giao từ 2 đợt trở lên?",True,2,False,ky_nay 2026-03-31→2026-03-31 [day] | ky_khac 2026-03-01→2026-03-31 [month],"hom nay, thang 3"
+q_93ff6d28c50b,2025-06-09,"ad ơi tíh tới hết ngày 9/6/2025 á, tien khach kòn nợ o nhug don dat hon 7 ngay chua tra het la bnhiu",True,1,False,ky_nay None→2025-06-09 [snapshot],"9/6, het ngay"
+q_9498d6b37278,2026-05-10,thang nay thuoc ke don chiem bn % dthu kua shop mik,True,1,False,ky_nay 2026-05-01→2026-05-10 [month_to_date],thang nay
+q_94a2e7ebecc0,2026-06-30,Thang nay bim size XL chiem bao nhieu % so bich bim ban ra?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month_to_date],thang nay
+q_94acd8f437f4,2026-08-08,T5/2026 sp nao lai gop nhieu nhat?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_94cca7f32768,2026-08-21,Th5/2026 có bnhiu món góp mặt trong ít nhất 152 đơn?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_94f634ace6b1,2026-09-30,"08/2025 tinh tien khach phai tra sau khi tru bot va tien may cu thu lai, binh quan mot don la may dong?",True,1,False,ky_nay 2025-08-01→2025-08-31 [month],08/20
+q_95427850405e,2026-05-15,30 ngày gần nhất tiệm bán tổng cộng mấy gói z?,True,1,False,ky_nay 2026-04-16→2026-05-15 [rolling],gan nhat
+q_95a45f58351b,2025-05-10,Hnay tổng bnhiu đh z?,True,1,False,ky_nay 2025-05-10→2025-05-10 [day],hom nay
+q_95aa9007198f,2026-07-22,"Tháng 10/2025, trong các khách hàng, ai khó tính nhất?",True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_95f39e8f5fd0,2026-06-30,"01/2026 tính tất cả các hãng, bỉm size NB được mấy % tổng số bịch bỉm bán ra nhỉ?",True,1,False,ky_nay 2026-01-01→2026-01-31 [month],01/20
+q_9649687d5e8b,2026-07-22,"Dthu tháng 3, tháng 4, tháng 5 năm 2025 lần lượt bnhiu?",True,3,False,ky_nay 2026-03-01→2026-03-31 [month] | ky_khac 2026-04-01→2026-04-30 [month] | ky_khac 2025-05-01→2025-05-31 [month],"nam 2025, thang 3, thang 4, thang 5"
+q_9692709e7d81,2026-05-10,Tiền bán thuốc kê đơn th11/2025 là bnhiu?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_976e38598dde,2026-08-08,Th7/2026 nhóm khách thân thiết mang về dthu bnhiu?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_978b7f61250e,2026-05-10,T11/2025 nhóm thực phẩm chức năng chiếm mấy % dthu?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_97a88c5a5568,2026-07-31,"Mình đang tính nhập thêm máy cũ, tháng này bán ra được bao nhiêu điện thoại cũ gồi?",True,1,False,ky_nay 2026-07-01→2026-07-31 [month_to_date],thang nay
+q_980cef2c769c,2026-09-19,Dthu th 6/26 tăng trưởng bnhiu % so th 6/25?,True,2,False,ky_nay 2026-06-01→2026-06-30 [month] | ky_truoc 2025-06-01→2025-06-30 [month],thang 6
+q_99045ceea1f1,2026-08-21,"Dthu 3 thang 11/2025, 12/2025, 1/2026 co tang lien tuc ko?",True,3,False,ky_nay 2025-11-01→2025-11-30 [month] | ky_khac 2025-12-01→2025-12-31 [month] | ky_khac 2026-01-01→2026-01-31 [month],"1/20, 12/20, thang 1"
+q_9956cc60cbb1,2026-08-21,Th 11/25 doanh thu tang hay giam bao nhieu % so voi thang truoc?,True,2,False,ky_nay 2025-11-01→2025-11-30 [month] | ky_truoc 2025-10-01→2025-10-31 [month],"1/25, thang 1, thang truoc"
+q_99e67ed05dd8,2026-09-19,"Ngay dthu cao nhat T7/2026, ngay nao nhi?",True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_99f979b5d0b4,2026-08-31,"So với tháng trước đó, 7/2026 dthu lên hay xuống mấy %?",True,2,False,ky_nay 2026-07-01→2026-07-31 [month] | ky_truoc 2026-06-01→2026-06-30 [month],"7/20, thang truoc"
+q_99fba89f30fa,2026-09-19,"Nhân viên mã NV005 tháng 6/2026, tiền bán được nhiêu z?",True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_9a905959d8ff,2025-06-28,tu dau nam den het hom nay cua hang co tong cong bao nhieu don hang,True,1,False,ky_nay 2025-01-01→2025-06-28 [ytd],"dau nam, den het, hom nay"
+q_9aa0981148ef,2026-07-22,1/26 ca sang doanh thu duoc bao nhieu?,True,0,True,,1/26
+q_9ab76e4d9f5e,2025-09-23,Tuần rồi 3 khách nào mua nhiều tiền nhất vậy?,True,1,False,ky_nay 2025-09-15→2025-09-21 [week],tuan roi
+q_9b5377726889,2026-05-24,Quý 2/2025 quán có mấy đơn rứa?,True,1,False,ky_nay 2025-04-01→2025-06-30 [quarter],quy 2
+q_9b5bf8a560a1,2025-07-04,Dthu 30 ngày gần nhât được nhiêu vậy?,True,1,False,ky_nay 2025-06-05→2025-07-04 [rolling],gan nhat
+q_9bcd14f14b1f,2026-06-10,Tháng 4/2026 khách mua từ 3 đơn trở lên chiếm bao nhiêu % số khách đã mua?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_9c2c85d9330d,2026-09-30,"So với 17 ngày ngay trước Tết, doanh thu dịp Tết 2026 thay đổi bao nhiêu phần trăm?",True,2,False,ky_nay 2026-02-10→2026-02-26 [tet] | ky_truoc 2026-01-24→2026-02-09 [pre_tet],tet
+q_9d4a0d4b4bcd,2026-07-08,"cko xin dthu th7/2025, th8/2025, th9/2025 nhé 🙏",True,3,False,ky_nay 2025-07-01→2025-07-31 [month] | ky_khac 2025-08-01→2025-08-31 [month] | ky_khac 2025-09-01→2025-09-30 [month],"thang 7, thang 8, thang 9"
+q_9d8949165b5e,2026-08-08,Khách sộp nhất tháng 5/2026 là ai?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_9e28638a40cb,2026-04-04,Từ đầu năm tới chừ tiệm bán được bao nhiêu tiền rồi?,True,1,False,ky_nay 2026-01-01→2026-04-04 [ytd],dau nam
+q_9e6f314a5bd8,2026-07-31,"5 khach no nhieu nhat tinh den het ngay 31/07/2026 la ai, tung nguoi con no bao nhieu?",True,1,False,ky_nay None→2026-07-31 [snapshot],"1/07, den het, ngay 3"
+q_9e82414141dd,2026-07-08,Th1/2025 khách nào mua nhiều đơn nhất z?,True,1,False,ky_nay 2025-01-01→2025-01-31 [month],thang 1
+q_9ed7874d83b8,2026-08-08,quy 2/2025 doanh thu tiem minh duoc bao nhieu,True,1,False,ky_nay 2025-04-01→2025-06-30 [quarter],quy 2
+q_9eddae22a244,2025-04-15,"Tính đến hôm nay, trong mọi đơn bán chịu, có bao nhiêu đơn có ngày phải trả ghi trên sổ muộn hơn hôm nay?",True,2,False,ky_nay None→2025-04-15 [snapshot] | ky_khac 2025-04-15→2025-04-15 [day],hom nay
+q_9ee4a6de0ca1,2026-07-31,Tháng 1/2026 tiệm bán Kệ điện thoại để bàn được bao nhiêu tiền?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_9f2824253517,2026-08-31,"xem júp mik nha, tháng này thợ Đàm Lan An làm đc mí phiếu sửa xe hen",True,1,False,ky_nay 2026-08-01→2026-08-31 [month_to_date],thang nay
+q_9f4af1e4fecd,2026-07-31,06/2025 nhóm máy cũ bán được bnhiu tiền?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],06/20
+q_9f57a164d2b7,2026-06-30,"Doanh thu từng tháng của 3 tháng 1/2026, 2/2026, 3/2026 lần lượt là bao nhiêu?",True,3,False,ky_nay 2026-01-01→2026-01-31 [month] | ky_khac 2026-02-01→2026-02-28 [month] | ky_khac 2026-03-01→2026-03-31 [month],"2/20, 3/20, thang 1"
+q_9ff971a2b435,2026-08-21,Th5/2025 có bnhiu đơn tiền hàng từ 130.000đ trở lên?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_a0046e6fede0,2026-08-08,2/2026 nhóm giảm đau hạ sốt dthu bnhiu?,True,1,False,ky_nay 2026-02-01→2026-02-28 [month],2/20
+q_a010ef0a217f,2026-05-10,Tháng 3/2026 có bao nhiêu bữa doanh thu của tiệm đạt từ 11 củ trở lên?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_a05a32f136e4,2026-05-18,Từ đầu năm tới bây chừ cửa hàng lên được tổng cộng bao nhiêu đơn?,True,1,False,ky_nay 2026-01-01→2026-05-18 [ytd],dau nam
+q_a0b76dd10f70,2025-03-04,Tuần rồi mỗi đơn trung bình mang về bnhiu dthu z?,True,1,False,ky_nay 2025-02-24→2025-03-02 [week],tuan roi
+q_a1195f9fe04c,2026-05-10,Tháng 7/2025 thuốc kê đơn chiếm bao nhiêu phần trăm doanh thu của nhà thuốc?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_a119f396d2af,2026-06-10,2-2025 bao nhieu phan tram don bi huy?,False,0,False,,
+q_a13017cca903,2026-06-24,Quý 1/2026 tiệm có tổng doanh thu bao nhiêu?,True,1,False,ky_nay 2026-01-01→2026-03-31 [quarter],quy 1
+q_a18fefbb07ad,2025-10-02,"Tính tới hôm nay, có bao nhiêu đơn bán chịu có ngày phải trả ghi trên sổ rơi vào tháng 11/2025?",True,2,False,ky_nay None→2025-10-02 [snapshot] | ky_khac 2025-11-01→2025-11-30 [month],"1/20, hom nay, thang 1"
+q_a1deeb0f213d,2026-05-10,Dem so don th12/2025 co tien hang dat 130.000 dong tro len,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_a225dc12182c,2026-08-31,"Trong tháng 9/2025, ai là thợ chăm chỉ nhất?",True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_a29355405c06,2026-07-31,"6-2025 tiệm bán được mấy chiếc điện thoại, gộp cả máy mới với máy cũ nhé?",False,0,False,,
+q_a2ed59a92ab8,2025-05-17,Tong tien ban hom nay?,True,1,False,ky_nay 2025-05-17→2025-05-17 [day],hom nay
+q_a33f5513b520,2026-09-06,Doanh thu trung bình trên một đơn tháng 11/25 là bao nhiêu?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/25, thang 1"
+q_a418a876f69f,2026-05-10,T9/2025 ngàynào dthu cao nhất?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_a420c0b8ca8a,2026-02-10,Doanh thu từ đầu năm tới hết hôm nay là bao nhiêu?,True,1,False,ky_nay 2026-01-01→2026-02-10 [ytd],"dau nam, het hom"
+q_a57177cbc6da,2026-03-20,30 ngày qua kể cả hôm nay dthu đc bnhiu?,True,2,False,ky_nay 2026-02-19→2026-03-20 [rolling] | ky_khac 2026-03-20→2026-03-20 [day],"0 ngay qua, hom nay"
+q_a5c0d50944b4,2026-07-08,Tháng 9/2025 số đơn có mua hàng nhóm bánh kẹo là bao nhiêu?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_a652f5fcb0fe,2026-07-31,Điện thoại cũ tháng 6/26 bán ra mấy máy thế?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_a6a66b57f28c,2026-07-12,Hqua bán được tổng cộng mấy lon?,True,1,False,ky_nay 2026-07-11→2026-07-11 [day],hom qua
+q_a6cf2d550014,2026-07-08,"Tháng 11 năm 2025, nhóm gạo có mặt hàng nào bán được nhiều kg nhất?",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"nam 2025, thang 1"
+q_a6e86ecce3f6,2026-07-22,05/2026 nhan vien NV005 ban dc bnhiu tien?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],05/20
+q_a77ff9dcc3e7,2026-05-24,be oi th10/2025 top 3 mon ban nhiu nhut la j z ha,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_a79c3c340077,2026-05-24,So voi T4/2025 thi T4/2026 doanh thu tang truong bao nhieu %?,True,2,False,ky_nay 2025-04-01→2025-04-30 [month] | ky_truoc 2026-04-01→2026-04-30 [month],thang 4
+q_a7dd46bc4b38,2026-09-19,"Xem giúp mình tháng 7/2025, hàng nào được khách ưa chuộng nhất?",True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_a85371a13fe2,2026-07-31,Th7/2026 mat hang nao ban chay nhat the?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_a883b37bc197,2026-09-30,Quý 4/2025 có mấy lượt khách đem máy tới bảo hành z?,True,1,False,ky_nay 2025-10-01→2025-12-31 [quarter],quy 4
+q_a897b21c864d,2026-08-21,T9/2025 có mấy đơn khách trả lại vì gọi nhầm món?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_a8d7ce013c6d,2025-11-26,Hết ngày 26/11/2025 tiền chậm góp của khách trả góp tổng cộng bnhiu?,True,1,False,ky_nay None→2025-11-26 [snapshot],"26/11, het ngay"
+q_a8da9136963f,2025-04-06,7 ngay gan nhat tiem co bnhiu don?,True,1,False,ky_nay 2025-03-31→2025-04-06 [rolling],gan nhat
+q_a904adc2606a,2026-07-22,"Th2/2026 trong số khách có mua, mấy % mua từ 5 đơn trở lên vậy?",True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_a91c8a25a22f,2026-08-08,Dthu thuốc kê đơn tháng 12 năm 2025 là bnhui?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"nam 2025, thang 1"
+q_a9f96bee3fa4,2026-09-19,Tháng 6/26 khách nhóm thân thiết mua tổng cộng bnhiu tiền hàng?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_aa47ce3a127a,2026-04-05,"Tinh den het ngay 05/04/2026, no con lai xep theo 3 nhom tuoi no 0–7 ngay, 8–15 ngay, tren 15 ngay thi tung nhom bao nhieu tien?",True,1,False,ky_nay None→2026-04-05 [snapshot],"5/04, den het, ngay 0"
+q_aa7c51569962,2026-07-08,Dthu th2/2025 so tháng liền trước lên hay xuống bnhiu %?,True,2,False,ky_nay 2025-02-01→2025-02-28 [month] | ky_truoc 2025-01-01→2025-01-31 [month],thang 2
+q_aacb2ba3f300,2026-09-06,"nhờ xíu, th11/2025 wan mik thu hoi dc bnhiu tien công nợ tu khach mua chiu",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_ab0d1507c71c,2026-06-30,"Th này bỉm Moony chiếm mấy % số bịch bỉm bán ra, tính hết các size?",True,1,False,ky_nay 2026-06-01→2026-06-30 [month_to_date],thang nay
+q_ab1417ed8c1b,2026-06-10,Tháng 5/2026 có bao nhiêu đơn hàng có doanh thu từ 1.800.000 đồng trở lên?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_ab14596b6b93,2026-07-08,T10/2025 dthu hơn hay kém th trước nhiêu %?,True,2,False,ky_nay 2025-10-01→2025-10-31 [month] | ky_truoc 2025-09-01→2025-09-30 [month],"0/20, thang 1, thang truoc"
+q_ab595fc253e0,2026-02-03,Tuần trước khách mua trung bình mội đơn hết bao nhiêu tiền?,True,1,False,ky_nay 2026-01-26→2026-02-01 [week],tuan truoc
+q_ab952d97e345,2026-02-17,Trong 7 ngày gần nhất có bao nhiêu mặt hàng không bán được cái nào?,True,1,False,ky_nay 2026-02-11→2026-02-17 [rolling],gan nhat
+q_acb6a360a60d,2026-01-15,Doanh thu của cửa hàng ngày hôm qua là bao nhiêu?,True,1,False,ky_nay 2026-01-14→2026-01-14 [day],hom qua
+q_acfd51bb9870,2025-09-02,Cả ngày hôm nay doanh thu được bao nhiêu?,True,1,False,ky_nay 2025-09-02→2025-09-02 [day],hom nay
+q_ad512cd0cb75,2026-08-31,3/26 thợ mô làm ra nhiều tiền nhất rứa?,True,0,True,,3/26
+q_ad5492b5897c,2026-09-06,Tháng 6 năm 2025 tỉ lệ đơn huỷ là mấy % vậy?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],"nam 2025, thang 6"
+q_ad782d8acb44,2025-08-14,"Doanh thu tu dau thang den het hom nay so voi cung ky thang truoc chenh bao nhieu phan tram, tang hay giam?",True,2,False,ky_nay 2025-08-01→2025-08-14 [month_to_date] | ky_truoc 2025-07-01→2025-07-14 [month_to_date],"cung ky, dau thang, den het, hom nay, thang truoc"
+q_ae10c252dc7a,2026-05-24,Tháng 9/2025 nhóm trà sữa bán được bao nhiêu ly?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_ae44d3539448,2026-08-08,"T3/2026 Diệp Hồng Hồng ghi nợ thêm nhiêu, trả nợ lại nhiêu vậy?",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_ae7e44a0dc30,2026-06-10,Thang nay tiem giao hang tong cong may dot?,True,1,False,ky_nay 2026-06-01→2026-06-10 [month_to_date],thang nay
+q_aea7033d3c8c,2026-06-30,"alo, th5/2026 đơn bán trên sàn thương mại điện tử với đơn bán wa Zalo OA, tung ben dthu bnhiu",True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_af0446a26a67,2026-09-19,Th 11/25 bình quân mỗi đơn dthu bnhiu?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/25, thang 1"
+q_af1b6f2ebf9b,2025-11-22,Từ đầu năm tới nay dthu đc bnhiu z?,True,1,False,ky_nay 2025-01-01→2025-11-22 [ytd],dau nam
+q_af96aaf1f4e2,2026-01-05,"Tính tới hnay, có mấy đơn bán chịu ghi ngày phải trả trong th2/2026?",True,2,False,ky_nay None→2026-01-05 [snapshot] | ky_khac 2026-02-01→2026-02-28 [month],"hom nay, thang 2"
+q_afc5f7f5f476,2026-04-06,Hnay dthu duoc bnhiu roi?,True,1,False,ky_nay 2026-04-06→2026-04-06 [day],hom nay
+q_b01bee67cde2,2025-10-25,Hết ngày hôm nay tiệm đang đứt hàng mấy mặt hàng?,True,1,False,ky_nay None→2025-10-25 [snapshot],"het ngay, hom nay"
+q_b0bffe2031c5,2026-07-22,Th 9/25 khách mô mua nhiều đơn nhất rứa?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_b0ce2336c79b,2026-08-21,2-2026 tong doanh thu duoc bao nheiu?,False,0,False,,
+q_b127103da0d2,2026-08-31,Luong Chi Duc thang 4/26 ban tong cong bnhiu tien?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_b189b9465fe7,2026-08-08,2/26 ngày nào dthu cao nhất z?,True,0,True,,2/26
+q_b1ee04ab9d3f,2026-07-08,"Th2, th3, th4/2026 tháng nào tiệm bán được nhiều tiền nhất z?",True,3,False,ky_nay 2026-02-01→2026-02-28 [month] | ky_khac 2026-03-01→2026-03-31 [month] | ky_khac 2026-04-01→2026-04-30 [month],"thang 2, thang 3, thang 4"
+q_b24515210e17,2026-08-08,Th 6/25 lãi gộp được nhiêu vậy?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_b290d99f9130,2026-06-10,"alo, dthu shop mik th4/2026 tăng hay giảm bnhiu % so vs th4/2025 zạ",True,2,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_truoc 2025-04-01→2025-04-30 [month],thang 4
+q_b2bbe9c1e9fc,2026-05-24,Tháng 2/2025 bán ra bao nhiêu ly Cà phê sữa (M)?,True,1,False,ky_nay 2025-02-01→2025-02-28 [month],thang 2
+q_b2eb16844a32,2026-09-09,"Tính đến hôm nay, bao nhiêu máy bán tháng 7/2026 đã được mang tới bảo hành ít nhất một lần?",True,2,False,ky_nay None→2026-09-09 [snapshot] | ky_khac 2026-07-01→2026-07-31 [month],"hom nay, thang 7"
+q_b3059f66db30,2026-08-31,Thợ nhận nhiều phiếu sửa nhất tháng ni là ai rứa?,False,0,False,,
+q_b33016c0dd71,2025-12-15,"Tính tới hôm nay, tiền góp quá hạn khách chưa trả là bao nhiêu?",True,1,False,ky_nay None→2025-12-15 [snapshot],hom nay
+q_b342fe1e1211,2026-08-31,Th4/2026 thợ nào làm ra dthu cao nhất?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_b362a46fa102,2026-06-30,"Thang 5/2026 bim size M ban duoc may bich nhi, gop tat ca cac hang?",True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_b36cb72072f1,2026-09-06,Thang 4 nam 2026 co bao nhieu don bi huy?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],"nam 2026, thang 4"
+q_b38db1ef2bcc,2026-07-22,"Trong quý 3/2025, ai là khách hay đổi ý nhất của cửa hàng?",True,1,False,ky_nay 2025-07-01→2025-09-30 [quarter],quy 3
+q_b3a65abd54c2,2026-09-19,Quý 1/2026 dthu bnhiu?,True,1,False,ky_nay 2026-01-01→2026-03-31 [quarter],quy 1
+q_b3c49510b3b7,2026-07-08,04/2025 nhóm hoá phẩm chiếm bnhiu % dthu cả tiệm?,True,1,False,ky_nay 2025-04-01→2025-04-30 [month],04/20
+q_b3c5bd56d757,2026-07-08,5-2026 huỷ mất mấy đơn z?,False,0,False,,
+q_b3c75e9f2c97,2025-03-01,Tuần trước tổng bnhiu đh z?,True,1,False,ky_nay 2025-02-17→2025-02-23 [week],tuan truoc
+q_b40a1380b99c,2026-08-21,"Khách mua từ 12 đơn trở lên T4/2026, chiếm bnhiu % số khách có mua tháng đó?",True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_b4171cc74531,2026-08-21,"nhờ xíu nha, trog th3/2026 shop mik banh croissant nhập zìa tru so ban ra thi dc bnhiu cai luôn đi e",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_b47894fc33f6,2026-06-10,"dthu shop mik th5/2025, th6/2025, th7/2025 lần lượt bnhiu zậy nè",True,3,False,ky_nay 2025-05-01→2025-05-31 [month] | ky_khac 2025-06-01→2025-06-30 [month] | ky_khac 2025-07-01→2025-07-31 [month],"thang 5, thang 6, thang 7"
+q_b4ad3b8d023f,2026-08-21,Tháng 9/2025 mặt hàng Topping Thạch cà phê bán được tổng cộng bao nhiêu phần?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_b5034a203b3b,2026-05-23,Tu dau thang nay toi het hom nay doanh thu tang hay giam bao nhieu % so voi cung ky thang truoc?,True,2,False,ky_nay 2026-05-01→2026-05-23 [month_to_date] | ky_truoc 2026-04-01→2026-04-23 [month_to_date],"cung ky, dau thang, het hom, thang truoc"
+q_b53e7cf12ac2,2026-08-21,Tháng 7/2025 top 5 hàng bán chạy nhất là gì?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_b5e65648c9dc,2026-08-21,Th5/2026 khách huỷ đơn chủ yếu vì sao z?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_b61b5951799d,2026-09-06,"Trong th5/2026, nhóm ăn dặm đóng góp bao nhiêu phần trăm doanh thu cả cửa hàng?",True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_b621b30b4b22,2026-08-21,Th nay khach tra no cho quan duoc bnhiu tien roi?,True,1,False,ky_nay 2026-08-01→2026-08-21 [month_to_date],thang nay
+q_b696d918fcc6,2026-07-22,Nhóm chiên xào 11/25 bán được bao nhiêu tiền vậy?,True,0,True,,11/25
+q_b6abccb6b3cb,2026-09-30,Th1/2026 Ốp lưng silicon iPhone bán roa tổng cộng bnhiu cái?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_b6d750b9ba50,2026-08-31,"Có bao nhiêu chiếc xe Wave Alpha được mang tới sửa tháng 12/2025, mỗi xe tính một lần?",True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_b6d81403be69,2026-06-30,Doanh thu nhóm hàng bình sữa tháng 6 năm 2026 là bao nhiêu?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],"nam 2026, thang 6"
+q_b6f52d2a9ace,2026-08-08,Chị cho em hỏi th 8/25 nhóm dụng cụ y tế bán được bao nhiêu tiền ạ?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_b70a59e2e970,2026-09-19,Tháng 10/25 bao nhiêu % đơn bị huỷ z?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/25, thang 1"
+q_b723bbe29e20,2026-07-08,T11/2025 có mấy đh dthu từ 400.000đ trở lên?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_b7ad6a55cf62,2026-07-08,"Trong tháng 9 năm 2025, bao nhiêu đơn có ít nhất một mặt hàng nhóm đồ ăn vặt?",True,1,False,ky_nay 2025-09-01→2025-09-30 [month],"nam 2025, thang 9"
+q_b7bc96270d9f,2025-07-02,"Đến hết ngày 02/07/2025, số khách còn công nợ với cửa hàng là bao nhiêu?",True,1,False,ky_nay None→2025-07-02 [snapshot],"2/07, den het, ngay 0"
+q_b82c713cb7b5,2026-06-10,thang 10 nam 2025 co bao nhieu don doanh thu tu 550.000 dong tro len,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"nam 2025, thang 1"
+q_b88ec465ade3,2026-08-21,Th7/2025 có mấy món có mặt trong ít nhất 128 đơn vậy?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_b963dcade0d3,2026-07-08,4/2026 có mấy đh bị huỷ hả?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],4/20
+q_b9aab5c81568,2026-09-30,"Dthu th7, th8, th9/2026 lần lượt mỗi tháng bao nhiêu z?",True,3,False,ky_nay 2026-07-01→2026-07-31 [month] | ky_khac 2026-08-01→2026-08-31 [month] | ky_khac 2026-09-01→2026-09-30 [month],"thang 7, thang 8, thang 9"
+q_b9c6ed02f53d,2026-05-10,Tháng 1/2026 tiền bán hàng không cần đơn bác sĩ được mấy đồng?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_b9de131bae7d,2026-07-08,"chị ơi mik mún bít xíu, trog th8/2025 khach nao tong tien mua hang cao nhut, thanks e nha",True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_ba1f08439ec8,2026-06-10,"Giua th1/2026, th2/2026 va th3/2026 thi thang nao doanh thu cao nhat z?",True,3,False,ky_nay 2026-01-01→2026-01-31 [month] | ky_khac 2026-02-01→2026-02-28 [month] | ky_khac 2026-03-01→2026-03-31 [month],"thang 1, thang 2, thang 3"
+q_ba2c318fc2be,2026-06-30,11/2025 tien cac don ban tai quay chiem may % tong doanh thu ca thang vay?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],11/20
+q_ba2fc11fac40,2026-08-21,"Dthu khách nhóm thân thiết 08/2025, nhiêu z?",True,1,False,ky_nay 2025-08-01→2025-08-31 [month],08/20
+q_ba477e8e6161,2026-06-10,04/2025 dthu so voi thang truoc tang hay giam may %?,True,2,False,ky_nay 2025-04-01→2025-04-30 [month] | ky_truoc 2025-03-01→2025-03-31 [month],"04/20, thang truoc"
+q_ba875ec0872f,2026-09-06,Dthu th 8/26 tính tất cả bnhiu?,True,1,False,ky_nay 2026-08-01→2026-08-31 [month],thang 8
+q_baa735ba5e5f,2026-07-22,6-2025 khách trả món vì món bị lỗi nhiều hơn hay vì gọi nhầm nhiều hơn hả?,False,0,False,,
+q_bae86e8e80f2,2026-07-31,"Tiền bán 06/2026, nhiêu z?",True,1,False,ky_nay 2026-06-01→2026-06-30 [month],06/20
+q_bb4017bc0666,2026-08-08,09/2025 tỉ lệ huỷ đơn là bnhiu %?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],09/20
+q_bbfddbd1d363,2025-10-10,"Tính đến hết 10/10/2025, các khoản nợ có tuổi nợ quá 7 ngày còn bnhiu tiền?",True,1,False,ky_nay None→2025-10-10 [snapshot],"10/10, den het"
+q_bc879c2a6de5,2026-09-06,"tíh tới ngày 6/9/2026, 3 khách nào đag nợ nhìu nhứt, mỗi ngừi kòn nợ bnhiu đó nghen",True,1,False,ky_nay 2026-09-06→2026-09-06 [date],"9/20, ngay 6"
+q_bd0fbda87c14,2026-08-08,Tháng 11/25 thuốc có hoạt chất Loratadin bán được bnhiu tiền?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/25, thang 1"
+q_bdbe8ca608ce,2026-07-22,"Thang nao dthu cao nhat trong 3 thang 2/2026, 3/2026, 4/2026 ha?",True,3,False,ky_nay 2026-02-01→2026-02-28 [month] | ky_khac 2026-03-01→2026-03-31 [month] | ky_khac 2026-04-01→2026-04-30 [month],"3/20, 4/20, thang 2"
+q_be3f968523bf,2026-09-19,T6/2026 số đơn ca chiều chênh ca sáng bnhiu %?,True,2,False,ky_nay 2026-06-01→2026-06-30 [month] | ky_truoc 2026-06-01→2026-06-30 [month],thang 6
+q_be4ad5df428d,2025-04-10,"Tính từ 1/1 tới hết hôm nay, năm nay quán bán được bao nhiêu tiền ha?",True,1,False,ky_nay 2025-01-01→2025-04-10 [ytd],"1/1, het hom, nam nay"
+q_be70a1626009,2026-05-10,"Cho xin doanh thu lần lượt từng T2/2026, T3/2026, T4/2026 nha",True,3,False,ky_nay 2026-02-01→2026-02-28 [month] | ky_khac 2026-03-01→2026-03-31 [month] | ky_khac 2026-04-01→2026-04-30 [month],"thang 2, thang 3, thang 4"
+q_be8b3469756d,2026-07-08,"Trong 3 tháng 6/2025 qua 7/2025 rồi 8/2025, doanh thu có tăng liên tục không?",True,3,False,ky_nay 2025-06-01→2025-06-30 [month] | ky_khac 2025-07-01→2025-07-31 [month] | ky_khac 2025-08-01→2025-08-31 [month],"7/20, 8/20, thang 6"
+q_beeab8ab97fc,2026-02-17,Tuần trước trung bìh 1 đơn giá trị bao nhiêu?,True,1,False,ky_nay 2026-02-09→2026-02-15 [week],tuan truoc
+q_beed6d8924db,2026-07-22,Tiền bán hàng của nhân viên mã NV002 trong tháng 8 năm 2025 là bao nhiêu vậy?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],"nam 2025, thang 8"
+q_bf178ff24ac3,2026-06-10,"doanh thu lần lượt các tháng 10, 11, 12 năm 2025 là bao nhiêu",True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"nam 2025, thang 1"
+q_bf314c953c1e,2026-07-08,Nhóm bánh kẹo tháng 10 năm 2025 dthu nhiêu?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"nam 2025, thang 1"
+q_bfbe25641230,2026-08-21,06/2026 khach tra bot no mua chiu duoc bnhiu tien?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],06/20
+q_bfe72da5b2f7,2026-06-10,08/2025 dthu bình quân mỗi đơn được bnhiu?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],08/20
+q_bfecad2e9a15,2026-07-22,Tháng 5/2025 có mấy mặt hàng được gọi chong ít nhất 172 đơn?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_bff16856342f,2026-05-08,Tuần này tính tới hôm nay doanh thu cửa hàng là bao nhiêu?,True,2,False,ky_nay 2026-05-04→2026-05-08 [week_to_date] | ky_khac None→2026-05-08 [snapshot],"hom nay, tuan nay"
+q_c011cf38470d,2026-05-10,Tháng 11 năm 2025 mỗi đơn bình quân được bao nhiêu doanh thu ha?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"nam 2025, thang 1"
+q_c0287211ca77,2026-07-08,"10/2025 trong so khach co mua, bao nhieu % khach mua tu 3 don tro len?",True,1,False,ky_nay 2025-10-01→2025-10-31 [month],10/20
+q_c03e79a805ac,2026-06-10,Th9/2025 tiem tong doanh thu duoc bao nhieu vay?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_c04e8d3d46b0,2026-06-24,Tháng 3/2026 tiệm bán được bao nhiêu tiềng?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_c0a590d269df,2026-04-02,"Tuần trước bán đc tổng mấy chai, tính hết các mặt hàng bán theo chai?",True,1,False,ky_nay 2026-03-23→2026-03-29 [week],tuan truoc
+q_c0d31d97c743,2026-05-10,"Trong dthu T11/2025, nhóm ho cảm cúm được bao nhiêu phần trăm?",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_c0f375f0d480,2026-08-08,Th 5/26 co bao nhieu phan tram don bi huy vay?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_c120861e5dd1,2025-07-09,Tổng doanh thu hôm qua quán được bao nhiêu?,True,1,False,ky_nay 2025-07-08→2025-07-08 [day],hom qua
+q_c16ed84d6481,2026-07-22,"Trong số khách có mua T7/2025, bao nhiêu phần trăm mua từ 6 đơn trở lên?",True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_c1976ad22afb,2026-06-10,Th9/2025 có mấy ngày dthu từ 43 triệu trở lên vậy?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_c1a3be0d7376,2025-06-01,Cuoi ngay 01/06/2025 tiem co may mat hang het hang?,True,1,False,ky_nay 2025-06-01→2025-06-01 [date],"1/06, ngay 0"
+q_c28a03d7a959,2025-06-23,Tính luôn hôm nay thì 7 ngày gần nhất quán bán ra được bao nhiêu ly z?,True,2,False,ky_nay 2025-06-23→2025-06-23 [day] | ky_khac 2025-06-17→2025-06-23 [rolling],"gan nhat, hom nay"
+q_c2ba3823e50f,2026-05-24,Ti le huy don T2/2025 bao nhieu %?,True,1,False,ky_nay 2025-02-01→2025-02-28 [month],thang 2
+q_c2eaa7985cf2,2026-07-08,T5/2026 doanh thu so voi T5/2025 len hay xuong bao nhieu % z?,True,2,False,ky_nay 2026-05-01→2026-05-31 [month] | ky_truoc 2025-05-01→2025-05-31 [month],thang 5
+q_c3158f13ca1c,2026-08-31,"Th9/2025 đến hết th11/2025 tiệm có bnhiu xe khách quen, tức xe vô sửa từ 2 lần trở lên z?",True,2,False,ky_nay 2025-09-01→2025-09-30 [month] | ky_khac 2025-11-01→2025-11-30 [month],"1/20, den het, thang 1, thang 9"
+q_c33e026f59e7,2026-07-08,"Trong nhóm gia vị, mặt hàng nào có doanh thu cao nhất tháng 11/2025?",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_c3439f11c9b0,2026-08-08,Hàng sẽ hết hạn trong 180 ngày tới còn tồn bao nhiêu tiền vốn?,True,1,False,ky_nay 2026-08-08→2027-02-04 [forward_days],0 ngay toi
+q_c34ede239480,2026-06-10,Trong tháng 5 năm 2026 cửa hàng bán được mấy cây Ống PVC Bình Minh D90 cây 4m?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],"nam 2026, thang 5"
+q_c3652d93727e,2026-07-08,Th12/2025 tiệm bán đc tổng cộng bnhiu tiền z?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_c38425d8aec8,2026-08-31,Tháng ni bnhiu phiếu sửa có vá ruột xe rứa?,False,0,False,,
+q_c4b294bc0479,2026-06-24,Tong tien ban quy 2/2025 la bao nhieu?,True,1,False,ky_nay 2025-04-01→2025-06-30 [quarter],quy 2
+q_c4da058cd902,2026-09-30,"Tháng 2/2026 trong nhóm máy mới, mặt hàng nào bán được nhiều máy nhất?",True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_c4eef10ab4ae,2026-08-21,1-2026 món nào đem về lãi gộp cao nhất?,False,0,False,,
+q_c4f79f600dc0,2026-05-08,30 ngay gan nhat doanhthu duoc bao nhieu?,True,1,False,ky_nay 2026-04-09→2026-05-08 [rolling],gan nhat
+q_c4fc35ebf2ee,2026-07-08,Mặt hàng có chất lượng tốt nhất tháng 10/2025 là gì?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_c64c6d29f583,2026-05-24,"Tháng này quán bán ra tổng cộng mấy ly size M, cộng tất cả các món?",True,1,False,ky_nay 2026-05-01→2026-05-24 [month_to_date],thang nay
+q_c65b4afeafd1,2026-05-10,e ơi dthu shop mik th5/2025 so vs thang lien trc do tang hay giam mí % z nghen,True,2,False,ky_nay 2025-05-01→2025-05-31 [month] | ky_truoc 2025-04-01→2025-04-30 [month],thang 5
+q_c6940f281136,2026-07-22,"Dthu T7/2025 cao hơn T6/2025, rồi T8/2025 lại cao hơn T7/2025, đúng vậy không?",True,3,False,ky_nay 2025-07-01→2025-07-31 [month] | ky_khac 2025-06-01→2025-06-30 [month] | ky_khac 2025-08-01→2025-08-31 [month],"thang 6, thang 7, thang 8"
+q_c69505022fd3,2026-08-31,"e ơi cko a xin cái bảng tien hoa hồng kua mọi thợ th11/2025 nha, xep tu cao xuong thap",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_c6bfd1c2506f,2026-03-10,"Tat ca mat hang tinh theo goi, tuan truoc ban ra duoc may goi?",True,1,False,ky_nay 2026-03-02→2026-03-08 [week],tuan truoc
+q_c76ae61c6092,2025-05-30,Tong so dh trong 30 ngay gan nhat la bnhiu?,True,1,False,ky_nay 2025-05-01→2025-05-30 [rolling],gan nhat
+q_c788ebe0ce0b,2026-08-08,"Th9/2025 Hagifen 400mg DHG hộp 10 vỉ x 10 viên, số viên nhập trừ số viên bán ra chênh bnhiu?",True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_c78fdf218577,2026-06-10,T7/2025 tiem giao duoc bao nhieu dot hang?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_c803650fe803,2026-08-31,Quý 2/2026 bnhiu nượt xe quay lại bảo hành?,True,1,False,ky_nay 2026-04-01→2026-06-30 [quarter],quy 2
+q_c810dcd56aa3,2026-08-21,"Sau lần tăng giá Topping Thạch cà phê lên 7.400 đồng, số phần bán ra trong 30 ngày kể từ ngày tăng thay đổi bao nhiêu % so với 30 ngày liền trước?",True,2,False,ky_nay None→None [fwd_window] | ky_truoc None→None [back_window],ke tu
+q_c8c553b90c18,2026-05-10,T3/2026 có mấy đơn tiền hàng từ 42.000 đồng trở lên z?,True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_c8f95328ca75,2026-07-08,"hoi nhanh xiu, dau goi clear 630g len 152k tu 28/5/2025 a, mun bit so chai ban 30 ngay tu bua do so vs 30 ngay trc do tang hay giam bn %",True,2,False,ky_nay 2025-05-28→2025-05-28 [date] | ky_truoc 2025-05-27→2025-05-27 [day],28/5
+q_c8fde55544b6,2026-06-10,Có mấy đợt giao hàng trong 11/2025?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],11/20
+q_c90bed5d2614,2026-07-31,Tháng 4/2026 bữa nào tiệm bán được nhiều tiền nhứt?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_c9afaa1f4f9e,2026-07-31,Tháng 10 năm 2025 Thẻ nhớ microSD 64GB bán ra mấy cái?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"nam 2025, thang 1"
+q_c9c0246005b6,2026-06-30,Có mấy ngày trong tháng 9/2025 cửa hàng bán được từ 15.000.000 đồng trở lên?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_ca1e5f9e682b,2026-08-21,"Giửa tháng 3/2025, tháng 4/2025 và tháng 5/2025, tháng nào quán có doanh thu cao nhất ạ?",True,3,False,ky_nay 2025-03-01→2025-03-31 [month] | ky_khac 2025-04-01→2025-04-30 [month] | ky_khac 2025-05-01→2025-05-31 [month],"thang 3, thang 4, thang 5"
+q_ca2c1d05618a,2026-07-22,Thang nay bao nhieu % don bi huy vay?,True,1,False,ky_nay 2026-07-01→2026-07-22 [month_to_date],thang nay
+q_ca85266e5cfa,2026-05-10,"Minh muon tang qua khach quen, dem giup so khach mua tu 6 don tro len trong th3/2026.",True,1,False,ky_nay 2026-03-01→2026-03-31 [month],thang 3
+q_ca9e9c233325,2026-08-08,Tháng 9/2025 tiệm thu được bao nhiêu tiền khách trả nợ cho các đơn bán thiếu?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_caba1ee84f03,2026-07-08,Dthu từng tháng từ 02/2025 tới 04/2025 lần lượt bnhiu giùm?,True,2,False,ky_nay 2025-02-01→2025-02-28 [month] | ky_khac 2025-04-01→2025-04-30 [month],"02/20, 04/20"
+q_caf3b2f243d4,2026-07-22,"Trong 3 tháng từ th4/2026 đến th6/2026, tháng nào bán được nhiều tiền nhất nhỉ?",True,2,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_khac 2026-06-01→2026-06-30 [month],"thang 4, thang 6"
+q_cb02efab0f93,2026-07-22,5/2025 tinh trung binh 1 don doanh thu bao nhieu z?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],5/20
+q_cb0b3be99b62,2026-09-06,Doanh thu tháng 7/2026 so với tháng 7 năm rồi tăng hay giảm mấy %?,True,2,False,ky_nay 2026-07-01→2026-07-31 [month] | ky_truoc 2026-07-01→2026-07-31 [month],thang 7
+q_cbf274008dc9,2026-08-21,"T1/2026 tới T3/2026, tháng nào quán bán đc nhiều tiền nhất?",True,2,False,ky_nay 2026-01-01→2026-01-31 [month] | ky_khac 2026-03-01→2026-03-31 [month],"thang 1, thang 3"
+q_cc69cb411f24,2026-05-10,có bao nhiêu đơn huỷ trong th10/2025,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_cc893126c047,2026-07-08,"Tháng 11 năm 2025, nhóm chăm sóc cá nhân thì mặt hàng nào thu về nhiều tiền nhất?",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"nam 2025, thang 1"
+q_cd0cfcf59c38,2026-07-22,Nhờ bạn tính dúp doanh thu bình quân chên mỗi đơn của tháng 9/2025.,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_cd3203f2d813,2026-05-10,Tháng 9 năm 2025 Nurofen for Children hỗn dịch chai 60ml bán được mấy chai vậy?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],"nam 2025, thang 9"
+q_cda272637d58,2026-08-21,Tháng này doanh thu các đơn trả bằng chuyển khoản được bao nhiêu?,True,1,False,ky_nay 2026-08-01→2026-08-21 [month_to_date],thang nay
+q_cdd8eec83c7a,2025-09-29,Tuan truoc dthu ca chieu hon ca sang bnhiu % nhi?,True,2,False,ky_nay 2025-09-22→2025-09-28 [week] | ky_truoc 2025-09-22→2025-09-28 [week],tuan truoc
+q_cdf9857d8c64,2026-06-10,th1/2026 shop mik nhap tien hang kủa ncc nào lớn nhứt z hen,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_ce16270f4c20,2025-12-27,30 ngay gan nhat quan ban duoc tat ca bao nheiu ly?,True,1,False,ky_nay 2025-11-28→2025-12-27 [rolling],gan nhat
+q_ce3bd6c20b25,2026-06-10,"Tu 15/02/2026 den het 21/02/2026 co bnhiu mat hang e han, khong ai mua cai nao?",True,1,False,ky_nay 2026-02-15→2026-02-21 [range],"15/02, 21/02, den het"
+q_ce8675d1ef06,2026-08-21,Chênh lệch nhập trừ bán Bánh tiramisu T10/2025 là bao nhiêu cái?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_cf2c969d8471,2025-06-01,"Các đơn đặt tháng 5/2025, tới hôm nay đã chở đi bao nhiêu thùng Gạch ốp tường Viglacera 30x60 thùng 8 viên?",True,3,False,ky_nay 2025-05-01→2025-05-31 [month] | ky_khac 2025-06-01→2025-06-01 [day] | ky_khac 2024-08-01→2024-08-31 [month],"hom nay, thang 5, thang 8"
+q_cf5c5dac1b20,2026-08-21,Tháng 7/2026 bán Topping Trân châu đen được bao nhiêu tiền?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_cfa36137a14a,2026-08-08,Th4 dthu khách nhóm thân thiết chiếm mấy phần trăm dthu cả tiệm z?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_cfcb5f8a241f,2026-05-24,"Thang ni quan ban duoc may ly size L, tinh tat ca do uong?",False,0,False,,
+q_d08785ea5577,2026-09-30,"12-2025 tiem ban dien thoai, tinh ca may moi lan may cu, trung binh moi may gia bao nhieu vay?",False,0,False,,
+q_d0c41c37777e,2026-09-19,Tổng số đĩa nhóm chiên xào bán được trong tháng 1/2026 là bao nhiêu?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_d0fb06a1ebb2,2026-06-30,11-2025 khách nam đóng góp bao nhiêu phần trăm doanh thu?,False,0,False,,
+q_d1c95d7db2ae,2025-10-05,Hqua bán đc mấy gói?,True,1,False,ky_nay 2025-10-04→2025-10-04 [day],hom qua
+q_d1e7b2bde646,2026-08-08,6/2025 thuốc kê đơn đem về bao nhiêu doanh thu?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],6/20
+q_d27e2e7a44a6,2026-09-06,Tháng 1/2026 bán Hoa quả nghiền HiPPiS Organic 100g được bao nhiêu tiền?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_d29c19d6d13e,2026-06-24,Tiền bán hàng của cửa hàng trong quý 1 năm 2025 là bao nhiêu?,True,1,False,ky_nay 2025-01-01→2025-03-31 [quarter],"nam 2025, quy 1"
+q_d2c646bb39ec,2026-09-06,"Tiền khách còn nợ đến hết 06/09/2026, nhiêu z?",True,1,False,ky_nay None→2026-09-06 [snapshot],"06/09, den het"
+q_d2f89e3c815d,2026-07-22,Th5/2026 nhom bia dong gop bnhiu % dthu?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_d3390eedd851,2026-06-10,Rieng ca sang th 5/25 ban duoc tong cong bao nhieu tien?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_d3b768308def,2026-08-31,Doanh thu tháng 4/2026 tăng dảm bao nhiêu % xo với tháng liền trước?,True,2,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_truoc 2026-03-01→2026-03-31 [month],thang 4
+q_d3ed369d528c,2025-11-16,Đếm dúp các khách còn thiếu tiền đến hết 16/11/2025 được bao nhiêu người nhé?,True,1,False,ky_nay None→2025-11-16 [snapshot],"16/11, den het"
+q_d3ef941d6105,2026-07-22,"So voi thang truoc, th2/2025 doanh thu hon hay kem bao nhieu %?",True,2,False,ky_nay 2025-02-01→2025-02-28 [month] | ky_truoc 2025-01-01→2025-01-31 [month],"thang 2, thang truoc"
+q_d41b61e31b85,2026-08-08,"Tháng 6/25, tháng 7/25 hay tháng 8/25, tháng nào dthu cao nhất?",True,3,False,ky_nay 2025-06-01→2025-06-30 [month] | ky_khac 2025-07-01→2025-07-31 [month] | ky_khac 2025-08-01→2025-08-31 [month],"thang 6, thang 7, thang 8"
+q_d4b2f0aaf69a,2026-07-08,Tháng 8/2025 bán Bia Sài Gòn Special 330ml được bao nhiêu tiền?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_d4d9ce010db3,2026-06-30,Tháng 6/2026 có mấy đơn có tiền hàng từ 450.000 đồng trở lên?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_d4ef0c5d0bb2,2026-09-06,Top 5 mat hang ban chay nhat th7/2025 la nhung mon nao?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_d5157cc4acfe,2026-05-10,Tháng 10/25 nhóm mắt mũi họng thu được bnhiu tiền?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/25, thang 1"
+q_d52c9b04ca54,2026-07-08,"Dthu th1/2026, th2/2026, th3/2026 có tăng liên tục ko ha?",True,3,False,ky_nay 2026-01-01→2026-01-31 [month] | ky_khac 2026-02-01→2026-02-28 [month] | ky_khac 2026-03-01→2026-03-31 [month],"thang 1, thang 2, thang 3"
+q_d547526c4d5d,2026-09-19,Thang 1 nam 2026 nhan vien nao ban dc nhieu tien nhat z?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],"nam 2026, thang 1"
+q_d5d84e9e6570,2026-08-21,11-2025 nhóm trà bán đc bnhiu tiền?,False,0,False,,
+q_d62189fd9ee2,2026-05-10,"Doanh thu 3 thang tu th3/2025 den th5/2025, thang nao cao nhat?",True,2,False,ky_nay 2025-03-01→2025-03-31 [month] | ky_khac 2025-05-01→2025-05-31 [month],"thang 3, thang 5"
+q_d622b78573c8,2026-07-31,Tháng này bán được bao nhiêu chiếc iPhone 16 Pro Max?,True,1,False,ky_nay 2026-07-01→2026-07-31 [month_to_date],thang nay
+q_d62edb3b5bc6,2026-06-10,"Mình đang xem lại mùa hè, giựa tháng 6/2025, 7/2025 và 8/2025 thì tháng nào doanh thu cao nhất?",True,3,False,ky_nay 2025-06-01→2025-06-30 [month] | ky_khac 2025-07-01→2025-07-31 [month] | ky_khac 2025-08-01→2025-08-31 [month],"7/20, 8/20, thang 6"
+q_d69464555c58,2025-11-17,Hom qua tiem len duoc may don vay?,True,1,False,ky_nay 2025-11-16→2025-11-16 [day],hom qua
+q_d6ff23824813,2026-06-10,08/2025 ai mua nhieu don nhat?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],08/20
+q_d721d81da2d5,2025-12-28,"Tới hết ngày 28/12/2025, anh xem giúp em tổng tiền khách còn nợ ở các đơn đã đặt quá 7 ngày là bao nhiêu ạ?",True,1,False,ky_nay None→2025-12-28 [snapshot],"28/12, het ngay"
+q_d75952be2f51,2026-09-19,5-2026 dthu được bnhiu vậy?,False,0,False,,
+q_d76d6563e547,2026-08-08,11/25 tiem lai gop bao nhieu z?,True,0,True,,11/25
+q_d770b2c75598,2026-08-08,Biosubtyl-II hộp 25 gói T11/2025: tổng gói nhập trừ tổng gói bán?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_d778fbbd804e,2026-09-06,"ua, dthu wan mik th7/2025 so vs thang trc do tang hay giam bn % the nhi",True,2,False,ky_nay 2025-07-01→2025-07-31 [month] | ky_truoc 2025-06-01→2025-06-30 [month],"thang 7, thang truoc"
+q_d790faf2293a,2025-08-18,Tu dau nam den hom nay bna duoc bnhiu tien roi?,True,1,False,ky_nay 2025-01-01→2025-08-18 [ytd],"dau nam, hom nay"
+q_d857fdab9c0a,2026-05-24,ủa th4/2026 dthu shop mik tăng hay giảm mí % so vs thang trc zị hen 😅,True,2,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_truoc 2026-03-01→2026-03-31 [month],"thang 4, thang truoc"
+q_d8706faef72f,2026-06-18,Hqua bán được nhiêu tiền z?,True,1,False,ky_nay 2026-06-17→2026-06-17 [day],hom qua
+q_d8da698d3e5d,2026-09-06,Quy 2/2026 ban duoc bao nhieu don hang?,True,1,False,ky_nay 2026-04-01→2026-06-30 [quarter],quy 2
+q_d95266d008e5,2026-07-08,Tiền bán Sữa đặc Ông Thọ 380g tháng 5/2025 là bao nhiêu?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_d965d0bc2205,2026-06-10,03/2025 doanh thu tang hay giam may % so voi thang lien truoc?,True,2,False,ky_nay 2025-03-01→2025-03-31 [month] | ky_truoc 2025-02-01→2025-02-28 [month],03/20
+q_d99e832f3190,2026-07-31,"Th7/2025 ban ra tat ca bao nhieu chiec dien thoai, ca may moi lan may cu?",True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_d9f743469198,2026-07-08,"Sua dac Ong Tho 380g len 26k tu 13/11/2025, so hop ban 30 ngay tu hom do so voi 30 ngay truoc tang hay giam bnhiu % nhi?",True,2,False,ky_nay 2025-11-13→2025-11-13 [date] | ky_truoc 2025-11-12→2025-11-12 [day],13/11
+q_da623a004480,2026-05-10,Tháng 3/2025 bán Prednisolon 5mg Boston chai 500 viên được bao nhiêu tiền?,True,1,False,ky_nay 2025-03-01→2025-03-31 [month],thang 3
+q_dad922a3924a,2025-06-23,Tuần trước dthu được bnhiu z?,True,1,False,ky_nay 2025-06-16→2025-06-22 [week],tuan truoc
+q_dae1955698d3,2026-06-15,Th này phí ship tổng cộng bnhiu?,True,1,False,ky_nay 2026-06-01→2026-06-15 [month_to_date],thang nay
+q_db00aee1a23d,2026-07-22,"Đến hết ngày 22/07/2026, số khách còn công nợ với cửa hàng là bao nhiêu?",True,1,False,ky_nay None→2026-07-22 [snapshot],"2/07, den het, ngay 2"
+q_db10e5d30a18,2025-02-04,Binh quan don hang tuan truoc gia tri bnhiu z?,True,1,False,ky_nay 2025-01-27→2025-02-02 [week],tuan truoc
+q_dbb084b9361d,2026-05-24,5/25 quan thu ve bao nhieu doanh thu?,True,0,True,,5/25
+q_dbb9f4aff4c3,2026-06-30,06/2026 khach dung diem tru duoc bao nhieu tien?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],06/20
+q_dcb25c39e1cc,2026-06-10,02/2025 ca chieu len duoc bao nhieu don?,True,1,False,ky_nay 2025-02-01→2025-02-28 [month],02/20
+q_dcd34fbf05f0,2026-06-30,"T2/2026, tính theo số bịch, bỉm Huggies chiếm bao nhiêu % lượng bỉm tiệm bán?",True,1,False,ky_nay 2026-02-01→2026-02-28 [month],thang 2
+q_dce7cb2e38a8,2026-07-08,Thang 10 nam 2025 co may khach mua tu 5 don tro len?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"nam 2025, thang 1"
+q_dd2362109dd4,2026-08-21,"Từ khi Bạc xỉu (M) lên 35.000 đồng/ly, 14 ngày đầu bán nhiều hay ít ly hơn 14 ngày liền trước mấy % z?",True,0,True,,14 ngay dau
+q_dd874c3e9e03,2025-12-09,Tuan truoc dthu binh quan tren 1 dh la bnhiu z?,True,1,False,ky_nay 2025-12-01→2025-12-07 [week],tuan truoc
+q_de25e5a7e1c6,2025-06-28,Tuần này doanh thu được bao nhiêu?,True,1,False,ky_nay 2025-06-23→2025-06-28 [week_to_date],tuan nay
+q_de45f4311dbe,2026-06-10,ad oi th5/2026 shop mik bn don dthu dat tu 3tr7 tro len z ha,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_de54a69c7dce,2026-07-22,10/2025 có mấy khách mua từ 8 đơn trở lên vậy?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],10/20
+q_de76013dcb99,2026-09-30,Dthu dịp Tết âm lịch 2026 bnhiu z?,True,1,False,ky_nay 2026-02-10→2026-02-26 [tet],tet
+q_dec759a2f085,2026-05-24,Tháng 4/2026 bán ra bao nhiêu ly Latte (M)?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_df258c67efec,2026-07-31,Th4/2026 ban ra may chiec dien thoai cu?,True,1,False,ky_nay 2026-04-01→2026-04-30 [month],thang 4
+q_dfe6c970b819,2026-06-24,T1/2025 ngày bán nhiều tiền nhất là ngày mô?,True,1,False,ky_nay 2025-01-01→2025-01-31 [month],thang 1
+q_e096ce51b13d,2025-04-16,"Từ đầu tháng này tới hết hôm nay, doanh thu của quán hơn hay kém cùng kỳ tháng rồi mấy phần trăm?",True,2,False,ky_nay 2025-04-01→2025-04-16 [month_to_date] | ky_truoc 2025-03-01→2025-03-16 [month_to_date],"cung ky, dau thang, het hom, thang roi"
+q_e0ac213834f6,2026-09-30,Cho tôi hỏi 6-2026 trung bình mỗi đơn khách phải trả bao nhiêu?,False,0,False,,
+q_e0e7974d6923,2026-08-21,Th4/2025 dthu hơn hay kém tháng trước mấy %?,True,2,False,ky_nay 2025-04-01→2025-04-30 [month] | ky_truoc 2025-03-01→2025-03-31 [month],"thang 4, thang truoc"
+q_e18836a94216,2026-07-22,4-2025 có mấy mặt hangf được mua ở từ 157 đơn khác nhau trở lên?,False,0,False,,
+q_e2a2674f8f4d,2026-03-09,Doanh thu hom nay bao nhieu z?,True,1,False,ky_nay 2026-03-09→2026-03-09 [day],hom nay
+q_e2ad9e83d06a,2026-09-27,"chị ơi, tih toi het ngay 27/9/2026 tong tien khach kòn nợ shop mik bnhiu đó ha chị",True,1,False,ky_nay None→2026-09-27 [snapshot],"27/9, het ngay"
+q_e2bedb87cc3d,2026-09-06,"Tổng dthu quý 1/2026, bnhiu?",True,1,False,ky_nay 2026-01-01→2026-03-31 [quarter],quy 1
+q_e2bfd7f28a9a,2026-06-13,"Từ đầu tháng này đến hết hôm nay, doanh thu hơn hay kém cùng kỳ tháng rồi mấy %?",True,2,False,ky_nay 2026-06-01→2026-06-13 [month_to_date] | ky_truoc 2026-05-01→2026-05-13 [month_to_date],"cung ky, dau thang, den het, hom nay, thang roi"
+q_e2e4e0639619,2026-09-19,"Trong tháng 11/2025, sản phẩm nào ngon nhất?",True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_e2f1ef732951,2026-09-19,Th8/2026 trung bình một đơn được bnhiu tiền?,True,1,False,ky_nay 2026-08-01→2026-08-31 [month],thang 8
+q_e322d691b4be,2026-09-19,"So voi th2/2025, doanh thu th2/2026 tang truong may %?",True,2,False,ky_nay 2025-02-01→2025-02-28 [month] | ky_truoc 2026-02-01→2026-02-28 [month],thang 2
+q_e36c0b269181,2026-06-30,Số khách thành viên đăng ký mới th 5/26?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_e39bf5fd32c6,2025-08-28,Tuần ni khách mô mua nhiều tiền nhất?,False,0,False,,
+q_e3f5a85b72b4,2026-07-08,"3 thang 4/2026, 5/2026, 6/2026 tung thang doanh thu bao nhieu, ke lan luot?",True,3,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_khac 2026-05-01→2026-05-31 [month] | ky_khac 2026-06-01→2026-06-30 [month],"5/20, 6/20, thang 4"
+q_e4641e459f38,2025-09-09,"Tuần rồi, 5 khách nào chi tiêu nhiều nhất?",True,1,False,ky_nay 2025-09-01→2025-09-07 [week],tuan roi
+q_e47610290a38,2026-05-16,Top năm món bán chayj nhất tuần này là những món nào?,True,1,False,ky_nay 2026-05-11→2026-05-16 [week_to_date],tuan nay
+q_e4f0a9bdf74b,2026-08-21,Dip Tet 2026 hang ban nhieu nhat la hang chi?,True,1,False,ky_nay 2026-02-10→2026-02-26 [tet],tet
+q_e4fc0d18d409,2026-09-30,1-2026 bán được bao nhiêu chiếc Xiaomi Redmi Note 14?,False,0,False,,
+q_e4fd11ebbadf,2026-08-31,Th5/2026 dthu cũa tiệm ra bao nhiêu rứa?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_e53ff8441ef1,2026-07-31,Tiem ban th7/2025 duoc tong cong bao nhieu tien nhi?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_e5fc1ce4c0a1,2025-07-06,hom nay doanh thu cua hang bao nhieu?,True,1,False,ky_nay 2025-07-06→2025-07-06 [day],hom nay
+q_e634d19ed4f2,2026-06-10,"Gas Petrolimex 12kg đổi giá từ 520.000đ lên 546.000đ vào ngày 31/10/2025. 30 ngày kể từ ngày đó bán được nhiều hay ít hơn 30 ngày liền trước bao nhiêu %, tính theo bình?",True,2,False,ky_nay 2025-10-31→2025-11-29 [fwd_window] | ky_truoc 2025-10-01→2025-10-30 [back_window],"1/10, ke tu, ngay 3"
+q_e6c703f05070,2026-05-24,th4/2025 kó bnhiu đơn bị huỷ zậy?,True,1,False,ky_nay 2025-04-01→2025-04-30 [month],thang 4
+q_e6ccb4744594,2026-09-19,Ngày nào th 1/26 quán bánnhiều tiền nhất z?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_e6ffb654ce0b,2026-05-10,Tháng này đơn huỷ chiếm nhiêu % toàn bộ đơn z?,True,1,False,ky_nay 2026-05-01→2026-05-10 [month_to_date],thang nay
+q_e734e6e62c7c,2026-04-23,"Tới hôm nay, khoản trả góp của khách Lương Khoa Hoàng còn lại bao nhiêu tiền chưa góp, kể cả kỳ chưa tới hạn?",True,1,False,ky_nay 2026-04-23→2026-04-23 [day],hom nay
+q_e768afaaf811,2026-08-21,Doanh thu cao nhất rơi vào tháng nào trong 3 tháng từ th12/2025 đến th2/2026?,True,2,False,ky_nay 2025-12-01→2025-12-31 [month] | ky_khac 2026-02-01→2026-02-28 [month],"2/20, thang 1, thang 2"
+q_e76cb855b50c,2026-05-24,2/25 bi huy bao nhieu don?,True,0,True,,2/25
+q_e848f74be11e,2026-09-06,"Trong tháng 4 năm 2026, sốp có doanh thu bao nhiêu tiền?",True,1,False,ky_nay 2026-04-01→2026-04-30 [month],"nam 2026, thang 4"
+q_e93bd9fb7c9a,2026-06-10,08/2025 co bao nhieu ngay ban duoc tu 39.000.000 dong tro len?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],08/20
+q_e966e0e6802e,2026-07-08,"T3/2026 tới T5/2026, tháng nào dthu caonhất trong 3 tháng đó?",True,2,False,ky_nay 2026-03-01→2026-03-31 [month] | ky_khac 2026-05-01→2026-05-31 [month],"thang 3, thang 5"
+q_e97f2c304dc0,2026-08-08,3-2026 nhom ho cam cum chiem may phan tram tong doanh thu?,False,0,False,,
+q_e9bb51886662,2026-07-31,Th11/2025 tổng cộng bán đc bnhiu tiền?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_e9eeeaa6cb03,2026-07-08,Th4/2025 bnhiu khách mua từ 3 đh trở lên?,True,1,False,ky_nay 2025-04-01→2025-04-30 [month],thang 4
+q_ea97617772d0,2026-07-22,"Th4/2026 so voi thang lien truoc, doanh thu tang giam bao nhieu %?",True,2,False,ky_nay 2026-04-01→2026-04-30 [month] | ky_truoc 2026-03-01→2026-03-31 [month],thang 4
+q_eb606434a18e,2026-08-31,08/2026 tiệm nhận mấy phiếu bảo hành rứa?,True,1,False,ky_nay 2026-08-01→2026-08-31 [month],08/20
+q_eb7f3881e7e9,2026-06-24,"Trong tháng 6 năm 2025, tiệm bán được nhiều tiền nhất vào ngày nào?",True,1,False,ky_nay 2025-06-01→2025-06-30 [month],"nam 2025, thang 6"
+q_ec17ef854d8a,2026-07-22,Khach nhom than thiet 3/26 mua tong cong bnhiu tien hang?,True,0,True,,3/26
+q_ec61b4f5b9ab,2025-05-18,tuần trước số đơn ca chiều cao hay thấp hơn ca sáng bao nhiêu phần trăm?,True,2,False,ky_nay 2025-05-05→2025-05-11 [week] | ky_truoc 2025-05-05→2025-05-11 [week],tuan truoc
+q_ec8d9cfa0f6b,2026-08-31,Tính bình quân 1 phiếu thu tiền th1/2026 được nhiêu rứa?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_ec9ca5f0dec1,2026-06-30,Cho tôi biết doanh thu tháng 12/2025.,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_eced47bf8f4b,2026-05-19,Tuần rồi doanh thu trung bình một đơn là bao nhiêu vậy?,True,1,False,ky_nay 2026-05-11→2026-05-17 [week],tuan roi
+q_ed4d0362d039,2026-06-10,Mặt hàng có doanh thu cao nhất của nhóm sơn trong tháng 11/2025 là mặt hàng nào?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_ed68b2a7cb63,2026-06-30,"Trong tổng số bịch bỉm bán tháng này, bỉm size M chiếm bao nhiêu %?",True,1,False,ky_nay 2026-06-01→2026-06-30 [month_to_date],thang nay
+q_ed841139ac0a,2026-06-18,Bữa ni tiệm bán được bao nhiêu tiền rồi?,False,0,False,,
+q_edb6d4859798,2026-06-10,10/2025 khách nào có nhiều đơn nhất?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],10/20
+q_edce3c50d4f7,2026-07-31,Khách phải trả hết bao nhiêu tiền trong 12-2025 vậy?,False,0,False,,
+q_ede70b7f6c13,2026-05-24,Th9/2025 3 khach nao chi nhieu tien nhat?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_edf890b68dfd,2026-05-18,Bữa qua tiệm có mấy đơn hen?,True,1,False,ky_nay 2026-05-17→2026-05-17 [day],hom qua
+q_ee2df6a3e957,2026-05-08,"tíh tới ngày 8/5/2026, 3 khách nợ nhìu nhứt là ai, từg ngừi kòn nợ bnhiu giùm nhoa",True,1,False,ky_nay 2026-05-08→2026-05-08 [date],"5/20, ngay 8"
+q_ee58dba4a73e,2026-05-26,Tuần trước mỗi đơn bình quân được bao nhiêu doanh thu nhỉ?,True,1,False,ky_nay 2026-05-18→2026-05-24 [week],tuan truoc
+q_ee860111a8df,2026-04-10,Hôm qua cửa hàng mình doanh thu được bao nhiêu nhỉ?,True,1,False,ky_nay 2026-04-09→2026-04-09 [day],hom qua
+q_ef0073de2935,2026-09-06,10/2025 tiệm mình thu được bao nhiêu doanh thu thế?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],10/20
+q_ef01edd61255,2026-08-21,Tháng ba quán có tất cả bao nhiêu đơn bị huỷ thế?,False,0,False,,
+q_ef32b18b17d5,2026-06-30,"Dthu tháng 5, 6, 7/2025 lần lượt bnhiu?",True,2,False,ky_nay 2026-05-01→2026-05-31 [month] | ky_khac 2025-07-01→2025-07-31 [month],"7/20, thang 5"
+q_ef77106ccec0,2026-06-10,Tỉ trọng của nhóm điện trong doanh thu tháng 11/2025 là bao nhiêu %?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/20, thang 1"
+q_effb17cba303,2026-08-21,Dem giup minh so don T9/2025 co tien hang tu 55.000d tro len nhe,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_f04b126554e3,2026-08-21,Thang 5 nam 2025 quan co bao nhieu don bi huy?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],"nam 2025, thang 5"
+q_f09bd63b0751,2026-07-08,Doanh thu tu 12/25 den 2/26 co thang sau luon cao hon thang truoc khong?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],"12/25, 2/26, thang truoc"
+q_f0bb331484b7,2026-03-18,7 ngày gần nhất được bnhiu đơn gồi?,True,1,False,ky_nay 2026-03-12→2026-03-18 [rolling],gan nhat
+q_f0c8b2fbb77f,2026-01-12,Hom qua tiem ban duoc bao nhieu tien?,True,1,False,ky_nay 2026-01-11→2026-01-11 [day],hom qua
+q_f118a00dc479,2026-05-24,"Thang 7 nam 2025 ngay nao ban dat nhat, tinh theo doanh thu?",True,1,False,ky_nay 2025-07-01→2025-07-31 [month],"nam 2025, thang 7"
+q_f156d23d04fe,2026-06-04,Tuần này tổng cộng mấy đơn rồi z?,True,1,False,ky_nay 2026-06-01→2026-06-04 [week_to_date],tuan nay
+q_f15ae79ed4ba,2026-07-22,Ti le huy don th8/2025 bnhiu %?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_f16bd70756d1,2025-09-03,Năm nay từ đầu năm tới hết hnay tiệm có dthu bnhiu nhỉ?,True,1,False,ky_nay 2025-01-01→2025-09-03 [ytd],"dau nam, het hom, nam nay"
+q_f1772e835811,2026-07-31,Nhóm phụ kiện 9/2025 bán được nhiêu tiền rứa?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],9/20
+q_f18a6235b749,2026-05-10,Th 4/25 ai mua nhieu don nhat?,True,1,False,ky_nay 2025-04-01→2025-04-30 [month],thang 4
+q_f1c0ff1d2330,2026-08-08,"Hết ngày 08/08/2026, hàng tồn trong kho tính giá vốn là bao nhiêu tiền?",True,1,False,ky_nay None→2026-08-08 [snapshot],"08/08, het ngay"
+q_f20f4f3ec923,2026-08-08,5-2025 tiệm bán ra bnhiu viên Panadol 500mg hộp 10 vỉ x 12 viên?,False,0,False,,
+q_f264ab49a2c8,2026-08-08,Nature's Bounty Vitamin E 400 IU chai 30 viên T5/2026 bán được mấy chai?,True,1,False,ky_nay 2026-05-01→2026-05-31 [month],thang 5
+q_f274c9241995,2026-06-10,Thang 5/25 ti le don bi huy la may phan tram z?,True,1,False,ky_nay 2025-05-01→2025-05-31 [month],thang 5
+q_f30748b72898,2026-09-30,"8-2026 mỗi đơn khách phải trả trung bình bnhiu, đã trừ bớt và máy cũ thu lại?",False,0,False,,
+q_f37ffc2cfd0c,2026-09-23,"Đến ngày 23/09/2026 tiền khách còn nợ chia theo tuổi nợ 0–7, 8–15 và trên 15 ngày, mỗi nhóm bnhiu?",True,1,False,ky_nay 2026-09-23→2026-09-23 [date],"3/09, ngay 2"
+q_f3a93a869037,2026-08-31,7-2026 tien hang cac phieu tho Ha Loan Dat lam cong lai bnhiu?,False,0,False,,
+q_f4a5eee7f524,2026-05-10,"Từ th 1/25 tới th 3/25, dthu tháng sau đều cao hơn tháng trước hả?",True,3,False,ky_nay 2025-01-01→2025-01-31 [month] | ky_truoc 2024-12-01→2024-12-31 [month] | ky_khac 2025-03-01→2025-03-31 [month],"thang 1, thang 3, thang truoc"
+q_f4e0630ebcb1,2025-07-26,Bữa nay quán bán được bao nhiêu tiền rồi?,True,1,False,ky_nay 2025-07-26→2025-07-26 [day],hom nay
+q_f539cf51f360,2026-08-21,Doanh thu của nhân viên mã NV004 tháng này là bao nhiêu?,True,1,False,ky_nay 2026-08-01→2026-08-21 [month_to_date],thang nay
+q_f53d89a0743e,2026-07-22,Doanh thu tháng 9/25 đuowc nhiêu vậy?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_f56bee880344,2026-07-22,Ca th8/2025 quan ban duoc tong cong bao nhieu tien vay?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_f56deeb4120b,2026-06-10,"Tính 3 tháng 12/2025, 1/2026, 2/2026, tháng nào doanh thu cao nhất vậy?",True,3,False,ky_nay 2025-12-01→2025-12-31 [month] | ky_khac 2026-01-01→2026-01-31 [month] | ky_khac 2026-02-01→2026-02-28 [month],"1/20, 2/20, thang 1"
+q_f5fae09ccd1e,2026-07-08,Tháng 8/2025 có mấy bữa tiệm bán được từ 10 củ trở lên?,True,1,False,ky_nay 2025-08-01→2025-08-31 [month],thang 8
+q_f66f667088cb,2026-07-08,T6/2026 3 mặt hàng nào bán chạy nhất?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_f75e58af3bcb,2026-06-10,Bao nhiêu khách mua ít nhất 4 đơn trong tháng 10 năm 2025?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"nam 2025, thang 1"
+q_f7fcc8fad30b,2025-11-26,Hnay được mấy đh rồi nhỉ?,True,1,False,ky_nay 2025-11-26→2025-11-26 [day],hom nay
+q_f823bf8a8442,2026-08-08,Doanh thu T10/2025 được bao nhiêu?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_f82dc784b8c9,2026-06-10,4/26 doanh thu đạt bao nhiêu ạ?,True,0,True,,4/26
+q_f83c96ab5362,2026-06-30,Thang nay don ban tren san thuong mai dien tu dong gop may phan tram tong doanh thu?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month_to_date],thang nay
+q_f86ac4d1df98,2026-08-21,"Trong tháng 7, quán đạt doanh thu cao nhất vào ngày nào ạ?",True,1,False,ky_nay 2026-07-01→2026-07-31 [month],thang 7
+q_f8715dcf6ad0,2025-10-10,Tu 1/1 nam nay toi het hom nay ban ra duoc may don roi?,True,1,False,ky_nay 2025-01-01→2025-10-10 [ytd],"1/1, het hom, nam nay"
+q_f9182884552a,2026-08-08,Tien hang nhap vo thang nay tong la bao nhieu z?,True,1,False,ky_nay 2026-08-01→2026-08-08 [month_to_date],thang nay
+q_f963e5fc774c,2026-06-10,"Cát xây trát lên 315.000đ từ ngày 22/06/2025, số m3 bán trong 14 ngày kể từ hôm đó tăng hay giảm mấy % so với 14 ngày trước đó?",True,2,False,ky_nay 2025-06-22→2025-07-05 [fwd_window] | ky_truoc 2025-06-08→2025-06-21 [back_window],"2/06, ke tu, ngay 2"
+q_f971c5fb2353,2026-07-22,"Mực rán nước mắm lên giá 146.000đ ngày 29/05/2025, số đĩa bán trong 14 ngày kể từ 29/05/2025 cao hay thấp hơn 14 ngày liền trước bao nhiêu %?",True,2,False,ky_nay 2025-05-29→2025-06-11 [fwd_window] | ky_truoc 2025-05-15→2025-05-28 [back_window],"29/05, 9/05, ke tu, ngay 2"
+q_f98cecea1595,2026-08-21,Khach nhom than thiet th 1/26 dong gop bao nhieu % tong doanh thu nhi?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_f9912ee059c9,2026-08-08,Th6/2026 các đơn nhân viên Võ Trung Hoa bán cộng lại được bnhiu tiền hàng?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_f9a0fa4ed236,2026-07-22,"Đến hết ngày 22/07/2026, các khoản nợ có tuổi quá 10 ngày còn bao nhiêu tiền?",True,1,False,ky_nay None→2026-07-22 [snapshot],"2/07, den het, ngay 2"
+q_f9c2f8a2a73e,2026-07-22,Tháng 10/2025 bán Canh chua cá tràu được bao nhiêu tiền?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_f9c80cc2d330,2026-08-31,Tháng 11/25 tiệm bán tổng cộng đươcj bnhiu tiền?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"1/25, thang 1"
+q_f9f2c930f630,2026-03-23,7 ngày gần nhất cửa hàng bán được mấy đơn?,True,1,False,ky_nay 2026-03-17→2026-03-23 [rolling],gan nhat
+q_f9fee7c180b4,2026-08-21,1-2026 tru chi phi xong quan loi that duoc bao nhieu?,False,0,False,,
+q_fa1084dc1d3f,2026-08-08,Bà bầu dùng Acemuc Kids 200mg hộp 30 gói được không?,False,0,False,,
+q_fa29edc5f8ab,2026-07-22,Trong th10/2025 hôm nào bán được nhiều tiền nhứt vậy?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"0/20, thang 1"
+q_fa3b2b76f9b3,2026-07-08,01/2026 co bao nhieu mat hang co mat trong tu 79 don khac nhau tro len?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],01/20
+q_fa92cbe8434c,2026-07-08,Tháng 6/25 mỗi đơn trung bình đem về bao nhiêu doanh thu vậy?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],thang 6
+q_facbc1f20a16,2026-06-30,"Dthu th9, th10, th11/2025 lan luot bnhiu?",True,3,False,ky_nay 2025-09-01→2025-09-30 [month] | ky_khac 2025-10-01→2025-10-31 [month] | ky_khac 2025-11-01→2025-11-30 [month],"1/20, thang 1, thang 9"
+q_fb290d8944ec,2026-09-06,"Trong thangs 7/2025, ngày bán đc nhiều tiền nhất là ngày naof?",True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_fb409424a396,2026-08-08,"nè mik hỏi xíu, hiện kòn bn lô chua ban het mà hạn dùng rơi zô 120 ngay toi",True,1,False,ky_nay 2026-08-08→2026-12-06 [forward_days],0 ngay toi
+q_fb4bf09137a7,2026-07-22,dthu th9/2025 wa th10/2025 rui th11/2025 co tang lien tuc khoong??,True,3,False,ky_nay 2025-09-01→2025-09-30 [month] | ky_khac 2025-10-01→2025-10-31 [month] | ky_khac 2025-11-01→2025-11-30 [month],"0/20, 1/20, thang 1, thang 9"
+q_fbaf2023cfb6,2026-08-08,Thang 6 nam 2025 nhap ve bnhiu vien Tiffy Dey hop 25 vi x 4 vien?,True,1,False,ky_nay 2025-06-01→2025-06-30 [month],"nam 2025, thang 6"
+q_fbb0ba502475,2025-06-30,"Liệt kê 5 khách nợ nhiều nhất tính đến hết ngày 30/06/2025, kèm số tiền còn nợ.",True,1,False,ky_nay None→2025-06-30 [snapshot],"0/06, den het, ngay 3"
+q_fbc812dde384,2026-09-06,Mặt hàng bán chạy nhất tháng 11 năm 2025 là gì thế?,True,1,False,ky_nay 2025-11-01→2025-11-30 [month],"nam 2025, thang 1"
+q_fbe115817066,2025-06-16,"Tính tới ngày 16/06/2025, còn bnhiu khách thiếu tiền tiệm z?",True,1,False,ky_nay None→2025-06-16 [snapshot],"6/06, ngay 1"
+q_fbf739189e42,2026-07-22,"Tính đến hết ngày 22/07/2026, khách hàng còn nợ cửa hàng tổng cộng bao nhiêu tiền?",True,1,False,ky_nay None→2026-07-22 [snapshot],"2/07, den het, ngay 2"
+q_fc4223c66403,2026-09-06,"Anh xem giúp em, tháng 12/2025 khách nhóm sỉ chiếm bao nhiêu phần trăm tổng doanh thu ạ?",True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_fc4f06f3006b,2026-05-10,Dthu T6/2025 so tháng liền trước tăng hay giảm mấy %?,True,2,False,ky_nay 2025-06-01→2025-06-30 [month] | ky_truoc 2025-05-01→2025-05-31 [month],thang 6
+q_fc8cdf9ab156,2026-08-08,Tháng 10 năm 2025 có mấy đơn tiền hàng từ 280.000đ trở lên vậy?,True,1,False,ky_nay 2025-10-01→2025-10-31 [month],"nam 2025, thang 1"
+q_fcc5aeef7f8d,2026-06-10,Tháng 9/2025 có bao nhiêu đơn mua hàng nhóm điện?,True,1,False,ky_nay 2025-09-01→2025-09-30 [month],thang 9
+q_fd38dda74f47,2026-09-30,Tổng dthu T1/2026 đc bnhiu?,True,1,False,ky_nay 2026-01-01→2026-01-31 [month],thang 1
+q_fda16d2c768c,2026-05-10,Doanh thu thuốc hoạt chất Paracetamol + Phenylephrin + Clorpheniramin tháng này là bao nhiêu?,True,1,False,ky_nay 2026-05-01→2026-05-10 [month_to_date],thang nay
+q_fe2a9de157ee,2026-06-30,Tháng 12/2025 có bao nhiêu ngày đạt doanh thu từ 18.000.000 đồng trở lên?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/20, thang 1"
+q_fe36c469e9f8,2026-08-21,Th7/2025 dthu đơn trả bằng ví điện tử với đơn trả bằng tiền mặt lần nượt bnhiu?,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_fe5788dae82e,2026-05-24,Th 12/25 doanh thu cua quan duoc bao nhieu vay?,True,1,False,ky_nay 2025-12-01→2025-12-31 [month],"2/25, thang 1"
+q_ff354156a3c4,2026-08-08,Dthu nhóm khách sỉ chiếm mấy % tổng dthu tháng 6/26?,True,1,False,ky_nay 2026-06-01→2026-06-30 [month],thang 6
+q_ff9f21f3aa6c,2026-06-02,Chéc giùm tại ngày 02/06/2026 tiệm còn mấy khách có công nợ?,True,1,False,ky_nay 2026-06-02→2026-06-02 [date],"2/06, ngay 0"
+q_ffaf8aecc5ea,2026-04-28,Gia tri binh quan 1 don tuan truoc duoc bao nhieu the?,True,1,False,ky_nay 2026-04-20→2026-04-26 [week],tuan truoc
+q_ffbacc923206,2025-12-30,Tuần trước bình quân mỗi đơn bnhiu tiền?,True,1,False,ky_nay 2025-12-22→2025-12-28 [week],tuan truoc
+q_ffc8757f6b7d,2026-07-22,Th7/2025 dem giup minh so don co dthu tu 1.000.000 dong tro len.,True,1,False,ky_nay 2025-07-01→2025-07-31 [month],thang 7
+q_ffd749264313,2026-08-08,Doanh thu tháng 9/2025 so dới tháng trước lên hay xuống bao nhiêu % dậy?,True,2,False,ky_nay 2025-09-01→2025-09-30 [month] | ky_truoc 2025-08-01→2025-08-31 [month],"thang 9, thang truoc"

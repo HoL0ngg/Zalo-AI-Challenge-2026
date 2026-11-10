@@ -1,0 +1,45 @@
+﻿shop,tap,ket_qua,giay,so_bang,so_dong,canh_bao,ngay_tu,ngay_den,ngay_tu_tho,ngay_den_tho,bang_loi_font,bang_lon_khong_co_cot_tien,cot_bi_dien
+biz_101,train,OK,3,1,56501,0,2025-06-01,2026-08-24,2025-06-01,2026-08-24,,,
+biz_102,train,OK,26,2,86106,18,2025-01-01,2026-06-16,2025-01-01,2026-06-16,,,
+biz_103,train,OK,12,2,45611,16,2025-04-01,2026-07-09,2025-04-01,2026-07-09,,,DonHang_ChiTiet.Mã đơn hàng;DonHang_ChiTiet.Ngày đặt hàng;DonHang_ChiTiet.Trạng thái đơn hàng;DonHang_ChiTiet.Tên khách hàng
+biz_104,train,OK,17,2,62894,0,2025-04-01,2026-06-02,2025-04-01,2026-06-02,,,
+biz_105,train,OK,44,5,141708,0,2025-02-01,2026-06-24,2025-02-01,2026-06-24,,,
+biz_106,train,OK,80,9,289353,0,2025-02-01,2026-09-14,2023-03-05,2026-09-14,,,
+biz_107,train,OK,11,1,43605,1,2025-03-01,2026-07-22,2025-03-01,2026-07-22,,,
+biz_108,train,OK,35,7,113696,0,2025-01-01,2026-05-29,2022-07-17,2026-05-29,,,
+biz_109,train,OK,46,9,156626,0,2025-01-01,2026-08-05,2022-07-23,2026-08-05,,,
+biz_110,train,OK,2,1,29317,0,2025-05-01,2026-07-03,2025-05-01,2026-07-03,,,
+biz_111,train,OK,13,5,239499,0,2025-01-01,2026-08-19,2025-01-01,2026-08-19,,,
+biz_112,train,OK,29,2,113375,0,2025-04-01,2026-07-31,2025-04-01,2026-07-31,,So_chi_tiet_ban_hang,
+biz_113,train,OK,7,1,32994,0,2025-02-01,2026-08-09,2025-02-01,2026-08-09,,,
+biz_114,train,OK,2,1,26119,1,2025-01-01,2026-06-21,2025-01-01,2026-06-21,,,
+biz_115,train,OK,15,4,55962,16,2025-02-01,2026-05-16,2025-02-01,2026-07-14,,Bảng kê phiếu giao hàng;Chi tiết công nợ theo hạn;So_chi_tiet_ban_hang,
+biz_116,train,OK,20,4,79117,1,2025-05-01,2026-09-03,2025-05-01,2026-11-02,,Bao_cao_ban_hang__So_chi_tiet_ban_hang;Bao_cao_ban_hang__Bảng kê phiếu giao hàng;Bao_cao_ban_hang__Chi tiết công nợ theo hạn,
+biz_117,train,OK,18,7,66246,17,2025-01-01,2026-05-20,2025-01-01,2026-07-18,,SoGiaoHang;SoHanNo,
+biz_118,train,OK,25,4,92169,20,2025-02-01,2026-09-10,2025-02-01,2026-11-09,,Bảng kê phiếu giao hàng;Chi tiết công nợ theo hạn;So_chi_tiet_ban_hang,
+biz_119,train,OK,39,10,172569,2,2025-01-01,2026-07-13,2025-01-01,2029-06-12,,DanhSachHoaDonChiTietLo;DanhSachLoHang,
+biz_120,train,OK,53,10,240702,3,2025-01-01,2026-06-12,2023-02-02,2029-05-28,,DanhSachHoaDonChiTietLo;DanhSachLoHang,
+biz_121,train,OK,31,7,172139,3,2025-03-01,2026-09-20,2025-03-01,2029-09-04,,DuLieuXuat__DonNhapHang_ChiTiet;DuLieuXuat__DonHang_Lo,DonHang_ChiTiet.Mã đơn hàng;DonHang_ChiTiet.Ngày đặt hàng;DonHang_ChiTiet.Trạng thái đơn hàng;DonHang_ChiTiet.Tên khách hàng
+biz_122,train,OK,38,7,214306,21,2025-01-01,2026-07-17,2025-01-01,2029-07-12,,DonHang_Lo;DonNhapHang_ChiTiet,DonHang_ChiTiet.Mã đơn hàng;DonHang_ChiTiet.Ngày đặt hàng;DonHang_ChiTiet.Trạng thái đơn hàng;DonHang_ChiTiet.Tên khách hàng
+biz_123,train,OK,8,17,268911,1,2025-01-01,2026-06-28,2022-07-17,2029-06-05,,pos__the_kho;pos__chi_tiet_don_lo,
+biz_124,train,OK,77,13,305973,5,2025-01-01,2026-05-25,2025-01-01,2029-05-02,,BanHang_BanTheoLo;BanHang_LoHang,
+biz_125,train,OK,5,1,79052,0,2025-01-01,2026-05-11,2025-01-01,2026-05-11,,,
+biz_126,train,OK,15,1,66429,0,2025-01-01,2026-06-06,2025-01-01,2026-06-06,,,
+biz_127,train,OK,11,5,198800,0,2025-03-01,2026-07-28,2025-03-01,2026-07-28,,,
+biz_128,train,OK,39,8,152259,0,2025-04-01,2026-09-07,2023-05-09,2026-09-07,,DanhSachHoaDonPhongBan,
+biz_129,train,OK,12,5,222331,0,2025-01-01,2026-08-14,2025-01-01,2026-08-14,,don_hang,
+biz_130,train,OK,46,2,172589,0,2025-02-01,2026-08-29,2025-02-01,2026-08-29,,So_chi_tiet_ban_hang,
+dev_001,public,OK,26,2,90911,1,2025-01-01,2026-07-08,2025-01-01,2026-07-08,,So_chi_tiet_ban_hang,
+dev_002,public,OK,26,2,84640,17,2025-01-01,2026-05-24,2025-01-01,2026-05-24,,,
+dev_003,public,OK,87,10,167824,0,2025-03-01,2026-08-21,2025-03-01,2026-08-21,,,
+dev_004,public,OK,17,7,65639,18,2025-01-01,2026-08-09,2025-01-01,2026-08-09,,SoGiaoHang;SoHanNo,SoBanHang.Khách hàng (tên);SoBanHang.Ma don;SoBanHang.Thời gian;SoBanHang.Trạng thái xử lý;SoBanHang.Tổng phiếu
+dev_005,public,OK,30,7,157670,19,2025-01-01,2026-05-10,2025-01-01,2029-05-01,,DonHang_Lo;DonNhapHang_ChiTiet,BanHang.Mã đơn hàng;BanHang.Ngày đặt hàng;BanHang.Trạng thái đơn hàng;BanHang.Tên khách hàng
+dev_006,public,OK,11,17,302800,1,2025-04-01,2026-08-08,2022-10-19,2029-07-28,,pos__the_kho;pos__chi_tiet_don_lo,
+dev_007,public,OK,20,3,122859,0,2025-02-01,2026-09-19,2025-02-01,2026-09-19,,,
+dev_008,public,OK,113,3,155223,2,2025-01-01,2026-07-22,2025-01-01,2026-07-22,,,
+dev_009,public,OK,2,1,23338,0,2025-01-01,2026-06-24,2025-01-01,2026-06-24,,,
+dev_010,public,OK,7,5,97293,0,2025-05-01,2026-09-06,2025-05-01,2026-09-06,,,
+dev_011,public,OK,1,2,6102,2,2025-06-01,2026-07-31,2025-06-01,2026-07-31,,,SoBanHang__Sổ bán hàng.IMEI
+dev_012,public,OK,1,2,6064,0,2023-05-29,2026-08-31,2023-05-29,2026-08-31,,,
+dev_013,public,OK,9,5,34163,1,2022-11-17,2026-06-30,2022-11-17,2026-06-30,,,QuanLy__DanhMuc.Số / Size;QuanLy__DanhMuc.Tên gọi khác
+dev_014,public,OK,4,6,12325,16,2025-07-03,2026-09-30,2025-07-03,2026-09-30,,,SoBanHang__T7-2025.IMEI;SoNo__Sổ nợ.Khách;SoNo__Sổ nợ.Ngày;SoNo__Sổ nợ.Nợ;SoNo__Trả góp.Góp/tháng;SoNo__Trả góp.Hạn góp (ngày);SoNo__Trả góp.Khách;SoNo__Trả góp.Máy;SoNo__Trả góp.Ngày;SoNo__Trả góp.Số kỳ;SoNo__Trả góp.Trả trước

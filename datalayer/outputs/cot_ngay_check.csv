@@ -1,0 +1,12 @@
+shop,tap,bang,cot,loai,mau
+biz_111,train,chi_tiet_don,Giá đơn vị,GIU_NGUYEN_CHUOI_5_CHU_SO,"['7000', '32000', '42000']"
+biz_111,train,san_pham,Giá,GIU_NGUYEN_CHUOI_5_CHU_SO,"['25000', '31000', '29000']"
+biz_123,train,pos__khach_hang,TaoLuc,DANG_LA_NGAY_NHUNG_TEN_KHONG_GIONG,
+biz_123,train,pos__san_pham,TaoLuc,DANG_LA_NGAY_NHUNG_TEN_KHONG_GIONG,
+biz_123,train,pos__don_hang,ThoiGianLap,DANG_LA_NGAY_NHUNG_TEN_KHONG_GIONG,
+biz_124,train,BanHang_LoHang,HSD,DANG_LA_NGAY_NHUNG_TEN_KHONG_GIONG,
+biz_124,train,SoTay_NhapHang,HSD,DANG_LA_NGAY_NHUNG_TEN_KHONG_GIONG,
+biz_129,train,thanh_toan,Thời điểm,DANG_LA_NGAY_NHUNG_TEN_KHONG_GIONG,
+dev_006,public,pos__khach_hang,TaoLuc,DANG_LA_NGAY_NHUNG_TEN_KHONG_GIONG,
+dev_006,public,pos__san_pham,TaoLuc,DANG_LA_NGAY_NHUNG_TEN_KHONG_GIONG,
+dev_006,public,pos__don_hang,ThoiGianLap,DANG_LA_NGAY_NHUNG_TEN_KHONG_GIONG,
