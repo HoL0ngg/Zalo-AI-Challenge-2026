@@ -108,7 +108,29 @@ def _fold_aligned(text):
 # ═════════════════════════ 2b. GÕ TELEX SAI (không bật bộ gõ) ═════════════════════════
 # Trong dữ liệu có nhiều chữ như 'tieenf' (tiền), 'dduwowcj' (được), 'laf' (là), 'bans' (bán).
 # Giải mã chỉ được CHẤP NHẬN khi kết quả là một từ có dấu đã thấy trong VOCAB (xây từ câu train) -> không biến từ lạ/tên riêng thành từ sai.
-VOCAB = set()
+# Khởi tạo mặc định với 499 từ tiếng Việt có dấu chuẩn từ tập câu hỏi train
+_DEFAULT_VOCAB = set(['biết', 'buộc', 'bà', 'bàn', 'bác', 'bán', 'bánh', 'bên', 'bình', 'bò', 'bó', 'bóp', 'băng', 'bơ', 'bơm', 'bươu', 'bạc', 'bạch', 'bảng', 'bảo', 'bằm', 'bằng', 'bếp', 'bị', 'bỏ', 'bổ', 'bộ', 'bột', 'bớt', 'bữa', 'chiên', 'chiếm', 'chiều', 'chuyển', 'chà', 'cháo', 'cháy', 'chân', 'châu', 'chén', 'chênh', 'chưa', 'chạy', 'chải', 'chất', 'chấu', 'chậm', 'chẵn', 'chỉ', 'chịu', 'chống', 'chở', 'chức', 'corbière', 'cuối', 'cuộn', 'cà', 'cá', 'các', 'cái', 'cánh', 'cát', 'cây', 'còn', 'có', 'công', 'cùng', 'cúm', 'cũ', 'cơm', 'cường', 'cạnh', 'cả', 'cảm', 'cấp', 'cần', 'cắm', 'cộng', 'cụ', 'củ', 'của', 'cửa', 'dày', 'dán', 'dây', 'dùng', 'dưa', 'dương', 'dầu', 'dị', 'dịch', 'dịp', 'dụng', 'giá', 'giò', 'giòn', 'gió', 'giùm', 'giúp', 'giảm', 'giấy', 'giặt', 'giỏi', 'gà', 'gì', 'gòn', 'gói', 'góp', 'gạch', 'gạo', 'gần', 'gỏi', 'gộp', 'hiếu', 'hiện', 'hoàn', 'hoàng', 'hoá', 'hoạt', 'huyết', 'huỳnh', 'huỷ', 'hà', 'hàng', 'hòa', 'hôm', 'hông', 'hùng', 'hơn', 'hướng', 'hạ', 'hạn', 'hạnh', 'hạt', 'hả', 'hải', 'hảo', 'hấp', 'hấu', 'hầm', 'hậu', 'hằng', 'hẳn', 'hết', 'họng', 'hỏi', 'hồ', 'hồi', 'hỗn', 'hộp', 'khiết', 'khoáng', 'khoản', 'khác', 'khách', 'khái', 'kháng', 'khánh', 'khô', 'không', 'khổ', 'kiềm', 'kèm', 'kém', 'kê', 'kẹo', 'kẽm', 'kết', 'kể', 'kỳ', 'liên', 'liền', 'liệt', 'loại', 'luôn', 'luồn', 'là', 'làm', 'lành', 'lá', 'lát', 'lãi', 'lê', 'lên', 'lòng', 'lóc', 'lót', 'lô', 'lúc', 'lưới', 'lượng', 'lượt', 'lại', 'lạnh', 'lấp', 'lấy', 'lần', 'lẩu', 'lẻ', 'lễ', 'lệ', 'lệch', 'lịch', 'lọ', 'lốc', 'lốt', 'lộ', 'lớn', 'lời', 'lợi', 'miếng', 'muối', 'muống', 'mà', 'má', 'máy', 'mã', 'mì', 'mình', 'món', 'môn', 'măng', 'mũi', 'mạ', 'mấy', 'mắm', 'mắt', 'mặt', 'mến', 'mề', 'mọi', 'mỗi', 'một', 'mới', 'mức', 'mực', 'nghiêm', 'nghêu', 'nghề', 'ngoài', 'ngoái', 'nguyên', 'nguyễn', 'ngày', 'ngân', 'ngư', 'người', 'ngậm', 'ngọt', 'nhiêu', 'nhiều', 'nhuận', 'nhà', 'nhân', 'nhìu', 'nhóm', 'nhôm', 'nhất', 'nhập', 'nhỉ', 'nhỏ', 'nhồi', 'những', 'nào', 'này', 'não', 'nêm', 'nên', 'năm', 'năng', 'nước', 'nướng', 'nấm', 'nằm', 'nếp', 'nền', 'nồi', 'nội', 'nợ', 'nữ', 'phiếu', 'phát', 'phân', 'phép', 'phê', 'phí', 'phùng', 'phúc', 'phương', 'phải', 'phần', 'phẩm', 'phế', 'phộng', 'phở', 'quá', 'quách', 'quán', 'quân', 'quý', 'quảng', 'quầy', 'quẹt', 'riêng', 'ròng', 'răng', 'rạng', 'rồi', 'rửa', 'suối', 'sài', 'sáng', 'sò', 'súc', 'sĩ', 'sơn', 'sườn', 'sả', 'sản', 'sắt', 'sặc', 'sẽ', 'sỉ', 'số', 'sốt', 'sụn', 'sủi', 'sữa', 'thiết', 'thiếu', 'thiện', 'thoại', 'thuốc', 'thuộc', 'thành', 'thái', 'tháng', 'thân', 'thép', 'thêm', 'thì', 'thùng', 'thúc', 'thước', 'thạch', 'thảo', 'thấm', 'thất', 'thấu', 'thẻ', 'thịt', 'thời', 'thợ', 'thủy', 'thứ', 'thực', 'tiên', 'tiêu', 'tiếp', 'tiền', 'tiệm', 'trà', 'trân', 'trét', 'trên', 'trí', 'trăm', 'trưng', 'trước', 'trưởng', 'trạng', 'trả', 'trần', 'trị', 'trọng', 'trở', 'trứng', 'trừ', 'tuýp', 'tuần', 'tuổi', 'tâm', 'tã', 'tính', 'tô', 'tôi', 'tôm', 'tôn', 'tăng', 'tươi', 'tương', 'tường', 'tại', 'tấn', 'tất', 'tận', 'tắc', 'tế', 'tết', 'tỉ', 'tỏi', 'tố', 'tồn', 'tổng', 'tới', 'tục', 'từ', 'từng', 'tử', 'tự', 'tỷ', 'uống', 'viên', 'việc', 'và', 'vàng', 'vào', 'ví', 'võ', 'vú', 'văn', 'vũ', 'vương', 'vải', 'vẫn', 'vậy', 'về', 'vệ', 'vỉ', 'vị', 'vốn', 'với', 'xoài', 'xuất', 'xào', 'xám', 'xét', 'xích', 'xúc', 'xỉu', 'xịt', 'âm', 'é', 'ép', 'ê', 'ích', 'ít', 'ó', 'ô', 'ăn', 'điện', 'đoàn', 'đoạn', 'đào', 'đá', 'đáng', 'đánh', 'đáo', 'đã', 'đèn', 'đó', 'đóng', 'đôi', 'đông', 'đĩa', 'đơn', 'đươc', 'đường', 'được', 'đạt', 'đầu', 'đậu', 'đắt', 'đằng', 'đặc', 'đặt', 'đếm', 'đến', 'đồ', 'đồng', 'đổi', 'độ', 'đợt', 'đức', 'ạ', 'ế', 'ếch', 'ốc', 'ống', 'ổ', 'ớt', 'ở', 'ứng'])
+VOCAB = set(_DEFAULT_VOCAB)
+
+def _collapse_token(w):
+    # Không co chữ viết hoa (thương hiệu, tên riêng nước ngoài như Plusssz, Knorr)
+    if not w or w[0].isupper() or any(c.isupper() for c in w):
+        return w
+    # Giữ nguyên 'dd' nếu đứng đầu vì là tiền tố Telex của 'đ' (ddieenj -> điện)
+    if w.lower().startswith("dd") and not w.lower().startswith("ddd"):
+        prefix = w[:2]
+        rest = w[2:]
+        s = re.sub(r"([b-cf-hj-np-tv-z])\1+", r"\1", rest, flags=re.IGNORECASE)
+        s = re.sub(r"([aeiouyáàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵ])\1{2,}", r"\1", s, flags=re.IGNORECASE)
+        return prefix + s
+    s = re.sub(r"([b-cf-hj-np-tv-z])\1+", r"\1", w, flags=re.IGNORECASE)
+    s = re.sub(r"d{3,}", "dd", s, flags=re.IGNORECASE)
+    s = re.sub(r"([aeiouyáàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵ])\1{2,}", r"\1", s, flags=re.IGNORECASE)
+    s = re.sub(r"\bnhie+u+\b", "nhiêu", s, flags=re.IGNORECASE)
+    s = re.sub(r"\bbnhi+e*u*\b", "bao nhiêu", s, flags=re.IGNORECASE)
+    s = re.sub(r"\bdth+u*\b", "doanh thu", s, flags=re.IGNORECASE)
+    return s
+
 _VOWELS = set("aăâeêioôơuưy")
 _TONE_MARK = {"s": "\u0301", "f": "\u0300", "r": "\u0309", "x": "\u0303", "j": "\u0323"}
 
@@ -265,7 +287,8 @@ def normalize_text(text, protect=None):
     has_lower = bool(re.search(r"[a-zà-ỹ]", s))
 
     def repl(m):
-        w = m.group(0)
+        raw_w = m.group(0)
+        w = _collapse_token(raw_w)
         lw = w.lower()
         if any(a <= m.start() < b for a, b in pspans):
             return w
