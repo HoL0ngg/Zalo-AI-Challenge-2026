@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Việc 3 — SỔ CHUẨN: đổi các bảng đã làm sạch của MỘT shop thành v_lines (mỗi dòng hàng) và v_orders (mỗi đơn).
+"""Việc 3 — SỔ CHUẨN: đổi các bảng đã làm sạch của MỘT shop thành v_lines, v_orders, v_purchases, v_inventory.
 
 Đầu vào : tables, meta = clean_shop.load_clean_tables(shop_dir)      (việc 2 của Nhi)
-Đầu ra  : build_canonical(tables, meta) -> dict(v_lines, v_orders, info)
+Đầu ra  : build_canonical(tables, meta) -> dict(v_lines, v_orders, v_purchases, v_inventory, info)
 
 Luật (rulebook train):
   - trạng thái đơn chỉ có 4 giá trị: hoan_thanh | huy | tra_hang | dang_giao
   - doanh thu = tổng thành tiền các dòng hàng của đơn KHÔNG huỷ và KHÔNG trả hàng (đơn đang giao vẫn tính), theo NGÀY ĐẶT
+  - số lượng bán = số lượng của đơn KHÔNG huỷ và KHÔNG trả hàng
   - hai dòng giống nhau ở mọi ô của CÙNG một đơn = lỗi xuất file, tính một lần
-Nguyên tắc: không đoán. Không nhận diện được vai trò thì để trống và ghi vào info['warnings'].
 """
 import re
 import unicodedata
@@ -41,7 +41,6 @@ def norm_status(v):
 # ───────────────────────── vai trò cột ─────────────────────────
 _DATE_PREF = [r"dat|ban|giao dich|tao|lap|^ngay$|^thoi gian$|date", r"gio"]
 _DATE_BAD = re.compile(r"giao hang|han|tra|nhap|sinh|dang ky|ap dung|thu|bao hanh|ngay giao")
-
 
 _MONEY_ROLES = {"don_gia", "thanh_tien_dong", "tong_don", "tong_tien_hang", "giam_gia", "phi_ship", "gia_von", "gia_nhap", "da_tra", "cong_no", "gia_cu_moi"}
 
@@ -221,15 +220,19 @@ def build_ledger(df, tm, led, info):
     what = next((c for c in base.columns if re.search(r"lam gi|noi dung|dich vu|cong viec|hang muc", cat.ascii_fold(c))), None)
     ids = ["R%d" % i for i in range(len(base))]
     vl = pd.DataFrame({"order_id": ids, "order_dt": base[dcol].values, "line_amount": _num(base[mcol]).values})
-    vl["status"] = st.values if st.notna().any() else None
+    vl["status"] = st.fillna("hoan_thanh").values if st.notna().any() else pd.Series(["hoan_thanh"]*len(base)).values
     vl["product"] = base[what].values if what else None
+    vl["product_name"] = vl["product"]
     vl["employee"] = base[emp].values if emp else None
+    vl["qty"] = 1.0
+    vl["quantity"] = 1.0
+    vl["category"] = "dịch vụ"
     vo = pd.DataFrame({"order_id": ids, "order_dt": base[dcol].values, "status": vl["status"].values, "employee": vl["employee"].values,
-                       "items_total": vl["line_amount"].values})
+                       "items_total": vl["line_amount"].values, "order_total": vl["line_amount"].values})
     info["structure"] = "ledger"
     info["tables_used"] = {"lines": led[0], "orders": None}
     info["warnings"].append("sổ ghi theo lần (mỗi dòng là một lượt/phiếu): doanh thu = cột tiền")
-    return {"v_lines": vl, "v_orders": vo, "info": info}
+    return {"v_lines": vl, "v_orders": vo, "v_purchases": None, "v_inventory": None, "info": info}
 
 
 def pick_order_table(tables, cls, orders, L):
@@ -249,6 +252,160 @@ def pick_order_table(tables, cls, orders, L):
         if best_key is None or key > best_key:
             best, best_key = t, key
     return best or max(orders, key=lambda t: len(tables[t]))
+
+
+def _enrich_from_catalogs(vl, tables, meta):
+    """Lấy nhóm hàng (category), hoạt chất, thuốc kê đơn, giá vốn từ các bảng danh mục nếu v_lines còn thiếu."""
+    if vl is None or vl.empty:
+        return vl
+    for loop in range(2):
+        for tn, df in tables.items():
+            tm = meta["tables"][tn]
+            hint = cat.table_hint(tn, tm.get("files", []))
+            is_cat = hint in ("danh_muc_hang", "bang_gia") or any(w in tn.lower() for w in ["sanpham", "danhmuc", "danh_muc", "thuoc", "hanghoa"])
+            if not is_cat:
+                continue
+            prod_col, sku_col, cat_col, cost_col, ingr_col, presc_col = None, None, None, None, None, None
+            for c in df.columns:
+                if c.startswith("_"): continue
+                r, _ = rd.infer_role(cat.ascii_fold(c), "chu")
+                if r == "ten_hang" and not prod_col: prod_col = c
+                elif r == "ma_hang" and not sku_col: sku_col = c
+                elif r == "nhom_hang" and not cat_col: cat_col = c
+                elif r == "gia_von" and not cost_col: cost_col = c
+                elif r == "hoat_chat" and not ingr_col: ingr_col = c
+                elif r == "thuoc_ke_don" and not presc_col: presc_col = c
+
+            join_key, target_key = None, None
+            if prod_col and "product" in vl.columns and vl["product"].notna().any():
+                join_key, target_key = prod_col, "product"
+            elif sku_col and "sku" in vl.columns and vl["sku"].notna().any():
+                join_key, target_key = sku_col, "sku"
+
+            if not join_key:
+                continue
+
+            cols_to_pull = []
+            rename_map = {join_key: target_key}
+            if sku_col and ("sku" not in vl.columns or vl["sku"].isna().mean() > 0.5) and join_key != sku_col:
+                cols_to_pull.append(sku_col)
+                rename_map[sku_col] = "__sku_enrich"
+            if cat_col and (("category" not in vl.columns) or vl["category"].isna().mean() > 0.5):
+                cols_to_pull.append(cat_col)
+                rename_map[cat_col] = "__cat_enrich"
+            if ingr_col and ("hoat_chat" not in vl.columns or vl["hoat_chat"].isna().mean() > 0.5):
+                cols_to_pull.append(ingr_col)
+                rename_map[ingr_col] = "__ingr_enrich"
+            if presc_col and ("thuoc_ke_don" not in vl.columns or vl["thuoc_ke_don"].isna().mean() > 0.5):
+                cols_to_pull.append(presc_col)
+                rename_map[presc_col] = "__presc_enrich"
+            if cost_col and ("cost_amount" not in vl.columns or vl["cost_amount"].isna().mean() > 0.5):
+                cols_to_pull.append(cost_col)
+                rename_map[cost_col] = "__cost_enrich"
+
+            if cols_to_pull:
+                sub = df.dropna(subset=[join_key]).drop_duplicates(subset=[join_key])[[join_key] + cols_to_pull].rename(columns=rename_map)
+                vl = vl.merge(sub, on=target_key, how="left")
+                if "__sku_enrich" in vl.columns:
+                    vl["sku"] = vl["sku"].where(vl["sku"].notna(), vl["__sku_enrich"]) if "sku" in vl.columns else vl["__sku_enrich"]
+                    vl.drop(columns=["__sku_enrich"], inplace=True)
+                if "__cat_enrich" in vl.columns:
+                    vl["category"] = vl["category"].where(vl["category"].notna(), vl["__cat_enrich"]) if "category" in vl.columns else vl["__cat_enrich"]
+                    vl.drop(columns=["__cat_enrich"], inplace=True)
+                if "__ingr_enrich" in vl.columns:
+                    vl["hoat_chat"] = vl["hoat_chat"].where(vl["hoat_chat"].notna(), vl["__ingr_enrich"]) if "hoat_chat" in vl.columns else vl["__ingr_enrich"]
+                    vl["active_ingredient"] = vl["hoat_chat"]
+                    vl.drop(columns=["__ingr_enrich"], inplace=True)
+                if "__presc_enrich" in vl.columns:
+                    p_norm = vl["__presc_enrich"].astype(str).str.lower().map(lambda s: 1 if any(k in s for k in ("ke don", "kê đơn", "co", "có", "1", "true", "x", "t")) else 0)
+                    vl["thuoc_ke_don"] = p_norm
+                    vl["is_prescription"] = p_norm
+                    vl.drop(columns=["__presc_enrich"], inplace=True)
+                if "__cost_enrich" in vl.columns:
+                    c_val = _num(vl["__cost_enrich"])
+                    if "qty" in vl.columns:
+                        vl["cost_amount"] = (vl["qty"] * c_val).fillna(0)
+                    else:
+                        vl["cost_amount"] = c_val.fillna(0)
+                    vl.drop(columns=["__cost_enrich"], inplace=True)
+    return vl
+
+
+def _build_purchases(tables, meta):
+    """Trích xuất v_purchases (sổ nhập hàng) từ các bảng nhập."""
+    for tn, df in tables.items():
+        tm = meta["tables"][tn]
+        hint = cat.table_hint(tn, tm.get("files", []))
+        if hint != "nhap_hang" and not any(w in tn.lower() for w in ["nhaphang", "nhap_hang", "phieunhap", "nhap"]):
+            continue
+        roles = column_roles(df, tm)
+        p_id = _pick(roles, "ma_phieu_nhap") or _pick(roles, "ma_don")
+        p_dt = _pick(roles, "thoi_diem", want_kind=("ngay",))
+        p_item = _pick(roles, "ten_hang")
+        p_sku = _pick(roles, "ma_hang")
+        p_qty = _pick(roles, "so_luong")
+        p_unit = _pick(roles, "don_vi")
+        p_price = _pick(roles, "gia_nhap") or _pick(roles, "don_gia")
+        p_amt = _pick(roles, "thanh_tien_dong")
+        p_ncc = _pick(roles, "ma_ncc") or _pick(roles, "ten_khach")
+
+        base = df.copy()
+        if not p_id:
+            base["__rowid"] = ["P%d" % i for i in range(len(base))]
+            p_id = "__rowid"
+
+        vp = pd.DataFrame({"order_id": _clean_id(base[p_id])})
+        vp["receipt_id"] = vp["order_id"]
+        vp["order_dt"] = pd.to_datetime(base[p_dt]).dt.date if p_dt else None
+        vp["receipt_dt"] = vp["order_dt"]
+        vp["product"] = base[p_item].values if p_item else None
+        vp["product_name"] = vp["product"]
+        vp["sku"] = base[p_sku].values if p_sku else None
+        vp["qty"] = _num(base[p_qty]).values if p_qty else None
+        vp["quantity"] = vp["qty"]
+        vp["unit"] = base[p_unit].values if p_unit else None
+        vp["unit_price"] = _num(base[p_price]).values if p_price else None
+        vp["cost_price"] = vp["unit_price"]
+        if p_amt:
+            vp["line_amount"] = _num(base[p_amt]).values
+        elif p_qty and p_price:
+            vp["line_amount"] = (vp["qty"] * vp["unit_price"]).values
+        else:
+            vp["line_amount"] = None
+        vp["total_amount"] = vp["line_amount"]
+        vp["supplier"] = base[p_ncc].values if p_ncc else None
+        return vp
+    return None
+
+
+def _build_inventory(tables, meta):
+    """Trích xuất v_inventory (tồn kho) từ các bảng kho."""
+    for tn, df in tables.items():
+        tm = meta["tables"][tn]
+        hint = cat.table_hint(tn, tm.get("files", []))
+        if hint != "ton_kho" and not any(w in tn.lower() for w in ["tonkho", "ton_kho", "thekho", "the_kho"]):
+            continue
+        roles = column_roles(df, tm)
+        p_item = _pick(roles, "ten_hang")
+        p_sku = _pick(roles, "ma_hang")
+        p_unit = _pick(roles, "don_vi") or _pick(roles, "quy_doi")
+        p_stock = _pick(roles, "ton_kho")
+        p_cost = _pick(roles, "gia_von") or _pick(roles, "gia_nhap")
+        p_dt = _pick(roles, "thoi_diem", want_kind=("ngay",))
+
+        base = df.copy()
+        vi = pd.DataFrame()
+        vi["product"] = base[p_item].values if p_item else None
+        vi["product_name"] = vi["product"]
+        vi["sku"] = base[p_sku].values if p_sku else None
+        vi["unit"] = base[p_unit].values if p_unit else None
+        vi["ending_stock"] = _num(base[p_stock]).values if p_stock else None
+        vi["qty"] = vi["ending_stock"]
+        vi["quantity"] = vi["ending_stock"]
+        vi["cost_price"] = _num(base[p_cost]).values if p_cost else None
+        vi["date"] = pd.to_datetime(base[p_dt]).dt.date if p_dt else None
+        return vi
+    return None
 
 
 def build_canonical(tables, meta):
@@ -288,7 +445,7 @@ def build_canonical(tables, meta):
         led = ledger_candidate(tables, tmeta)
         if led is None:
             info["warnings"].append("không nhận ra bảng bán hàng")
-            return {"v_lines": None, "v_orders": None, "info": info}
+            return {"v_lines": None, "v_orders": None, "v_purchases": None, "v_inventory": None, "info": info}
         return build_ledger(tables[led[0]], tmeta[led[0]], led, info)
     info["tables_used"] = {"lines": L, "orders": O}
 
@@ -296,7 +453,7 @@ def build_canonical(tables, meta):
     vl = None
     if L:
         df, roles = tables[L], cls[L][1]
-        c = {r: _pick(roles, r) for r in ("ma_don", "ten_hang", "ma_hang", "so_luong", "don_vi", "don_gia", "trang_thai", "ten_khach", "ma_khach", "nhan_vien", "kenh_ban", "giam_gia")}
+        c = {r: _pick(roles, r) for r in ("ma_don", "ten_hang", "ma_hang", "so_luong", "don_vi", "don_gia", "trang_thai", "ten_khach", "ma_khach", "nhan_vien", "kenh_ban", "giam_gia", "nhom_hang")}
         c["thoi_diem"] = _pick(roles, "thoi_diem", want_kind=("ngay",), prefer=_DATE_PREF[0], avoid=_DATE_BAD.pattern)
         amt, ratio = pick_line_amount(df, roles, c["so_luong"], c["don_gia"])
         c["thanh_tien_dong"] = amt or _pick(roles, "thanh_tien_dong", want_kind=("tien",))
@@ -319,17 +476,24 @@ def build_canonical(tables, meta):
             vl["order_dt"] = base[c["thoi_diem"]].values
         st, info["status_source"] = status_series(base, c["trang_thai"])
         if st.notna().any():
-            vl["status"] = st.values
+            vl["status"] = st.fillna("hoan_thanh").values
+        else:
+            vl["status"] = "hoan_thanh"
         vl["product"] = base[c["ten_hang"]].values if c["ten_hang"] else None
+        vl["product_name"] = vl["product"]
+        vl["category"] = base[c["nhom_hang"]].values if c.get("nhom_hang") else None
         vl["sku"] = base[c["ma_hang"]].values if c["ma_hang"] else None
         vl["qty"] = _num(base[c["so_luong"]]).values if c["so_luong"] else None
+        vl["quantity"] = vl["qty"]
         vl["unit"] = base[c["don_vi"]].values if c["don_vi"] else None
         vl["unit_price"] = _num(base[c["don_gia"]]).values if c["don_gia"] else None
         if c["thanh_tien_dong"]:
             vl["line_amount"] = _num(base[c["thanh_tien_dong"]]).values
         else:
             vl["line_amount"] = (vl["qty"] * vl["unit_price"]).values
+        vl["line_total"] = vl["line_amount"]
         vl["customer"] = base[c["ten_khach"] or c["ma_khach"]].values if (c["ten_khach"] or c["ma_khach"]) else None
+        vl["customer_id"] = vl["customer"]
         vl["employee"] = base[c["nhan_vien"]].values if c["nhan_vien"] else None
         vl["channel"] = base[c["kenh_ban"]].values if c["kenh_ban"] else None
         vl["_src_row"] = range(len(vl))
@@ -346,8 +510,9 @@ def build_canonical(tables, meta):
         vo = pd.DataFrame({"order_id": _clean_id(base[c["ma_don"]])})
         vo["order_dt"] = base[c["thoi_diem"]].values if c["thoi_diem"] else None
         st, info["status_source"] = status_series(base, c["trang_thai"])
-        vo["status"] = st.values if st.notna().any() else None
+        vo["status"] = st.fillna("hoan_thanh").values if st.notna().any() else pd.Series(["hoan_thanh"]*len(vo)).values
         vo["customer"] = base[c["ten_khach"] or c["ma_khach"]].values if (c["ten_khach"] or c["ma_khach"]) else None
+        vo["customer_id"] = vo["customer"]
         for src, dst in (("tong_tien_hang", "items_total"), ("phi_ship", "ship_fee"), ("giam_gia", "order_discount"), ("tong_don", "order_total"),
                          ("da_tra", "paid"), ("cong_no", "debt")):
             vo[dst] = _num(base[c[src]]).values if c[src] else None
@@ -363,8 +528,9 @@ def build_canonical(tables, meta):
         first = g.first()
         vo = pd.DataFrame({"order_id": first.index})
         vo["order_dt"] = first["order_dt"].values if "order_dt" in first else None
-        vo["status"] = first["status"].values if "status" in first else None
+        vo["status"] = first["status"].values if "status" in first else "hoan_thanh"
         vo["customer"] = first["customer"].values
+        vo["customer_id"] = vo["customer"]
         vo["employee"] = first["employee"].values
         vo["channel"] = first["channel"].values
         vo["items_total"] = g["line_amount"].sum().values
@@ -385,6 +551,7 @@ def build_canonical(tables, meta):
         vl = vl.merge(m, on="order_id", how="left")
         if "customer_o" in vl:
             vl["customer"] = vl["customer"].where(vl["customer"].notna(), vl["customer_o"]) if "customer" in vl else vl["customer_o"]
+            vl["customer_id"] = vl["customer"]
             vl = vl.drop(columns=["customer_o"])
         s = vl.groupby("order_id")["line_amount"].sum().rename("items_total_lines").reset_index()
         vo = vo.merge(s, on="order_id", how="left")
@@ -392,7 +559,41 @@ def build_canonical(tables, meta):
             vo["items_total"] = vo["items_total_lines"]
     elif info["structure"] == "orders_only" and vo is not None:
         info["warnings"].append("chỉ có bảng đơn, không có dòng hàng: doanh thu lấy từ tổng đơn (không chắc đúng rulebook)")
-    return {"v_lines": vl, "v_orders": vo, "info": info}
+
+    # ---- Bổ sung thông tin từ Catalog (nhóm hàng, hoạt chất, thuốc kê đơn, giá vốn) ----
+    if vl is not None:
+        vl = _enrich_from_catalogs(vl, tables, meta)
+        # Đảm bảo các cột alias chuẩn luôn tồn tại
+        if "product_name" not in vl.columns and "product" in vl.columns:
+            vl["product_name"] = vl["product"]
+        if "line_total" not in vl.columns and "line_amount" in vl.columns:
+            vl["line_total"] = vl["line_amount"]
+        if "quantity" not in vl.columns and "qty" in vl.columns:
+            vl["quantity"] = vl["qty"]
+        if "category" not in vl.columns:
+            vl["category"] = None
+        if "hoat_chat" not in vl.columns:
+            vl["hoat_chat"] = None
+            vl["active_ingredient"] = None
+        if "thuoc_ke_don" not in vl.columns:
+            vl["thuoc_ke_don"] = 0
+            vl["is_prescription"] = 0
+        if "cost_amount" not in vl.columns:
+            vl["cost_amount"] = None
+
+    if vo is not None:
+        if "order_total" not in vo.columns or vo["order_total"].isna().all():
+            vo["order_total"] = vo["items_total"] if "items_total" in vo.columns else None
+        if "status" not in vo.columns:
+            vo["status"] = "hoan_thanh"
+        else:
+            vo["status"] = vo["status"].fillna("hoan_thanh")
+
+    # ---- Trích xuất sổ nhập hàng & sổ tồn kho ----
+    vp = _build_purchases(tables, meta)
+    vi = _build_inventory(tables, meta)
+
+    return {"v_lines": vl, "v_orders": vo, "v_purchases": vp, "v_inventory": vi, "info": info}
 
 
 # ───────────────────────── tính số liệu từ sổ chuẩn (để kiểm chứng) ─────────────────────────
