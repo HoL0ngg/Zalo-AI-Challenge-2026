@@ -18,6 +18,37 @@ def _bad_name(n):
     return any(ch in n for ch in "├ß║╗Ã")
 
 
+_ID_NAME = clean_shop._NameMatcher(("imei", "serial", "seri", "so may", "so seri", "barcode", "ma vach", "sdt", "so dien thoai", "sku"))
+
+
+def invariant_issues(tabs):
+    """v3 — kiểm tra BẤT BIẾN sau khi làm sạch (bắt cả lỗi cấp bảng mà test hàm đơn lẻ không thấy):
+      1. cột tên giống TIỀN mà kiểu dữ liệu không phải số      (lỗi '45,000.0000' ở v2)
+      2. cột tên giống SỐ LƯỢNG mà kiểu dữ liệu không phải số  (str ở biz_101/111/125..., int/float ở shop khác)
+      3. cột tên giống NGÀY mà còn là chuỗi
+      4. cột IMEI/serial/mã vạch bị điền xuống (nhiều ô hơn dữ liệu gốc cho phép: >95% có giá trị trong bảng có cờ nhóm)
+    Trả list (bang, cot, loai, vi_du)."""
+    out = []
+    for n, df in tabs.items():
+        grouped = "_is_group_head" in df.columns
+        for c in df.columns:
+            if c.startswith("_") or c.endswith(("__don_vi", "__raw")):
+                continue
+            num = pd.api.types.is_numeric_dtype(df[c])
+            nn = df[c].dropna()
+            ex = [str(v) for v in nn.head(3).tolist()]
+            if not num and len(nn):
+                smp = nn.head(300).tolist()
+                numeric_like = sum(1 for v in smp if clean_shop.parse_money(v) is not None) / len(smp) >= 0.5   # cột chữ như 'MaKhuyenMai' không bị báo
+                if numeric_like and clean_shop._MONEY_NAME.search(c):
+                    out.append((n, c, "TÊN GIỐNG TIỀN NHƯNG KHÔNG PHẢI SỐ", ex))
+                elif numeric_like and clean_shop._QTY_NAME.search(c):
+                    out.append((n, c, "TÊN GIỐNG SỐ LƯỢNG NHƯNG KHÔNG PHẢI SỐ", ex))
+            if grouped and _ID_NAME.search(c) and df[c].notna().mean() > 0.95 and (~df["_is_group_head"]).any():
+                out.append((n, c, "MÃ ĐỊNH DANH CẤP DÒNG NGHI BỊ ĐIỀN XUỐNG", ex))
+    return out
+
+
 def run(roots, out_dir=None, verbose=True):
     shops, cols = [], []
     for split, root in roots:
@@ -42,7 +73,13 @@ def run(roots, out_dir=None, verbose=True):
                 bang_lon_khong_co_cot_tien=";".join(no_money),
                 cot_bi_dien=";".join("%s.%s" % (n, c) for n, v in m["tables"].items() for c in v["ffilled"]),
             ))
+            for n, c, kind, ex in invariant_issues(tabs):
+                cols.append(dict(shop=shop, bang=n, cot=c, van_de="BẤT BIẾN: " + kind, so_o=None))
             for n, v in m["tables"].items():
+                if v.get("dup_rows"):
+                    cols.append(dict(shop=shop, bang=n, cot="(cả dòng)", van_de="DÒNG TRÙNG HOÀN TOÀN (đã gắn cờ _is_exact_dup, KHÔNG xoá)", so_o=v["dup_rows"]))
+                if v.get("total_rows_dropped"):
+                    cols.append(dict(shop=shop, bang=n, cot="(dòng tổng)", van_de="DÒNG TỔNG ĐÃ BỎ: " + "; ".join(v.get("total_rows_dropped_text", [])), so_o=v["total_rows_dropped"]))
                 for c, k in v["unparsed"].items():
                     cols.append(dict(shop=shop, bang=n, cot=c, van_de="Ô KHÔNG ĐỔI ĐƯỢC", so_o=k))
                 for c, k in v["skipped"].items():

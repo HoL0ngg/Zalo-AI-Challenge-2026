@@ -124,7 +124,7 @@ def parse_money(value):
     return -out if neg else out
 
 
-_QTY = re.compile(r"^(-?\s*\d+(?:[.,]\d+)*(?: \d{3})*)\s*([^\W\d_][^\d]*)?$")
+_QTY = re.compile(r"^(-?\s*\d+(?:[.,]\d+)*(?: \d{3})*)\s*([^\W\d_].*)?$")
 
 
 def _nice(x):
@@ -173,9 +173,13 @@ def parse_qty(value):
     if not m:
         return None
     num, unit = m.group(1), (m.group(2) or "").strip().rstrip(".").strip()
-    # Đơn vị: không chứa khoảng trắng, chữ số, quá dài -> không đoán
-    if unit and (" " in unit or len(unit) > 12 or re.search(r"\d", unit)):
-        return None
+    # Đơn vị: v3 nhận quy cách có số ('m3', '25kg') và cụm nhiều từ KHI có chữ số ('bao 25kg', 'hộp 30', 'xe 4m3').
+    # Cụm nhiều từ không có số ('hộp to') vẫn không đoán. Quá dài / quá nhiều từ -> None.
+    if unit:
+        if len(unit) > 20 or len(unit.split()) > 3:
+            return None
+        if " " in unit and not re.search(r"\d", unit):
+            return None
     n = _qty_number(num)
     if n is None:
         return None
@@ -342,7 +346,7 @@ QTY_TESTS = [
 
     # --- bẫy chữ viết ---
     ("một cái", None),
-    ("2 hộp to", None),                 # đơn vị chứa khoảng trắng → None
+    ("2 hộp to", None),                 # cụm nhiều từ không có số → None
 
     # --- v2: bug đã tái hiện được ở v1 ---
     ("2kg", (2, "kg")), ("3cái", (3, "cái")), ("1,5kg", (1.5, "kg")), ("2KG", (2, "kg")),
@@ -354,6 +358,11 @@ QTY_TESTS = [
     ("2 cái.", (2, "cái")),           # v1 giữ dấu chấm trong đơn vị
     ("2 Cái", (2, "cái")),            # chuẩn hoá chữ thường để group-by không bị tách đôi
     ("-5 cái", (-5, "cái")), ("1.5 kg", (1.5, "kg")), (" 2  hộp ", (2, "hộp")),
+
+    # --- v3: đơn vị có quy cách / nhiều từ (trước đây bị xoá thành trống, mất ~5% dòng ở biz_114, biz_116) ---
+    ("1 bao 25kg", (1, "bao 25kg")), ("2 hộp 30", (2, "hộp 30")), ("1 xe 4m3", (1, "xe 4m3")),
+    ("2 m3", (2, "m3")), ("3 chai 500ml", (3, "chai 500ml")), ("10 thùng 24 lon", (10, "thùng 24 lon")),
+    ("1 a b c d", None),
 ]
 
 DATE_TESTS = [  # (đầu vào, year_hint, mong đợi)

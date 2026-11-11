@@ -21,8 +21,12 @@ from value_parsers import parse_money, parse_qty, parse_datetime, _core
 
 _ERRORS = {"#value!", "#n/a", "#ref!", "#div/0!", "#name?", "#null!", "#num!"}
 _TOTAL_WORDS = ("tổng", "tong", "total", "cộng", "cong", "ghi chú", "ghi chu", "lưu ý", "luu y", "note")
+# v3: dòng tổng chỉ khi ô đầu là TỪ 'tổng/cộng/total/ghi chú...' đứng riêng (không phải 'Tổng hợp vitamin', 'Notebook A4')
+# và phần còn lại của dòng gần như chỉ có số. Ghi lại các dòng đã bỏ để kiểm tra (meta).
+_TOTAL_RX = re.compile(r"(?i)^\s*(?:tổng|tong|total|cộng|cong|ghi chú|ghi chu|lưu ý|luu y|note)(?!\w)(?!\s+(?:hợp|hop)\b)")
 _MONEY_MARK = re.compile(r"(?i)\d\s*(k|tr|triệu|tỷ|tỉ)\b|\d\s*(đ|₫|đồng|vnd)\b|^\s*-?\d{1,3}([.,]\d{3})+\s*$|^\s*-?\d{1,3}( \d{3})+\s*$")
-_QTY_UNIT = re.compile(r"^\d+(?:[.,]\d+)?\s*[^\W\d_]{1,10}\.?$")
+# v3: đơn vị có thể kèm quy cách / nhiều từ: '1 bao 25kg', '2 hộp 30', '1 xe 4m3', '2 m3' (v2 bỏ sót -> ô bị xoá thành trống)
+_QTY_UNIT = re.compile(r"^\d+(?:[.,]\d+)?\s*[^\W\d_][\w .()/]{0,19}$")
 _STATUS_NAME = re.compile(r"(?i)trang thai|trạng thái|status|tinh trang|tình trạng")
 
 
@@ -64,10 +68,19 @@ _MONEY_NAME = _NameMatcher(("gia", "tien", "thanh tien", "tong tien", "amount", 
                             "gia von", "gia ban", "gia nhap", "doanh thu", "revenue", "phi", "giam gia", "ck", "tong",
                             "khuyen mai", "con no", "da tra", "da thu", "khach tra", "so tien", "tri gia",
                             "tong bill", "tong tien", "tien hang", "cong no", "con lai", "gia tri", "ship", "tien thu"))
-_QTY_NAME = _NameMatcher(("sl", "so luong", "quantity", "qty", "sl quy doi", "so luong ban"))
+_QTY_NAME = _NameMatcher(("sl", "so luong", "quantity", "qty", "sl quy doi", "so luong ban", "sluong", "soluong",
+                          "quy ra dv le", "quy ra le"))
 _NO_FILL_KEY = _NameMatcher(("barcode", "vach", "ean", "sinh", "sinh nhat", "ngay sinh", "birthday", "sdt",
                              "dien thoai", "phone", "email", "gia", "gia cu", "gia moi", "tien", "price", "amount",
-                             "sku", "hsd", "han su dung"))
+                             "sku", "hsd", "han su dung",
+                             # v3: mã định danh theo từng món/máy (cấp DÒNG) không được điền xuống / không được làm khoá nhóm
+                             "imei", "serial", "seri", "so may", "so seri"))
+# v3: cột TIỀN không bao giờ được điền xuống (một khoản nợ/giảm giá ở dòng đầu mà chép ra nhiều dòng sẽ bị cộng nhiều lần).
+# Quy tắc cũ chỉ chặn theo vài từ ('gia', 'tien') nên cùng một nhóm: 'Trả trước' bị điền còn 'Giá' thì không (dev_014).
+_MONEY_FILL_BLOCK = _NameMatcher(("tra truoc", "gop", "gop thang", "no", "coc", "dat coc", "bot", "chiet khau"))
+# tên cột trông như MÃ ĐƠN: được ưu tiên làm khoá nhóm (kể cả khi giá trị là số, ví dụ STT)
+_ORDER_KEY_NAME = _NameMatcher(("ma don", "so don", "stt", "order", "ma hd", "so hd", "so phieu", "ma phieu",
+                                "bill", "ma hoa don", "so hoa don", "ma don hang", "ma giao dich"))
 
 
 def _demojibake(text):
@@ -223,15 +236,20 @@ def rows_to_frame(rows):
     empty_cols = [c for c in df.columns if c.startswith("col_") and df[c].map(_empty).all()]
     df = df.drop(columns=empty_cols).reset_index(drop=True)
     # bỏ dòng tổng ở cuối bảng
-    dropped = 0
+    dropped, dropped_txt = 0, []
     while len(df):
-        first = next((v for v in df.iloc[-1].tolist() if not _empty(v)), None)
-        if isinstance(first, str) and first.strip().lower().startswith(_TOTAL_WORDS):
-            df = df.iloc[:-1]
-            dropped += 1
-        else:
-            break
+        vals = [v for v in df.iloc[-1].tolist() if not _empty(v)]
+        first = vals[0] if vals else None
+        if isinstance(first, str) and _TOTAL_RX.match(first):
+            other_text = [v for v in vals[1:] if isinstance(v, str) and not _is_plain_num(v) and not _MONEY_MARK.search(v)]
+            if len(other_text) <= 1:
+                dropped_txt.append(first.strip()[:40])
+                df = df.iloc[:-1]
+                dropped += 1
+                continue
+        break
     info["total_rows_dropped"] = dropped
+    info["total_rows_dropped_text"] = dropped_txt[:5]
     return df, info
 
 
@@ -271,13 +289,24 @@ def _fail_note(warnings, tag, kind, c, orig, out):
     return len(bad)
 
 
+def _num_series(vals):
+    """Danh sách số / None -> Int64 nếu mọi giá trị nguyên, ngược lại Float64 (kiểu thống nhất giữa các shop)."""
+    nn = [v for v in vals if v is not None]
+    if all(float(v).is_integer() for v in nn):
+        return pd.array([None if v is None else int(v) for v in vals], dtype="Int64")
+    return pd.array([None if v is None else float(v) for v in vals], dtype="Float64")
+
+
 def clean_columns(df, year_hint, warnings, tag):
     """Đổi cột tiền / ngày / số lượng theo NỘI DUNG (+ tên cột khi nội dung chỉ là số thuần).
     Trả về (df, done). done['unparsed'] = {cột: số ô lỗi}; cột nhìn giống tiền/ngày/SL nhưng không đổi được thì có cảnh báo."""
     done = {"money": [], "date": [], "qty": [], "autoyear": [], "unparsed": {}, "skipped": {}, "numeric_text": []}
     for c in list(df.columns):
-        df[c] = df[c].map(_clean_text)
+        if not c.startswith("_"):
+            df[c] = df[c].map(_clean_text)
     for c in list(df.columns):
+        if c.startswith("_"):
+            continue
         col = df[c]
         smp = _sample(col)
         if len(smp) < 3:
@@ -325,10 +354,12 @@ def clean_columns(df, year_hint, warnings, tag):
             continue
         # --- tiền ---
         marked = sum(1 for v in strs if _MONEY_MARK.search(v))
-        plain = sum(1 for v in smp if _is_plain_num(v))
-        # v1 chỉ nhận cột có ký hiệu (k/tr/đ/dấu ngăn nghìn) nên cột giá toàn số thuần ('7000') bị bỏ sót, nằm lại dạng chuỗi.
-        # v2: cột có tên giống tiền và >=85% giá trị là số/ký hiệu tiền cũng được đổi thành số nguyên VND.
-        money_like = marked >= 1 or (name_money and (plain + marked) / len(smp) >= 0.85)
+        # v3: cổng nhận cột tiền dựa vào CHÍNH parse_money, không dựa regex riêng.
+        # v2 dùng regex (k/tr/đ/dấu nghìn/số thuần) nên cột '45,000.0000' (dấu nghìn + 4 số thập phân) không bao giờ vào
+        # parse_money và nằm lại dạng chuỗi ở biz_112/115/116/118/130, dev_001 (Đơn giá, Thành tiền, Giá vốn, Giá bán).
+        money_like = marked >= 1
+        if not money_like and name_money:
+            money_like = sum(1 for v in smp if parse_money(v) is not None) / len(smp) >= 0.85
         if money_like:
             ok = sum(1 for v in smp if parse_money(v) is not None)
             if ok / len(smp) >= 0.85:
@@ -340,11 +371,13 @@ def clean_columns(df, year_hint, warnings, tag):
                 df[c] = pd.array(out, dtype="Int64")
                 done["money"].append(c)
                 continue
-            # nhìn giống tiền nhưng quá nhiều ô lỗi -> KHÔNG đổi, nhưng phải báo (v1 im lặng)
-            bad_ex = [str(v) for v in smp if parse_money(v) is None][:3]
-            warnings.append("%s: cột '%s' trông như tiền nhưng chỉ %d/%d ô đổi được -> để nguyên. Ví dụ lỗi %s"
-                            % (tag, c, ok, len(smp), bad_ex))
-            done["skipped"][c] = "tien"
+            # nhìn giống tiền nhưng quá nhiều ô lỗi -> KHÔNG đổi. v3: chỉ báo khi tên giống tiền hoặc >=10% ô có ký hiệu tiền
+            # (v2 báo nhầm cả cột 'Tên hàng' vì vài tên như '10k' / '5tr' -> 28 dòng nhiễu trong dq_columns)
+            if name_money or marked / len(smp) >= 0.10:
+                bad_ex = [str(v) for v in smp if parse_money(v) is None][:3]
+                warnings.append("%s: cột '%s' trông như tiền nhưng chỉ %d/%d ô đổi được -> để nguyên. Ví dụ lỗi %s"
+                                % (tag, c, ok, len(smp), bad_ex))
+                done["skipped"][c] = "tien"
         # --- số lượng (có thể kèm đơn vị) ---
         with_unit = sum(1 for v in strs if _QTY_UNIT.match(v) and not _is_plain_num(v))
         n_plain = sum(1 for v in smp if _is_plain_num(v))   # v1 không tính chuỗi '1','2' -> cột lẫn '1' và '1 ly' bị bỏ sót
@@ -356,8 +389,21 @@ def clean_columns(df, year_hint, warnings, tag):
                 ex = [str(o) for o, p in zip(orig, parsed) if not _empty(o) and p is None][:3]
                 warnings.append("%s: cột số lượng '%s' có %d ô không đổi được (đã để trống), ví dụ %s" % (tag, c, n_bad, ex))
                 done["unparsed"][c] = n_bad
-            df[c] = [p[0] if p else None for p in parsed]
+            df[c + "__raw"] = orig   # v3: giữ chuỗi gốc ('1 bao 25kg') để không mất thông tin khi tách số / đơn vị
+            df[c] = _num_series([p[0] if p else None for p in parsed])
             df[c + "__don_vi"] = [(p[1] or None) if p else None for p in parsed]
+            done["qty"].append(c)
+            continue
+        # v3: cột SỐ LƯỢNG thuần số (tên giống SL) -> cùng một kiểu số ở mọi shop (v2: str ở biz_101/111/125/127, dev_007/010; int/float ở shop khác)
+        if name_qty and n_plain / len(smp) >= 0.85:
+            orig = col.tolist()
+            vals = [None if _empty(v) else (parse_qty(v)[0] if parse_qty(v) else None) for v in orig]
+            n_bad = sum(1 for o, v in zip(orig, vals) if not _empty(o) and v is None)
+            if n_bad:
+                ex = [str(o) for o, v in zip(orig, vals) if not _empty(o) and v is None][:3]
+                warnings.append("%s: cột số lượng '%s' có %d ô không đổi được (đã để trống), ví dụ %s" % (tag, c, n_bad, ex))
+                done["unparsed"][c] = n_bad
+            df[c] = _num_series(vals)
             done["qty"].append(c)
             continue
         # cột chuỗi toàn số nhưng tên không giống tiền/SL: không tự đổi (có thể là mã/SĐT), chỉ LIỆT KÊ để người kiểm tra
@@ -366,24 +412,52 @@ def clean_columns(df, year_hint, warnings, tag):
     return df, done
 
 
+def _key_blocked(c):
+    """Cột không được làm khoá nhóm đơn: mã vạch, SĐT, IMEI, giá, tiền..."""
+    return bool(_NO_FILL_KEY.search(c) or _MONEY_NAME.search(c))
+
+
+def _fill_blocked(c):
+    """Cột không bao giờ điền xuống: như trên + mọi cột TIỀN (nợ, trả trước, góp/tháng...)."""
+    return _key_blocked(c) or bool(_MONEY_FILL_BLOCK.search(c))
+
+
+def _is_int_like(v):
+    if isinstance(v, bool):
+        return False
+    if isinstance(v, (int, float)):
+        return float(v).is_integer()
+    return isinstance(v, str) and bool(re.fullmatch(r"\d+(?:\.0+)?", v.strip()))
+
+
 def fill_order_level(df):
-    """Điền ô trống cấp ĐƠN (mã đơn, ngày, khách…) xuống các dòng hàng bên dưới. Trả về (df, các cột đã điền)."""
+    """Điền ô trống cấp ĐƠN (mã đơn, ngày, khách…) xuống các dòng hàng bên dưới (rulebook §8).
+    Trả về (df, các cột đã điền). Khi có điền, thêm cột `_is_group_head` (True = dòng đầu nhóm, ô không bị điền)
+    để phía sau không cộng nhân các số ở cấp đơn.
+
+    v3: (1) khoá nhóm ưu tiên cột có tên giống MÃ ĐƠN / STT (kể cả khi là số); (2) IMEI/serial/mã vạch không thể là khoá
+    hay bị điền (v2 chọn nhầm IMEI làm khoá ở dev_011: IMEI của máy bị chép sang ốp lưng, cáp và cả đơn sau);
+    (3) cột tiền không bao giờ bị điền, thống nhất cho mọi shop."""
     n = len(df)
     if n < 6:
         return df, []
-    key = None
+    cands = []
     for c in list(df.columns)[:8]:
-        if _NO_FILL_KEY.search(c):   # v1 điền nhầm 'Mã barcode', 'Ngày sinh', 'Giá cũ' ở bảng danh mục
+        if _key_blocked(c):   # v1 điền nhầm 'Mã barcode', 'Ngày sinh', 'Giá cũ' ở bảng danh mục
             continue
         col = df[c]
         blank = col.map(_empty).mean()
         nn = col.dropna()
-        if 0.10 <= blank <= 0.90 and len(nn) >= 3 and nn.astype(str).nunique() / len(nn) >= 0.9 \
-                and nn.map(lambda v: isinstance(v, str)).mean() >= 0.8:
-            key = c
-            break
-    if key is None:
+        nn = nn[~nn.map(_empty)]
+        if not (0.10 <= blank <= 0.90 and len(nn) >= 3 and nn.astype(str).nunique() / len(nn) >= 0.9):
+            continue
+        is_str = nn.map(lambda v: isinstance(v, str)).mean() >= 0.8
+        is_num_key = bool(_ORDER_KEY_NAME.search(c)) and nn.map(_is_int_like).mean() >= 0.95
+        if is_str or is_num_key:
+            cands.append((0 if _ORDER_KEY_NAME.search(c) else 1, len(cands), c))
+    if not cands:
         return df, []
+    key = sorted(cands)[0][2]
     starts = ~df[key].map(_empty)
     grp = starts.cumsum()
     filled = []
@@ -391,11 +465,12 @@ def fill_order_level(df):
         col = df[c]
         first_nb = (~col.map(_empty))[starts].mean()
         later_blank = col.map(_empty)[~starts].mean() if (~starts).any() else 0
-        if c != key and _NO_FILL_KEY.search(c):
+        if c != key and _fill_blocked(c):
             continue
         if c == key or (first_nb >= 0.5 and later_blank >= 0.95):
             df[c] = col.where(~col.map(_empty), None).groupby(grp).ffill()
             filled.append(c)
+    df["_is_group_head"] = starts.values
     return df, filled
 
 
@@ -411,7 +486,7 @@ def _base_name(stem):
 
 
 def _sig(df):
-    return {_ascii(c) for c in df.columns if not c.endswith("__don_vi")}
+    return {_ascii(c) for c in df.columns if not c.endswith(("__don_vi", "__raw")) and not c.startswith("_")}
 
 
 def _similar(a, b):
@@ -478,6 +553,14 @@ def load_clean_tables(shop_dir):
             d["_sheet_year"] = p["info"].get("year_hint")
             frames.append(d)
         full = pd.concat(frames, ignore_index=True) if len(frames) > 1 else frames[0]
+        if "_is_group_head" in full.columns:   # phần không có điền ô trống: mỗi dòng là đầu nhóm của chính nó
+            full["_is_group_head"] = full["_is_group_head"].fillna(True).astype(bool)
+        # v3: cờ dòng trùng hoàn toàn (KHÔNG xoá: bảng theo đơn -> lỗi xuất file tính 1 lần; bảng không theo đơn -> giữ cả hai, rulebook §8)
+        real_cols = [c for c in full.columns if not c.startswith("_")]
+        try:
+            full["_is_exact_dup"] = full.duplicated(subset=real_cols, keep="first").values
+        except TypeError:
+            full["_is_exact_dup"] = False
         tables[final] = full
         dates = {}
         for c in full.columns:
@@ -498,6 +581,11 @@ def load_clean_tables(shop_dir):
             "unparsed": {c: n for p in cl for c, n in p["info"].get("unparsed", {}).items()},
             "skipped": {c: v for p in cl for c, v in p["info"].get("skipped", {}).items()},
             "numeric_text": sorted({c for p in cl for c in p["info"].get("numeric_text", [])}),
+            "dup_rows": int(full["_is_exact_dup"].sum()),
+            "group_fill": "_is_group_head" in full.columns,
+            "total_rows_dropped": sum(p["info"].get("total_rows_dropped", 0) for p in cl),
+            "total_rows_dropped_text": sorted({t for p in cl for t in p["info"].get("total_rows_dropped_text", [])})[:5],
+            "repeated_header_rows_dropped": sum(p["info"].get("repeated_header_rows_dropped", 0) for p in cl),
         }
     def _span(skip_non_event):
         lo, hi = [], []

@@ -43,9 +43,21 @@ TEENCODE_WORDS = {
     "mik": "mình", "mk": "mình", "nv": "nhân viên", "kh": "khách hàng", "hđ": "hóa đơn", "hd": "hóa đơn",
     "bill": "đơn hàng", "order": "đơn hàng", "sl": "số lượng", "slg": "số lượng", "đv": "đơn vị", "dvt": "đơn vị tính",
     "trc": "trước", "nhut": "nhất", "z": "vậy", "zay": "vậy", "vs": "so với", "amount": "tổng tiền",
-    "total": "tổng tiền", "cash": "tiền mặt", "revenue": "doanh thu", "thg": "tháng", "bít": "biết", "mún": "muốn", "trog": "trong",
+    "total": "tổng", "cash": "tiền mặt", "revenue": "doanh thu", "thg": "tháng", "bít": "biết", "mún": "muốn", "trog": "trong",
 }
 # Từ mơ hồ: chỉ mở rộng khi ngữ cảnh rõ (xem _expand_ambiguous). 'dt' có thể là điện thoại, 'k' có thể là vitamin K.
+# v3: phương ngữ 'ni' (= này) và tháng viết bằng chữ — trên public_test có >60 câu không ra kỳ nào vì các cách viết này
+TEENCODE_PHRASES.update({
+    "tháng ni": "tháng này", "thang ni": "tháng này", "tuần ni": "tuần này", "tuan ni": "tuần này",
+    "quý ni": "quý này", "quy ni": "quý này", "năm ni": "năm này", "nam ni": "năm này",
+    "bữa ni": "hôm nay", "bua ni": "hôm nay", "hôm ni": "hôm nay", "hom ni": "hôm nay",
+    "tháng giêng": "tháng 1", "tháng một": "tháng 1", "tháng hai": "tháng 2", "tháng ba": "tháng 3",
+    "tháng tư": "tháng 4", "tháng bốn": "tháng 4", "tháng năm": "tháng 5", "tháng sáu": "tháng 6",
+    "tháng bảy": "tháng 7", "tháng tám": "tháng 8", "tháng chín": "tháng 9", "tháng mười một": "tháng 11",
+    "tháng mười hai": "tháng 12", "tháng chạp": "tháng 12", "tháng mười": "tháng 10",
+    "thang mot": "tháng 1", "thang hai": "tháng 2", "thang ba": "tháng 3", "thang bon": "tháng 4",
+    "thang sau": "tháng 6", "thang bay": "tháng 7", "thang tam": "tháng 8", "thang chin": "tháng 9",
+})
 _AMBIG_DT_NEXT = {"thang", "tháng", "hom", "hôm", "hnay", "tuan", "tuần", "quy", "quý", "nam", "năm", "ngay", "ngày", "hqua"}
 _AMBIG_K_NEXT = {"ban", "bán", "mua", "co", "có", "duoc", "được", "dc", "đc", "lan", "lần", "ai", "thay", "thấy", "con", "còn", "du", "đủ"}
 
@@ -191,6 +203,19 @@ def telex_decode(token, vocab=None, can_be_name=False):
     return None
 
 
+def autoload_config(base_dir=None):
+    """v3: tự nạp configs/teencode_dict.json + configs/vocab_vi_train.txt nếu có.
+    v2 chỉ nạp khi gọi tay nên báo cáo câu hỏi chạy mà KHÔNG có từ điển: 'cuwar', 'tawng/giamr', 'soos', 'hoom', 'gias' không được sửa."""
+    import os
+    base = base_dir or os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "configs")
+    tj, vt = os.path.join(base, "teencode_dict.json"), os.path.join(base, "vocab_vi_train.txt")
+    if os.path.isfile(tj):
+        load_teencode(tj)
+    if os.path.isfile(vt) and not VOCAB:
+        load_vocab(vt)
+    return bool(VOCAB)
+
+
 _PHRASE_CACHE = {}
 
 
@@ -203,10 +228,30 @@ def _phrase_regex():
     return _PHRASE_CACHE["items"]
 
 
-def normalize_text(text):
-    """Mở rộng viết tắt, đổi 'th5'->'tháng 5', giữ nguyên dấu câu và tên riêng. Trả về (text_norm, text_ascii)."""
+# v3: viết tắt có nguy cơ trùng TÊN HÀNG ('Telfast HD 180mg', 'đèn led T8 1.2m'): không mở rộng khi
+#   (a) đứng ngay trước quy cách (số + mg/ml/g/kg/w/v/m/cm/mm/l/iu/mcg/%) hoặc
+#   (b) viết HOA trong câu có chữ thường ('HD', 'T8').
+_RISKY_ABBR = re.compile(r"(?i)^(?:hd|hđ|t\d{1,2})$")
+_SPEC_AFTER = re.compile(r"\s+\d+(?:[.,]\d+)?\s*(?:mg|mcg|ml|kg|g|iu|w|v|m|cm|mm|l|%|x)\b", re.I)
+
+
+def _protected_spans(text, protect):
+    spans = []
+    for term in (protect or []):
+        t = str(term).strip()
+        if len(t) >= 3:
+            for m in re.finditer(r"(?<!\w)" + re.escape(t) + r"(?!\w)", text, re.I):
+                spans.append((m.start(), m.end()))
+    return spans
+
+
+def normalize_text(text, protect=None):
+    """Mở rộng viết tắt, đổi 'th5'->'tháng 5', giữ nguyên dấu câu và tên riêng. Trả về (text_norm, text_ascii).
+    protect: danh sách tên hàng / tên riêng của shop (tuỳ chọn) — các đoạn trùng khớp không bị mở rộng viết tắt."""
     if not text:
         return "", ""
+    if not VOCAB:
+        autoload_config()
     s = unicodedata.normalize("NFC", str(text)).strip()
     s = re.sub(r"\s+", " ", s)
     # th5, thg 5, thang 5 -> tháng 5 ; 't5 2026' -> tháng 5 2026 ; 'th trước' -> tháng trước
@@ -216,9 +261,16 @@ def normalize_text(text):
     for rx, rep in _phrase_regex():
         s = rx.sub(rep, s)
 
+    pspans = _protected_spans(s, protect)
+    has_lower = bool(re.search(r"[a-zà-ỹ]", s))
+
     def repl(m):
         w = m.group(0)
         lw = w.lower()
+        if any(a <= m.start() < b for a, b in pspans):
+            return w
+        if _RISKY_ABBR.match(w) and (_SPEC_AFTER.match(m.string[m.end():]) or (w.isupper() and has_lower)):
+            return w
         if lw == "dt":
             nxt = re.match(r"\s+(\w+)", m.string[m.end():])
             return "doanh thu" if nxt and nxt.group(1).lower() in _AMBIG_DT_NEXT else w
@@ -881,6 +933,8 @@ def _fmt(p, label, **extra):
 
 # [vá 8] viết lại vài cách nói đồng nghĩa về dạng module đã hiểu (chỉ trên chuỗi thời gian, không đổi câu hỏi)
 _RW8 = [
+    # v3: 'M-YYYY' đứng một mình (không chữ 'tháng'): '6-2025 …', '12-2025', 'từ 2-2025 đến 4-2025' = tháng M/YYYY
+    (r"(?<![\d\-/.])(?<!thang )(?<!thang)(?<!th )(?<!ngay )(\d{1,2})\s*-\s*(20\d{2})(?![\d\-/])", r"thang \1/\2"),
     # "chừ" (miền Trung) = "giờ"
     (r"\b(?:bay\s*)?chu\b(?=\s*(?:$|[,.?!]|quan|tiem|shop|cua|ban|duoc|thu|co|la|ro|vay|z|ha|a)\b|\s*$)", "gio"),
     # "từ mùng 1 (tháng này) tới (hết) hôm nay" = từ đầu tháng tới hết hôm nay
@@ -1099,8 +1153,8 @@ def extract_flags(text):
 
 
 # ═════════════════════════ 6. HÀM CHÍNH ═════════════════════════
-def normalize_question(raw_question, as_of_date, calendar=None):
-    text_norm, text_ascii = normalize_text(raw_question)
+def normalize_question(raw_question, as_of_date, calendar=None, protect=None):
+    text_norm, text_ascii = normalize_text(raw_question, protect=protect)
     periods, info = resolve_time_ex(raw_question, as_of_date, calendar)
     return {
         "raw": raw_question,
