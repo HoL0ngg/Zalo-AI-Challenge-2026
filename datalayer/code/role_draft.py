@@ -11,7 +11,7 @@ PREFIX_ROLE = {
     "ORD": "ma_don", "SP": "ma_hang", "KH": "ma_khach", "NCC": "ma_ncc",
     "PN": "ma_phieu_nhap", "NV": "ma_nhan_vien", "PT": "ma_phieu_thu",
     "PAY": "ma_phieu_thu", "LO": "ma_lo", "HD": "ma_don", "GD": "ma_giao_dich",
-    "CT": "ma_chung_tu", "BIZ": "ma_cua_hang", "DEV": "ma_cua_hang"
+    "CT": "ma_chung_tu", "BIZ": "ma_cua_hang", "DEV": "ma_cua_hang", "SKU": "ma_hang"
 }
 
 # (vai trò, regex trên tên đã bỏ dấu, bỏ khoảng trắng). Thứ tự quan trọng: quy tắc cụ thể đứng trước.
@@ -21,9 +21,10 @@ NAME_RULES = [
     ("gia_cu_moi", r"^(giacu|giamoi)$"),
     ("ma_phieu_tra", r"^(maphieutra|tienhoantra)$"),
     ("hoat_chat", r"^(hoatchat|hoatchatchinh|thanhphanchinh|thanhphan)$"),
-    ("thuoc_ke_don", r"^(thuockedon|kedon|loaithuoc)$"),
-    ("nhom_khach", r"^(nhomkhach(hang)?|nhomkh|loaikhach(hang)?|loaihinhkh.*|phanloaikh|hangthanhvien|hangkhach|doituongkh)$"),
-    ("nhom_hang", r"^(nhomhang|nhomhanghoa|nhomsp|loaisanpham|loaihanghoa|danhmuc|phanloai|nhomhang3cap)$"),
+    ("thuoc_ke_don", r"^(thuockedon|kedon|loaithuoc|bantheodon)$"),
+    ("thuong_hieu", r"^(thuonghieu|nhanhieu|brand)$"),
+    ("nhom_khach", r"^(nhomkhach(hang)?|nhomkh|loaikhach(hang)?|loaihinhkh.*|phanloaikh|hangthanhvien|hangkhach|doituongkh|khachlesi)$"),
+    ("nhom_hang", r"^(nhom|nhomhang|nhomhanghoa|nhomsp|loai|loaihang|loaisanpham|loaihanghoa|danhmuc|phanloai|nhomhang3cap)$"),
     ("han_dung", r"^(hansudung|hsd)$"),
     ("ma_vach", r"^(mavach.*|mabarcode|barcode|ean)$"),
     ("lo", r"^(malo|lo|idlo)$"),
@@ -39,24 +40,24 @@ NAME_RULES = [
     ("so_luong", r"^(soluong(ban|giao|sanpham|le|nhap|tra|hang|mua)?|sl(ban|nhap|le|tra|mua)?|sluong|slg|sl)$"),
     ("quy_doi", r"^(slqd|slquydoi|quydoi|tylequydoi|tilequydoi|hesoquydoi|hesoqd|heso|soluongquydoi|quyradvle|giabantheodonviquydoi|donviquydoi|donvicoban|donvigoc|dvgoc|dvlon|dvnho|dvt?nhap|dvtcoban|slnhapquydoi|sltraquydoi|soluongdvtcoban|soluongtradvtcoban)$"),
     ("don_vi", r"^(donvitinh|dvt|donvi|dv|dvtinh|dvi|dtinh|dvitinh)$"),
-    ("ten_hang", r"^(tenhang(hoa)?|tensanpham|tensp|hang(hoa|ban)?|sanpham|product|mathang|tenmathang|chitiethang|hangapdung)$"),
-    ("ma_hang", r"^(mahang(hoa|ban)?|masanpham(ban)?|masp|mahh|mahhoa|masku|sku|idsp)$"),
-    ("ten_khach", r"^(tenkhachhang|khachhang(ten)?|khach|tenkh|hoten|customer|khachlesi|benmua|doitac)$"),
+    ("ten_hang", r"^(tenhang(hoa)?|tensanpham|tensp|hang(hoa|ban)?|sanpham|product|mathang|tenmathang|chitiethang|hangapdung|may)$"),
+    ("ma_hang", r"^(mahang(hoa|ban)?|masanpham(ban)?|masp|mahh|mahhoa|masku|sku|idsp|mahhoa|mahhoa)$"),
+    ("ten_khach", r"^(tenkhachhang|khachhang(ten)?|khach|tenkh|hoten|customer|benmua|doitac)$"),
     ("ma_khach", r"^(makh(mua)?|makhachhang|makhach(mua)?|customerid|idkh)$"),
-    ("nhan_vien", r"^(nhanvien|nv|thungan|nguoiban|nhanvienban|manvban|manhanvien|nguoigiaohang)$"),
+    ("nhan_vien", r"^(nhanvien|nv|thungan|nguoiban|nhanvienban|manvban|manhanvien|nguoigiaohang|tho)$"),
     ("kenh_ban", r"^(kenhban(hang)?|kenh)$"),
     ("phuong_thuc_tt", r"^(phuongthuc(tt|thanhtoan)?|pttt|hinhthucthanhtoan|cachhoantien)$"),
     ("trang_thai", r"^(trangthai(don(hang)?|xuly|phieu)?|status|tinhtrang|xuly)$"),
     ("cong_no", r"^(conno|no|congno|duno|chuatra|conphaithu|canphaitra|cantrancc|canstra)$"),
     ("da_tra", r"^(khachdatra|khachtra|datra|dathu|dagop|sotienthu|gopthang)$"),
     ("ton_kho", r"^(tonkho|toncuoiky|toncuoi|tonthuc)$"),
-    ("thoi_diem", r"^(ngay(ban|dathang|giaodich|thang|nhap|nhapkho|thu|lap|tao|giao hang|giaohang|apdung|mua|phatsinh|giogiaodich)?|thoigian(tao|thu|lap)?|date|taoluc|gio(ban|taodon)?|ngaygio(phatsinh|thu|tra)?|denngay|hantra|giaodich)$"),
+    ("thoi_diem", r"^(ngay(ban|dathang|giaodich|thang|nhap|nhapkho|thu|lap|tao|giao hang|giaohang|apdung|mua|phatsinh|giogiaodich|nhan|tra|gop)?|thoigian(tao|thu|lap)?|date|taoluc|gio(ban|taodon)?|ngaygio(phatsinh|thu|tra)?|denngay|hantra|giaodich)$"),
     ("ma_don", r"^(ma|so)?(don(hang)?|hoadon|hd|bill|ct|chungtu|phieu|giaodich|gd)(nhap)?$"),
     ("ma_ncc", r"^(mancc|manhacungcap|nhacungcap)$"),
     ("stt", r"^(stt|sothutu|lan giao|langiao|luotgiao)$"),
     ("dich_vu", r"^(dichvu|hangmuc|congviec|lamgi|noidung)$"),
     ("khong_dung", r"^(ghichu.*|mauhoghichu|mauhogichu|baohanh|trongluong|thuoctinh|hinhanh.*|mota.*|email|cccd|mastue|masothue|mst|"
-                   r"ngaysinh|sinhnhat|ngaykhaitruong|thuonghieu|nguoitao|vitri|dangkinhdoanh|conkinhdoanh|dinhmuc.*|ton(nho|lon)nhat.*|"
+                   r"ngaysinh|sinhnhat|ngaykhaitruong|nguoitao|vitri|dangkinhdoanh|conkinhdoanh|dinhmuc.*|ton(nho|lon)nhat.*|"
                    r"tondai|duocbantructiep|bantructiep|hanghoalienquan|mahhlienquan|congty|chucvu|ngaynhanviec|diemtichluy|tongdiem|diemhienco|diemhientai|"
                    r"trangthaikh|dienthoai|sdt|sodienthoai|phone|didong|diachi.*|addr|imei|tengoi|"
                    r"hinhthuc|nguon|luuy|note)$"),
